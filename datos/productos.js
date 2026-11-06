@@ -14,7 +14,7 @@
       modo: cómo se aplica.
       solar: qué indica la marca sobre fotoprotección (opcional; solo si la marca lo dice).
       nota: advertencias o aclaraciones (opcional).
-   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com). */
+   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com, es.medik8.com, es.svr.com, es.nuxe.com, laroche-posay.es). */
 var D = D || {};
 
 D.prods = [
@@ -5116,6 +5116,7399 @@ D.prods = [
       necesidad: "Aporte de ácidos grasos omega-3.",
       cuando: "2 cápsulas al día, preferiblemente con una comida principal.",
       modo: "Tomar con un vaso de agua. No superar la dosis diaria."
+    }
+  },
+
+  /* ---------- Medik8 · Limpiadores ---------- */
+  {
+    id: "m8-lipid-balance-cleansing-oil",
+    name: "Lipid-Balance Cleansing Oil™",
+    img: "imagenes/medik8/m8-lipid-balance-cleansing-oil.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel.",
+      tipo: "Aceite desmaquillante que pasa a textura lechosa.",
+      necesidad: "Elimina maquillaje resistente, incluso en ojos, protector solar e impurezas.",
+      limpieza: "Doble limpieza · 1.er paso",
+      limpiezaDet: "Medik8 lo recomienda como primer paso ideal de una doble limpieza.",
+      cuando: "Medik8 no indica la frecuencia.",
+      modo: "Masajear sobre la piel seca, emulsionar con agua tibia, aclarar y secar a toques.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-total-moisture-daily-cleansing-gel",
+    name: "Total Moisture Daily Cleansing Gel",
+    img: "imagenes/medik8/m8-total-moisture-daily-cleansing-gel.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel.",
+      tipo: "Gel limpiador que prioriza la hidratación.",
+      necesidad: "Elimina impurezas sin alterar el equilibrio ni la barrera cutánea.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 2 pulsaciones en la palma, hacer espuma y masajear sobre rostro y cuello húmedos. Aclarar y secar a toques."
+    }
+  },
+
+  {
+    id: "m8-micellar-mousse",
+    name: "Micellar Mousse™",
+    img: "imagenes/medik8/m8-micellar-mousse.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca una alternativa al agua micelar.",
+      tipo: "Mousse limpiadora micelar.",
+      necesidad: "Limpieza suave; piel nutrida y equilibrada.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear un poco sobre rostro y cuello húmedos. Aclarar y secar a toques.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-calmwise-soothing-cleanser",
+    name: "Calmwise™ Soothing Cleanser",
+    img: "imagenes/medik8/m8-calmwise-soothing-cleanser.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel enrojecida, sensible o recién sometida a un tratamiento.",
+      tipo: "Limpiador espumoso calmante con clorofila.",
+      necesidad: "Limpieza ultrasuave, reduce el enrojecimiento y apoya la barrera.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear una pequeña cantidad sobre rostro y cuello húmedos. Aclarar con agua tibia y secar a toques.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-surface-radiance-cleanse",
+    name: "Surface Radiance Cleanse™",
+    img: "imagenes/medik8/m8-surface-radiance-cleanse.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente apagada.",
+      tipo: "Limpiador con AHA y BHA.",
+      necesidad: "Limpia, suaviza e ilumina sin tirantez.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y noche. Piel sensible o seca: como máximo una vez al día.",
+      modo: "Masajear sobre rostro y cuello húmedos. Aclarar y secar a toques.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-clarifying-foam",
+    name: "Clarifying Foam™",
+    img: "imagenes/medik8/m8-clarifying-foam.webp",
+    brand: "medik8",
+    line: "m8-limpiadores",
+    n: ["limpieza", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia a imperfecciones.",
+      tipo: "Espuma limpiadora con AHA y BHA.",
+      necesidad: "Exfolia suavemente, elimina impurezas y reduce y previene imperfecciones.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear un poco sobre rostro y cuello húmedos. Aclarar con agua tibia y secar a toques.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  /* ---------- Medik8 · Ácidos directos ---------- */
+  {
+    id: "m8-press-glow",
+    name: "Press & Glow™",
+    img: "imagenes/medik8/m8-press-glow.webp",
+    brand: "medik8",
+    line: "m8-acidos",
+    n: ["apagada", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere una alternativa a los tónicos ácidos que escuecen o resecan.",
+      tipo: "Tónico exfoliante diario.",
+      necesidad: "Elimina células muertas; piel hidratada y luminosa.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Tónico de uso diario, después de limpiar.",
+      cuando: "Empezar una vez al día y subir hasta 2 veces al día.",
+      modo: "Desbloquear la bomba, presionar un disco 3-4 veces y pasarlo por el rostro limpio.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-press-clear",
+    name: "Press & Clear™",
+    img: "imagenes/medik8/m8-press-clear.webp",
+    brand: "medik8",
+    line: "m8-acidos",
+    n: ["acne", "poros", "manchas"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia a imperfecciones.",
+      tipo: "Tónico diario equilibrante, respetuoso con el microbioma.",
+      necesidad: "Imperfecciones, poros y manchas posacné.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Tónico de uso diario, después de limpiar.",
+      cuando: "Empezar una vez al día y subir hasta 2 veces al día.",
+      modo: "Desbloquear la bomba, presionar un disco 3-4 veces y pasarlo por el rostro limpio, evitando el contorno de ojos.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-sleep-glycolic",
+    name: "Sleep Glycolic™",
+    img: "imagenes/medik8/m8-sleep-glycolic.webp",
+    brand: "medik8",
+    line: "m8-acidos",
+    n: ["apagada", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca una exfoliación nocturna sin enrojecimiento ni irritación.",
+      tipo: "Tratamiento exfoliante nocturno con AHA.",
+      necesidad: "Piel más luminosa, suave y uniforme.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Tratamiento de noche sin aclarado.",
+      cuando: "Probar una vez y después 2 o 3 noches por semana.",
+      modo: "Tras limpiar, aplicar un guisante en rostro, cuello y escote, evitando los ojos. Es normal un ligero cosquilleo. Seguir con sérums e hidratante.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-blemish-sos",
+    name: "Blemish SOS™",
+    img: "imagenes/medik8/m8-blemish-sos.webp",
+    brand: "medik8",
+    line: "m8-acidos",
+    n: ["acne", "rojeces"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con imperfecciones puntuales.",
+      tipo: "Gel localizado con 2 % de ácido salicílico.",
+      necesidad: "Reduce imperfecciones y calma el enrojecimiento.",
+      cuando: "Mañana y/o noche, según sea necesario.",
+      modo: "Aplicar con un dedo limpio tras la limpieza y dejar secar. Es normal un ligero cosquilleo. Se puede usar bajo o sobre el maquillaje.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  /* ---------- Medik8 · Sérums de vitamina C ---------- */
+  {
+    id: "m8-c-tetra",
+    name: "C-Tetra®",
+    img: "imagenes/medik8/m8-c-tetra.webp",
+    brand: "medik8",
+    line: "m8-vitc",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum ligero con 7 % de vitamina C estabilizada.",
+      necesidad: "Ilumina y unifica el tono.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar 4 gotas con masaje suave en rostro, cuello y escote. Dejar absorber.",
+      solar: "Por la mañana, terminar con protección solar.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-c-tetra-advanced",
+    name: "C-Tetra Advanced",
+    img: "imagenes/medik8/m8-c-tetra-advanced.webp",
+    brand: "medik8",
+    line: "m8-vitc",
+    n: ["apagada", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente grasa y mixta.",
+      tipo: "Sérum con 20 % de vitamina C.",
+      necesidad: "Envejecimiento prematuro, luminosidad y barrera.",
+      cuando: "Por la mañana.",
+      modo: "Extender 2 o 3 pulsaciones por rostro, cuello y escote. Después, hidratar.",
+      solar: "Terminar siempre con protección solar.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-c-tetra-luxe",
+    name: "C-Tetra Luxe",
+    img: "imagenes/medik8/m8-c-tetra-luxe.webp",
+    brand: "medik8",
+    line: "m8-vitc",
+    n: ["apagada", "arrugas", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente grasa y mixta.",
+      tipo: "Sérum con 14 % de vitamina C.",
+      necesidad: "Arrugas, hiperpigmentación y luminosidad.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar 6 gotas con masaje suave en rostro, cuello y escote. Dejar absorber.",
+      solar: "Por la mañana, terminar con protección solar.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-super-c-ferulic",
+    name: "Super C Ferulic™",
+    img: "imagenes/medik8/m8-super-c-ferulic.webp",
+    brand: "medik8",
+    line: "m8-vitc",
+    n: ["arrugas", "manchas", "flacidez"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente grasa y mixta. No recomendado en piel sensible.",
+      tipo: "Sérum de vitamina C de alta potencia.",
+      necesidad: "Arrugas, manchas, tono desigual y firmeza por envejecimiento solar.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar 4 gotas con masaje en rostro, cuello y escote. Es normal un ligero cosquilleo.",
+      solar: "Por la mañana, terminar con protección solar.",
+      nota: "No recomendado en piel sensible. Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-c-tetra-cream",
+    name: "C-Tetra® Cream",
+    img: "imagenes/medik8/m8-c-tetra-cream.webp",
+    brand: "medik8",
+    line: "m8-vitc",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca una piel luminosa e hidratada.",
+      tipo: "Crema antioxidante con vitamina C.",
+      necesidad: "Recupera la luminosidad y unifica el tono.",
+      cuando: "Por la mañana.",
+      modo: "Extender por rostro, cuello y escote con movimientos ascendentes.",
+      solar: "Dejar absorber y aplicar protector solar.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  /* ---------- Medik8 · Vitamina A ---------- */
+  {
+    id: "m8-crystal-retinal",
+    name: "Crystal Retinal®",
+    img: "imagenes/medik8/m8-crystal-retinal.webp",
+    brand: "medik8",
+    line: "m8-vita",
+    n: ["arrugas", "manchas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere usar vitamina A; se elige la fuerza adecuada (6 versiones).",
+      tipo: "Sérum nocturno con retinal.",
+      necesidad: "Arrugas, manchas, congestión y firmeza.",
+      cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 noches las 2 siguientes y luego todas las noches.",
+      modo: "Tras limpiar, aplicar 2 pulsaciones en rostro y cuello. Dejar absorber e hidratar.",
+      solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-r-retinoate",
+    name: "r-Retinoate® Day & Night",
+    img: "imagenes/medik8/m8-r-retinoate.webp",
+    brand: "medik8",
+    line: "m8-vita",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca vitamina A para día y noche.",
+      tipo: "Sérum con retinil retinoato, vitamina C y ácido hialurónico.",
+      necesidad: "Arrugas, luminosidad e hidratación.",
+      cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 días las 2 siguientes y luego a diario.",
+      modo: "Tras limpiar, aplicar 2 pulsaciones en rostro, cuello y escote.",
+      solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-r-retinoate-intense",
+    name: "r-Retinoate® Intense",
+    img: "imagenes/medik8/m8-r-retinoate-intense.webp",
+    brand: "medik8",
+    line: "m8-vita",
+    n: ["arrugas", "manchas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con signos avanzados de envejecimiento.",
+      tipo: "Tratamiento de noche con retinil retinoato.",
+      necesidad: "Arrugas, manchas y firmeza.",
+      cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 noches las 2 siguientes y luego todas las noches.",
+      modo: "Tras limpiar, aplicar 2 pulsaciones en rostro, cuello y escote.",
+      solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-bakuchiol-peptides",
+    name: "Bakuchiol Peptides™",
+    img: "imagenes/medik8/m8-bakuchiol-peptides.webp",
+    brand: "medik8",
+    line: "m8-vita",
+    n: ["arrugas", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien no puede usar retinol. Apto para embarazadas, según Medik8.",
+      tipo: "Sérum con 1,25 % de bakuchiol, alternativa vegetal al retinol.",
+      necesidad: "Líneas, arrugas, textura, tono y enrojecimiento.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 6 gotas con masaje en rostro, cuello y escote. Después, hidratante.",
+      solar: "Por la mañana, aplicar después protector solar."
+    }
+  },
+
+  /* ---------- Medik8 · Sérums de péptidos e hidratación ---------- */
+  {
+    id: "m8-liquid-peptides-advanced-mp",
+    name: "Liquid Peptides Advanced MP",
+    img: "imagenes/medik8/m8-liquid-peptides-advanced-mp.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca reducir arrugas; complemento de tratamientos inyectables.",
+      tipo: "Sérum con Dual MiniProteins.",
+      necesidad: "Líneas de expresión y arrugas profundas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Tras limpiar, aplicar con movimientos ascendentes en rostro, cuello y escote.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-liquid-peptides",
+    name: "Liquid Peptides™",
+    img: "imagenes/medik8/m8-liquid-peptides.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien tiene los primeros signos de envejecimiento.",
+      tipo: "Sérum con 30 % de mezcla de 10 péptidos.",
+      necesidad: "Líneas de expresión e hidratación.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 6 gotas con masaje en rostro, cuello y escote. Después, hidratante.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-exo-pdrn-prismatic",
+    name: "Exo-PDRN Prismatic+",
+    img: "imagenes/medik8/m8-exo-pdrn-prismatic.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca rejuvenecimiento; complemento de tratamientos profesionales.",
+      tipo: "Sérum inspirado en polinucleótidos, con PDRN.",
+      necesidad: "Rejuvenecimiento, tono y textura.",
+      cuando: "Mañana y noche.",
+      modo: "Tras limpiar, aplicar 1 o 2 pulsaciones en rostro, cuello y escote con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "m8-oxy-r-peptides",
+    name: "Oxy-R Peptides™",
+    img: "imagenes/medik8/m8-oxy-r-peptides.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Manchas oscuras en todos los tonos de piel.",
+      tipo: "Sérum con 1 % de oxi-resveratrol, en 2 frascos.",
+      necesidad: "Manchas oscuras y decoloraciones.",
+      cuando: "Medik8 no indica la frecuencia.",
+      modo: "Activar pulsando la tapa y agitando 30 segundos. Cada frasco dura 6 semanas tras abrirlo.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-niacinamide-peptides",
+    name: "Niacinamide Peptides™",
+    img: "imagenes/medik8/m8-niacinamide-peptides.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["acne", "poros", "rojeces", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con imperfecciones y poros visibles.",
+      tipo: "Sérum multiactivo con 10 % de niacinamida.",
+      necesidad: "Imperfecciones, poros, enrojecimiento y barrera.",
+      cuando: "Mañana y/o noche.",
+      modo: "Tras limpiar, aplicar por rostro, cuello y escote.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-clarity-peptides",
+    name: "Clarity Peptides™",
+    img: "imagenes/medik8/m8-clarity-peptides.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["apagada", "acne"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel apagada y propensa a imperfecciones.",
+      tipo: "Sérum ligero con 10 % de niacinamida.",
+      necesidad: "Luminosidad, tono e imperfecciones; calma e hidrata.",
+      cuando: "Mañana y noche.",
+      modo: "Tras limpiar, aplicar en rostro, cuello y escote.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-hydr8-b5",
+    name: "Hydr8 B5™",
+    img: "imagenes/medik8/m8-hydr8-b5.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel que necesita hidratación.",
+      tipo: "Sérum de ácido hialurónico sin aceites.",
+      necesidad: "Hidratación duradera; piel más tersa.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 6 gotas con masaje en rostro, cuello y escote antes del hidratante.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-hydr8-b5-intense",
+    name: "Hydr8 B5™ Intense",
+    img: "imagenes/medik8/m8-hydr8-b5-intense.webp",
+    brand: "medik8",
+    line: "m8-serums",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel que necesita hidratación intensa.",
+      tipo: "Sérum de ácido hialurónico potenciado.",
+      necesidad: "Repone la hidratación en 24 horas; suaviza y reafirma.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 6 gotas con masaje en rostro, cuello y escote antes del hidratante.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  /* ---------- Medik8 · Hidratantes ---------- */
+  {
+    id: "m8-total-moisture-daily-facial-cream",
+    name: "Total Moisture Daily Facial Cream™",
+    img: "imagenes/medik8/m8-total-moisture-daily-facial-cream.webp",
+    brand: "medik8",
+    line: "m8-hidratantes",
+    n: ["deshidratacion", "seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca hidratación diaria y refuerzo de la barrera.",
+      tipo: "Crema hidratante multiacción, con recambio.",
+      necesidad: "100 horas de hidratación; barrera y base de maquillaje.",
+      cuando: "Mañana y/o noche.",
+      modo: "Tras limpiar, aplicar en rostro, cuello y escote con movimientos ascendentes.",
+      solar: "Tras la aplicación de la mañana, usar protección solar."
+    }
+  },
+
+  {
+    id: "m8-advanced-pro-collagen-peptide-cream",
+    name: "Advanced Pro-Collagen+ Peptide Cream",
+    img: "imagenes/medik8/m8-advanced-pro-collagen-peptide-cream.webp",
+    brand: "medik8",
+    line: "m8-hidratantes",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, ideal para sensible.",
+      tipo: "Crema con péptidos pro-colágeno, con recambio.",
+      necesidad: "Arrugas profundas, flacidez y contorno facial.",
+      cuando: "Mañana y noche.",
+      modo: "Tras limpiar, aplicar con movimientos ascendentes en rostro, cuello y escote.",
+      solar: "Tras la aplicación de la mañana, usar protector solar.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-advanced-night-restore",
+    name: "Advanced Night Restore™",
+    img: "imagenes/medik8/m8-advanced-night-restore.webp",
+    brand: "medik8",
+    line: "m8-hidratantes",
+    n: ["arrugas", "flacidez", "seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca firmeza y nutrición nocturna.",
+      tipo: "Crema de noche rica en ceramidas.",
+      necesidad: "Arrugas y firmeza; potencia la vitamina A.",
+      cuando: "Por la noche.",
+      modo: "Tras limpiar y aplicar sérums, usar en rostro, cuello y escote con movimientos ascendentes.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-balance-moisturiser-glycolic-acid-activator",
+    name: "Balance Moisturiser™ & Glycolic Acid Activator™",
+    img: "imagenes/medik8/m8-balance-moisturiser-glycolic-acid-activator.webp",
+    brand: "medik8",
+    line: "m8-hidratantes",
+    n: ["apagada", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca una hidratación ligera y una tez más perfecta.",
+      tipo: "Hidratante ligera con activador de ácido glicólico.",
+      necesidad: "Tez uniforme, hidratación y equilibrio del microbioma.",
+      cuando: "Mañana y noche.",
+      modo: "Tras limpiar, aplicar por rostro, cuello y escote.",
+      solar: "Por la mañana, dejar absorber y aplicar protector solar."
+    }
+  },
+
+  /* ---------- Medik8 · Ojos ---------- */
+  {
+    id: "m8-crystal-retinal-ceramide-eye",
+    name: "Crystal Retinal® Ceramide Eye",
+    img: "imagenes/medik8/m8-crystal-retinal-ceramide-eye.webp",
+    brand: "medik8",
+    line: "m8-ojos",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere vitamina A para el contorno de ojos (3 fuerzas).",
+      tipo: "Crema de noche con retinal para el contorno.",
+      necesidad: "Patas de gallo, hinchazón y ojeras.",
+      cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 noches las 2 siguientes y luego todas las noches.",
+      modo: "Tras limpiar, aplicar en el contorno de ojos, evitando los párpados.",
+      solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-r-retinoate-day-night-eye-serum",
+    name: "r-Retinoate® Day & Night Eye Serum",
+    img: "imagenes/medik8/m8-r-retinoate-day-night-eye-serum.webp",
+    brand: "medik8",
+    line: "m8-ojos",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien tiene líneas y arrugas alrededor de los ojos.",
+      tipo: "Sérum de contorno con retinil retinoato.",
+      necesidad: "Líneas y arrugas del contorno.",
+      cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 días las 2 siguientes y luego a diario.",
+      modo: "Tras limpiar, aplicar en el contorno de ojos, evitando los párpados.",
+      solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  {
+    id: "m8-advanced-night-eye",
+    name: "Advanced Night Eye™",
+    img: "imagenes/medik8/m8-advanced-night-eye.webp",
+    brand: "medik8",
+    line: "m8-ojos",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Ojos cansados.",
+      tipo: "Crema rejuvenecedora de noche.",
+      necesidad: "Líneas de expresión y ojeras; potencia la vitamina A.",
+      cuando: "Por la noche.",
+      modo: "Tras limpiar, aplicar en el contorno de ojos, evitando los párpados. Después, hidratante de noche.",
+      nota: "Embarazo o lactancia: Medik8 no asesora y recomienda consultar los ingredientes con el médico."
+    }
+  },
+
+  /* ---------- Medik8 · Protección solar ---------- */
+  {
+    id: "m8-advanced-day-ultimate-protect",
+    name: "Advanced Day Ultimate Protect™",
+    img: "imagenes/medik8/m8-advanced-day-ultimate-protect.webp",
+    brand: "medik8",
+    line: "m8-solar",
+    n: ["fotoproteccion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca hidratante y protector en uno.",
+      tipo: "Crema hidratante y protector solar SPF 50+ PA++++.",
+      necesidad: "Protección UV, líneas y arrugas, hidratación.",
+      cuando: "Último paso de la mañana. Reaplicar según sea necesario y cada 2 horas al sol directo.",
+      modo: "Aplicar 5 pulsaciones en el rostro, evitando los ojos, y 5 más en cuello y escote."
+    }
+  },
+
+  {
+    id: "m8-advanced-day-total-protect",
+    name: "Advanced Day Total Protect™",
+    img: "imagenes/medik8/m8-advanced-day-total-protect.webp",
+    brand: "medik8",
+    line: "m8-solar",
+    n: ["fotoproteccion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca hidratante y protector en uno.",
+      tipo: "Crema hidratante ligera y protector solar SPF 30.",
+      necesidad: "Protección UV e hidratación; base de maquillaje.",
+      cuando: "Último paso de la mañana. Reaplicar según sea necesario y cada 2 horas al sol directo.",
+      modo: "Aplicar 5 pulsaciones en el rostro, evitando los ojos, y 5 más en cuello y escote."
+    }
+  },
+
+  {
+    id: "m8-daily-radiance-vitamin-c",
+    name: "Daily Radiance Vitamin C™",
+    img: "imagenes/medik8/m8-daily-radiance-vitamin-c.webp",
+    brand: "medik8",
+    line: "m8-solar",
+    n: ["fotoproteccion", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere vitamina C y protector en uno.",
+      tipo: "Crema de día con 7 % de vitamina C y SPF 30.",
+      necesidad: "Protección antioxidante y solar; luminosidad.",
+      cuando: "Por la mañana. Reaplicar según sea necesario.",
+      modo: "Tras limpiar, extender una cantidad generosa en rostro, cuello y escote.",
+      nota: "Según Medik8, no contiene ingredientes que recomiende evitar en el embarazo, salvo indicación médica."
+    }
+  },
+
+  {
+    id: "m8-advanced-day-eye-protect",
+    name: "Advanced Day Eye Protect",
+    img: "imagenes/medik8/m8-advanced-day-eye-protect.webp",
+    brand: "medik8",
+    line: "m8-solar",
+    n: ["fotoproteccion", "ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere proteger la zona del contorno de ojos.",
+      tipo: "Protector solar SPF 30 específico para los ojos.",
+      necesidad: "Protege, hidrata y suaviza el contorno.",
+      cuando: "Por la mañana, antes del protector facial. Reaplicar según sea necesario y cada 2 horas al sol.",
+      modo: "Aplicar una cantidad generosa alrededor de los ojos, evitando los párpados."
+    }
+  },
+
+  /* ---------- Medik8 · Mascarillas ---------- */
+  {
+    id: "m8-h-e-o-mask",
+    name: "H.E.O.® Mask",
+    img: "imagenes/medik8/m8-h-e-o-mask.webp",
+    brand: "medik8",
+    line: "m8-mascarillas",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel que necesita hidratación intensa.",
+      tipo: "Mascarilla de tratamiento nocturno en 2 pasos.",
+      necesidad: "Hidratación, líneas y arrugas.",
+      cuando: "Por la noche, como último paso. Medik8 no indica cuántas veces por semana.",
+      modo: "Aplicar una almendra del paso 1 en rostro, cuello y escote, dejar absorber y repetir con el paso 2."
+    }
+  },
+
+  /* ---------- SVR · Sun Secure ---------- */
+  {
+    id: "sv-sun-secure-lait",
+    name: "SUN SECURE Lait SPF50+",
+    img: "imagenes/svr/sv-sun-secure-lait.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Leche fluida SPF 50+ para cara y cuerpo.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-lait-spf50-sin-perfume",
+    name: "SUN SECURE Lait SPF50+ Sans Parfum",
+    img: "imagenes/svr/sv-sun-secure-lait-spf50-sin-perfume.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Desde el nacimiento, en formato familiar.",
+      tipo: "Leche fluida SPF 50+ sin perfume para cara y cuerpo.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar una dosis suficiente sobre la piel seca o húmeda.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección. Evitar la exposición en las horas centrales.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-lait-crepitant-spf50",
+    name: "SUN SECURE Lait Crépitant SPF50+",
+    img: "imagenes/svr/sv-sun-secure-lait-crepitant-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Bruma de leche SPF 50+ para cara y cuerpo.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Agitar y aplicar; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-spray-spf50-1",
+    name: "SUN SECURE Spray SPF50+",
+    img: "imagenes/svr/sv-sun-secure-spray-spf50-1.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Niños desde 3 años y adultos.",
+      tipo: "Spray lechoso SPF 50+ muy resistente, de acabado seco.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-spray-pocket-spf50",
+    name: "SUN SECURE Spray Pocket SPF50+",
+    img: "imagenes/svr/sv-sun-secure-spray-pocket-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Spray SPF 50+ en formato de bolsillo.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-brume-spf50-1",
+    name: "SUN SECURE Brume SPF50",
+    img: "imagenes/svr/sv-sun-secure-brume-spf50-1.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Niños desde 3 años y adultos.",
+      tipo: "Bruma ligera e invisible SPF 50.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-eau-solaire-spf50",
+    name: "SUN SECURE Eau Solaire SPF50+",
+    img: "imagenes/svr/sv-sun-secure-eau-solaire-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Niños desde 3 años y adultos.",
+      tipo: "Agua solar bifásica SPF 50+, no comedogénica.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Agitar y aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-eau-solaire-glow-spf50",
+    name: "SUN SECURE Eau Solaire Glow SPF50+",
+    img: "imagenes/svr/sv-sun-secure-eau-solaire-glow-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Adolescentes y adultos.",
+      tipo: "Agua solar bifásica SPF 50+ con efecto luminoso.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Agitar y aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-huile-spf50",
+    name: "SUN SECURE Huile SPF50",
+    img: "imagenes/svr/sv-sun-secure-huile-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol.",
+      tipo: "Aceite seco nutritivo SPF 50, acabado satinado.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara y cuerpo; en el rostro, pulverizar antes sobre las manos. Evitar los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-fluide-spf50-1",
+    name: "SUN SECURE Fluide SPF50+",
+    img: "imagenes/svr/sv-sun-secure-fluide-spf50-1.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Fluido facial SPF 50+, no comedogénico.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender uniformemente por el rostro, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-creme-spf50-1",
+    name: "SUN SECURE Creme SPF50+",
+    img: "imagenes/svr/sv-sun-secure-creme-spf50-1.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Crema facial SPF 50+, acabado aterciopelado.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender uniformemente por el rostro, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-aqua-fluide-spf50",
+    name: "SUN SECURE Aqua Fluide SPF50+",
+    img: "imagenes/svr/sv-sun-secure-aqua-fluide-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Niños desde 3 años y adultos.",
+      tipo: "Ultrafluido facial SPF 50+, no comedogénico.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Agitar y distribuir por rostro y cuello, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-extreme-spf50",
+    name: "SUN SECURE Extreme SPF50+",
+    img: "imagenes/svr/sv-sun-secure-extreme-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Niños desde 3 años y adultos.",
+      tipo: "Gel ultramate multirresistente SPF 50+.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender uniformemente por el rostro, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-fluide-photo-age-spf50",
+    name: "SUN SECURE Fluide Photo-Age SPF50+",
+    img: "imagenes/svr/sv-sun-secure-fluide-photo-age-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol.",
+      tipo: "Fluido facial SPF 50+ con acción antifotoenvejecimiento.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender uniformemente por el rostro.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-blur-spf50-23",
+    name: "SUN SECURE Blur SPF50+",
+    img: "imagenes/svr/sv-sun-secure-blur-spf50-23.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Adolescentes y adultos.",
+      tipo: "Mousse facial SPF 50+ con efecto difuminador.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender por el rostro como una base de maquillaje, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-blur-sin-perfume-spf50",
+    name: "SUN SECURE Blur Sans Parfum SPF50+",
+    img: "imagenes/svr/sv-sun-secure-blur-sin-perfume-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Adolescentes y adultos.",
+      tipo: "Mousse facial SPF 50+ sin perfume.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender por el rostro como una base de maquillaje, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-blur-con-color-spf50",
+    name: "SUN SECURE Blur Teinté SPF50+",
+    img: "imagenes/svr/sv-sun-secure-blur-con-color-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Adolescentes y adultos.",
+      tipo: "Mousse facial SPF 50+ con color.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Extender por el rostro como una base de maquillaje, evitando los ojos.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-easy-stick-spf50",
+    name: "SUN SECURE Easy Stick SPF50+",
+    img: "imagenes/svr/sv-sun-secure-easy-stick-spf50.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol. Bebés, niños y adultos.",
+      tipo: "Stick SPF 50+ sin fragancia.",
+      necesidad: "Protección solar de amplio espectro.",
+      cuando: "Por la mañana, antes de la exposición. Reaplicar con frecuencia y en exposiciones prolongadas.",
+      modo: "Aplicar en cara, labios y zonas sensibles (orejas, nariz, manos, tatuajes curados, cicatrices). Fácil de reaplicar durante el día.",
+      solar: "Aplicar generosa y uniformemente: reducir la cantidad disminuye mucho la protección.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-gouttes-teintees",
+    name: "SUN SECURE Gouttes Teintées",
+    img: "imagenes/svr/sv-sun-secure-gouttes-teintees.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles e hipersensibles al sol, con tez apagada.",
+      tipo: "Concentrado iluminador con color, sin DHA ni autobronceador.",
+      necesidad: "Efecto buena cara inmediato, que se elimina al desmaquillar.",
+      cuando: "SVR no indica la frecuencia.",
+      modo: "Mezclar con la crema de día o el protector y aplicar por rostro y cuello.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-mousse-autobronzante",
+    name: "SUN SECURE Mousse Autobronzante",
+    img: "imagenes/svr/sv-sun-secure-mousse-autobronzante.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todas las pieles sensibles. Adolescentes y adultos.",
+      tipo: "Mousse autobronceadora para cara y cuerpo.",
+      necesidad: "Bronceado sin exposición al sol.",
+      cuando: "A diario hasta lograr el tono; luego 2-3 veces por semana.",
+      modo: "Aplicar sobre la piel limpia y seca. Exfoliar 24 horas antes y lavar bien las manos tras aplicar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-apres-soleil-1",
+    name: "SUN SECURE Après-Soleil",
+    img: "imagenes/svr/sv-sun-secure-apres-soleil-1.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles, sobrecalentadas e hipersensibles. Bebés, niños y adultos.",
+      tipo: "Leche after-sun hidratante y calmante.",
+      necesidad: "Hidrata, calma y repara tras el sol; prolonga el bronceado.",
+      cuando: "Después de la exposición al sol.",
+      modo: "Aplicar generosamente sobre la piel limpia y seca de cara y cuerpo."
+    }
+  },
+
+  {
+    id: "sv-sun-secure-spray-apres-soleil",
+    name: "SUN SECURE Spray Après-Soleil",
+    img: "imagenes/svr/sv-sun-secure-spray-apres-soleil.webp",
+    brand: "svr",
+    line: "sv-sun",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles sensibles, sobrecalentadas e hipersensibles. Bebés, niños y adultos.",
+      tipo: "Bruma after-sun refrescante.",
+      necesidad: "Calma e hidrata tras el sol.",
+      cuando: "Después de la exposición al sol.",
+      modo: "Agitar y aplicar sobre la piel limpia y seca; en el rostro, pulverizar antes sobre las manos."
+    }
+  },
+
+  /* ---------- SVR · AK Secure ---------- */
+  {
+    id: "sv-ak-secure-dm-protect",
+    name: "AK SECURE DM Protect",
+    img: "imagenes/svr/sv-ak-secure-dm-protect.webp",
+    brand: "svr",
+    line: "sv-ak",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles hipersensibles al sol o de riesgo (fototipos I y II, inmunodeprimidos), cánceres de piel no melanoma y queratosis actínica.",
+      tipo: "Producto sanitario de muy alta protección, resistente al agua.",
+      necesidad: "Prevención de lesiones por daño actínico.",
+      cuando: "Cada mañana. Reaplicar tras el agua o con sudoración intensa.",
+      modo: "Aplicar uniformemente en las zonas afectadas y todas las zonas expuestas (rostro, orejas, escote, cuero cabelludo, manos)."
+    }
+  },
+
+  /* ---------- SVR · Sebiaclear ---------- */
+  {
+    id: "sv-sebiaclear-gel-moussant-23",
+    name: "SEBIACLEAR Gel Moussant",
+    img: "imagenes/svr/sv-sebiaclear-gel-moussant-23.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["limpieza", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel mixta a grasa, sensible y con tendencia al acné. Adolescentes y adultos.",
+      tipo: "Limpiador facial y corporal sin jabón.",
+      necesidad: "Limpia y purifica la piel con tendencia al acné.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "SVR propone combinarlo con Sebiaclear Eau Micellaire para desmaquillar por la noche.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel húmeda, hacer espuma y aclarar."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-creme-lavante",
+    name: "SEBIACLEAR Creme Lavante",
+    img: "imagenes/svr/sv-sebiaclear-creme-lavante.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["limpieza", "acne", "deshidratacion"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel con tendencia al acné, deshidratada o debilitada por tratamientos secantes. Adolescentes y adultos.",
+      tipo: "Crema limpiadora facial y corporal.",
+      necesidad: "Limpieza suave de la piel fragilizada.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear suavemente en cara y/o cuerpo y aclarar."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-eau-micellaire",
+    name: "SEBIACLEAR Eau Micellaire",
+    img: "imagenes/svr/sv-sebiaclear-eau-micellaire.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["limpieza", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Pieles sensibles mixtas o grasas con tendencia al acné.",
+      tipo: "Agua limpiadora purificante y matificante.",
+      necesidad: "Limpia y desmaquilla rostro y ojos.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un algodón. No requiere aclarado."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-micro-peel",
+    name: "SEBIACLEAR Micro-Peel",
+    img: "imagenes/svr/sv-sebiaclear-micro-peel.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Pieles sensibles mixtas o grasas con tendencia al acné.",
+      tipo: "Loción suavizante y exfoliante.",
+      necesidad: "Prepara la piel y actúa sobre las imperfecciones.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Loción que prepara la piel tras la limpieza.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un algodón o con la mano por todo el rostro, insistiendo en las imperfecciones."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-active-gel",
+    name: "SEBIACLEAR Active Gel",
+    img: "imagenes/svr/sv-sebiaclear-active-gel.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel propensa al acné, incluso sensible; imperfecciones de leves a graves. Desde 10 años.",
+      tipo: "Cuidado corrector hidratante diario, no comedogénico.",
+      necesidad: "Imperfecciones, con acción rápida y duradera.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar por todo el rostro limpio y seco. Sirve de base de maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-active",
+    name: "SEBIACLEAR Active Teinté",
+    img: "imagenes/svr/sv-sebiaclear-active.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel mixta a grasa con tendencia al acné, incluso sensible.",
+      tipo: "Tratamiento unificador con color.",
+      necesidad: "Corrige imperfecciones y unifica.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar uniformemente sobre la piel limpia. Por la noche, SVR aconseja Sebiaclear Active Gel."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-serum",
+    name: "SEBIACLEAR Sérum",
+    img: "imagenes/svr/sv-sebiaclear-serum.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne", "arrugas"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa adulta con tendencia al acné, incluso sensible.",
+      tipo: "Sérum para acné adulto, no comedogénico.",
+      necesidad: "Imperfecciones y signos del acné adulto.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar por rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear_ampoule_flash",
+    name: "SEBIACLEAR Ampoule Flash",
+    img: "imagenes/svr/sv-sebiaclear_ampoule_flash.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne", "rojeces"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Pieles sensibles con tendencia al acné; granos, enrojecimiento y marcas. Desde 10 años.",
+      tipo: "Concentrado contra imperfecciones y enrojecimiento.",
+      necesidad: "Imperfecciones, enrojecimiento y marcas.",
+      cuando: "Mañana y noche.",
+      modo: "Agitar y aplicar sobre el rostro limpio y seco."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-gel-flash-4h",
+    name: "SEBIACLEAR Gel Flash 4H",
+    img: "imagenes/svr/sv-sebiaclear-gel-flash-4h.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Imperfecciones localizadas, incluso en piel sensible; acné de leve a severo. Desde 10 años.",
+      tipo: "Gel invisible efecto parche con 5 % de ácido azelaico.",
+      necesidad: "Imperfecciones localizadas.",
+      cuando: "2 veces al día.",
+      modo: "Aplicar sobre la piel limpia y seca. Compatible con maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-mat-pores-1",
+    name: "SEBIACLEAR Mat+Pores",
+    img: "imagenes/svr/sv-sebiaclear-mat-pores-1.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["poros", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel mixta a grasa con tendencia al acné, incluso sensible.",
+      tipo: "Matificante hidratante seborregulador, no comedogénico.",
+      necesidad: "Poros dilatados y exceso de sebo.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar en toda la cara. Excelente base de maquillaje."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-hydra-23",
+    name: "SEBIACLEAR Hydra",
+    img: "imagenes/svr/sv-sebiaclear-hydra-23.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["deshidratacion", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel con tendencia al acné, deshidratada o sometida a tratamientos desecantes.",
+      tipo: "Crema hidratante reparadora, no comedogénica.",
+      necesidad: "Confort duradero en piel fragilizada.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel limpia."
+    }
+  },
+
+  {
+    id: "sv-novedad-sebiaclear-creme-spf50",
+    name: "SEBIACLEAR Creme SPF50+",
+    img: "imagenes/svr/sv-novedad-sebiaclear-creme-spf50.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["fotoproteccion", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Pieles sensibles mixtas o grasas con tendencia al acné, expuestas a UV.",
+      tipo: "Crema 2 en 1: cuidado y protección solar SPF 50+.",
+      necesidad: "Imperfecciones y marcas; protección solar diaria.",
+      cuando: "Por la mañana y durante el día. Reaplicar con frecuencia.",
+      modo: "Aplicar uniformemente sobre el rostro."
+    }
+  },
+
+  {
+    id: "sv-sebiaclear-spray-corps",
+    name: "SEBIACLEAR Spray Corps",
+    img: "imagenes/svr/sv-sebiaclear-spray-corps.webp",
+    brand: "svr",
+    line: "sv-sebiaclear",
+    n: ["acne", "corporal"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia al acné en espalda, hombros y escote. Desde 10 años.",
+      tipo: "Spray corporal antiimperfecciones.",
+      necesidad: "Imperfecciones de espalda, hombros y escote.",
+      cuando: "Mañana y noche.",
+      modo: "Pulverizar a 5-10 cm sobre la piel limpia y seca y dejar secar."
+    }
+  },
+
+  /* ---------- SVR · Sensifine ---------- */
+  {
+    id: "sv-sensifine-baume-demaquillant",
+    name: "SENSIFINE Baume Démaquillant",
+    img: "imagenes/svr/sv-sensifine-baume-demaquillant.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Las pieles más sensibles, intolerantes y polialérgicas. Desde 10 años.",
+      tipo: "Bálsamo desmaquillante con 9 ingredientes.",
+      necesidad: "Desmaquilla cara, ojos y labios.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Masajear sobre la piel seca, emulsionar con agua y aclarar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-dermo-nettoyant",
+    name: "SENSIFINE Dermo-Nettoyant",
+    img: "imagenes/svr/sv-sensifine-dermo-nettoyant.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Las pieles más sensibles, intolerantes y polialérgicas. Desde 10 años.",
+      tipo: "Limpiador con 9 ingredientes.",
+      necesidad: "Elimina todo rastro de maquillaje en cara, ojos y labios.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Aplicar con las yemas masajeando; pasar un algodón sin frotar. Aclarar si es necesario."
+    }
+  },
+
+  {
+    id: "sv-sensifine-extreme",
+    name: "SENSIFINE Extrême",
+    img: "imagenes/svr/sv-sensifine-extreme.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles intolerantes y polialérgicas que no toleran nada. Desde 3 años.",
+      tipo: "Crema calmante con solo 6 ingredientes.",
+      necesidad: "Hidrata, repara y calma.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-hydra-creme",
+    name: "SENSIFINE Hydra-Creme",
+    img: "imagenes/svr/sv-sensifine-hydra-creme.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles hipersensibles, intolerantes y alérgicas. Desde 3 años.",
+      tipo: "Crema minimalista con 10 ingredientes.",
+      necesidad: "Hidrata la piel hipersensible.",
+      cuando: "Mañana y/o noche.",
+      modo: "Sobre la piel limpia y seca. Sola o con la rutina diaria.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-aqua-gel",
+    name: "SENSIFINE Aqua-Gel",
+    img: "imagenes/svr/sv-sensifine-aqua-gel.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["mixta", "grasa", "sensible"],
+    d: {
+      paciente: "Pieles mixtas a grasas, irritadas y muy sensibles. Desde 10 años.",
+      tipo: "Gel con 8 ingredientes.",
+      necesidad: "Frescor e hidratación.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre rostro y cuello limpios y secos. Excelente base de maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-nutri-baume",
+    name: "SENSIFINE Nutri-Baume",
+    img: "imagenes/svr/sv-sensifine-nutri-baume.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["seca", "rojeces"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas a muy secas, sensibles, intolerantes y polialérgicas. Desde 10 años.",
+      tipo: "Bálsamo con 10 ingredientes.",
+      necesidad: "Nutre y aporta bienestar.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre rostro y cuello limpios y secos.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-huile-de-nuit",
+    name: "SENSIFINE Huile de Nuit",
+    img: "imagenes/svr/sv-sensifine-huile-de-nuit.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["seca", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles muy sensibles, intolerantes y polialérgicas. Desde 10 años.",
+      tipo: "Aceite de noche con 10 ingredientes.",
+      necesidad: "Nutre la piel durante la noche.",
+      cuando: "Por la noche.",
+      modo: "Aplicar 3-4 gotas en rostro y cuello limpios y secos y masajear.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-masque-sos",
+    name: "SENSIFINE Masque SOS",
+    img: "imagenes/svr/sv-sensifine-masque-sos.webp",
+    brand: "svr",
+    line: "sv-sensifine",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles sensibles, intolerantes y polialérgicas; piel irritada. Desde 10 años.",
+      tipo: "Mascarilla calmante sin aclarado, con 10 ingredientes.",
+      necesidad: "Calma la piel reactiva y lesionada.",
+      cuando: "Como SOS cuando se necesite, o por la noche.",
+      modo: "SOS: capa gruesa 5-10 minutos y retirar el exceso. Noche: capa fina sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Sensifine AR ---------- */
+  {
+    id: "sv-sensifine-ar-eau-micellaire",
+    name: "SENSIFINE AR Eau Micellaire",
+    img: "imagenes/svr/sv-sensifine-ar-eau-micellaire.webp",
+    brand: "svr",
+    line: "sv-sensifinear",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva con tendencia al enrojecimiento. Desde 10 años.",
+      tipo: "Agua micelar fresca, apta para lentillas.",
+      necesidad: "Desmaquilla y refresca rostro, ojos y labios.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Empapar un algodón, dejar unos segundos en las zonas con rojeces y extender.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-ar-creme",
+    name: "SENSIFINE AR Creme",
+    img: "imagenes/svr/sv-sensifine-ar-creme.webp",
+    brand: "svr",
+    line: "sv-sensifinear",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva con tendencia a rojeces y vasos visibles. Desde 3 años.",
+      tipo: "Gel cremoso antirrojeces.",
+      necesidad: "Enrojecimiento y vasos visibles.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar con ligeros toques sobre la piel limpia y seca. Excelente base de maquillaje."
+    }
+  },
+
+  {
+    id: "sv-sensifine-ar-creme-riche",
+    name: "SENSIFINE AR Creme Riche",
+    img: "imagenes/svr/sv-sensifine-ar-creme-riche.webp",
+    brand: "svr",
+    line: "sv-sensifinear",
+    n: ["rojeces", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel reactiva con tendencia a rojeces y vasos visibles. Desde 3 años.",
+      tipo: "Crema nutritiva antirrojeces.",
+      necesidad: "Enrojecimiento y sequedad.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar con ligeros toques sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "sv-sensifine-ar-creme-teinte-nuevo",
+    name: "SENSIFINE AR Creme Teinté",
+    img: "imagenes/svr/sv-sensifine-ar-creme-teinte-nuevo.webp",
+    brand: "svr",
+    line: "sv-sensifinear",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva con tendencia a rojeces y vasos visibles. Desde 10 años.",
+      tipo: "Crema antirrojeces con color.",
+      necesidad: "Disimula y trata el enrojecimiento.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar sobre la piel limpia y seca, ajustando la dosis según las rojeces.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-sensifine-ar-creme-spf50-1",
+    name: "SENSIFINE AR Creme SPF50+",
+    img: "imagenes/svr/sv-sensifine-ar-creme-spf50-1.webp",
+    brand: "svr",
+    line: "sv-sensifinear",
+    n: ["rojeces", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva con rojeces y vasos visibles al sol. Desde 10 años.",
+      tipo: "Crema antirrojeces con SPF 50+.",
+      necesidad: "Enrojecimiento y protección solar.",
+      cuando: "Por la mañana, antes del sol. Reaplicar con frecuencia.",
+      modo: "Aplicar una dosis generosa por el rostro limpio y seco.",
+      solar: "Evitar el sol de 12 a 16 h; si no, usar ropa protectora.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Topialyse ---------- */
+  {
+    id: "sv-topialyse-gel-lavant-1",
+    name: "TOPIALYSE Gel Lavant",
+    img: "imagenes/svr/sv-topialyse-gel-lavant-1.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["limpieza", "corporal", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas y sensibles de toda la familia, desde recién nacidos.",
+      tipo: "Gel limpiador ultrasuave.",
+      necesidad: "Higiene corporal, facial, capilar e íntima.",
+      limpieza: "Limpiador corporal y facial",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Aplicar sobre la piel húmeda, formar espuma, aclarar y secar sin frotar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-huile-micellaire-nuevo",
+    name: "TOPIALYSE Huile Lavante",
+    img: "imagenes/svr/sv-topialyse-huile-micellaire-nuevo.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["limpieza", "corporal", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas o muy secas con tendencia atópica, de toda la familia desde recién nacidos.",
+      tipo: "Aceite limpiador para cuerpo y cara.",
+      necesidad: "Limpieza suave sin tirantez.",
+      limpieza: "Limpiador corporal y facial",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Aplicar sobre la piel húmeda, formar espuma, aclarar y secar sin frotar. En el baño: 3 dosis.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-baume-lavant",
+    name: "TOPIALYSE Baume Lavant",
+    img: "imagenes/svr/sv-topialyse-baume-lavant.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["limpieza", "corporal", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles muy secas con tendencia atópica, de toda la familia desde recién nacidos.",
+      tipo: "Bálsamo limpiador sin perfume.",
+      necesidad: "Calma y protege durante la higiene.",
+      limpieza: "Limpiador corporal y facial",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "SVR no indica la frecuencia.",
+      modo: "SVR no detalla cómo aplicarlo.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-concentre-lavant",
+    name: "TOPIALYSE Concentré Lavant",
+    img: "imagenes/svr/sv-topialyse-concentre-lavant.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["limpieza", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas y sensibles de toda la familia.",
+      tipo: "Limpiador concentrado sin agua ni jabón.",
+      necesidad: "Higiene corporal, facial e íntima.",
+      limpieza: "Limpiador corporal y facial",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Humedecer la piel, aplicar con 2 dedos, formar espuma entre las manos y aclarar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-creme-1",
+    name: "TOPIALYSE Creme",
+    img: "imagenes/svr/sv-topialyse-creme-1.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas y sensibles, con tirantez. Toda la familia, desde recién nacidos.",
+      tipo: "Crema reconfortante para cuerpo y cara.",
+      necesidad: "Hidrata y aporta confort.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre el cuerpo limpio, insistiendo en las zonas secas. También en la cara.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-baume-protect",
+    name: "TOPIALYSE Baume Protect+",
+    img: "imagenes/svr/sv-topialyse-baume-protect.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles secas, muy secas, con tendencia atópica o xerosis senil. Toda la familia.",
+      tipo: "Bálsamo con ceramidas, sin irritar.",
+      necesidad: "Sequedad y barrera cutánea.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre rostro o cuerpo limpios, insistiendo en las zonas muy secas.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-barriere",
+    name: "TOPIALYSE Barrière",
+    img: "imagenes/svr/sv-topialyse-barriere.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["rojeces", "seca"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Zonas reactivas e irritadas; piel sensible con tendencia atópica. Desde 3 años.",
+      tipo: "Crema barrera resistente al agua.",
+      necesidad: "Repara y protege de agresiones en manos, cara, cuerpo y pliegues.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en las zonas localizadas.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-mains",
+    name: "TOPIALYSE Mains",
+    img: "imagenes/svr/sv-topialyse-mains.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Manos ultrasecas y estropeadas. Desde 3 años.",
+      tipo: "Crema de manos no pegajosa.",
+      necesidad: "Hidrata y repara las manos.",
+      cuando: "Varias veces al día.",
+      modo: "Aplicar en el dorso y masajear con movimientos circulares.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-topialyse-stick-levres",
+    name: "TOPIALYSE Stick Lèvres",
+    img: "imagenes/svr/sv-topialyse-stick-levres.webp",
+    brand: "svr",
+    line: "sv-topialyse",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos y sensibles. Desde 3 años.",
+      tipo: "Stick labial con acabado invisible.",
+      necesidad: "Labios sensibles y dañados.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en los labios.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Palpebral ---------- */
+  {
+    id: "sv-palpebral-by-topialyse-demaquillant",
+    name: "PALPEBRAL Démaquillant",
+    img: "imagenes/svr/sv-palpebral-by-topialyse-demaquillant.webp",
+    brand: "svr",
+    line: "sv-palpebral",
+    n: ["limpieza", "ojos"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Párpados sensibles, irritados y secos; usuarios de lentillas. Desde 10 años.",
+      tipo: "Desmaquillante de ojos en gel.",
+      necesidad: "Desmaquilla y alivia al momento.",
+      limpieza: "Desmaquillante de ojos",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Uso diario.",
+      modo: "Poner gel en un algodón, aplicar sobre el ojo cerrado unos segundos y arrastrar hacia las sienes sin frotar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-palpebral-by-topialyse-creme-nueva-formula",
+    name: "PALPEBRAL Creme",
+    img: "imagenes/svr/sv-palpebral-by-topialyse-creme-nueva-formula.webp",
+    brand: "svr",
+    line: "sv-palpebral",
+    n: ["ojos"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Párpados y contorno sensibles, secos, irritados y con tendencia atópica. Desde 3 años.",
+      tipo: "Crema calmante para párpados y contorno.",
+      necesidad: "Sequedad e irritación del contorno.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel limpia y seca del contorno y los párpados.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-palpebral-baume",
+    name: "PALPEBRAL Baume",
+    img: "imagenes/svr/sv-palpebral-baume.webp",
+    brand: "svr",
+    line: "sv-palpebral",
+    n: ["ojos", "seca"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Rostro, contorno y párpados secos con tendencia a eccema atópico. Toda la familia, desde recién nacidos.",
+      tipo: "Bálsamo reparador de la barrera.",
+      necesidad: "Enrojecimiento, irritación y picor.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar a toques en contorno y párpado y en zonas con eccema atópico. En brotes, capa gruesa.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-palpebral-by-topialyse-mascara-protect",
+    name: "PALPEBRAL Máscara Protect",
+    img: "imagenes/svr/sv-palpebral-by-topialyse-mascara-protect.webp",
+    brand: "svr",
+    line: "sv-palpebral",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos hipersensibles y usuarios de lentillas. Desde 10 años.",
+      tipo: "Máscara de pestañas hipoalergénica.",
+      necesidad: "Alarga y riza; se retira con facilidad.",
+      cuando: "Uso diario.",
+      modo: "Aplicar a ras de pestañas en zigzag. Retirar con agua o desmaquillante suave.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Xerial ---------- */
+  {
+    id: "sv-xerial-10-lait-corps-new",
+    name: "XERIAL 10 Lait Corps",
+    img: "imagenes/svr/sv-xerial-10-lait-corps-new.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca, áspera, escamosa, de cocodrilo o agrietada. Desde 3 años.",
+      tipo: "Leche corporal con 10 % de urea.",
+      necesidad: "Sequedad, tirantez y picor.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar en el cuerpo sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-30-gel-creme",
+    name: "XERIAL 30 Gel-Creme",
+    img: "imagenes/svr/sv-xerial-30-gel-creme.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Zonas ásperas y escamosas; vellos encarnados, tendencia a queratosis pilar y/o psoriasis. Desde 3 años.",
+      tipo: "Gel-crema corporal queratorreguladora.",
+      necesidad: "Rugosidades localizadas y descamación.",
+      cuando: "1 o 2 veces al día hasta lograr el efecto.",
+      modo: "Aplicar sobre codos, rodillas, manos y brazos.",
+      nota: "Por consejo profesional, puede complementar un tratamiento de la sequedad. Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-gel-peeling",
+    name: "XERIAL Gel Lavant Peeling",
+    img: "imagenes/svr/sv-xerial-gel-peeling.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal", "apagada", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles apagadas, secas con descamación, con marcas, pigmentación en zonas de fricción o tendencia a queratosis pilaris. Desde 10 años.",
+      tipo: "Gel de ducha exfoliante con AHA y PHA.",
+      necesidad: "Rugosidades, textura y tono.",
+      limpieza: "Exfoliante corporal",
+      limpiezaDet: "Gel de ducha con ácidos.",
+      cuando: "Una vez al día en la ducha.",
+      modo: "Hacer espuma sobre la piel húmeda, masajear 30 segundos y aclarar. Después, hidratar con Xerial 10.",
+      solar: "Antes de exponerse al sol, proteger las zonas tratadas con AHA con un fotoprotector.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-gommage",
+    name: "XERIAL Gommage",
+    img: "imagenes/svr/sv-xerial-gommage.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel engrosada, áspera, con pelos encarnados y tendencia a queratosis pilar; también sensible. Desde 10 años.",
+      tipo: "Exfoliante dermatológico en granos, sin agua.",
+      necesidad: "Elimina células muertas y asperezas.",
+      limpieza: "Exfoliante corporal",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "1 o 2 veces por semana, en la ducha.",
+      modo: "Masajear sobre la piel húmeda con movimientos circulares y aclarar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-dm-psoriasis",
+    name: "XERIAL DM Psoriasis",
+    img: "imagenes/svr/sv-xerial-dm-psoriasis.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pacientes con síntomas de psoriasis en placas: placas, escamas, picor y enrojecimiento.",
+      tipo: "Producto sanitario, no graso.",
+      necesidad: "Síntomas de la psoriasis.",
+      cuando: "2 veces al día durante un máximo de 30 días.",
+      modo: "Aplicar una capa gruesa sobre las lesiones limpias y secas y masajear.",
+      nota: "No usar más de 30 días. SVR indica que puede sustituir a los dermocorticoides."
+    }
+  },
+
+  {
+    id: "sv-xerial-30-creme-pieds",
+    name: "XERIAL 30 Creme Pieds",
+    img: "imagenes/svr/sv-xerial-30-creme-pieds.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Pies secos, muy secos y estropeados. Desde 3 años.",
+      tipo: "Crema de pies de uso diario.",
+      necesidad: "Mantiene los pies suaves.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear en círculos por todo el pie.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-50-extreme-creme-pieds",
+    name: "XERIAL 50 Extreme Creme Pieds",
+    img: "imagenes/svr/sv-xerial-50-extreme-creme-pieds.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Callos, durezas y pies muy ásperos. Desde 3 años.",
+      tipo: "Tratamiento queratolítico con urea y ácido salicílico.",
+      necesidad: "Callos y durezas.",
+      cuando: "2 veces al día hasta lograr el efecto.",
+      modo: "Masajear en círculos sobre las zonas afectadas. También en manos y codos."
+    }
+  },
+
+  {
+    id: "sv-xerial-fissures-crevasses-23",
+    name: "XERIAL Fisuras y Grietas",
+    img: "imagenes/svr/sv-xerial-fissures-crevasses-23.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Pies muy secos y agrietados; personas de pie mucho tiempo o que corren. Desde 10 años.",
+      tipo: "Crema protectora 24 h.",
+      necesidad: "Alisa y repara grietas y fisuras.",
+      cuando: "1 o 2 veces al día hasta lograr el efecto; luego 2-3 veces por semana.",
+      modo: "Aplicar sobre los pies o la zona afectada. No usar en heridas abiertas o infectadas.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-xerial-peel",
+    name: "XERIAL Peel",
+    img: "imagenes/svr/sv-xerial-peel.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Pies muy secos, engrosados y con callosidades.",
+      tipo: "Mascarilla exfoliante en calcetín, de un solo uso.",
+      necesidad: "Elimina piel muerta en unos días.",
+      limpieza: "Exfoliante de pies",
+      limpiezaDet: "Mascarilla en calcetín.",
+      cuando: "Un solo uso.",
+      modo: "Dejar 1 hora y aclarar. A los 4-5 días la piel empieza a desprenderse."
+    }
+  },
+
+  {
+    id: "sv-xerial-40-ongles",
+    name: "XERIAL 40 Ongles",
+    img: "imagenes/svr/sv-xerial-40-ongles.webp",
+    brand: "svr",
+    line: "sv-xerial",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uñas de pies o manos dañadas, estriadas, engrosadas y quebradizas. Desde 3 años.",
+      tipo: "Gel para uñas con tubo aplicador.",
+      necesidad: "Uñas dañadas o partidas.",
+      cuando: "2 veces al día durante 3 meses.",
+      modo: "Aplicar en las uñas con el tubo.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Cicavit+ ---------- */
+  {
+    id: "sv-cicavit-creme-hppi",
+    name: "CICAVIT+ Crème HPPI",
+    img: "imagenes/svr/sv-cicavit-creme-hppi.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Irritaciones, arañazos, rojeces del pañal o tras láser/descamación. Desde el nacimiento.",
+      tipo: "Crema reparadora, no comedogénica.",
+      necesidad: "Repara la piel irritada y dañada.",
+      cuando: "2 veces al día hasta repararla.",
+      modo: "Aplicar una capa fina o gruesa sobre la piel limpia y seca. Se puede usar como mascarilla SOS.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-cicavit-pommade",
+    name: "CICAVIT+ Pommade",
+    img: "imagenes/svr/sv-cicavit-pommade.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["seca", "rojeces"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca a muy seca e irritación por fricción. Toda la familia.",
+      tipo: "Pomada multiusos de efecto vendaje.",
+      necesidad: "Nutre y protege rostro, cuerpo, labios, nariz, manos, talones y codos.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar sobre zonas limpias y secas. Como mascarilla, capa gruesa.",
+      nota: "Solo uso externo. Si las molestias persisten, consultar a un profesional sanitario. Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-cicavit-sos-grattage",
+    name: "CICAVIT+ SOS Grattage",
+    img: "imagenes/svr/sv-cicavit-sos-grattage.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles sensibles con picor temporal o regular. Desde el nacimiento.",
+      tipo: "Spray de efecto frío, sin aclarado.",
+      necesidad: "Alivia el picor de inmediato.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Pulverizar a 15 cm y dejar penetrar. En el rostro, aplicar antes en la palma.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-cicavit-dm-cicatrices",
+    name: "CICAVIT DM+ Cicatrices",
+    img: "imagenes/svr/sv-cicavit-dm-cicatrices.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Cicatrices tras intervenciones dermatológicas o quirúrgicas (heridas cerradas) o quemaduras superficiales.",
+      tipo: "Producto sanitario con gel de silicona.",
+      necesidad: "Tratamiento de cicatrices.",
+      cuando: "2 veces al día.",
+      modo: "Aplicar sobre la piel limpia y seca, en heridas cerradas y cicatrices.",
+      nota: "Uso externo. Si el problema persiste, interrumpir y consultar."
+    }
+  },
+
+  {
+    id: "sv-creme-mains-cicavit",
+    name: "CICAVIT+ Crème Mains",
+    img: "imagenes/svr/sv-creme-mains-cicavit.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Manos estropeadas, con descamación y grietas; uñas y cutículas.",
+      tipo: "Crema de manos reparadora.",
+      necesidad: "Nutre y repara.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en manos, uñas y cutículas.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-cicavit-levres",
+    name: "CICAVIT+ Lèvres",
+    img: "imagenes/svr/sv-cicavit-levres.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos, dañados y agrietados.",
+      tipo: "Cuidado labial reparador.",
+      necesidad: "Labios secos a muy secos.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en los labios.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-cicavit-creme-spf50",
+    name: "CICAVIT+ Crème SPF50+",
+    img: "imagenes/svr/sv-cicavit-creme-spf50.webp",
+    brand: "svr",
+    line: "sv-cicavit",
+    n: ["fotoproteccion", "manchas", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles expuestas al sol, dañadas e irritadas, incluso sensibles. Desde el nacimiento.",
+      tipo: "Crema reparadora con SPF 50+.",
+      necesidad: "Repara y previene manchas en piel dañada.",
+      cuando: "Antes del sol. Reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar generosa y uniformemente sobre zonas limpias y secas.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Densitium ---------- */
+  {
+    id: "sv-densitium-creme-refill",
+    name: "DENSITIUM Crème",
+    img: "imagenes/svr/sv-densitium-creme-refill.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["arrugas", "flacidez", "manchas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Pieles maduras normales a secas, con arrugas, pérdida de firmeza y manchas.",
+      tipo: "Tratamiento antiedad nutritivo, con recarga.",
+      necesidad: "Arrugas, firmeza y manchas.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre cara y cuello limpios.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-creme-riche-copy",
+    name: "DENSITIUM Crème Riche",
+    img: "imagenes/svr/sv-densitium-creme-riche-copy.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["arrugas", "flacidez", "manchas", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel madura de seca a muy seca, con arrugas, pérdida de firmeza y manchas.",
+      tipo: "Crema antiedad rica, con recarga.",
+      necesidad: "Arrugas, firmeza, manchas y sequedad.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre cara y cuello limpios.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-creme-spf30-refill",
+    name: "DENSITIUM Crème SPF30",
+    img: "imagenes/svr/sv-densitium-creme-spf30-refill.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["arrugas", "flacidez", "fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles maduras con arrugas, pérdida de firmeza o manchas que buscan protección solar y antiedad.",
+      tipo: "Crema antiedad con SPF 30, con recarga.",
+      necesidad: "Arrugas, firmeza y protección solar.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar en cara, cuello y escote. No usar sobre piel dañada.",
+      solar: "Si hay exposición al sol, usar una crema solar adecuada.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-rose-eclat-refill",
+    name: "DENSITIUM Rose Éclat",
+    img: "imagenes/svr/sv-densitium-rose-eclat-refill.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["apagada", "arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel madura, opaca y desigual, flácida, con arrugas y manchas.",
+      tipo: "Tratamiento antiedad con pigmentos rosados, con recarga.",
+      necesidad: "Tono, luminosidad y signos de la edad.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar en cara y cuello, solo o con la rutina.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-bi-serum-refill",
+    name: "DENSITIUM Bi-Sérum",
+    img: "imagenes/svr/sv-densitium-bi-serum-refill.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["arrugas", "flacidez", "seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles maduras con arrugas marcadas, pérdida de densidad, sequedad avanzada o papada.",
+      tipo: "Sérum de doble textura, con recarga.",
+      necesidad: "Redensifica y reafirma.",
+      cuando: "Mañana y noche.",
+      modo: "Calentar entre las manos y aplicar en cara y cuello limpios, del centro hacia fuera.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-baume-nuit-refill",
+    name: "DENSITIUM Baume Nuit",
+    img: "imagenes/svr/sv-densitium-baume-nuit-refill.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["arrugas", "flacidez", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles maduras con arrugas, pérdida de firmeza o manchas.",
+      tipo: "Bálsamo antiedad de noche, con recarga.",
+      necesidad: "Nutre y trata los signos de la edad.",
+      cuando: "Por la noche.",
+      modo: "Aplicar sobre cara y cuello limpios.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-densitium-contour-des-yeux-nuevo",
+    name: "DENSITIUM Contour des Yeux",
+    img: "imagenes/svr/sv-densitium-contour-des-yeux-nuevo.webp",
+    brand: "svr",
+    line: "sv-densitium",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles maduras con arrugas marcadas, ojeras y bolsas.",
+      tipo: "Contorno de ojos antiedad.",
+      necesidad: "Arrugas, ojeras y bolsas.",
+      cuando: "Mañana y noche.",
+      modo: "Dar toques desde el ángulo interno hacia fuera, insistiendo en las patas de gallo.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Biotic ---------- */
+  {
+    id: "sv-ceramides-biotic",
+    name: "[CERAMIDES] Biotic",
+    img: "imagenes/svr/sv-ceramides-biotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["seca", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca e incómoda, sin flexibilidad, con arrugas y líneas finas.",
+      tipo: "Bálsamo nutritivo, con recarga.",
+      necesidad: "Sequedad, elasticidad y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca. Solo o con la rutina.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-c20biotic-new",
+    name: "[C20] Biotic",
+    img: "imagenes/svr/sv-c20biotic-new.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["apagada", "arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con cutis apagado, cansado y desigual, con líneas o arrugas.",
+      tipo: "Crema con vitamina C.",
+      necesidad: "Luminosidad y arrugas.",
+      cuando: "Mañana y/o noche; empezar de forma gradual.",
+      modo: "Primera vez: una pequeña cantidad de noche y esperar 48 horas. Si hay hormigueo o rojeces, interrumpir.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-c20-fluide",
+    name: "[C20] Fluide Biotic",
+    img: "imagenes/svr/sv-c20-fluide.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["apagada", "manchas", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Tez apagada, fatiga, manchas, arrugas y líneas finas.",
+      tipo: "Fluido con vitamina C y ácido hialurónico.",
+      necesidad: "Luminosidad, tono y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre la piel limpia y seca, evitando el contorno de ojos. Primera vez: esperar 48 horas antes de repetir.",
+      nota: "No recomendado para pieles reactivas. Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-new-peptibiotic",
+    name: "[PEPTI] Biotic",
+    img: "imagenes/svr/sv-new-peptibiotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["acne", "poros", "arrugas"],
+    sk: ["mixta", "grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible con imperfecciones, poros visibles y arrugas.",
+      tipo: "Gel matificante con péptidos.",
+      necesidad: "Imperfecciones, poros y textura.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-new-hyalubiotic",
+    name: "[HYALU] Biotic",
+    img: "imagenes/svr/sv-new-hyalubiotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel deshidratada con tirantez y arrugas por deshidratación.",
+      tipo: "Gel fresco con ácido hialurónico.",
+      necesidad: "Deshidratación y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-new-collagen-biotic",
+    name: "[COLLAGEN] Biotic",
+    img: "imagenes/svr/sv-new-collagen-biotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles con pérdida de elasticidad, líneas de expresión y arrugas.",
+      tipo: "Crema con colágeno vegetal.",
+      necesidad: "Elasticidad y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-c-eye-biotic",
+    name: "[C-EYE] Biotic",
+    img: "imagenes/svr/sv-c-eye-biotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["ojos", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cansancio, ojeras pigmentadas y vasculares, hinchazón y arrugas del contorno.",
+      tipo: "Contorno de ojos con vitamina C y micropigmentos.",
+      necesidad: "Revitaliza, ilumina y suaviza.",
+      cuando: "Mañana y noche.",
+      modo: "Dar toques de dentro hacia fuera y extender hacia las patas de gallo.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-filler-biotic",
+    name: "[FILLER] Biotic",
+    img: "imagenes/svr/sv-filler-biotic.webp",
+    brand: "svr",
+    line: "sv-biotic",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Arrugas y líneas de deshidratación en ojos y labios; patas de gallo.",
+      tipo: "Contorno de ojos y labios con ácido hialurónico.",
+      necesidad: "Rellena los signos de expresión.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre la piel limpia con un ligero masaje hacia fuera. Admite maquillaje."
+    }
+  },
+
+  /* ---------- SVR · [A] [B3] [C] ---------- */
+  {
+    id: "sv-a-ampoule-lift-2",
+    name: "[A] Ampoule Lift",
+    img: "imagenes/svr/sv-a-ampoule-lift-2.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["arrugas", "poros", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con textura irregular, arrugas, poros dilatados, marcas y manchas.",
+      tipo: "Ampolla de noche con retinol.",
+      necesidad: "Textura, arrugas y marcas.",
+      cuando: "Por la noche: empezar cada 3 días, luego cada 2 y después a diario si se tolera.",
+      modo: "Aplicar 2-3 gotas antes del tratamiento diario, evitando los ojos."
+    }
+  },
+
+  {
+    id: "sv-b3-ampoule-hydra",
+    name: "[B3] Ampoule Hydra",
+    img: "imagenes/svr/sv-b3-ampoule-hydra.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Pieles deshidratadas, sensibles, normales a secas, con primeras arrugas o marcadas.",
+      tipo: "Sérum con niacinamida y ácido hialurónico.",
+      necesidad: "Tirantez, enrojecimiento y elasticidad.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre la piel limpia y seca antes del tratamiento.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-c-ampoule-anti-ox",
+    name: "[C] Ampoule Anti-Ox",
+    img: "imagenes/svr/sv-c-ampoule-anti-ox.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["apagada", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sin luminosidad, con tez apagada y fatiga; primeras arrugas o marcadas.",
+      tipo: "Sérum con alta concentración de vitamina C.",
+      necesidad: "Luminosidad y unificación.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 2-3 gotas sobre la piel limpia y seca antes del tratamiento.",
+      nota: "No combinar directamente con otro producto de vitamina C muy concentrada. Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-b3-essence-hydra",
+    name: "[B3] Essence Hydra",
+    img: "imagenes/svr/sv-b3-essence-hydra.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y deshidratada, con molestias, tirantez y arrugas.",
+      tipo: "Esencia con niacinamida.",
+      necesidad: "Hidrata y calma.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar con algodón o con la palma sobre la piel limpia, antes del sérum.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-b3-masque-hydra-intensif",
+    name: "[B3] Masque Hydra Intensif",
+    img: "imagenes/svr/sv-b3-masque-hydra-intensif.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible, deshidratada, con líneas de deshidratación.",
+      tipo: "Mascarilla de biocelulosa.",
+      necesidad: "Frescor e hidratación.",
+      cuando: "1 o 2 veces por semana.",
+      modo: "Colocar sobre la piel limpia 15 minutos y retirar. Masajear el exceso. No aclarar."
+    }
+  },
+
+  {
+    id: "sv-ampoule-refresh",
+    name: "Ampoule Refresh",
+    img: "imagenes/svr/sv-ampoule-refresh.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contornos de ojos, incluso sensibles, con ojeras, bolsas y arrugas. Apta para lentillas.",
+      tipo: "Sérum de contorno de día con punta metálica.",
+      necesidad: "Ojeras, bolsas y arrugas.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar una pequeña cantidad y masajear con la punta metálica. No aplicar en los ojos.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-ampoule-relax",
+    name: "Ampoule Relax",
+    img: "imagenes/svr/sv-ampoule-relax.webp",
+    brand: "svr",
+    line: "sv-ab3c",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno de ojos desde los primeros signos, incluso sensible. Apta para lentillas.",
+      tipo: "Sérum de contorno de noche.",
+      necesidad: "Ojeras, arrugas y deshidratación.",
+      cuando: "Por la noche.",
+      modo: "Aplicar sobre la piel limpia y seca y masajear con la punta. No aplicar en los ojos.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- SVR · Clairial ---------- */
+  {
+    id: "sv-novedad-clairial-ampoule",
+    name: "CLAIRIAL Ampoule",
+    img: "imagenes/svr/sv-novedad-clairial-ampoule.webp",
+    brand: "svr",
+    line: "sv-clairial",
+    n: ["manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Manchas por sol, edad o embarazo y tono desigual, en pieles sensibles claras a oscuras. Adultos.",
+      tipo: "Ampolla antimanchas.",
+      necesidad: "Manchas y tono desigual.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar en rostro, escote y manos antes del tratamiento diario, evitando los ojos."
+    }
+  },
+
+  {
+    id: "sv-clairial-day",
+    name: "CLAIRIAL Day",
+    img: "imagenes/svr/sv-clairial-day.webp",
+    brand: "svr",
+    line: "sv-clairial",
+    n: ["manchas", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles sensibles con manchas por edad, sol o embarazo. Adultos.",
+      tipo: "Cuidado de día antimanchas con SPF 30.",
+      necesidad: "Reduce manchas y unifica la tez.",
+      cuando: "Por la mañana, después de Clairial Ampoule.",
+      modo: "Agitar y aplicar en cara, cuello y escote. No usar sobre piel dañada.",
+      solar: "Si hay exposición al sol, usar una crema solar adecuada."
+    }
+  },
+
+  {
+    id: "sv-clairial-creme-spf50-nueva-formula",
+    name: "CLAIRIAL Crème SPF50+",
+    img: "imagenes/svr/sv-clairial-creme-spf50-nueva-formula.webp",
+    brand: "svr",
+    line: "sv-clairial",
+    n: ["manchas", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles sensibles con manchas por sol, edad o embarazo. Adultos.",
+      tipo: "Crema antimanchas SPF 50+.",
+      necesidad: "Manchas y protección solar.",
+      cuando: "Por la mañana. Reaplicar con frecuencia.",
+      modo: "Aplicar en rostro, escote y manos.",
+      solar: "SVR aconseja SPF 50+ en periodos de exposición y Clairial Day el resto del tiempo."
+    }
+  },
+
+  {
+    id: "sv-clairial-night-peel",
+    name: "CLAIRIAL Night Peel",
+    img: "imagenes/svr/sv-clairial-night-peel.webp",
+    brand: "svr",
+    line: "sv-clairial",
+    n: ["manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Pieles sensibles con manchas por edad, sol o embarazo. Adultos.",
+      tipo: "Peeling de noche con aplicador de pincel.",
+      necesidad: "Corrección suave de manchas.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling de noche sin aclarado.",
+      cuando: "Por la noche.",
+      modo: "Girar el pincel y aplicar una pasada fina, evitando los ojos. Si hay molestias, espaciar las aplicaciones."
+    }
+  },
+
+  /* ---------- SVR · Hydraliane ---------- */
+  {
+    id: "sv-hydraliane-creme-legere",
+    name: "HYDRALIANE Légère",
+    img: "imagenes/svr/sv-hydraliane-creme-legere.webp",
+    brand: "svr",
+    line: "sv-hydraliane",
+    n: ["deshidratacion"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Piel deshidratada, irritada y con tirantez; sensible a mixta.",
+      tipo: "Crema hidratante ligera, no comedogénica.",
+      necesidad: "Deshidratación y tirantez.",
+      cuando: "Mañana y/o noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje."
+    }
+  },
+
+  {
+    id: "sv-hydraliane-creme",
+    name: "HYDRALIANE Crème",
+    img: "imagenes/svr/sv-hydraliane-creme.webp",
+    brand: "svr",
+    line: "sv-hydraliane",
+    n: ["deshidratacion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, deshidratada y con tirantez; apta para sensible.",
+      tipo: "Crema hidratante, no comedogénica.",
+      necesidad: "Deshidratación y tirantez.",
+      cuando: "Mañana y/o noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje."
+    }
+  },
+
+  {
+    id: "sv-hydraliane-creme-riche",
+    name: "HYDRALIANE Riche",
+    img: "imagenes/svr/sv-hydraliane-creme-riche.webp",
+    brand: "svr",
+    line: "sv-hydraliane",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca a muy seca, deshidratada y con tirantez; apta para sensible.",
+      tipo: "Crema hidratante rica, no comedogénica.",
+      necesidad: "Deshidratación y sequedad.",
+      cuando: "Mañana y/o noche.",
+      modo: "Sobre la piel limpia y seca. Buena base de maquillaje."
+    }
+  },
+
+  /* ---------- SVR · Physiopure ---------- */
+  {
+    id: "sv-physiopure-huile-demaquillante",
+    name: "PHYSIOPURE Huile Démaquillante",
+    img: "imagenes/svr/sv-physiopure-huile-demaquillante.webp",
+    brand: "svr",
+    line: "sv-physiopure",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, incluso la más sensible.",
+      tipo: "Aceite desmaquillante de cara, ojos y labios.",
+      necesidad: "Desmaquilla de forma eficaz.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Por la noche.",
+      modo: "Masajear insistiendo en las zonas maquilladas, aclarar bien y secar sin frotar."
+    }
+  },
+
+  {
+    id: "sv-physiopure-eau-micellaire",
+    name: "PHYSIOPURE Eau Micellaire",
+    img: "imagenes/svr/sv-physiopure-eau-micellaire.webp",
+    brand: "svr",
+    line: "sv-physiopure",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de piel sensible.",
+      tipo: "Agua micelar oxigenante.",
+      necesidad: "Limpia y desmaquilla la cara.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un algodón. No requiere aclarado."
+    }
+  },
+
+  {
+    id: "sv-physiopure-gelee-moussante-23",
+    name: "PHYSIOPURE Gel Moussant",
+    img: "imagenes/svr/sv-physiopure-gelee-moussante-23.webp",
+    brand: "svr",
+    line: "sv-physiopure",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de piel sensible.",
+      tipo: "Gel espumoso de pH fisiológico.",
+      necesidad: "Purifica y limpia la cara.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar en la cara mojada, aclarar bien y secar sin frotar."
+    }
+  },
+
+  {
+    id: "sv-physiopure-tonique",
+    name: "PHYSIOPURE Tonique",
+    img: "imagenes/svr/sv-physiopure-tonique.webp",
+    brand: "svr",
+    line: "sv-physiopure",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de piel sensible.",
+      tipo: "Tónico oxigenante sin aclarado.",
+      necesidad: "Último paso de la rutina de limpieza.",
+      limpieza: "Rutina de limpieza · último paso",
+      limpiezaDet: "SVR lo presenta como último paso de la limpieza.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un algodón, solo o después de la limpieza. No aclarar."
+    }
+  },
+
+  /* ---------- SVR · Spirial ---------- */
+  {
+    id: "sv-spirial-roll-on-2",
+    name: "SPIRIAL Roll-On",
+    img: "imagenes/svr/sv-spirial-roll-on-2.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Axilas con transpiración normal a excesiva; piel sensible. Desde 10 años.",
+      tipo: "Desodorante roll-on regulador.",
+      necesidad: "Regula la transpiración.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-spirial-roll-on-vegetal",
+    name: "SPIRIAL Roll-On Végétal",
+    img: "imagenes/svr/sv-spirial-roll-on-vegetal.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Transpiración ligera a moderada; incluso piel muy sensible. Desde 10 años.",
+      tipo: "Desodorante roll-on sin sales de aluminio.",
+      necesidad: "Regula la transpiración leve.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "sv-spirial-spray-vegetal-1",
+    name: "SPIRIAL Spray Végétal",
+    img: "imagenes/svr/sv-spirial-spray-vegetal-1.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Transpiración normal en manos, pies o axilas; pieles sensibles, afeitadas o depiladas. Desde 10 años.",
+      tipo: "Desodorante en spray sin aluminio.",
+      necesidad: "Antihumedad y antiolor.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-spirial-spray-anti-transpirant",
+    name: "SPIRIAL Spray Anti-Transpirant",
+    img: "imagenes/svr/sv-spirial-spray-anti-transpirant.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sudoración normal a excesiva en manos, pies o axilas. Desde 10 años.",
+      tipo: "Antitranspirante en spray 48 horas.",
+      necesidad: "Regula la sudoración.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre la piel limpia y seca.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-copie-de-spirial-creme",
+    name: "SPIRIAL Déo-Crème",
+    img: "imagenes/svr/sv-copie-de-spirial-creme.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Transpiración normal a excesiva en manos, pies, axilas, pliegues o cara. Desde 3 años, en niños bajo supervisión médica.",
+      tipo: "Crema antitranspirante para todo el cuerpo.",
+      necesidad: "Regula la sudoración.",
+      cuando: "A diario.",
+      modo: "Aplicar en las zonas propensas a la transpiración.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  {
+    id: "sv-spirial-extreme",
+    name: "SPIRIAL Extrême",
+    img: "imagenes/svr/sv-spirial-extreme.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sudoración excesiva o extrema, incluso en piel sensible. Desde 12 años, por consejo médico en adolescentes.",
+      tipo: "Antitranspirante intensivo.",
+      necesidad: "Sudoración excesiva.",
+      cuando: "3 días seguidos al inicio; luego 2 o 3 veces por semana.",
+      modo: "Aplicar 1 o 2 veces sobre la zona limpia y seca, por la mañana o la noche. Esperar antes de vestirse."
+    }
+  },
+
+  {
+    id: "sv-spirial-deo-douche-1",
+    name: "SPIRIAL Déo-Douche",
+    img: "imagenes/svr/sv-spirial-deo-douche-1.webp",
+    brand: "svr",
+    line: "sv-spirial",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible. Desde 10 años.",
+      tipo: "Gel de ducha 2 en 1 con acción desodorante.",
+      necesidad: "Limpieza de cuerpo, cara, cabello e higiene íntima.",
+      cuando: "SVR no indica la frecuencia.",
+      modo: "Aplicar sobre la piel húmeda, hacer espuma y aclarar.",
+      nota: "Apto en embarazo y lactancia, según SVR."
+    }
+  },
+
+  /* ---------- Nuxe · Huile Prodigieuse® ---------- */
+  {
+    id: "nx-prodigious-oil-3",
+    name: "Huile Prodigieuse®",
+    img: "imagenes/nuxe/nx-prodigious-oil-3.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["seca", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos y tonos de piel.",
+      tipo: "Aceite seco con 7 aceites vegetales para rostro, cuerpo y cabello.",
+      necesidad: "Nutre, repara y aporta brillo satinado.",
+      cuando: "Todo el año.",
+      modo: "Rostro: 1 spray solo o unas gotas con la crema. Cuerpo y cabello: vaporizar y masajear."
+    }
+  },
+
+  {
+    id: "nx-prodigious-oil-o-50-ml",
+    name: "Huile Prodigieuse® Or",
+    img: "imagenes/nuxe/nx-prodigious-oil-o-50-ml.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["apagada", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos y tonos de piel.",
+      tipo: "Aceite seco con nácares dorados.",
+      necesidad: "Hidrata, satina e ilumina rostro, cuerpo y cabello.",
+      cuando: "Todo el año.",
+      modo: "Agitar. En el rostro, aplicar a toques en los puntos de luz. Vaporizar en cuerpo y cabello."
+    }
+  },
+
+  {
+    id: "nx-huile-prodigieuse-r-florale-30ml",
+    name: "Huile Prodigieuse® Florale",
+    img: "imagenes/nuxe/nx-huile-prodigieuse-r-florale-30ml.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["seca", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Aceite seco de fragancia floral.",
+      necesidad: "Nutre, repara y sublima rostro, cuerpo y cabello.",
+      cuando: "Todo el año.",
+      modo: "Rostro: 1 spray solo o unas gotas con la crema. Cuerpo y cabello: vaporizar y masajear."
+    }
+  },
+
+  {
+    id: "nx-floral-o-floral-o",
+    name: "Huile Prodigieuse® Or Florale",
+    img: "imagenes/nuxe/nx-floral-o-floral-o.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["apagada", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Aceite seco con nácares y fragancia floral.",
+      necesidad: "Hidrata, satina e ilumina.",
+      cuando: "Todo el año.",
+      modo: "Agitar. En el rostro, aplicar a toques en los puntos de luz. Vaporizar en cuerpo y cabello."
+    }
+  },
+
+  {
+    id: "nx-huile-prodigieuse-neroli",
+    name: "Huile Prodigieuse® Néroli",
+    img: "imagenes/nuxe/nx-huile-prodigieuse-neroli.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["seca", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Aceite seco con ciruela y sésamo bio.",
+      necesidad: "Nutre, repara y aporta brillo satinado.",
+      cuando: "Todo el año.",
+      modo: "Rostro: 1 spray solo o unas gotas con la crema. Cuerpo y cabello: vaporizar y masajear."
+    }
+  },
+
+  {
+    id: "nx-huile-prodigieuse-riche",
+    name: "Huile Prodigieuse® Riche",
+    img: "imagenes/nuxe/nx-huile-prodigieuse-riche.webp",
+    brand: "nuxe",
+    line: "nx-hp",
+    n: ["seca", "corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca a muy seca.",
+      tipo: "Aceite seco enriquecido.",
+      necesidad: "Nutre intensamente y sublima.",
+      cuando: "Todo el año en piel muy seca, o en invierno.",
+      modo: "Rostro: 1 spray solo o unas gotas con la crema. Cuerpo y cabello: vaporizar y masajear."
+    }
+  },
+
+  /* ---------- Nuxe · Prodigieux® cuerpo y fragancia ---------- */
+  {
+    id: "nx-prodigieux-leche-corporal-sublimadora-perfumada-400ml",
+    name: "Prodigieux® Leche Corporal Sublimadora",
+    img: "imagenes/nuxe/nx-prodigieux-leche-corporal-sublimadora-perfumada-400ml.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Leche corporal perfumada.",
+      necesidad: "Hidrata y sublima el cuerpo.",
+      cuando: "A diario.",
+      modo: "Aplicar 6 dosis para todo el cuerpo con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "nx-nuxe-huile-douche-prodigieuse-100-ml",
+    name: "Prodigieux® Huile de Douche",
+    img: "imagenes/nuxe/nx-nuxe-huile-douche-prodigieuse-100-ml.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Aceite de ducha perfumado.",
+      necesidad: "Limpieza corporal.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Nuxe no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "nx-prodigieux-floral-gel-de-ducha-perfumado",
+    name: "Prodigieux® Floral Gel de Ducha",
+    img: "imagenes/nuxe/nx-prodigieux-floral-gel-de-ducha-perfumado.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Gel de ducha perfumado con almendra dulce.",
+      necesidad: "Limpia con delicadeza.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear sobre la piel mojada y aclarar."
+    }
+  },
+
+  {
+    id: "nx-prodigieux-polvos-bronceadores-multifuncion",
+    name: "Prodigieux® Polvos Bronceadores",
+    img: "imagenes/nuxe/nx-prodigieux-polvos-bronceadores-multifuncion.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Polvos bronceadores multifunción.",
+      necesidad: "Tono bronceado todo el año.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar con una brocha grande en rostro o cuerpo."
+    }
+  },
+
+  {
+    id: "nx-prodigieux-florale-polvos-iluminadores-multifuncion",
+    name: "Prodigieux® Florale Polvos Iluminadores",
+    img: "imagenes/nuxe/nx-prodigieux-florale-polvos-iluminadores-multifuncion.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Polvos iluminadores multifunción.",
+      necesidad: "Luminosidad natural.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar con los dedos o brocha en pómulos, nariz y escote."
+    }
+  },
+
+  {
+    id: "nx-prodigieux-the-perfume-3",
+    name: "Prodigieux® Le Parfum",
+    img: "imagenes/nuxe/nx-prodigieux-the-perfume-3.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Eau de parfum.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  {
+    id: "nx-prodigieux-floral-le-parfum-30ml-fragancia",
+    name: "Prodigieux® Floral Le Parfum",
+    img: "imagenes/nuxe/nx-prodigieux-floral-le-parfum-30ml-fragancia.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Eau de parfum floral.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  {
+    id: "nx-sensual-era-bruma-perfumada-cuerpo-y-cabello",
+    name: "Sensual Era Bruma Perfumada",
+    img: "imagenes/nuxe/nx-sensual-era-bruma-perfumada-cuerpo-y-cabello.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Bruma para cuerpo y cabello.",
+      necesidad: "Fragancia.",
+      cuando: "En cualquier momento.",
+      modo: "Vaporizar sobre cuerpo y cabello, o sobre el cepillo. No aplicar en las axilas."
+    }
+  },
+
+  {
+    id: "nx-sensual-era-gold-bruma-perfumada-cuerpo-y-cabello",
+    name: "Sensual Era Gold Bruma Perfumada",
+    img: "imagenes/nuxe/nx-sensual-era-gold-bruma-perfumada-cuerpo-y-cabello.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Bruma con resplandor irisado.",
+      necesidad: "Fragancia.",
+      cuando: "En cualquier momento.",
+      modo: "Vaporizar sobre cuerpo y cabello, o sobre el cepillo. No aplicar en las axilas."
+    }
+  },
+
+  {
+    id: "nx-sunset-bliss-bruma-perfumada-cuerpo-y-cabello",
+    name: "Sunset Bliss Bruma Perfumada",
+    img: "imagenes/nuxe/nx-sunset-bliss-bruma-perfumada-cuerpo-y-cabello.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Bruma para cuerpo y cabello.",
+      necesidad: "Fragancia.",
+      cuando: "En cualquier momento.",
+      modo: "Vaporizar sobre cuerpo y cabello, o sobre el cepillo. No aplicar en las axilas."
+    }
+  },
+
+  {
+    id: "nx-happy-in-pink-bruma-perfumada-cuerpo-y-cabello",
+    name: "Happy In Pink Bruma Perfumada",
+    img: "imagenes/nuxe/nx-happy-in-pink-bruma-perfumada-cuerpo-y-cabello.webp",
+    brand: "nuxe",
+    line: "nx-prodigieux",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Bruma para cuerpo y cabello.",
+      necesidad: "Fragancia.",
+      cuando: "En cualquier momento.",
+      modo: "Vaporizar sobre cuerpo y cabello, o sobre el cepillo. No aplicar en las axilas."
+    }
+  },
+
+  /* ---------- Nuxe · Rêve de Miel ---------- */
+  {
+    id: "nx-balsamo-rostro-ultra-reconfortante",
+    name: "Rêve de Miel Bálsamo Rostro Ultra Reconfortante",
+    img: "imagenes/nuxe/nx-balsamo-rostro-ultra-reconfortante.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Bálsamo facial con miel francesa.",
+      necesidad: "Nutre intensamente y reconforta.",
+      cuando: "Nuxe no indica la frecuencia; por la mañana termina con toques.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-gel-limpiador-nutritivo-para-rostro-y-cuerpo-400ml",
+    name: "Rêve de Miel Gel Limpiador Nutritivo",
+    img: "imagenes/nuxe/nx-gel-limpiador-nutritivo-para-rostro-y-cuerpo-400ml.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["limpieza", "corporal", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Gel limpiador con miel para rostro y cuerpo.",
+      necesidad: "Limpieza suave y calmante.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "A diario, mañana y/o noche.",
+      modo: "Masajear sobre la piel húmeda y aclarar. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-gel-limpiador-y-desmaquillante-facial-1",
+    name: "Rêve de Miel Gel Limpiador y Desmaquillante",
+    img: "imagenes/nuxe/nx-gel-limpiador-y-desmaquillante-facial-1.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["limpieza"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Gel limpiador y desmaquillante facial.",
+      necesidad: "Retira impurezas con delicadeza.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear sobre el rostro húmedo, evitando los ojos, y aclarar."
+    }
+  },
+
+  {
+    id: "nx-crema-corporal-nutritiva-ultra-reconfortante-i-48h",
+    name: "Rêve de Miel Crema Corporal Nutritiva 48h",
+    img: "imagenes/nuxe/nx-crema-corporal-nutritiva-ultra-reconfortante-i-48h.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Crema corporal con miel.",
+      necesidad: "Nutre e hidrata 48 horas.",
+      cuando: "A diario.",
+      modo: "Aplicar 6 dosis para todo el cuerpo con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "nx-crema-nutritiva-y-reparadora-de-manos-y-unas",
+    name: "Rêve de Miel Crema de Manos y Uñas",
+    img: "imagenes/nuxe/nx-crema-nutritiva-y-reparadora-de-manos-y-unas.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Manos secas.",
+      tipo: "Crema de manos con miel.",
+      necesidad: "Nutre y repara.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en el dorso, frotar y masajear los dedos."
+    }
+  },
+
+  {
+    id: "nx-exfoliante-corporal-goloso-nutritivo-reve-de-miel",
+    name: "Rêve de Miel Exfoliante Corporal",
+    img: "imagenes/nuxe/nx-exfoliante-corporal-goloso-nutritivo-reve-de-miel.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Exfoliante 2 en 1 con miel, azúcar y aceites.",
+      necesidad: "Elimina células muertas y nutre.",
+      limpieza: "Exfoliante corporal",
+      limpiezaDet: "Se aplica después de la limpieza.",
+      cuando: "1 o 2 veces por semana.",
+      modo: "Masajear en círculos sobre la piel húmeda tras la limpieza y aclarar."
+    }
+  },
+
+  {
+    id: "nx-b-lsamo-labial-con-miel",
+    name: "Rêve de Miel Bálsamo Labial",
+    img: "imagenes/nuxe/nx-b-lsamo-labial-con-miel.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios muy secos y dañados.",
+      tipo: "Bálsamo labial con miel y própolis.",
+      necesidad: "Repara y suaviza los labios.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar con el dedo en labios y contorno. También como mascarilla de noche."
+    }
+  },
+
+  {
+    id: "nx-tratamiento-labial-con-miel",
+    name: "Rêve de Miel Tratamiento Labial",
+    img: "imagenes/nuxe/nx-tratamiento-labial-con-miel.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Aceite labial brillante con miel.",
+      necesidad: "Brillo y confort de los labios.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar con el aplicador."
+    }
+  },
+
+  {
+    id: "nx-tratamiento-labial-con-miel-gold",
+    name: "Rêve de Miel Tratamiento Labial Gold",
+    img: "imagenes/nuxe/nx-tratamiento-labial-con-miel-gold.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Aceite labial con nácares dorados.",
+      necesidad: "Brillo y confort de los labios.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar con el aplicador."
+    }
+  },
+
+  {
+    id: "nx-agua-exquisita-perfumada",
+    name: "Rêve de Miel Agua Exquisita Perfumada",
+    img: "imagenes/nuxe/nx-agua-exquisita-perfumada.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Agua perfumada golosa.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  {
+    id: "nx-stick-labios-hidratante",
+    name: "Stick Labios Hidratante",
+    img: "imagenes/nuxe/nx-stick-labios-hidratante.webp",
+    brand: "nuxe",
+    line: "nx-miel",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos.",
+      tipo: "Stick labial.",
+      necesidad: "Calma, suaviza y protege.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en labios y contorno."
+    }
+  },
+
+  /* ---------- Nuxe · Rêve de Thé ---------- */
+  {
+    id: "nx-gel-de-ducha-revitalizante-750ml",
+    name: "Rêve de Thé Gel de Ducha Revitalizante",
+    img: "imagenes/nuxe/nx-gel-de-ducha-revitalizante-750ml.webp",
+    brand: "nuxe",
+    line: "nx-the",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Gel de ducha de base vegetal.",
+      necesidad: "Limpia con delicadeza.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear sobre la piel húmeda y aclarar."
+    }
+  },
+
+  {
+    id: "nx-desodorante-frescor-24-h-reve-de-th-50-ml",
+    name: "Rêve de Thé Desodorante Frescor 24 h",
+    img: "imagenes/nuxe/nx-desodorante-frescor-24-h-reve-de-th-50-ml.webp",
+    brand: "nuxe",
+    line: "nx-the",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Desodorante fluido.",
+      necesidad: "Protección 24 horas sin marcas.",
+      cuando: "Por la mañana; reaplicar si es necesario.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "nx-agua-exaltante-perfumada-100ml",
+    name: "Rêve de Thé Agua Exaltante Perfumada",
+    img: "imagenes/nuxe/nx-agua-exaltante-perfumada-100ml.webp",
+    brand: "nuxe",
+    line: "nx-the",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Agua perfumada revitalizante.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  /* ---------- Nuxe · Very Rose ---------- */
+  {
+    id: "nx-agua-micelar-desmaquillante-calmante-750ml",
+    name: "Very Rose Agua Micelar Calmante",
+    img: "imagenes/nuxe/nx-agua-micelar-desmaquillante-calmante-750ml.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Agua micelar con extracto de rosa.",
+      necesidad: "Desmaquilla y limpia rostro y ojos.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Por la noche como desmaquillante; también por la mañana.",
+      modo: "Aplicar con un algodón hasta que quede limpio. No aclarar."
+    }
+  },
+
+  {
+    id: "nx-aceite-delicado-desmaquillante-150ml",
+    name: "Very Rose Aceite Delicado Desmaquillante",
+    img: "imagenes/nuxe/nx-aceite-delicado-desmaquillante-150ml.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel, incluso sensible.",
+      tipo: "Aceite desmaquillante para rostro, ojos y labios.",
+      necesidad: "Elimina maquillaje persistente y waterproof.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Calentar 2-3 dosis y masajear sobre la piel seca. Aclarar con agua."
+    }
+  },
+
+  {
+    id: "nx-leche-desmaquillante-rica-1",
+    name: "Very Rose Leche Desmaquillante Rica",
+    img: "imagenes/nuxe/nx-leche-desmaquillante-rica-1.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de pieles.",
+      tipo: "Leche desmaquillante.",
+      necesidad: "Desmaquilla, hidrata y calma.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Masajear sobre la piel seca y aclarar con agua."
+    }
+  },
+
+  {
+    id: "nx-desmaquillante-waterproof-ojos-y-labios-bifasico",
+    name: "Very Rose Desmaquillante Bifásico Ojos y Labios",
+    img: "imagenes/nuxe/nx-desmaquillante-waterproof-ojos-y-labios-bifasico.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Desmaquillante bifásico waterproof.",
+      necesidad: "Elimina maquillaje muy resistente.",
+      limpieza: "Desmaquillante de ojos y labios",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Agitar, impregnar un disco y masajear sobre párpados, pestañas y labios. Aclarar o dejar."
+    }
+  },
+
+  {
+    id: "nx-espuma-ligera-limpiadora-1",
+    name: "Very Rose Espuma Ligera Limpiadora",
+    img: "imagenes/nuxe/nx-espuma-ligera-limpiadora-1.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel, incluso sensible.",
+      tipo: "Espuma limpiadora untuosa.",
+      necesidad: "Limpia y calma sin sequedad.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear 1-2 dosis sobre la piel húmeda, evitando los ojos, y aclarar."
+    }
+  },
+
+  {
+    id: "nx-gel-limpiador-calmante",
+    name: "Very Rose Gel Limpiador Calmante",
+    img: "imagenes/nuxe/nx-gel-limpiador-calmante.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Gel limpiador suave.",
+      necesidad: "Limpia y calma.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear sobre la piel húmeda en círculos, evitando los ojos, y aclarar."
+    }
+  },
+
+  {
+    id: "nx-locion-tonica-refrescante",
+    name: "Very Rose Loción Tónica Refrescante",
+    img: "imagenes/nuxe/nx-locion-tonica-refrescante.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Loción tónica.",
+      necesidad: "Hidrata, calma y perfecciona el desmaquillado.",
+      limpieza: "Tónico, después de la limpieza",
+      limpiezaDet: "Perfecciona el desmaquillado.",
+      cuando: "Mañana y noche, tras la limpieza.",
+      modo: "Aplicar con un algodón en rostro y cuello, evitando los ojos."
+    }
+  },
+
+  {
+    id: "nx-exfoliante-facial-luminosidad",
+    name: "Very Rose Exfoliante Facial Luminosidad",
+    img: "imagenes/nuxe/nx-exfoliante-facial-luminosidad.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["apagada", "limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel, incluso sensible.",
+      tipo: "Exfoliante en crema con hueso de albaricoque.",
+      necesidad: "Elimina impurezas sin tirantez.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Se aplica sobre la piel limpia.",
+      cuando: "1 o 2 veces por semana.",
+      modo: "Masajear sobre la piel limpia y húmeda, insistiendo en la zona T. Aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "nx-serum-de-labios-voluminizador",
+    name: "Very Rose Sérum Voluminizador de Labios",
+    img: "imagenes/nuxe/nx-serum-de-labios-voluminizador.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Sérum de labios con ácido hialurónico.",
+      necesidad: "Volumen instantáneo e hidratación 24 horas.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar con el aplicador."
+    }
+  },
+
+  {
+    id: "nx-b-lsamo-hidratante-de-labios-con-rosa",
+    name: "Very Rose Bálsamo de Labios",
+    img: "imagenes/nuxe/nx-b-lsamo-hidratante-de-labios-con-rosa.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos a muy secos.",
+      tipo: "Bálsamo hidratante con rosa.",
+      necesidad: "Suaviza e ilumina los labios.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en labios y contorno. También como mascarilla de noche."
+    }
+  },
+
+  {
+    id: "nx-crema-calmante-para-manos-y-unas",
+    name: "Very Rose Crema de Manos y Uñas",
+    img: "imagenes/nuxe/nx-crema-calmante-para-manos-y-unas.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel, incluso sensible.",
+      tipo: "Crema calmante de manos.",
+      necesidad: "Hidrata, calma y protege.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en el dorso, frotar e insistir entre los dedos."
+    }
+  },
+
+  {
+    id: "nx-gel-de-ducha-calmante-750ml",
+    name: "Very Rose Gel de Ducha Calmante",
+    img: "imagenes/nuxe/nx-gel-de-ducha-calmante-750ml.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel, incluso sensible.",
+      tipo: "Gel de ducha suave.",
+      necesidad: "Limpia sin resecar.",
+      cuando: "Mañana y/o noche.",
+      modo: "Masajear sobre la piel mojada y aclarar."
+    }
+  },
+
+  {
+    id: "nx-desodorante-en-stick-cuerpo-completo-48h",
+    name: "Very Rose Desodorante Stick 48H",
+    img: "imagenes/nuxe/nx-desodorante-en-stick-cuerpo-completo-48h.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Desodorante en stick para todo el cuerpo.",
+      necesidad: "Sin marcas y antifricción.",
+      cuando: "Al menos una vez al día; reaplicar si es necesario.",
+      modo: "Aplicar sobre la piel limpia y seca en axilas, espalda, muslos, pecho o pliegues."
+    }
+  },
+
+  {
+    id: "nx-desodorante-roll-on-frescor-24h",
+    name: "Very Rose Desodorante Roll-On 24H",
+    img: "imagenes/nuxe/nx-desodorante-roll-on-frescor-24h.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un perfil concreto.",
+      tipo: "Desodorante roll-on.",
+      necesidad: "Frescor y sin marcas.",
+      cuando: "Reaplicar si es necesario.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "nx-agua-voluptuosa-perfumada",
+    name: "Very Rose Agua Voluptuosa Perfumada",
+    img: "imagenes/nuxe/nx-agua-voluptuosa-perfumada.webp",
+    brand: "nuxe",
+    line: "nx-rose",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Agua perfumada de rosa.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  /* ---------- Nuxe · Crème Fraîche de Beauté® ---------- */
+  {
+    id: "nx-cr-me-fra-che-de-beaut-3-en-1-crema-hidratante-48-h-leche-desmaquillante-mascarilla-repulpante",
+    name: "Crème Fraîche de Beauté® 3 en 1",
+    img: "imagenes/nuxe/nx-cr-me-fra-che-de-beaut-3-en-1-crema-hidratante-48-h-leche-desmaquillante-mascarilla-repulpante.webp",
+    brand: "nuxe",
+    line: "nx-cf",
+    n: ["deshidratacion", "limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de pieles.",
+      tipo: "Crema hidratante 48 h, leche limpiadora y mascarilla.",
+      necesidad: "Hidrata, limpia y repulpa.",
+      cuando: "Como crema, mañana y/o noche.",
+      modo: "Crema: media avellana en rostro y contorno. Leche: 2 almendras, masajear y retirar con algodón. También como mascarilla."
+    }
+  },
+
+  {
+    id: "nx-crema-repulpante-hidratante-l-48-h-30ml",
+    name: "Crème Fraîche de Beauté® Crema Repulpante 48h",
+    img: "imagenes/nuxe/nx-crema-repulpante-hidratante-l-48-h-30ml.webp",
+    brand: "nuxe",
+    line: "nx-cf",
+    n: ["deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles normales.",
+      tipo: "Crema hidratante calmante.",
+      necesidad: "Hidrata 48 horas y reduce la tirantez.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-rica-hidratante-l-48h-30ml",
+    name: "Crème Fraîche de Beauté® Crema Rica 48h",
+    img: "imagenes/nuxe/nx-crema-rica-hidratante-l-48h-30ml.webp",
+    brand: "nuxe",
+    line: "nx-cf",
+    n: ["seca", "deshidratacion"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Crema hidratante rica.",
+      necesidad: "Hidrata 48 horas y nutre sin efecto graso.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-fluido-matificante-hidratante-l-48h-cr-me-fra-che-de-beaut",
+    name: "Crème Fraîche de Beauté® Fluido Matificante 48h",
+    img: "imagenes/nuxe/nx-fluido-matificante-hidratante-l-48h-cr-me-fra-che-de-beaut.webp",
+    brand: "nuxe",
+    line: "nx-cf",
+    n: ["deshidratacion", "poros"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta.",
+      tipo: "Fluido hidratante ultraligero.",
+      necesidad: "Hidrata 48 horas y matifica.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-eye-flash-tratamiento-contorno-de-ojos-hidratante-anti-fatiga-con-certificaci-n-bio",
+    name: "Eye Flash Contorno de Ojos Antifatiga",
+    img: "imagenes/nuxe/nx-eye-flash-tratamiento-contorno-de-ojos-hidratante-anti-fatiga-con-certificaci-n-bio.webp",
+    brand: "nuxe",
+    line: "nx-cf",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Contorno de ojos hidratante bio.",
+      necesidad: "Ojeras, bolsas y líneas.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar 2 granos de arroz a toques bajo los ojos y alisar de dentro hacia fuera."
+    }
+  },
+
+  /* ---------- Nuxe · Super Serum [10] ---------- */
+  {
+    id: "nx-super-serum-10-el-concentrado-antiedad-universal-30ml",
+    name: "Super Serum [10]",
+    img: "imagenes/nuxe/nx-super-serum-10-el-concentrado-antiedad-universal-30ml.webp",
+    brand: "nuxe",
+    line: "nx-ss",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Concentrado antiedad con complejo de longevidad.",
+      necesidad: "Corrige los signos de la edad y ayuda a retrasar su aparición.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos. Dejar penetrar 30 segundos."
+    }
+  },
+
+  {
+    id: "nx-super-serum-10-contorno-de-ojos-el-concentrado-para-el-contorno-de-ojos-antiedad-universal",
+    name: "Super Serum [10] Contorno de Ojos",
+    img: "imagenes/nuxe/nx-super-serum-10-contorno-de-ojos-el-concentrado-para-el-contorno-de-ojos-antiedad-universal.webp",
+    brand: "nuxe",
+    line: "nx-ss",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Sérum de contorno con ácido hialurónico y cafeína.",
+      necesidad: "Arrugas, ojeras, bolsas y cansancio.",
+      cuando: "Mañana y noche, antes de la crema.",
+      modo: "Aplicar una gota a toques bajo los ojos, alisar y repetir en el párpado superior, evitando la zona móvil."
+    }
+  },
+
+  /* ---------- Nuxe · Nuxuriance Ultra ---------- */
+  {
+    id: "nx-la-crema-antiedad-global",
+    name: "Nuxuriance Ultra La Crema Antiedad Global",
+    img: "imagenes/nuxe/nx-la-crema-antiedad-global.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Crema de día con tecnología Alfa [3R].",
+      necesidad: "Principales signos de la edad.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-rica-antiedad-global",
+    name: "Nuxuriance Ultra La Crema Rica",
+    img: "imagenes/nuxe/nx-la-crema-rica-antiedad-global.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["arrugas", "flacidez", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca a muy seca.",
+      tipo: "Crema rica de día con tecnología Alfa [3R].",
+      necesidad: "Signos de la edad y nutrición.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-antiedad-global-spf30",
+    name: "Nuxuriance Ultra La Crema SPF30",
+    img: "imagenes/nuxe/nx-la-crema-antiedad-global-spf30.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["arrugas", "fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Crema 2 en 1 con SPF 30.",
+      necesidad: "Signos de la edad y fotoenvejecimiento.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-de-noche-antiedad-global",
+    name: "Nuxuriance Ultra La Crema de Noche",
+    img: "imagenes/nuxe/nx-la-crema-de-noche-antiedad-global.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Crema de noche con tecnología Alfa [3R].",
+      necesidad: "Signos de la edad; nutre durante la noche.",
+      cuando: "Por la noche.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-el-tratamiento-excepcional-dia-y-noche-75ml",
+    name: "Nuxuriance Ultra Tratamiento Excepcional Día y Noche",
+    img: "imagenes/nuxe/nx-el-tratamiento-excepcional-dia-y-noche-75ml.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["arrugas", "flacidez", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Tratamiento antiedad global de 75 ml.",
+      necesidad: "Signos de la edad y luminosidad.",
+      cuando: "Día y noche.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-el-s-rum-corrector-de-manchas",
+    name: "Nuxuriance Ultra El Sérum Corrector de Manchas",
+    img: "imagenes/nuxe/nx-el-s-rum-corrector-de-manchas.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["manchas", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Sérum con Alfa [3R] y vitamina C.",
+      necesidad: "Manchas y signos de la edad.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar del centro hacia fuera en rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "nx-el-tratamiento-espec-fico-para-contorno-de-ojos-y-labios",
+    name: "Nuxuriance Ultra Contorno de Ojos y Labios",
+    img: "imagenes/nuxe/nx-el-tratamiento-espec-fico-para-contorno-de-ojos-y-labios.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Tratamiento de contorno con Alfa [3R].",
+      necesidad: "Líneas, ojeras y bolsas.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Alisar los párpados de dentro hacia fuera con los dedos corazón y presionar en las sienes."
+    }
+  },
+
+  {
+    id: "nx-crema-antimanchas-antiedad-spf30",
+    name: "Nuxuriance Ultra Crema Antimanchas + Antiedad SPF30",
+    img: "imagenes/nuxe/nx-crema-antimanchas-antiedad-spf30.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["manchas", "arrugas", "fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema de día con SPF 30.",
+      necesidad: "Manchas y principales signos de la edad.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-de-manos-correctora-de-manchas",
+    name: "Nuxuriance Ultra Crema de Manos Correctora de Manchas",
+    img: "imagenes/nuxe/nx-la-crema-de-manos-correctora-de-manchas.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["manchas", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Manos con manchas y sequedad.",
+      tipo: "Crema de manos.",
+      necesidad: "Manchas y sequedad.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en el dorso, frotar e insistir entre los dedos."
+    }
+  },
+
+  {
+    id: "nx-la-leche-corporal-reafirmante",
+    name: "Nuxuriance Ultra Leche Corporal Reafirmante",
+    img: "imagenes/nuxe/nx-la-leche-corporal-reafirmante.webp",
+    brand: "nuxe",
+    line: "nx-nu",
+    n: ["corporal", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Zonas con flacidez: brazos, escote, vientre, glúteos y piernas.",
+      tipo: "Leche corporal de efecto tensor.",
+      necesidad: "Firmeza y remodelado.",
+      cuando: "Mañana y/o noche.",
+      modo: "Calentar y aplicar de abajo arriba, con movimientos en ocho."
+    }
+  },
+
+  /* ---------- Nuxe · Nuxuriance Gold ---------- */
+  {
+    id: "nx-el-aceite-s-rum-revitalizante",
+    name: "Nuxuriance Gold El Aceite-Sérum",
+    img: "imagenes/nuxe/nx-el-aceite-s-rum-revitalizante.webp",
+    brand: "nuxe",
+    line: "nx-ng",
+    n: ["seca", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel seca.",
+      tipo: "Aceite-sérum bio con extracto de arroz.",
+      necesidad: "Nutre y regenera; flexibilidad y luminosidad.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar media pipeta del centro hacia fuera, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-aceite-nutri-fortificante",
+    name: "Nuxuriance Gold La Crema-Aceite",
+    img: "imagenes/nuxe/nx-la-crema-aceite-nutri-fortificante.webp",
+    brand: "nuxe",
+    line: "nx-ng",
+    n: ["seca", "flacidez", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel que necesita nutrición antiedad.",
+      tipo: "Crema-aceite nutritiva.",
+      necesidad: "Confort, firmeza y redensificación.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  /* ---------- Nuxe · Merveillance Lift ---------- */
+  {
+    id: "nx-crema-aterciopelada-efecto-lifting",
+    name: "Merveillance Lift Crema Aterciopelada",
+    img: "imagenes/nuxe/nx-crema-aterciopelada-efecto-lifting.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel normal a seca.",
+      tipo: "Crema con aceite de micro-alga.",
+      necesidad: "Alisa arrugas y reafirma.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-en-polvo-efecto-lifting-merveillance-lift-50-ml",
+    name: "Merveillance Lift Crema en Polvo",
+    img: "imagenes/nuxe/nx-crema-en-polvo-efecto-lifting-merveillance-lift-50-ml.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema de textura rellenadora.",
+      necesidad: "Antiedad instantáneo.",
+      cuando: "Por el día.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-glow-efecto-lifting",
+    name: "Merveillance Lift Crema Glow",
+    img: "imagenes/nuxe/nx-crema-glow-efecto-lifting.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["flacidez", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tonos y tipos de piel.",
+      tipo: "Crema reafirmante con sutil color.",
+      necesidad: "Efecto tensor y buena cara.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-concentrada-de-noche",
+    name: "Merveillance Lift Crema de Noche",
+    img: "imagenes/nuxe/nx-crema-concentrada-de-noche.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema concentrada de noche.",
+      necesidad: "Corrige arrugas durante la noche.",
+      cuando: "Por la noche.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-la-crema-excepcional-dia-and-noche-75ml-merveillance-lift",
+    name: "Merveillance Lift Crema Excepcional Día y Noche",
+    img: "imagenes/nuxe/nx-la-crema-excepcional-dia-and-noche-75ml-merveillance-lift.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["arrugas", "flacidez", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema de día y noche de 75 ml.",
+      necesidad: "Arrugas, firmeza y luminosidad.",
+      cuando: "Día y noche.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-s-rum-en-aceite-activador-de-firmeza",
+    name: "Merveillance Lift Sérum en Aceite",
+    img: "imagenes/nuxe/nx-s-rum-en-aceite-activador-de-firmeza.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tipos de piel.",
+      tipo: "Sérum en aceite antiedad.",
+      necesidad: "Firmeza; bastan 3 gotas.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Extender del centro hacia fuera, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-reafirmante-contorno-de-ojos",
+    name: "Merveillance Lift Contorno de Ojos",
+    img: "imagenes/nuxe/nx-crema-reafirmante-contorno-de-ojos.webp",
+    brand: "nuxe",
+    line: "nx-ml",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema reafirmante de contorno.",
+      necesidad: "Arrugas y párpados.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar 2 granos de arroz a toques bajo los ojos y alisar de dentro hacia fuera."
+    }
+  },
+
+  /* ---------- Nuxe · Prodigieuse Boost ---------- */
+  {
+    id: "nx-gel-crema-alisadora-iluminadora",
+    name: "Prodigieuse Boost Gel-Crema Alisadora",
+    img: "imagenes/nuxe/nx-gel-crema-alisadora-iluminadora.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["deshidratacion", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel normal a mixta.",
+      tipo: "Gel-crema fresca iluminadora.",
+      necesidad: "Hidrata, alisa y aporta luminosidad.",
+      cuando: "Después del sérum.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-crema-repulpante-iluminadora",
+    name: "Prodigieuse Boost Crema Repulpante",
+    img: "imagenes/nuxe/nx-crema-repulpante-iluminadora.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["deshidratacion", "apagada"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca.",
+      tipo: "Crema envolvente iluminadora.",
+      necesidad: "Repulpa, ilumina y da confort.",
+      cuando: "Después del sérum.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-serum-iluminador-antimanchas",
+    name: "Prodigieuse Boost Sérum Iluminador Antimanchas",
+    img: "imagenes/nuxe/nx-serum-iluminador-antimanchas.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["manchas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Sérum potenciador de luminosidad.",
+      necesidad: "Intensidad, número y tamaño de las manchas.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar media pipeta del centro hacia fuera en rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "nx-balsamo-aceite-renovador-noche",
+    name: "Prodigieuse Boost Bálsamo-Aceite Noche",
+    img: "imagenes/nuxe/nx-balsamo-aceite-renovador-noche.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Bálsamo renovador de noche.",
+      necesidad: "Hidrata, repulpa y refuerza la barrera.",
+      cuando: "Por la noche, después del sérum.",
+      modo: "Calentar entre las manos y aplicar del centro hacia fuera en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-concentrado-iluminador",
+    name: "Prodigieuse Boost Concentrado Iluminador",
+    img: "imagenes/nuxe/nx-concentrado-iluminador.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Concentrado con partículas nacaradas.",
+      necesidad: "Luminosidad inmediata y repulpa.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Como sérum antes de la crema, mezclado con ella, o como iluminador."
+    }
+  },
+
+  {
+    id: "nx-stick-antifatiga-para-el-contorno-de-ojos",
+    name: "Prodigieuse Boost Stick Antifatiga Ojos",
+    img: "imagenes/nuxe/nx-stick-antifatiga-para-el-contorno-de-ojos.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Stick efecto cubito de hielo con cafeína.",
+      necesidad: "Bolsas, ojeras y líneas.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar bajo el párpado inferior y sobre el superior, de dentro hacia fuera. Se puede guardar en la nevera."
+    }
+  },
+
+  {
+    id: "nx-gel-b-lsamo-multi-correcci-n-ojos",
+    name: "Prodigieuse Boost Gel-Bálsamo Ojos",
+    img: "imagenes/nuxe/nx-gel-b-lsamo-multi-correcci-n-ojos.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Contorno de ojos con jazmín.",
+      necesidad: "Bolsas, ojeras y luminosidad.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar 2 granos de arroz a toques bajo los ojos y alisar de dentro hacia fuera."
+    }
+  },
+
+  {
+    id: "nx-serum-iluminador-ojos",
+    name: "Prodigieuse Boost Sérum Iluminador Ojos",
+    img: "imagenes/nuxe/nx-serum-iluminador-ojos.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["ojos", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Sérum híbrido con pigmentos nacarados.",
+      necesidad: "Ilumina y rejuvenece la mirada.",
+      cuando: "Mañana y/o noche; retocar durante el día.",
+      modo: "Agitar, aplicar con el aplicador de espuma y difuminar con toques."
+    }
+  },
+
+  {
+    id: "nx-mascarilla-detox-luminosidad-vitaminada",
+    name: "Prodigieuse Boost Mascarilla Detox",
+    img: "imagenes/nuxe/nx-mascarilla-detox-luminosidad-vitaminada.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto.",
+      tipo: "Mascarilla de luminosidad en 5 minutos.",
+      necesidad: "Purifica y afina la textura.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar sobre la piel seca, evitando los ojos, y dejar actuar 5 minutos."
+    }
+  },
+
+  {
+    id: "nx-el-serum-autobronceador",
+    name: "Prodigieuse Boost El Sérum Autobronceador",
+    img: "imagenes/nuxe/nx-el-serum-autobronceador.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un bronceado sin sol todo el año.",
+      tipo: "Sérum autobronceador con ácido hialurónico.",
+      necesidad: "Tono bronceado e hidratación.",
+      cuando: "Por la mañana.",
+      modo: "Una pipeta como sérum en rostro y cuello, antes de la crema, o gotas mezcladas con ella. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "nx-bb-cream-hidratante-con-color-tono-medio",
+    name: "BB Cream Hidratante con Color",
+    img: "imagenes/nuxe/nx-bb-cream-hidratante-con-color-tono-medio.webp",
+    brand: "nuxe",
+    line: "nx-boost",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de piel concreto (3 tonos).",
+      tipo: "Tratamiento perfeccionador con color.",
+      necesidad: "Unifica e hidrata 24 horas.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Repartir a toques en frente, nariz y mentón y extender hacia fuera y el cuello."
+    }
+  },
+
+  /* ---------- Nuxe · Zinc Power ---------- */
+  {
+    id: "nx-gel-limpiador-purificante-1",
+    name: "Zinc Power Gel Limpiador Purificante",
+    img: "imagenes/nuxe/nx-gel-limpiador-purificante-1.webp",
+    brand: "nuxe",
+    line: "nx-zinc",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta a grasa con tendencia acneica.",
+      tipo: "Gel no comedogénico para rostro y cuerpo.",
+      necesidad: "Limpia, matifica y cierra los poros.",
+      limpieza: "Limpiador, 1.er paso de la rutina",
+      limpiezaDet: "Nuxe lo llama primer paso de la rutina antiimperfecciones.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear en círculos, evitando los ojos, y aclarar."
+    }
+  },
+
+  {
+    id: "nx-locion-purificante-anti-imperfecciones",
+    name: "Zinc Power Loción Purificante",
+    img: "imagenes/nuxe/nx-locion-purificante-anti-imperfecciones.webp",
+    brand: "nuxe",
+    line: "nx-zinc",
+    n: ["acne", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta con tendencia acneica.",
+      tipo: "Loción purificante sin aclarado.",
+      necesidad: "Minimiza poros, matifica y reduce imperfecciones.",
+      limpieza: "Rutina de limpieza · 2.º paso",
+      limpiezaDet: "Nuxe la llama segundo paso de limpieza de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un algodón sobre la piel limpia, evitando los ojos."
+    }
+  },
+
+  {
+    id: "nx-serum-anti-imperfecciones",
+    name: "Zinc Power Sérum Anti-Imperfecciones",
+    img: "imagenes/nuxe/nx-serum-anti-imperfecciones.webp",
+    brand: "nuxe",
+    line: "nx-zinc",
+    n: ["acne", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica.",
+      tipo: "Sérum no comedogénico con zinc PCA y lichi.",
+      necesidad: "Granitos, puntos negros y poros.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar del centro hacia fuera y dejar penetrar 30 segundos antes de la crema."
+    }
+  },
+
+  {
+    id: "nx-fluido-matificante-minimizador-de-poros",
+    name: "Zinc Power Fluido Matificante",
+    img: "imagenes/nuxe/nx-fluido-matificante-minimizador-de-poros.webp",
+    brand: "nuxe",
+    line: "nx-zinc",
+    n: ["poros", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta a grasa con tendencia acneica.",
+      tipo: "Fluido hidratante matificante.",
+      necesidad: "Brillos y poros visibles.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar en todo el rostro."
+    }
+  },
+
+  {
+    id: "nx-corrector-de-imperfecciones",
+    name: "Zinc Power Corrector de Imperfecciones",
+    img: "imagenes/nuxe/nx-corrector-de-imperfecciones.webp",
+    brand: "nuxe",
+    line: "nx-zinc",
+    n: ["acne"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con granos localizados.",
+      tipo: "Gel parche invisible de acción localizada.",
+      necesidad: "Tamaño y color de los granos; marcas.",
+      cuando: "Mañana y noche.",
+      modo: "Mañana: tras la crema y antes del maquillaje. Noche: como último paso, sobre la piel limpia."
+    }
+  },
+
+  /* ---------- Nuxe · Nuxe Men [BOOST]³ ---------- */
+  {
+    id: "nx-gel-de-ducha-multi-usos-para-rostro-barba-cuerpo-y-cabello-1",
+    name: "Nuxe Men [BOOST]³ Gel de Ducha Multiusos",
+    img: "imagenes/nuxe/nx-gel-de-ducha-multi-usos-para-rostro-barba-cuerpo-y-cabello-1.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Gel para rostro, barba, cuerpo y cabello.",
+      necesidad: "Limpieza completa.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Masajear sobre la zona húmeda y aclarar."
+    }
+  },
+
+  {
+    id: "nx-gel-limpiador-matificante",
+    name: "Nuxe Men [BOOST]³ Gel Limpiador Matificante",
+    img: "imagenes/nuxe/nx-gel-limpiador-matificante.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["limpieza", "poros"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Gel limpiador facial.",
+      necesidad: "Elimina impurezas y matifica.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel húmeda, evitando los ojos, masajear y aclarar."
+    }
+  },
+
+  {
+    id: "nx-serum-multi-accion-juventud-y-energia",
+    name: "Nuxe Men [BOOST]³ Sérum Multiacción",
+    img: "imagenes/nuxe/nx-serum-multi-accion-juventud-y-energia.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Sérum con Alfa [3R].",
+      necesidad: "Potencia y fortalece la piel.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar unas gotas sobre el rostro limpio y seco y masajear."
+    }
+  },
+
+  {
+    id: "nx-fluido-antiedad-revitalizante-global",
+    name: "Nuxe Men [BOOST]³ Fluido Antiedad",
+    img: "imagenes/nuxe/nx-fluido-antiedad-revitalizante-global.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Fluido antiedad con Alfa [3R].",
+      necesidad: "Hidrata y alisa.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel limpia y seca del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "nx-gel-hidratante-antifatiga-instantaneo",
+    name: "Nuxe Men [BOOST]³ Gel Hidratante Antifatiga",
+    img: "imagenes/nuxe/nx-gel-hidratante-antifatiga-instantaneo.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Gel ultrafresco.",
+      necesidad: "Hidrata y da energía.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel limpia y seca del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "nx-aceite-multifuncion-para-la-barba",
+    name: "Nuxe Men [BOOST]³ Aceite para la Barba",
+    img: "imagenes/nuxe/nx-aceite-multifuncion-para-la-barba.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres con barba.",
+      tipo: "Aceite multifunción.",
+      necesidad: "Barba suave y zonas secas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Calentar en las palmas y masajear la barba."
+    }
+  },
+
+  {
+    id: "nx-espuma-de-afeitar-anti-irritaciones",
+    name: "Nuxe Men [BOOST]³ Espuma de Afeitar",
+    img: "imagenes/nuxe/nx-espuma-de-afeitar-anti-irritaciones.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Espuma de afeitar.",
+      necesidad: "Afeitado cómodo.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Agitar, aplicar sobre el rostro húmedo, afeitar y aclarar."
+    }
+  },
+
+  {
+    id: "nx-balsamo-regenerador-calmante-para-despues-del-afeitado",
+    name: "Nuxe Men [BOOST]³ Bálsamo After-Shave",
+    img: "imagenes/nuxe/nx-balsamo-regenerador-calmante-para-despues-del-afeitado.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: ["rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Bálsamo calmante con nopal.",
+      necesidad: "Calma y regenera tras el afeitado.",
+      cuando: "Después del afeitado.",
+      modo: "Masajear sobre rostro y cuello limpios y secos."
+    }
+  },
+
+  {
+    id: "nx-desodorante-proteccion-24h",
+    name: "Nuxe Men [BOOST]³ Desodorante 24h",
+    img: "imagenes/nuxe/nx-desodorante-proteccion-24h.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Hombres.",
+      tipo: "Desodorante sin marcas.",
+      necesidad: "Protección 24 horas.",
+      cuando: "Reaplicar si es necesario.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "nx-eau-de-parfum",
+    name: "Nuxe Men Eau de Parfum",
+    img: "imagenes/nuxe/nx-eau-de-parfum.webp",
+    brand: "nuxe",
+    line: "nx-men",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Eau de parfum.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  /* ---------- Nuxe · Hair Prodigieux® ---------- */
+  {
+    id: "nx-el-champ-brillo-sublime-400ml",
+    name: "Hair Prodigieux® Champú Brillo Sublime",
+    img: "imagenes/nuxe/nx-el-champ-brillo-sublime-400ml.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de cabello concreto.",
+      tipo: "Champú sin siliconas ni sulfatos.",
+      necesidad: "Limpia y nutre sin apelmazar.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar sobre el cabello mojado, masajear y aclarar."
+    }
+  },
+
+  {
+    id: "nx-acondicionador-brillo-sublime",
+    name: "Hair Prodigieux® Acondicionador",
+    img: "imagenes/nuxe/nx-acondicionador-brillo-sublime.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de cabello concreto.",
+      tipo: "Acondicionador sin siliconas.",
+      necesidad: "Desenreda y nutre.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en largos y puntas sobre el cabello escurrido, dejar 1 minuto y aclarar."
+    }
+  },
+
+  {
+    id: "nx-mascarilla-capilar-reparacion-intensiva",
+    name: "Hair Prodigieux® Mascarilla Reparación Intensiva",
+    img: "imagenes/nuxe/nx-mascarilla-capilar-reparacion-intensiva.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello que necesita reparación.",
+      tipo: "Mascarilla capilar.",
+      necesidad: "Repara y nutre.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en largos y puntas, dejar 3 minutos y aclarar."
+    }
+  },
+
+  {
+    id: "nx-la-mascarilla-nutrici-n-pre-champ",
+    name: "Hair Prodigieux® Mascarilla Pre-Champú",
+    img: "imagenes/nuxe/nx-la-mascarilla-nutrici-n-pre-champ.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello que necesita nutrición.",
+      tipo: "Tratamiento sin siliconas.",
+      necesidad: "Nutre y repara la fibra.",
+      cuando: "Antes del champú.",
+      modo: "Aplicar sobre el cabello seco 10 minutos, o 30 para reparación intensa, y aclarar."
+    }
+  },
+
+  {
+    id: "nx-leche-capilar-desenredante-sin-aclarado",
+    name: "Hair Prodigieux® Leche Desenredante",
+    img: "imagenes/nuxe/nx-leche-capilar-desenredante-sin-aclarado.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de cabello concreto.",
+      tipo: "Leche capilar sin aclarado.",
+      necesidad: "Desenreda e hidrata.",
+      cuando: "A diario.",
+      modo: "Vaporizar sobre largos y puntas del cabello escurrido. No aclarar."
+    }
+  },
+
+  {
+    id: "nx-tratamiento-capilar-nutrici-n-intensa",
+    name: "Hair Prodigieux® Tratamiento Nutrición Intensa",
+    img: "imagenes/nuxe/nx-tratamiento-capilar-nutrici-n-intensa.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Nuxe no indica un tipo de cabello concreto.",
+      tipo: "Crema termoprotectora hasta 220 °C.",
+      necesidad: "Nutre, repara y facilita el peinado.",
+      cuando: "A diario.",
+      modo: "Aplicar en largos y puntas, en seco o escurrido. No aclarar."
+    }
+  },
+
+  {
+    id: "nx-serum-hidra-voluminizador-para-cabello-y-cuero-cabelludo",
+    name: "Hair Prodigieux® Sérum Hidra-Voluminizador",
+    img: "imagenes/nuxe/nx-serum-hidra-voluminizador-para-cabello-y-cuero-cabelludo.webp",
+    brand: "nuxe",
+    line: "nx-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello y cuero cabelludo.",
+      tipo: "Sérum con ácido hialurónico y amla.",
+      necesidad: "Revitaliza el cuero cabelludo y aporta volumen.",
+      cuando: "A diario.",
+      modo: "Aplicar de 2 a 4 pipetas sobre el cabello seco o secado con toalla."
+    }
+  },
+
+  /* ---------- Nuxe · Nuxe Sun ---------- */
+  {
+    id: "nx-leche-solar-fundente-muy-alta-proteccion-spf50",
+    name: "Nuxe Sun Leche Solar SPF50+",
+    img: "imagenes/nuxe/nx-leche-solar-fundente-muy-alta-proteccion-spf50.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Leche rostro y cuerpo SPF 50+.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-crema-solar-fundente-muy-alta-protecction-spf50",
+    name: "Nuxe Sun Crema Solar SPF50+",
+    img: "imagenes/nuxe/nx-crema-solar-fundente-muy-alta-protecction-spf50.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema facial SPF 50+.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-fluido-ligero-alta-protecci-n-spf50",
+    name: "Nuxe Sun Fluido Ligero SPF50",
+    img: "imagenes/nuxe/nx-fluido-ligero-alta-protecci-n-spf50.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Fluido facial SPF 50 de bolsillo.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Agitar y aplicar en todo el rostro, evitando el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-spray-solar-delicioso-spf50",
+    name: "Nuxe Sun Spray Solar SPF50",
+    img: "imagenes/nuxe/nx-spray-solar-delicioso-spf50.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Spray rostro y cuerpo SPF 50.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-spray-solar-delicioso-protecci-n-alta-spf30",
+    name: "Nuxe Sun Spray Solar SPF30",
+    img: "imagenes/nuxe/nx-spray-solar-delicioso-protecci-n-alta-spf30.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Spray rostro y cuerpo SPF 30.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-aceite-solar-bronceador-spf50-g7",
+    name: "Nuxe Sun Aceite Bronceador SPF50",
+    img: "imagenes/nuxe/nx-aceite-solar-bronceador-spf50-g7.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Aceite rostro y cuerpo SPF 50.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-aceite-solare-oro-alta-proteccion-spf50",
+    name: "Nuxe Sun Aceite Oro SPF50",
+    img: "imagenes/nuxe/nx-aceite-solare-oro-alta-proteccion-spf50.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Aceite con acabado dorado SPF 50.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Agitar y aplicar generosamente. En el rostro, poner antes en las manos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-aceite-solar-oro-alta-proteccion-spf30",
+    name: "Nuxe Sun Aceite Oro SPF30",
+    img: "imagenes/nuxe/nx-aceite-solar-oro-alta-proteccion-spf30.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Aceite con acabado dorado SPF 30.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Agitar y aplicar generosamente. En el rostro, poner antes en las manos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-crema-solar-fundente-alta-protecci-n-spf30",
+    name: "Nuxe Sun Crema Solar SPF30",
+    img: "imagenes/nuxe/nx-crema-solar-fundente-alta-protecci-n-spf30.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Crema SPF 30 que sublima el bronceado.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-leche-solar-fundente-alta-protecci-n-spf30-rostro-y-cuerpo",
+    name: "Nuxe Sun Leche Solar SPF30",
+    img: "imagenes/nuxe/nx-leche-solar-fundente-alta-protecci-n-spf30-rostro-y-cuerpo.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Leche rostro y cuerpo SPF 30.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-bruma-solar-refrescante-spf30",
+    name: "Nuxe Sun Bruma Refrescante SPF30",
+    img: "imagenes/nuxe/nx-bruma-solar-refrescante-spf30.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Bruma para rostro, cuerpo y cuero cabelludo SPF 30.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-fluido-solar-glow-spf30",
+    name: "Nuxe Sun Fluido Glow SPF30",
+    img: "imagenes/nuxe/nx-fluido-solar-glow-spf30.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Fluido sublimador SPF 30.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar generosamente. En el rostro, poner antes en las manos y evitar el contorno de ojos.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-serum-en-stick-solar-spf50plus",
+    name: "Nuxe Sun Sérum en Stick SPF50+",
+    img: "imagenes/nuxe/nx-serum-en-stick-solar-spf50plus.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro y/o cuerpo; Nuxe no indica un tipo de piel concreto.",
+      tipo: "Stick invisible antimanchas SPF 50+.",
+      necesidad: "Protección UVA/UVB y prevención del fotoenvejecimiento.",
+      cuando: "Antes de la exposición. Repetir con frecuencia, sobre todo tras nadar o secarse.",
+      modo: "Aplicar en rostro y zonas expuestas (nariz, orejas, manos). No aplicar en los labios.",
+      solar: "Una cantidad insuficiente reduce la protección. Una exposición excesiva es peligrosa."
+    }
+  },
+
+  {
+    id: "nx-aceite-l-cteo-capilar-protector-hidratante",
+    name: "Nuxe Sun Aceite Lácteo Capilar",
+    img: "imagenes/nuxe/nx-aceite-l-cteo-capilar-protector-hidratante.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello expuesto al sol, la sal y el cloro.",
+      tipo: "Aceite lácteo bifásico capilar.",
+      necesidad: "Protege e hidrata el cabello.",
+      cuando: "Antes y durante el baño.",
+      modo: "Agitar y vaporizar a 20 cm sobre el cabello seco o mojado.",
+      solar: "No usar como protección solar de rostro y cuerpo."
+    }
+  },
+
+  {
+    id: "nx-leche-refrescante-after-sun-400ml-original",
+    name: "Nuxe Sun Leche After-Sun",
+    img: "imagenes/nuxe/nx-leche-refrescante-after-sun-400ml-original.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel irritada tras la exposición solar.",
+      tipo: "Leche after-sun para rostro y cuerpo.",
+      necesidad: "Calma, repara, hidrata y prolonga el bronceado.",
+      cuando: "Cada noche tras el sol. También todo el año.",
+      modo: "Aplicar de forma generosa."
+    }
+  },
+
+  {
+    id: "nx-champ-y-gel-de-ducha-after-sun-750ml",
+    name: "Nuxe Sun Champú y Gel de Ducha After-Sun",
+    img: "imagenes/nuxe/nx-champ-y-gel-de-ducha-after-sun-750ml.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel y cabello tras playa o piscina.",
+      tipo: "Limpiador de cuerpo y cabello.",
+      necesidad: "Elimina filtros, sal, cloro y arena.",
+      cuando: "Después de la playa o la piscina.",
+      modo: "Aplicar sobre piel y cabello mojados, hacer espuma y aclarar."
+    }
+  },
+
+  {
+    id: "nx-espuma-autobronceadora-hidratante",
+    name: "Nuxe Sun Espuma Autobronceadora",
+    img: "imagenes/nuxe/nx-espuma-autobronceadora-hidratante.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un bronceado sin sol.",
+      tipo: "Espuma autobronceadora para rostro y cuerpo.",
+      necesidad: "Bronceado sin marcas hasta una semana.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Exfoliar el día anterior. Agitar y aplicar una dosis por zona."
+    }
+  },
+
+  {
+    id: "nx-polvos-compactos-bronceadores-multiusos",
+    name: "Nuxe Sun Polvos Bronceadores",
+    img: "imagenes/nuxe/nx-polvos-compactos-bronceadores-multiusos.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los tonos de piel.",
+      tipo: "Polvos multiusos.",
+      necesidad: "Intensifica el color y sublima el bronceado.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar con una brocha grande en las zonas deseadas."
+    }
+  },
+
+  {
+    id: "nx-agua-deliciosa-perfumada-100ml",
+    name: "Nuxe Sun Agua Deliciosa Perfumada",
+    img: "imagenes/nuxe/nx-agua-deliciosa-perfumada-100ml.webp",
+    brand: "nuxe",
+    line: "nx-sun",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: es una fragancia.",
+      tipo: "Agua perfumada.",
+      necesidad: "Fragancia.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar a unos centímetros de la piel, en cuello y muñecas, o sobre el cepillo."
+    }
+  },
+
+  /* ---------- Nuxe · Sweet Lemon ---------- */
+  {
+    id: "nx-crema-de-manos-y-u-as-sweet-lemon-50-ml",
+    name: "Sweet Lemon Crema de Manos y Uñas",
+    img: "imagenes/nuxe/nx-crema-de-manos-y-u-as-sweet-lemon-50-ml.webp",
+    brand: "nuxe",
+    line: "nx-lemon",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Manos secas.",
+      tipo: "Crema bio y vegana.",
+      necesidad: "Suaviza y protege de agresiones.",
+      cuando: "Nuxe no indica la frecuencia.",
+      modo: "Aplicar en el dorso, frotar y masajear los dedos."
+    }
+  },
+
+  {
+    id: "nx-b-lsamo-labial-con-fragancia-de-merengue-de-lim-n",
+    name: "Sweet Lemon Bálsamo Labial",
+    img: "imagenes/nuxe/nx-b-lsamo-labial-con-fragancia-de-merengue-de-lim-n.webp",
+    brand: "nuxe",
+    line: "nx-lemon",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos o fragilizados.",
+      tipo: "Bálsamo bio y vegano.",
+      necesidad: "Nutre, suaviza y calma.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en labios y contorno. También como mascarilla de noche."
+    }
+  },
+
+  /* ---------- La Roche Posay · Agua termal ---------- */
+  {
+    id: "lrp-agua-micelar-ultra-pieles-reactivas",
+    name: "Agua micelar piel reactiva",
+    img: "imagenes/lrp/lrp-agua-micelar-ultra-pieles-reactivas.webp",
+    brand: "lrp",
+    line: "lrp-aguatermal",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva.",
+      tipo: "Agua micelar desmaquillante.",
+      necesidad: "Retira maquillaje, impurezas y contaminación; hidrata y calma con efecto antitiranteces y antienrojecimiento.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Limpia y desmaquilla con disco de algodón. La marca no indica en qué paso usarla.",
+      cuando: "Mañana y noche, especialmente para eliminar el maquillaje.",
+      modo: "Empapar un disco de algodón y aplicar sobre el rostro. Presionar ligeramente unos segundos contra la piel antes de retirarlo con suavidad, para no frotar."
+    }
+  },
+
+  {
+    id: "lrp-agua-micelar-ultra-piel-sensible",
+    name: "Agua micelar piel sensible",
+    img: "imagenes/lrp/lrp-agua-micelar-ultra-piel-sensible.webp",
+    brand: "lrp",
+    line: "lrp-aguatermal",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Agua micelar desmaquillante.",
+      necesidad: "Retira maquillaje, impurezas y contaminación, y calma dejando sensación de confort y frescor.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Limpia y desmaquilla con disco de algodón. La marca no indica en qué paso usarla.",
+      cuando: "Mañana y noche, especialmente para eliminar el maquillaje.",
+      modo: "Empapar un disco de algodón y aplicar sobre el rostro. Presionar ligeramente unos segundos contra la piel antes de retirarlo con suavidad, para no frotar."
+    }
+  },
+
+  {
+    id: "lrp-agua-micelar-oil-infused",
+    name: "Agua micelar oil infused",
+    img: "imagenes/lrp/lrp-agua-micelar-oil-infused.webp",
+    brand: "lrp",
+    line: "lrp-aguatermal",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible; quien usa maquillaje resistente al agua.",
+      tipo: "Agua micelar con fase oleosa, desmaquillante.",
+      necesidad: "Elimina incluso el maquillaje waterproof respetando el equilibrio de la piel; limita la adhesión de partículas de polución.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Limpia y desmaquilla con disco de algodón. La marca no indica en qué paso usarla.",
+      cuando: "Mañana y noche, especialmente para eliminar el maquillaje.",
+      modo: "Empapar un disco de algodón y aplicar sobre el rostro. Presionar ligeramente unos segundos contra la piel antes de retirarlo con suavidad, para no frotar."
+    }
+  },
+
+  {
+    id: "lrp-agua-termal",
+    name: "Agua termal",
+    img: "imagenes/lrp/lrp-agua-termal.webp",
+    brand: "lrp",
+    line: "lrp-aguatermal",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Agua termal en spray.",
+      necesidad: "Calma y reduce la irritación, con propiedades antioxidantes.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Vaporizar sobre todo el rostro, dejar actuar 3 minutos y secar a toques. Se puede conservar en el frigorífico para un efecto refrescante."
+    }
+  },
+
+  /* ---------- La Roche Posay · Anthelios ---------- */
+  {
+    id: "lrp-anthelios-post-uv-locion-after-sun",
+    name: "Anthelios Post-UV loción after-sun",
+    img: "imagenes/lrp/lrp-anthelios-post-uv-locion-after-sun.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel sensible, seca o deshidratada tras la exposición solar.",
+      tipo: "Loción after-sun corporal.",
+      necesidad: "Reduce la sensación de calor, repara la sequedad provocada por el sol y refuerza la barrera.",
+      cuando: "Después del baño o la ducha.",
+      modo: "Aplicar una pequeña cantidad en cada zona por todo el cuerpo y masajear con cuidado. Evitar el contorno de ojos y el contacto con tejidos."
+    }
+  },
+
+  {
+    id: "lrp-posthelios-gel-fondant",
+    name: "Posthelios gel fondant",
+    img: "imagenes/lrp/lrp-posthelios-gel-fondant.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel caliente e inflamada tras la exposición al sol. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Gel after-sun corporal.",
+      necesidad: "Refresca al instante, calma y ayuda a la recuperación de la piel tras el sol.",
+      cuando: "La noche posterior a la exposición.",
+      modo: "Aplicar una avellana por zona en el cuerpo, después de la ducha o el baño, con un masaje suave."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvair-spf-50-plus",
+    name: "Anthelios UVAIR SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvair-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; quien busca un acabado invisible y matificante.",
+      tipo: "Fotoprotector facial SPF50+.",
+      necesidad: "Alta protección UVA/UVB con textura ligera, 24 horas de hidratación y efecto matificante que controla la grasa.",
+      cuando: "A diario y antes de la exposición al sol; reaplicar con frecuencia a lo largo del día.",
+      modo: "Aplicar el equivalente a dos dedos sobre el rostro y extender uniformemente, antes del maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvair-spf-50-plus-serum-con-protector-solar",
+    name: "Anthelios UVAIR SPF50+ sérum solar",
+    img: "imagenes/lrp/lrp-anthelios-uvair-spf-50-plus-serum-con-protector-solar.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uso diario. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Sérum con protector solar SPF50+.",
+      necesidad: "Protege frente a los rayos UV con acabado invisible, hidrata 24 horas y ayuda frente al estrés oxidativo.",
+      cuando: "Cada mañana y antes de la exposición solar; reaplicar cada 2 horas.",
+      modo: "Dos dedos de producto en rostro, cuello y escote, extendido uniformemente. Es el último paso de la rutina de la mañana y se integra bajo el maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvair-spf-50-plus-serum-con-color",
+    name: "Anthelios UVAIR SPF50+ sérum solar con color",
+    img: "imagenes/lrp/lrp-anthelios-uvair-spf-50-plus-serum-con-color.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uso diario. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Sérum con protector solar SPF50+ con color.",
+      necesidad: "Protege frente a los rayos UV, hidrata 24 horas y ayuda frente al estrés oxidativo.",
+      cuando: "Cada mañana y antes de la exposición solar; reaplicar cada 2 horas.",
+      modo: "Dos dedos de producto en rostro, cuello y escote, extendido uniformemente. Es el último paso de la rutina de la mañana y se integra bajo el maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvair-vitamin-sun-stick-spf-50-plus",
+    name: "Anthelios UVAIR Vitamin Sun stick SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvair-vitamin-sun-stick-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y con alergia solar.",
+      tipo: "Protector solar facial en stick SPF50+.",
+      necesidad: "Protección UVA/UVB muy alta, invisible y resistente al sudor y al agua; facilita la reaplicación.",
+      cuando: "En cualquier momento del día, incluso sobre el maquillaje; reaplicar cada 2 horas.",
+      modo: "Aplicar generosamente sobre el rostro."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-fluido-antimanchas-spf-50-plus",
+    name: "Anthelios UVMUNE 400+ fluido antimanchas SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-fluido-antimanchas-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con manchas o tendencia a la hiperpigmentación; apto para piel sensible.",
+      tipo: "Fotoprotector despigmentante SPF50+.",
+      necesidad: "Previene y corrige las manchas y protege frente a UVA ultralargos y la pigmentación provocada por la luz visible de alta energía.",
+      cuando: "La Roche-Posay no indica la frecuencia.",
+      modo: "La Roche-Posay no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvsport-bruma-invisible-refrescante-spf50-plus",
+    name: "Anthelios UVSport bruma invisible refrescante SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvsport-bruma-invisible-refrescante-spf50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Deportistas; piel sensible y con alergia solar.",
+      tipo: "Bruma solar SPF50+ para deporte.",
+      necesidad: "Protección muy alta resistente al sudor y al agua, aplicable sobre piel mojada; refresca y no deja marcas.",
+      cuando: "Durante la práctica deportiva; reaplicar cada 2 horas.",
+      modo: "Aplicar en rostro y cuerpo una cantidad suficiente hasta formar una película protectora."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvsport-locion-resistente-al-sudor-y-la-humedad",
+    name: "Anthelios UVSport loción resistente al sudor y la humedad",
+    img: "imagenes/lrp/lrp-anthelios-uvsport-locion-resistente-al-sudor-y-la-humedad.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Deportistas; piel sensible y reactiva.",
+      tipo: "Loción solar corporal SPF50+ para deporte.",
+      necesidad: "Protección muy alta con 24 horas de hidratación y 80 minutos de resistencia al agua y al sudor.",
+      cuando: "Durante la práctica deportiva, incluso sobre piel sudada o mojada; reaplicar cada 2 horas.",
+      modo: "Aplicar por todo el cuerpo una cantidad suficiente hasta formar una película protectora."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvsport-pro-resistance-protector-solar-stick-spf50-plus",
+    name: "Anthelios UVSport Pro-Resistance stick SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvsport-pro-resistance-protector-solar-stick-spf50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Deportistas al aire libre; piel sensible y con alergia solar.",
+      tipo: "Protector solar en stick SPF50+ para deporte.",
+      necesidad: "Protección muy alta que resiste sudor intenso y calor, invisible y sin migración.",
+      cuando: "Durante la práctica deportiva; reaplicar cada 2 horas.",
+      modo: "Aplicar por todo el rostro y zonas sensibles: labios, orejas, nariz, tatuajes, cicatrices e imperfecciones."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-100-ka-med",
+    name: "Anthelios 100KA+ MED",
+    img: "imagenes/lrp/lrp-anthelios-100-ka-med.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Prevención de queratosis actínica y cáncer de piel no melanoma, según la marca. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Producto sanitario con protección solar muy alta.",
+      necesidad: "Muy alta protección UVA y UVB de amplio espectro; protege la barrera y promueve la reparación del daño del ADN por radiación UV.",
+      cuando: "Cada mañana antes de la exposición al sol; reaplicar cuando sea necesario, máximo 5 veces al día si se aplica en todas las zonas.",
+      modo: "Uso tópico (2 mg/cm²). Presiones por zona: cuero cabelludo 5, rostro 5, cuello 3, escote 7 y manos 8."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-dermo-pediatrics-locion-hidratante-spf-50-plus",
+    name: "Anthelios UVMUNE 400 Dermo-Pediatrics loción hidratante SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-dermo-pediatrics-locion-hidratante-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Niños, especialmente con piel seca; piel delicada.",
+      tipo: "Loción solar infantil SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400), con hidratación y muy resistente al agua.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Aplicar una pequeña cantidad en cada zona del cuerpo."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-dermo-pediatrics-fluido-invisible-spf-50-plus",
+    name: "Anthelios UVMUNE 400 Dermo-Pediatrics fluido invisible SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-dermo-pediatrics-fluido-invisible-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños con piel sensible o reactiva.",
+      tipo: "Fluido solar infantil SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); muy resistente al agua.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Una perla por zona en rostro, cuello, escote y zonas expuestas."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-dermo-pediatrics-spray-invisible-spf-50-plus",
+    name: "Anthelios UVMUNE 400 Dermo-Pediatrics spray invisible SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-dermo-pediatrics-spray-invisible-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños; piel infantil.",
+      tipo: "Spray solar infantil SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400), con aplicación rápida y práctica.",
+      cuando: "Justo antes de la exposición al sol; reaplicar cada dos horas.",
+      modo: "Utilizar una pequeña cantidad por zona y extender con la mano. No pulverizar directamente sobre el rostro: hacerlo en las palmas antes de aplicar y evitar los ojos."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-dermo-pediatrics-spf-50-leche-bebe",
+    name: "Anthelios Dermo-Pediatrics loción para bebés SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-dermo-pediatrics-spf-50-leche-bebe.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Bebés a partir de 6 meses; piel delicada y sensible.",
+      tipo: "Leche solar para bebés SPF50+.",
+      necesidad: "Protección muy alta frente a UVB, UVA y UVA ultralargos; hidrata durante la exposición.",
+      cuando: "Justo antes de la exposición al sol; reaplicar cada dos horas, sobre todo tras nadar, transpirar o secarse con toalla.",
+      modo: "Aplicar generosamente sobre todo el cuerpo."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-dermo-pediatrics-wet-skin-lotion-spf-50-plus-piel-humeda",
+    name: "Anthelios Dermo-Pediatrics loción Wet Skin SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-dermo-pediatrics-wet-skin-lotion-spf-50-plus-piel-humeda.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Niños; aplicación sobre piel húmeda tras el baño.",
+      tipo: "Loción solar infantil SPF50+ para piel mojada.",
+      necesidad: "Protección UVA/UVB muy alta y muy resistente al agua; ayuda frente al estrés oxidativo.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar o secarse.",
+      modo: "Agitar antes de usar y aplicar una perla por zona del cuerpo. No hace falta secar la piel."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-family-spray-spf-50-plus",
+    name: "Anthelios Family spray SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-family-spray-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Familias: niños y adultos con piel sensible o reactiva.",
+      tipo: "Spray solar corporal SPF50+.",
+      necesidad: "Protección UVA/UVB muy alta, ultrarresistente al agua, sudor y arena; hidrata y no pica en los ojos.",
+      cuando: "20 minutos antes de la exposición; reaplicar con frecuencia, sobre todo tras transpirar o secarse con toalla.",
+      modo: "Una perla por zona del cuerpo, sin pulverizar en el rostro."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-leche-hidratante-spf-50-plus",
+    name: "Anthelios leche hidratante SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-leche-hidratante-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva con tendencia a la intolerancia solar.",
+      tipo: "Leche solar corporal SPF50+.",
+      necesidad: "Protección muy alta con textura no grasa ni pegajosa y sin marcas blancas; resistente al agua.",
+      cuando: "20 minutos antes de la exposición; reaplicar con frecuencia, sobre todo tras transpirar o secarse con toalla.",
+      modo: "Una perla por zona del cuerpo, sin pulverizar en el rostro."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-invisible-spray-spf50-plus",
+    name: "Anthelios spray invisible SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-invisible-spray-spf50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uso corporal. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Spray solar corporal SPF50+.",
+      necesidad: "Protección muy alta, ultrarresistente al agua, sudor y arena, sin marcas blancas.",
+      cuando: "20 minutos antes de la exposición; reaplicar con frecuencia, sobre todo tras transpirar o secarse con toalla.",
+      modo: "Una perla por zona del cuerpo y extender con la mano. No pulverizar en el rostro."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-xl-spf-50-bruma-invisible-ultra-ligera",
+    name: "Anthelios bruma invisible SPF50+ cuerpo",
+    img: "imagenes/lrp/lrp-anthelios-xl-spf-50-bruma-invisible-ultra-ligera.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uso corporal. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Bruma solar corporal SPF50+.",
+      necesidad: "Protección muy alta de rápida absorción y acabado no graso, sin marcas blancas y resistente al agua.",
+      cuando: "20 minutos antes de la exposición; reaplicar con frecuencia, sobre todo tras transpirar o secarse con toalla.",
+      modo: "Una perla por zona del cuerpo, sin pulverizar en el rostro."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-spf-50-bruma-facial-invisible-anti-brillos",
+    name: "Anthelios bruma invisible anti-brillos SPF50 rostro",
+    img: "imagenes/lrp/lrp-anthelios-spf-50-bruma-facial-invisible-anti-brillos.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible", "grasa"],
+    d: {
+      paciente: "Piel sensible o reactiva, con tendencia alérgica; quien quiere controlar los brillos.",
+      tipo: "Bruma solar facial SPF50.",
+      necesidad: "Protección UVA/UVB muy alta que controla los brillos y sirve para reaplicar sobre el maquillaje; la marca la plantea como complemento de otro protector.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Agitar antes de usar y pulverizar sobre cada zona del rostro, cuello, escote y áreas expuestas."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-age-correct-spf-50-cc-crema",
+    name: "Anthelios Age Correct con color SPF50",
+    img: "imagenes/lrp/lrp-anthelios-age-correct-spf-50-cc-crema.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "arrugas", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Signos de la edad y manchas. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "CC crema con protección solar SPF50.",
+      necesidad: "Protección muy alta que unifica el tono y ayuda a reducir arrugas y manchas del fotoenvejecimiento.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Limpiar la piel y aplicar una perla en rostro, cuello, escote y áreas expuestas."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-oil-correct",
+    name: "Anthelios Oil Correct SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-oil-correct.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "acne"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Piel con imperfecciones.",
+      tipo: "Fotoprotector diario en gel-crema SPF50+.",
+      necesidad: "Protege del fotoenvejecimiento y ayuda a corregir las imperfecciones, con acabado matificante 12 horas.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Limpiar la piel y aplicar una perla en rostro, cuello, escote y áreas expuestas."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-sensitive-areas-stick-spf-50-plus",
+    name: "Anthelios stick para zonas sensibles SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-sensitive-areas-stick-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Zonas sensibles o sobreexpuestas: labios, nariz, pómulos, cicatrices y contorno de ojos.",
+      tipo: "Protector solar en stick SPF50+.",
+      necesidad: "Protección muy alta localizada, hidratante, sin marcas blancas y resistente al agua.",
+      cuando: "Renovar con frecuencia, sobre todo tras sudar o secarse; también sobre el maquillaje.",
+      modo: "Aplicar generosamente en las zonas sensibles."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-crema-hidratante-spf-50-plus",
+    name: "Anthelios UVMUNE 400 crema hidratante SPF50+ sin perfume",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-crema-hidratante-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, sensible o reactiva, con tendencia alérgica, especialmente al sol.",
+      tipo: "Crema solar facial hidratante SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); aporta confort y evita la tirantez. Puede sustituir a la hidratante de la mañana.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Una cantidad del tamaño de una perla por zona en rostro, cuello, escote y todas las áreas expuestas. Masajear hasta su absorción."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-crema-hidratante-spf-50-plus-con-color",
+    name: "Anthelios UVMUNE 400 crema hidratante SPF50+ con color",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-crema-hidratante-spf-50-plus-con-color.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, sensible o reactiva, con tendencia alérgica, especialmente al sol.",
+      tipo: "Crema solar facial hidratante SPF50+ con color.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400), con hidratación duradera y acabado confortable.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Agitar antes de usar. Una cantidad del tamaño de una perla por zona en rostro, cuello, escote y todas las áreas expuestas. "
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-fluido-invisible-spf-50-plus-sin-perfume",
+    name: "Anthelios UVMUNE 400 fluido invisible SPF50+ sin perfume",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-fluido-invisible-spf-50-plus-sin-perfume.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de pieles, incluidas las sensibles.",
+      tipo: "Fluido solar facial SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400), ultrarresistente e invisible.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Una cantidad del tamaño de una perla por zona en rostro, cuello, escote y todas las áreas expuestas. Masajear hasta su absorción."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-fluido-spf-50-plus-con-color",
+    name: "Anthelios UVMUNE 400 fluido invisible SPF50+ con color",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-fluido-spf-50-plus-con-color.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Uso diario. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Fluido solar facial SPF50+ con color.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400), con acabado natural que unifica el tono.",
+      cuando: "20 minutos antes de la exposición, como último paso de la rutina.",
+      modo: "Una cantidad del tamaño de una perla por zona en rostro, cuello, escote y todas las áreas expuestas. Masajear hasta su absorción."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-oil-control-fluido-spf-50-plus",
+    name: "Anthelios UVMUNE 400 Oil Control fluido SPF50+",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-oil-control-fluido-spf-50-plus.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel grasa.",
+      tipo: "Fluido solar facial matificante SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); controla los brillos con acabado mate.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Aplicar una perla por zona."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-oil-control-fluido-spf-50-plus-con-color",
+    name: "Anthelios UVMUNE 400 Oil Control fluido SPF50+ con color",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-oil-control-fluido-spf-50-plus-con-color.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion"],
+    sk: ["grasa", "mixta"],
+    d: {
+      paciente: "Piel mixta a grasa.",
+      tipo: "Fluido solar facial matificante SPF50+ con color.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); controla los brillos y unifica el tono.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Aplicar una perla por zona."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-oil-control-gel-crema-spf-50-plus-sin-perfume",
+    name: "Anthelios UVMUNE 400 Oil Control gel-crema SPF50+ sin perfume",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-oil-control-gel-crema-spf-50-plus-sin-perfume.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica o imperfecciones; también sensible o reactiva.",
+      tipo: "Gel-crema solar facial matificante SPF50+.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); regula el brillo con acabado mate y no obstruye los poros.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Aplicar una perla por zona."
+    }
+  },
+
+  {
+    id: "lrp-anthelios-uvmune-400-oil-control-gel-crema-spf-50-plus-con-color",
+    name: "Anthelios UVMUNE 400 Oil Control gel-crema SPF50+ con color",
+    img: "imagenes/lrp/lrp-anthelios-uvmune-400-oil-control-gel-crema-spf-50-plus-con-color.webp",
+    brand: "lrp",
+    line: "lrp-anthelios",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta a grasa, incluida la de tendencia acneica.",
+      tipo: "Gel-crema solar facial matificante SPF50+ con color.",
+      necesidad: "Muy alta protección UVB/UVA y UVA ultralarga (filtro Mexoryl 400); controla el brillo, unifica el tono y no obstruye los poros.",
+      cuando: "Justo antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras nadar, sudar o secarse con toalla.",
+      modo: "Aplicar una perla por zona."
+    }
+  },
+
+  /* ---------- La Roche Posay · Cicaplast ---------- */
+  {
+    id: "lrp-cicaplast-b5-serum",
+    name: "Cicaplast B5 sérum",
+    img: "imagenes/lrp/lrp-cicaplast-b5-serum.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel deshidratada o irritada, con la barrera fragilizada.",
+      tipo: "Sérum reparador con 10 % de vitamina B5.",
+      necesidad: "Repara la barrera cutánea, la protege de agresiones diarias e hidrata 24 horas.",
+      cuando: "Mañana y noche.",
+      modo: "1 a 2 gotas en rostro y cuello. Esperar 1 minuto antes de aplicar otros productos."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-baume-b5-plus",
+    name: "Cicaplast Baume B5+",
+    img: "imagenes/lrp/lrp-cicaplast-baume-b5-plus.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Piel irritada de adultos, bebés y niños.",
+      tipo: "Bálsamo reparador multiusos.",
+      necesidad: "Calma, nutre y protege la piel irritada, y acelera la reparación de la barrera.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Capa gruesa sobre piel limpia y seca en cuerpo, cara, labios y zonas íntimas. Evitar el contorno de ojos. No aplicar sobre heridas abiertas."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-baume-b5-spf-50",
+    name: "Cicaplast Baume B5+ SPF50",
+    img: "imagenes/lrp/lrp-cicaplast-baume-b5-spf-50.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["seca", "manchas", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca e irritada; marcas y tatuajes.",
+      tipo: "Crema reparadora de rostro y cuerpo con SPF50.",
+      necesidad: "Repara la barrera y mejora la apariencia de las marcas; ayuda a conservar el color del tatuaje.",
+      cuando: "Al final de la rutina.",
+      modo: "Capa gruesa sobre piel limpia y seca en cuerpo y rostro. Evitar el contorno de ojos. No aplicar sobre heridas abiertas.",
+      solar: "La marca indica que no es un producto de protección solar: en exposición intensa o prolongada, usar un protector solar adaptado."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-gel-b5",
+    name: "Cicaplast Gel B5",
+    img: "imagenes/lrp/lrp-cicaplast-gel-b5.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel cicatrizada y marcas, en niños y adultos.",
+      tipo: "Gel de silicona reparador.",
+      necesidad: "Favorece la recuperación epidérmica y mejora el aspecto de las marcas, con efecto de apósito invisible.",
+      cuando: "1 a 2 veces al día, mañana y noche.",
+      modo: "Una perla en cada zona que lo necesite. Solo sobre piel cicatrizada, nunca sobre heridas abiertas o sangrantes. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-manos",
+    name: "Cicaplast Manos",
+    img: "imagenes/lrp/lrp-cicaplast-manos.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["seca", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Manos excesivamente trabajadas, con enrojecimiento y asperezas; piel sensible y con tendencia atópica.",
+      tipo: "Crema reparadora de manos.",
+      necesidad: "Calma, nutre y restaura la barrera; reduce el enrojecimiento y las asperezas.",
+      cuando: "Tantas veces como sea necesario, sobre todo tras lavarse las manos.",
+      modo: "Aplicar generosamente en las manos. Se pueden retomar las actividades de inmediato."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-lavant-b5",
+    name: "Cicaplast Lavant B5",
+    img: "imagenes/lrp/lrp-cicaplast-lavant-b5.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["limpieza", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel que necesita una limpieza suave sin resecar. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Gel espumoso limpiador de rostro y cuerpo.",
+      necesidad: "Limpia sin alterar el equilibrio natural de la piel y calma con pantenol.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "1 a 2 veces al día, mañana y noche.",
+      modo: "Una dosis mezclada con agua en la palma, aplicar sobre la zona, aclarar abundantemente y secar sin frotar."
+    }
+  },
+
+  {
+    id: "lrp-cicaplast-labios",
+    name: "Cicaplast Labios",
+    img: "imagenes/lrp/lrp-cicaplast-labios.webp",
+    brand: "lrp",
+    line: "lrp-cicaplast",
+    n: ["seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios secos, agrietados o fragilizados, en niños y adultos.",
+      tipo: "Bálsamo reparador de labios.",
+      necesidad: "Repara, alivia la tirantez y ayuda a restaurar la barrera y la hidratación.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar generosamente en los labios. No ingerir."
+    }
+  },
+
+  /* ---------- La Roche Posay · Effaclar ---------- */
+  {
+    id: "lrp-effaclar-az-gel-crema",
+    name: "Effaclar A.Z. gel-crema",
+    img: "imagenes/lrp/lrp-effaclar-az-gel-crema.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne", "arrugas"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel adulta con acné, marcas y arrugas; apto para piel sensible.",
+      tipo: "Gel-crema con ácido azelaico, salicílico y hialurónico.",
+      necesidad: "Reduce imperfecciones, marcas de acné y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Una dosis en el rostro, después del limpiador y el sérum, y antes del maquillaje. Evitar el contorno de ojos.",
+      solar: "Aplicar SPF a continuación durante el día."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-duo-plus-m-anti-imperfections-triple-corrective-care",
+    name: "Effaclar Duo+M",
+    img: "imagenes/lrp/lrp-effaclar-duo-plus-m-anti-imperfections-triple-corrective-care.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica, a partir de 10 años.",
+      tipo: "Crema correctora antiimperfecciones.",
+      necesidad: "Corrige puntos negros, imperfecciones y marcas persistentes de acné.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una pequeña cantidad en todo el rostro después de limpiar con Effaclar gel limpiador y antes de maquillarse. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-duo-plus-m-unifiant",
+    name: "Effaclar Duo+M Unifiant",
+    img: "imagenes/lrp/lrp-effaclar-duo-plus-m-unifiant.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica.",
+      tipo: "Crema antiimperfecciones unificadora.",
+      necesidad: "Reduce imperfecciones y marcas de acné, dejando una piel más uniforme.",
+      cuando: "A diario como hidratante.",
+      modo: "Una pequeña cantidad en todo el rostro tras Effaclar gel limpiador purificante +M, extendiendo hasta difuminar. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-duo-plus-unifiant",
+    name: "Effaclar Duo (+) Unifiant",
+    img: "imagenes/lrp/lrp-effaclar-duo-plus-unifiant.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne", "rojeces"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o mixta con imperfecciones y marcas rojas.",
+      tipo: "Crema correctora unificadora con pigmentos.",
+      necesidad: "Reduce imperfecciones y marcas y disimula las rojeces al instante; hidrata 24 horas.",
+      cuando: "Por la mañana, al final de la rutina; se puede reaplicar durante el día.",
+      modo: "Una avellana con las yemas de los dedos en la cara, evitando los ojos. No apretar los granos."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-duo-plus-spf-30",
+    name: "Effaclar Duo+M SPF30",
+    img: "imagenes/lrp/lrp-effaclar-duo-plus-spf-30.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne", "fotoproteccion"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica.",
+      tipo: "Crema antiimperfecciones en gel con SPF30.",
+      necesidad: "Reduce granos, marcas e imperfecciones, desobstruye poros y controla el brillo con protección solar.",
+      cuando: "Por la mañana. El modo de empleo dice «mañana y/o noche», pero las preguntas frecuentes de la marca desaconsejan la noche por sus filtros solares.",
+      modo: "Una avellana en el rostro, calentándola para facilitar su absorción. Evitar el contorno de ojos.",
+      solar: "Suficiente para el día a día en ciudad; en exposición intensa, un SPF50+ específico encima cada 2 horas."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-duo-plus-m-parches",
+    name: "Effaclar Duo+M parches anti-granos",
+    img: "imagenes/lrp/lrp-effaclar-duo-plus-m-parches.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Granos e imperfecciones localizados; bien tolerados por piel sensible.",
+      tipo: "Parches ultrafinos de un solo uso.",
+      necesidad: "Protegen de la manipulación y las bacterias, absorben fluidos y favorecen la recuperación de la lesión.",
+      cuando: "Mañana y/o noche.",
+      modo: "Despegar y aplicar sobre piel limpia, después de la crema Effaclar Duo+M. Se pueden poner varios a la vez y maquillar encima."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-mat-plus",
+    name: "Effaclar Mat+",
+    img: "imagenes/lrp/lrp-effaclar-mat-plus.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["poros", "acne"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa con brillos y poros dilatados; apta para piel sensible.",
+      tipo: "Crema hidratante matificante.",
+      necesidad: "Matifica de forma duradera, reduce la apariencia de los poros e hidrata 24 horas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana en todo el rostro limpio, evitando el contorno de ojos. Sirve como prebase de maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-supramolecular-corrector-de-sebo-y-poros",
+    name: "Effaclar Supramolecular corrector de sebo y poros",
+    img: "imagenes/lrp/lrp-effaclar-supramolecular-corrector-de-sebo-y-poros.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["poros"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel grasa con poros visibles.",
+      tipo: "Gel hidratante corrector.",
+      necesidad: "Reduce el exceso de sebo y los poros visibles, y deja la piel suave y matificada.",
+      cuando: "Mañana y/o noche.",
+      modo: "3 a 4 gotas en rostro, cuello y escote, tras limpiar con el gel limpiador Effaclar Supramolecular."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-ai",
+    name: "Effaclar A.I.",
+    img: "imagenes/lrp/lrp-effaclar-ai.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica e imperfecciones localizadas.",
+      tipo: "Corrector localizado de imperfecciones.",
+      necesidad: "Corrige y disimula los granos más rebeldes; se combina con Effaclar Duo+M en todo el rostro.",
+      cuando: "Mañana y/o noche, hasta que desaparezcan; se puede reaplicar de día.",
+      modo: "Una pequeña gota en cada imperfección. Se puede maquillar encima."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-locion-astringente",
+    name: "Effaclar loción astringente",
+    img: "imagenes/lrp/lrp-effaclar-locion-astringente.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["poros"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa con poros obstruidos; tolerancia comprobada en piel sensible.",
+      tipo: "Loción astringente con LHA.",
+      necesidad: "Reduce el tamaño de los poros y los desobstruye, con efecto calmante y antioxidante.",
+      cuando: "Mañana y/o noche.",
+      modo: "Unas gotas en un algodón húmedo, pasar con suavidad por el rostro. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-supramolecular-gel-limpiador-para-piel-grasa-y-poros-visibles",
+    name: "Effaclar Supramolecular gel limpiador",
+    img: "imagenes/lrp/lrp-effaclar-supramolecular-gel-limpiador-para-piel-grasa-y-poros-visibles.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["limpieza", "poros"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa con poros visibles; apto para piel sensible.",
+      tipo: "Gel limpiador purificante.",
+      necesidad: "Elimina el exceso de sebo, impurezas y restos de contaminación, y reduce los brillos.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Mañana y/o noche.",
+      modo: "3 a 4 gotas sobre piel húmeda de rostro y cuello, masajear y aclarar."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-h-iso-biome",
+    name: "Effaclar H ISO-Biome",
+    img: "imagenes/lrp/lrp-effaclar-h-iso-biome.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["deshidratacion", "acne"],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Piel fragilizada por tratamientos antiacné.",
+      tipo: "Crema hidratante calmante.",
+      necesidad: "Hidrata, calma, refuerza la barrera y alivia la sensación de sequedad.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-h-iso-biome-crema-limpiadora",
+    name: "Effaclar H ISO-Biome crema limpiadora",
+    img: "imagenes/lrp/lrp-effaclar-h-iso-biome-crema-limpiadora.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["limpieza", "acne"],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica, muy sensible o reseca por tratamientos como la isotretinoína.",
+      tipo: "Crema limpiadora suave.",
+      necesidad: "Limpia, purifica y calma; reduce el secado excesivo que causan los tratamientos.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana en el rostro evitando los ojos. Aclarar con agua y secar con una toalla."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-k-plus",
+    name: "Effaclar K (+)",
+    img: "imagenes/lrp/lrp-effaclar-k-plus.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["poros", "acne"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel grasa con puntos negros recurrentes y textura irregular.",
+      tipo: "Crema renovadora en aquagel.",
+      necesidad: "Alisa la textura, desobstruye los poros y controla los brillos.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio, evitando los ojos. Sirve como prebase de maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-agua-micelar",
+    name: "Effaclar agua micelar",
+    img: "imagenes/lrp/lrp-effaclar-agua-micelar.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["limpieza"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa; tolerancia testada en piel sensible.",
+      tipo: "Agua micelar purificante.",
+      necesidad: "Elimina maquillaje, impurezas y suciedad; deja la piel limpia y con menos brillos.",
+      limpieza: "Doble limpieza · 1.er paso",
+      limpiezaDet: "Para un desmaquillado completo, la marca recomienda usarla primero y seguir con Effaclar gel limpiador purificante +M.",
+      cuando: "Mañana y/o noche.",
+      modo: "Impregnar un algodón con unas gotas y pasar por el rostro, sin aclarado."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-gel-limpiador-purificante-plus-m",
+    name: "Effaclar gel limpiador purificante +M",
+    img: "imagenes/lrp/lrp-effaclar-gel-limpiador-purificante-plus-m.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica.",
+      tipo: "Gel limpiador en espuma.",
+      necesidad: "Elimina impurezas y purifica sin resecar; reduce imperfecciones y puntos negros.",
+      limpieza: "Doble limpieza · 2.º paso",
+      limpiezaDet: "Basta para la limpieza diaria; para desmaquillar por completo, la marca lo pone después de Effaclar agua micelar.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una pequeña cantidad con agua templada, masajear en círculos hasta hacer espuma y aclarar. También apto para el cuerpo."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-gel-purificante-micro-exfoliante",
+    name: "Effaclar gel purificante micro-exfoliante",
+    img: "imagenes/lrp/lrp-effaclar-gel-purificante-micro-exfoliante.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica e imperfecciones recurrentes.",
+      tipo: "Gel limpiador micro-exfoliante.",
+      necesidad: "Limpia, elimina células muertas sin irritar, desobstruye poros y controla los brillos.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Limpiador con micro-exfoliación diaria.",
+      cuando: "Mañana y/o noche, de uso diario. Con piel muy sensible, se puede empezar en días alternos.",
+      modo: "Una avellana en el rostro con movimientos circulares suaves y agua tibia. Puede usarse en el cuerpo. No hace falta otro exfoliante: podría irritar."
+    }
+  },
+
+  {
+    id: "lrp-effaclar-ultra-concentrated-serum",
+    name: "Effaclar sérum",
+    img: "imagenes/lrp/lrp-effaclar-ultra-concentrated-serum.webp",
+    brand: "lrp",
+    line: "lrp-effaclar",
+    n: ["acne", "poros"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel con imperfecciones, marcas y poros visibles; apto para piel sensible.",
+      tipo: "Sérum concentrado con ácidos dermatológicos.",
+      necesidad: "Microexfolia, alisa la superficie, desobstruye los poros y reduce la acumulación de sebo.",
+      cuando: "Por la noche. Empezar en días alternos antes de pasar a diario.",
+      modo: "3 gotas en todo el rostro con un masaje suave. Evitar el contorno de ojos.",
+      solar: "Imprescindible SPF30 o superior cada mañana: los ácidos vuelven la piel más sensible al sol."
+    }
+  },
+
+  /* ---------- La Roche Posay · Hyalu B5 ---------- */
+  {
+    id: "lrp-hyalu-b5-suractivated-crema",
+    name: "Hyalu B5 Suractivated crema reafirmante antiarrugas",
+    img: "imagenes/lrp/lrp-hyalu-b5-suractivated-crema.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Arrugas y pérdida de firmeza. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Crema reafirmante antiarrugas.",
+      necesidad: "Rellena, mejora la firmeza e hidrata intensamente con acabado ligero.",
+      cuando: "Mañana y noche, todo el año.",
+      modo: "Una avellana en rostro, cuello y escote con las yemas de los dedos, sola o tras un sérum.",
+      solar: "A continuación, aplicar SPF."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-suractivated-crema-spf30",
+    name: "Hyalu B5 Suractivated crema SPF30",
+    img: "imagenes/lrp/lrp-hyalu-b5-suractivated-crema-spf30.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Arrugas y barrera dañada. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Crema hidratante antiarrugas con SPF30.",
+      necesidad: "Hidrata, rellena las arrugas, repara la barrera y protege del sol.",
+      cuando: "Mañana y noche.",
+      modo: "Una avellana en rostro, cuello y escote con las yemas de los dedos, sola o tras un sérum."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-suractivated-serum",
+    name: "Hyalu B5 Suractivated sérum antiarrugas reafirmante",
+    img: "imagenes/lrp/lrp-hyalu-b5-suractivated-serum.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "flacidez", "deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todos los tipos y tonos de piel, incluida la sensible.",
+      tipo: "Sérum antiarrugas reafirmante.",
+      necesidad: "Hidrata intensamente, mejora la elasticidad, refuerza la barrera y corrige las arrugas.",
+      cuando: "Mañana y noche, todo el año.",
+      modo: "3 a 4 gotas en rostro y cuello, con masajes suaves desde el centro del rostro hacia abajo."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-ampollas",
+    name: "Hyalu B5 ampollas",
+    img: "imagenes/lrp/lrp-hyalu-b5-ampollas.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Arrugas; probado en piel después de procedimientos estéticos.",
+      tipo: "Ampollas concentradas antiedad.",
+      necesidad: "Rellenan y reparan la piel, con piel más hidratada y reducción de arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Romper la parte superior de la ampolla, añadir el aplicador y poner 3 gotas en la cara, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-water-gel-spf30",
+    name: "Hyalu B5 Water Gel SPF30",
+    img: "imagenes/lrp/lrp-hyalu-b5-water-gel-spf30.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta o grasa que busca hidratación y protección sin efecto graso.",
+      tipo: "Aquagel hidratante con SPF30.",
+      necesidad: "Rellena, repara y protege frente a la radiación UV y la polución; refresca.",
+      cuando: "Todo el día.",
+      modo: "3 a 4 gotas en rostro y cuello sobre piel limpia y seca. Sirve como prebase de maquillaje."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-crema",
+    name: "Hyalu B5 crema",
+    img: "imagenes/lrp/lrp-hyalu-b5-crema.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con arrugas.",
+      tipo: "Crema antiarrugas reparadora.",
+      necesidad: "Repara y rellena, hidrata profundamente y mejora la elasticidad.",
+      cuando: "Mañana y noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-serum",
+    name: "Hyalu B5 sérum",
+    img: "imagenes/lrp/lrp-hyalu-b5-serum.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ideal para piel sensible.",
+      tipo: "Sérum antiarrugas en aquagel.",
+      necesidad: "Rellena y reduce las arrugas con una textura fresca y fundente.",
+      cuando: "Mañana y noche.",
+      modo: "3 a 4 gotas sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-serum-de-ojos",
+    name: "Hyalu B5 sérum de ojos",
+    img: "imagenes/lrp/lrp-hyalu-b5-serum-de-ojos.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["ojos", "arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Contorno con ojeras y arrugas; ojos sensibles y usuarios de lentes de contacto.",
+      tipo: "Sérum de contorno de ojos.",
+      necesidad: "Hidrata al instante y en 2 semanas reduce arrugas, líneas de expresión y ojeras.",
+      cuando: "Mañana y noche.",
+      modo: "Una gota, extendiendo con movimientos ascendentes y masajeando el contorno con el aplicador; terminar con la yema de los dedos."
+    }
+  },
+
+  {
+    id: "lrp-hyalu-b5-ojos",
+    name: "Hyalu B5 ojos",
+    img: "imagenes/lrp/lrp-hyalu-b5-ojos.webp",
+    brand: "lrp",
+    line: "lrp-hyalu",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno de ojos con arrugas y líneas de expresión. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Crema de contorno de ojos.",
+      necesidad: "Redensifica, repara la barrera y reduce arrugas y líneas de expresión.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar en el contorno de ojos, sin acercarse demasiado al ojo: por debajo de los huesos y por encima de los ojos."
+    }
+  },
+
+  /* ---------- La Roche Posay · Hydraphase ---------- */
+  {
+    id: "lrp-hydraphase-ha-ligera",
+    name: "Hydraphase HA ligera",
+    img: "imagenes/lrp/lrp-hydraphase-ha-ligera.webp",
+    brand: "lrp",
+    line: "lrp-hydraphase",
+    n: ["deshidratacion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca y sensible.",
+      tipo: "Crema hidratante en gel-crema.",
+      necesidad: "Hidrata hasta 72 horas, reduce los signos de deshidratación y aporta luminosidad.",
+      cuando: "Mañana y noche.",
+      modo: "Una avellana en el rostro limpio."
+    }
+  },
+
+  {
+    id: "lrp-hydraphase-ha-rica",
+    name: "Hydraphase HA rica",
+    img: "imagenes/lrp/lrp-hydraphase-ha-rica.webp",
+    brand: "lrp",
+    line: "lrp-hydraphase",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca y sensible.",
+      tipo: "Crema hidratante nutritiva.",
+      necesidad: "Hidrata 72 horas, redensifica y reduce los signos de deshidratación.",
+      cuando: "Mañana y noche.",
+      modo: "Una avellana en el rostro limpio."
+    }
+  },
+
+  {
+    id: "lrp-hydraphase-ha-uv-ligera-piel-sensible",
+    name: "Hydraphase HA UV SPF25 ligera",
+    img: "imagenes/lrp/lrp-hydraphase-ha-uv-ligera-piel-sensible.webp",
+    brand: "lrp",
+    line: "lrp-hydraphase",
+    n: ["deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y deshidratada.",
+      tipo: "Crema hidratante con SPF25.",
+      necesidad: "Hidrata 72 horas e ilumina, con protección de amplio espectro anti-UVA y UVB.",
+      cuando: "Por la mañana.",
+      modo: "Una avellana en rostro, cuello y escote limpios."
+    }
+  },
+
+  {
+    id: "lrp-hydraphase-ha-uv-rica-piel-sensible",
+    name: "Hydraphase HA UV SPF25 rica",
+    img: "imagenes/lrp/lrp-hydraphase-ha-uv-rica-piel-sensible.webp",
+    brand: "lrp",
+    line: "lrp-hydraphase",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel sensible y seca.",
+      tipo: "Crema hidratante rica con SPF25.",
+      necesidad: "Hidrata 72 horas e ilumina, con protección de amplio espectro anti-UVA y UVB.",
+      cuando: "Por la mañana.",
+      modo: "Una avellana en rostro, cuello y escote limpios."
+    }
+  },
+
+  {
+    id: "lrp-hydraphase-ha-ojos",
+    name: "Hydraphase HA ojos",
+    img: "imagenes/lrp/lrp-hydraphase-ha-ojos.webp",
+    brand: "lrp",
+    line: "lrp-hydraphase",
+    n: ["ojos", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Contorno de ojos deshidratado o con bolsas; tolerancia comprobada en piel sensible.",
+      tipo: "Contorno de ojos hidratante con ácido hialurónico.",
+      necesidad: "Rehidrata intensamente el contorno y reduce visiblemente la hinchazón.",
+      cuando: "Mañana y noche.",
+      modo: "Una avellana en el contorno de ojos y terminar con una ligera presión en la sien."
+    }
+  },
+
+  /* ---------- La Roche Posay · Kerium ---------- */
+  {
+    id: "lrp-kerium-suavidad-extrema",
+    name: "Kerium extra suave",
+    img: "imagenes/lrp/lrp-kerium-suavidad-extrema.webp",
+    brand: "lrp",
+    line: "lrp-kerium",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Cuero cabelludo sensible.",
+      tipo: "Champú suave.",
+      necesidad: "Alivia el cuero cabelludo de forma duradera y aporta ligereza y suavidad al cabello.",
+      cuando: "Ideal para uso diario.",
+      modo: "Una avellana sobre el cabello y el cuero cabelludo. Si entra en los ojos, enjuagar con abundante agua."
+    }
+  },
+
+  /* ---------- La Roche Posay · Lipikar ---------- */
+  {
+    id: "lrp-lipikar-baume-ap-plus-max",
+    name: "Lipikar Baume AP+Max",
+    img: "imagenes/lrp/lrp-lipikar-baume-ap-plus-max.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel atópica o de seca a muy seca, con tendencia al eczema; bebés desde 3 meses, niños y adultos.",
+      tipo: "Bálsamo para piel atópica de rostro y cuerpo.",
+      necesidad: "Ayuda a controlar el picor 24 horas, reduce irritación y rojeces y alivia la sequedad.",
+      cuando: "Una vez al día, por la mañana o por la noche.",
+      modo: "Aplicar en todo el cuerpo y el rostro con un masaje suave. La marca lo combina con Lipikar Syndet AP+."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-baume-light-ap-plus-m",
+    name: "Lipikar Baume Light AP+M",
+    img: "imagenes/lrp/lrp-lipikar-baume-light-ap-plus-m.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel con tendencia atópica en recién nacidos, bebés, niños y adultos.",
+      tipo: "Bálsamo ligero antipicor de rostro y cuerpo.",
+      necesidad: "Calma de inmediato, con eficacia antipicor y antirreaparición; reequilibra el microbioma.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una pulsación por zona en rostro y cuerpo. La marca recomienda limpiar con Lipikar Syndet AP+ o el aceite lavante AP+."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-eczema-med",
+    name: "Lipikar Eczema Med",
+    img: "imagenes/lrp/lrp-lipikar-eczema-med.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["rojeces", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con eczema.",
+      tipo: "Crema, producto sanitario.",
+      necesidad: "Alivia inflamación, irritación, picor y enrojecimiento del eczema, e hidrata cuidando el microbioma.",
+      cuando: "Dos o tres veces al día.",
+      modo: "Una pulsación por zona, alrededor y en la zona del eczema, sin capa gruesa. Dejar secar 5 minutos antes de otros productos. Se conserva mejor en frío.",
+      nota: "Dispositivo médico: leer las instrucciones de uso."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-gel-urea-30",
+    name: "Lipikar gel urea 30%",
+    img: "imagenes/lrp/lrp-lipikar-gel-urea-30.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel muy seca, áspera o con tendencia a queratosis, en zonas localizadas; apto para piel sensible.",
+      tipo: "Gel concentrado con urea 30 %.",
+      necesidad: "Suaviza la piel, calma e hidrata las zonas secas y con durezas.",
+      cuando: "Una o dos veces al día, de forma local.",
+      modo: "Una avellana en cada zona: cuerpo, manos, pies y cuero cabelludo. Evitar el contorno de ojos y labios. No es un hidratante corporal general."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-lait-urea-10",
+    name: "Lipikar Lait urea 10%",
+    img: "imagenes/lrp/lrp-lipikar-lait-urea-10.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["seca", "corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel muy seca, áspera o con descamación.",
+      tipo: "Loción corporal con urea 10 %.",
+      necesidad: "Reduce rugosidad, descamación, tirantez y picor, y restaura la elasticidad.",
+      cuando: "Una o dos veces al día.",
+      modo: "Una avellana por parte del cuerpo, después de limpiar. Solo en el cuerpo: no aplicar en el rostro."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-leche",
+    name: "Lipikar leche hidratante",
+    img: "imagenes/lrp/lrp-lipikar-leche.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca y sensible de bebés, niños, adultos y personas mayores.",
+      tipo: "Leche corporal hidratante.",
+      necesidad: "Hidrata 48 horas, calma y protege, con una textura de rápida absorción.",
+      cuando: "Una o dos veces al día, por la mañana y por la noche.",
+      modo: "Una avellana por parte del cuerpo, después de limpiar."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-aceite-lavante-ap-plus",
+    name: "Lipikar aceite lavante AP+",
+    img: "imagenes/lrp/lrp-lipikar-aceite-lavante-ap-plus.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel muy seca, sensible o con tendencia atópica, para toda la familia.",
+      tipo: "Aceite limpiador corporal.",
+      necesidad: "Limpia sin frotar, hidrata, reduce la irritación y protege del agua dura.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una avellana por cada parte del cuerpo, con un masaje suave. No pica en los ojos. Sobre piel húmeda; aclarar."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-gel-de-ducha",
+    name: "Lipikar Gel Lavant",
+    img: "imagenes/lrp/lrp-lipikar-gel-de-ducha.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["limpieza", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel sensible y normal a seca, para toda la familia, incluidos bebés.",
+      tipo: "Gel de ducha espumoso.",
+      necesidad: "Limpia con suavidad respetando la barrera; calma y nutre desde la ducha.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una avellana por cada parte del cuerpo, con un masaje suave. No pica en los ojos. Apto para cuerpo, rostro y cuero cabelludo."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-pain-surgras",
+    name: "Lipikar Pain Surgras",
+    img: "imagenes/lrp/lrp-lipikar-pain-surgras.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["limpieza", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca y sensible de toda la familia, incluidos niños y adultos.",
+      tipo: "Pastilla limpiadora sólida.",
+      necesidad: "Limpia sin resecar, aporta lípidos esenciales y alivia la irritación.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Frotar la pastilla sobre la piel y masajear con suavidad. No pica en los ojos."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-surgras",
+    name: "Lipikar Surgras",
+    img: "imagenes/lrp/lrp-lipikar-surgras.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca, muy seca y sensible.",
+      tipo: "Crema de ducha antisequedad con lípidos.",
+      necesidad: "Limpia con suavidad, aporta lípidos y protege de la sequedad del agua dura.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una avellana por cada parte del cuerpo, con un masaje suave. No pica en los ojos. Apta para rostro y cuerpo."
+    }
+  },
+
+  {
+    id: "lrp-lipikar-syndet-ap-plus",
+    name: "Lipikar Syndet AP+",
+    img: "imagenes/lrp/lrp-lipikar-syndet-ap-plus.webp",
+    brand: "lrp",
+    line: "lrp-lipikar",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel propensa al eczema atópico o de seca a muy seca; incluso bebés con costra láctea.",
+      tipo: "Crema de ducha ultrasuave tipo syndet.",
+      necesidad: "Calma de inmediato, reduce la sequedad severa y alivia el picor desde la ducha.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una avellana por cada parte del cuerpo, con un masaje suave. No pica en los ojos. Apta para rostro, cuerpo y cuero cabelludo."
+    }
+  },
+
+  /* ---------- La Roche Posay · Mela B3 ---------- */
+  {
+    id: "lrp-mela-b3-serum-despigmentante-con-niacinamida",
+    name: "Mela B3 sérum despigmentante con niacinamida",
+    img: "imagenes/lrp/lrp-mela-b3-serum-despigmentante-con-niacinamida.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["manchas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Piel con manchas, incluso persistentes; tolerancia comprobada en piel sensible.",
+      tipo: "Sérum despigmentante.",
+      necesidad: "Corrige las manchas, unifica el tono y mejora la luminosidad, con eficacia antirreaparición.",
+      cuando: "Mañana y/o noche.",
+      modo: "2 a 3 gotas en rostro, cuello, escote y manos, después de la limpieza; solo o antes de la hidratante."
+    }
+  },
+
+  {
+    id: "lrp-mela-b3-double-dose",
+    name: "Mela B3 Double Dose",
+    img: "imagenes/lrp/lrp-mela-b3-double-dose.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["manchas", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todos los tipos de piel, incluida la sensible, con manchas solares, de la edad o marcas de acné.",
+      tipo: "Tratamiento intensivo antimanchas y antiedad.",
+      necesidad: "Reduce manchas oscuras, solares, de la edad y marcas de acné, y los signos de la edad.",
+      cuando: "Mañana y noche.",
+      modo: "3 a 4 presiones sobre piel limpia en rostro, cuello, escote y manos.",
+      solar: "Por la mañana, aplicar siempre después un protector de amplio espectro; la marca propone Anthelios UVMUNE SPF50+."
+    }
+  },
+
+  {
+    id: "lrp-mela-b3-crema-antimanchas-spf30-con-niacinamida",
+    name: "Mela B3 crema antimanchas SPF30 con niacinamida",
+    img: "imagenes/lrp/lrp-mela-b3-crema-antimanchas-spf30-con-niacinamida.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con manchas, incluso persistentes. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Crema antimanchas con SPF30.",
+      necesidad: "Corrige las manchas, unifica el tono y protege con SPF30 y UVA.",
+      cuando: "Por la mañana.",
+      modo: "Una almendra en rostro, cuello, escote y manos limpios, después del sérum, como último paso."
+    }
+  },
+
+  {
+    id: "lrp-mela-b3-gel-limpiador-facial-exfoliante-antimanchas",
+    name: "Mela B3 gel limpiador facial exfoliante antimanchas",
+    img: "imagenes/lrp/lrp-mela-b3-gel-limpiador-facial-exfoliante-antimanchas.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["limpieza", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con manchas; apto para piel sensible.",
+      tipo: "Gel limpiador exfoliante.",
+      necesidad: "Purifica, renueva, corrige las manchas y unifica el tono.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Limpiador microexfoliante de uso diario, primer paso de la rutina antimanchas según la marca.",
+      cuando: "Mañana y noche.",
+      modo: "Una pequeña cantidad sobre piel húmeda, masajear en círculos evitando los ojos, aclarar y secar suavemente. Va antes del sérum."
+    }
+  },
+
+  {
+    id: "lrp-mela-b3-ojos",
+    name: "Mela B3 ojos",
+    img: "imagenes/lrp/lrp-mela-b3-ojos.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["ojos", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojeras azuladas y marrones; apto para contorno de ojos sensible.",
+      tipo: "Tratamiento para ojeras.",
+      necesidad: "Corrige la hiperpigmentación de las ojeras, ilumina la mirada y reduce líneas de expresión.",
+      cuando: "Mañana y noche.",
+      modo: "Una pequeña cantidad sobre el contorno limpio, masajeando con el aplicador de efecto frío."
+    }
+  },
+
+  {
+    id: "lrp-pigmentclar-ojos",
+    name: "Pigmentclar ojos",
+    img: "imagenes/lrp/lrp-pigmentclar-ojos.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["ojos", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Ojeras marrones y azules. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Contorno de ojos para ojeras.",
+      necesidad: "Reduce las ojeras azules y marrones, e ilumina y unifica el contorno.",
+      cuando: "Mañana y/o noche.",
+      modo: "Un grano de arroz en el contorno, alisando con la punta metálica desde el ángulo interno al externo."
+    }
+  },
+
+  {
+    id: "lrp-pigmentclar-uv-spf-30",
+    name: "Pigmentclar UV SPF30",
+    img: "imagenes/lrp/lrp-pigmentclar-uv-spf-30.webp",
+    brand: "lrp",
+    line: "lrp-mela",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con manchas oscuras. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Crema hidratante antimanchas con SPF30.",
+      necesidad: "Corrige las manchas y previene su reaparición.",
+      cuando: "Por la mañana.",
+      modo: "Una avellana en rostro, cuello y escote; también en el dorso de las manos."
+    }
+  },
+
+  /* ---------- La Roche Posay · Nutritic ---------- */
+  {
+    id: "lrp-nutritic-intense",
+    name: "Nutritic Intense",
+    img: "imagenes/lrp/lrp-nutritic-intense.webp",
+    brand: "lrp",
+    line: "lrp-nutritic",
+    n: ["seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Zonas más secas del rostro; tolerancia comprobada en piel sensible.",
+      tipo: "Crema nutritiva.",
+      necesidad: "Nutre en profundidad, calma y reduce irritación, picor y hormigueo.",
+      cuando: "Mañana y noche.",
+      modo: "Una pequeña avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-nutritic-intense-rica",
+    name: "Nutritic Intense rica",
+    img: "imagenes/lrp/lrp-nutritic-intense-rica.webp",
+    brand: "lrp",
+    line: "lrp-nutritic",
+    n: ["seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Zonas más secas del rostro.",
+      tipo: "Crema nutritiva rica en tarro.",
+      necesidad: "Nutre en profundidad, calma y aporta confort y protección.",
+      cuando: "Mañana y noche.",
+      modo: "Una pequeña avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-nutritic-labios",
+    name: "Nutritic labios",
+    img: "imagenes/lrp/lrp-nutritic-labios.webp",
+    brand: "lrp",
+    line: "lrp-nutritic",
+    n: ["seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Labios secos.",
+      tipo: "Bálsamo labial en stick.",
+      necesidad: "Nutre en profundidad y reconstituye la barrera protectora de los labios.",
+      cuando: "Tantas veces como sea necesario durante el día.",
+      modo: "Una fina capa sobre los labios."
+    }
+  },
+
+  /* ---------- La Roche Posay · Physiological ---------- */
+  {
+    id: "lrp-desmaquillante-de-ojos-waterproof",
+    name: "Desmaquillante de ojos waterproof",
+    img: "imagenes/lrp/lrp-desmaquillante-de-ojos-waterproof.webp",
+    brand: "lrp",
+    line: "lrp-physiological",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles.",
+      tipo: "Desmaquillante de ojos.",
+      necesidad: "Elimina el maquillaje resistente al agua.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Específico de ojos. La marca no indica paso.",
+      cuando: "Por la noche y/o por la mañana.",
+      modo: "Unas gotas en un algodón, colocarlo sobre el ojo unos segundos y retirar sin frotar."
+    }
+  },
+
+  {
+    id: "lrp-desmaquillante-en-espuma-de-agua-micelar-limpiadora",
+    name: "Espuma micelar",
+    img: "imagenes/lrp/lrp-desmaquillante-en-espuma-de-agua-micelar-limpiadora.webp",
+    brand: "lrp",
+    line: "lrp-physiological",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Espuma de agua micelar desmaquillante, para rostro y ojos.",
+      necesidad: "Limpia las impurezas, desmaquilla y suaviza respetando el equilibrio de la piel.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Se aclara con agua. La marca no indica paso.",
+      cuando: "Por la mañana y por la noche.",
+      modo: "2 o 3 pulsaciones sobre piel húmeda de rostro y cuello, masajear con movimientos circulares y aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "lrp-locion-calmante",
+    name: "Loción calmante",
+    img: "imagenes/lrp/lrp-locion-calmante.webp",
+    brand: "lrp",
+    line: "lrp-physiological",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Loción tónica calmante.",
+      necesidad: "Calma, tonifica y purifica respetando el equilibrio de la piel.",
+      limpieza: "Rutina de limpieza · último paso",
+      limpiezaDet: "Se aplica después de desmaquillar o limpiar.",
+      cuando: "Por la mañana y por la noche.",
+      modo: "Empapar un disco de algodón y pasar por rostro y cuello, después de desmaquillar o limpiar."
+    }
+  },
+
+  /* ---------- La Roche Posay · Retinol ---------- */
+  {
+    id: "lrp-retinol-b3-serum",
+    name: "Retinol B3 sérum",
+    img: "imagenes/lrp/lrp-retinol-b3-serum.webp",
+    brand: "lrp",
+    line: "lrp-retinol",
+    n: ["arrugas", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Signos profundos del fotoenvejecimiento; piel sensible incluida.",
+      tipo: "Sérum con retinol y vitamina B3.",
+      necesidad: "Reduce arrugas profundas y líneas de expresión, unifica el tono y atenúa las manchas.",
+      cuando: "Por la noche; introducir de forma progresiva.",
+      modo: "3 o 4 gotas en cara, cuello y escote, sobre el rostro limpio y seco, antes de la hidratante.",
+      solar: "Usar siempre con protección SPF>30 por la mañana."
+    }
+  },
+
+  {
+    id: "lrp-redermic-retinol-concentrado",
+    name: "Redermic Retinol crema",
+    img: "imagenes/lrp/lrp-redermic-retinol-concentrado.webp",
+    brand: "lrp",
+    line: "lrp-retinol",
+    n: ["arrugas", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Arrugas profundas y manchas de la edad; tolerancia en piel sensible.",
+      tipo: "Crema con retinol de liberación gradual.",
+      necesidad: "Reduce arrugas profundas, mejora la textura, unifica el tono y atenúa las manchas.",
+      cuando: "Por la noche.",
+      modo: "Una avellana en cara, cuello y escote limpios.",
+      solar: "Usar siempre con protección SPF>30 por la mañana."
+    }
+  },
+
+  {
+    id: "lrp-redermic-retinol-ojos",
+    name: "Redermic Retinol ojos",
+    img: "imagenes/lrp/lrp-redermic-retinol-ojos.webp",
+    brand: "lrp",
+    line: "lrp-retinol",
+    n: ["ojos", "arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Contorno con arrugas, ojeras y signos de fatiga; testado en ojos sensibles.",
+      tipo: "Contorno de ojos antiarrugas con retinol.",
+      necesidad: "Reduce las arrugas profundas, alisa y disminuye ojeras y signos de fatiga.",
+      cuando: "Por la noche.",
+      modo: "Un grano de arroz en el contorno limpio, desde el interior hacia el exterior, sin tocar el ojo.",
+      solar: "Usar siempre con protección SPF>30 por la mañana."
+    }
+  },
+
+  /* ---------- La Roche Posay · Toleriane ---------- */
+  {
+    id: "lrp-toleriane-sensitive-crema",
+    name: "Toleriane Sensitive crema",
+    img: "imagenes/lrp/lrp-toleriane-sensitive-crema.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Crema hidratante calmante.",
+      necesidad: "Calma, repara la barrera y reduce tirantez, picor y ardor.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar uniformemente sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-sensitive-fluido",
+    name: "Toleriane Sensitive fluido",
+    img: "imagenes/lrp/lrp-toleriane-sensitive-fluido.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Fluido hidratante calmante.",
+      necesidad: "Hidrata 48 horas, repara y refuerza la barrera y calma.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-sensitive-rica",
+    name: "Toleriane Sensitive rica",
+    img: "imagenes/lrp/lrp-toleriane-sensitive-rica.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel seca y sensible.",
+      tipo: "Crema rica calmante.",
+      necesidad: "Repara la barrera, calma y alivia la tirantez.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-dermallergo-crema",
+    name: "Toleriane Dermallergo crema",
+    img: "imagenes/lrp/lrp-toleriane-dermallergo-crema.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel alérgica o con tendencia a las alergias.",
+      tipo: "Crema hidratante diaria.",
+      necesidad: "Hidrata y calma las irritaciones, con eficacia antirrojeces y antirreaparición.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-dermallergo-fluido",
+    name: "Toleriane Dermallergo fluido",
+    img: "imagenes/lrp/lrp-toleriane-dermallergo-fluido.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con tendencia a las alergias.",
+      tipo: "Fluido hidratante ligero.",
+      necesidad: "Hidrata y calma las irritaciones, con eficacia antirrojeces y antirreaparición.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-dermallergo-noche",
+    name: "Toleriane Dermallergo noche",
+    img: "imagenes/lrp/lrp-toleriane-dermallergo-noche.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel sensible y seca con molestias nocturnas.",
+      tipo: "Crema de noche.",
+      necesidad: "Reduce rojeces y molestias, y refuerza la barrera durante la noche.",
+      cuando: "Por la noche.",
+      modo: "Una avellana sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-dermallergo-ojos",
+    name: "Toleriane Dermallergo ojos",
+    img: "imagenes/lrp/lrp-toleriane-dermallergo-ojos.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["ojos", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Contorno de ojos irritado o sensible.",
+      tipo: "Crema reparadora de contorno de ojos.",
+      necesidad: "Hidrata 48 horas y calma, con eficacia antipicor, antirrojeces y antirreaparición.",
+      cuando: "Mañana y/o noche.",
+      modo: "Un grano de arroz sobre el contorno de ojos limpio."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-ultra-dermallergo-serum",
+    name: "Toleriane Ultra Dermallergo sérum",
+    img: "imagenes/lrp/lrp-toleriane-ultra-dermallergo-serum.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Sérum calmante diario.",
+      necesidad: "Calma de inmediato, repara la barrera e hidrata hasta 48 horas.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "3 a 4 gotas sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-rosaliac-ar-concentrado",
+    name: "Toleriane Rosaliac AR concentrado",
+    img: "imagenes/lrp/lrp-toleriane-rosaliac-ar-concentrado.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con rosácea e irritaciones, con tendencia a las rojeces.",
+      tipo: "Corrector hidratante antirrojeces.",
+      necesidad: "Minimiza las rojeces, reduce la reactividad y previene nuevos brotes.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una pequeña cantidad sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-rosaliac-ar-spf-30",
+    name: "Toleriane Rosaliac AR SPF30",
+    img: "imagenes/lrp/lrp-toleriane-rosaliac-ar-spf-30.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con tendencia a enrojecerse.",
+      tipo: "Crema antirrojeces con SPF30.",
+      necesidad: "Reduce las rojeces, calma el ardor y refuerza la barrera, con protección solar SPF30.",
+      cuando: "Mañana y/o noche, a diario; reaplicar según sea necesario.",
+      modo: "Una pequeña cantidad sobre el rostro limpio, cuello y escote."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-kerium-ds-concentrado",
+    name: "Toleriane Kerium DS concentrado",
+    img: "imagenes/lrp/lrp-toleriane-kerium-ds-concentrado.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["rojeces"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Zonas resecas con tendencia al enrojecimiento, picor y descamación.",
+      tipo: "Crema seborreguladora y calmante.",
+      necesidad: "Reduce enrojecimiento, picor y descamación; purifica, hidrata y calma.",
+      cuando: "Por la mañana y por la noche.",
+      modo: "Una pequeña cantidad sobre el rostro limpio."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-crema-limpiadora",
+    name: "Toleriane crema limpiadora",
+    img: "imagenes/lrp/lrp-toleriane-crema-limpiadora.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["limpieza"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal, seca o sensible.",
+      tipo: "Crema limpiadora desmaquillante.",
+      necesidad: "Elimina el maquillaje, incluso resistente al agua, respeta la barrera y calma.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Limpia y desmaquilla. La marca no indica paso.",
+      cuando: "Mañana y/o noche.",
+      modo: "Hacer espuma con una pequeña cantidad, masajear rostro, cuello y escote, aclarar y secar sin frotar. Evitar el contorno de ojos."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-dermolimpiador",
+    name: "Toleriane Dermolimpiador",
+    img: "imagenes/lrp/lrp-toleriane-dermolimpiador.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible o reactiva.",
+      tipo: "Fluido cremoso limpiador y desmaquillante.",
+      necesidad: "Limpia y desmaquilla en un solo paso, con glicerina para hidratar.",
+      limpieza: "Limpieza única",
+      limpiezaDet: "La marca lo presenta como un solo paso para limpiar y desmaquillar.",
+      cuando: "Mañana y/o noche.",
+      modo: "Una avellana en rostro, ojos, cuello y escote, masajear en círculos y secar sin frotar. Aclarado opcional."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-gel-espumoso-doble-limpiador-hidratante-purificante",
+    name: "Toleriane gel espumoso doble limpiador hidratante purificante",
+    img: "imagenes/lrp/lrp-toleriane-gel-espumoso-doble-limpiador-hidratante-purificante.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel reactiva y sensible.",
+      tipo: "Gel limpiador espumoso.",
+      necesidad: "Elimina maquillaje, suciedad, grasa y polución manteniendo la piel hidratada.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca lo llama doble limpiador porque su sistema retira maquillaje y suciedad en un solo gel; no indica paso.",
+      cuando: "Dos veces al día, antes del tratamiento.",
+      modo: "Hacer espuma con una pequeña cantidad, aplicar sobre piel húmeda de rostro, cuello y escote, masajear y aclarar bien."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-rosaliac-gel-micelar-desmaquillante",
+    name: "Toleriane Rosaliac gel micelar desmaquillante",
+    img: "imagenes/lrp/lrp-toleriane-rosaliac-gel-micelar-desmaquillante.webp",
+    brand: "lrp",
+    line: "lrp-toleriane",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible, fina y reactiva con tendencia al enrojecimiento.",
+      tipo: "Gel micelar desmaquillante.",
+      necesidad: "Limpia las impurezas y elimina el maquillaje; refresca y calma.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "No se aclara. La marca no indica paso.",
+      cuando: "Mañana y/o noche.",
+      modo: "2 o 3 pulsaciones con un disco de algodón o con los dedos en rostro, cuello y escote; retirar con cuidado. Sin aclarado."
+    }
+  },
+
+  /* ---------- La Roche Posay · Toleriane maquillaje ---------- */
+  {
+    id: "lrp-toleriane-fluido-corrector",
+    name: "Toleriane base de maquillaje fluida correctora",
+    img: "imagenes/lrp/lrp-toleriane-fluido-corrector.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible; todo tipo de pieles.",
+      tipo: "Base de maquillaje de alta cobertura.",
+      necesidad: "16 horas de cobertura y corrección inmediata; calma y reduce las rojeces con pigmentos y Neurosensina.",
+      cuando: "Por la mañana.",
+      modo: "Con las yemas de los dedos o una brocha limpia, desde el centro del rostro hacia afuera, por capas según la cobertura deseada."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-polvos-compactos",
+    name: "Toleriane compacto mineral",
+    img: "imagenes/lrp/lrp-toleriane-polvos-compactos.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Piel sensible con imperfecciones.",
+      tipo: "Polvos compactos.",
+      necesidad: "Cubren las imperfecciones sin obstruir los poros, unifican el tono y matifican.",
+      cuando: "Por la mañana.",
+      modo: "Una pequeña cantidad con la esponja en cara y cuello, sin excederse."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-teint-blush",
+    name: "Toleriane Teint Blush",
+    img: "imagenes/lrp/lrp-toleriane-teint-blush.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Colorete en polvo.",
+      necesidad: "Maquillaje de alta tolerancia. Aporta color natural y confort duradero.",
+      cuando: "Al final de la rutina de maquillaje.",
+      modo: "Con la esponjilla a toquecitos en las mejillas y difuminar con movimientos circulares ascendentes."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-teint-polvos-fijadores-matificantes",
+    name: "Toleriane Teint polvos fijadores matificantes",
+    img: "imagenes/lrp/lrp-toleriane-teint-polvos-fijadores-matificantes.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Polvos fijadores matificantes.",
+      necesidad: "Efecto matificante duradero con alta absorción de grasa.",
+      cuando: "Al final de la rutina de maquillaje.",
+      modo: "Con una brocha suave, mezclar los tres colores y aplicar en frente, nariz y barbilla, y terminar en los pómulos."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-lapiz-de-cejas",
+    name: "Toleriane lápiz de cejas",
+    img: "imagenes/lrp/lrp-toleriane-lapiz-de-cejas.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Lápiz de cejas hipoalergénico.",
+      necesidad: "Define, colorea y rellena las zonas poco pobladas.",
+      cuando: "Por la mañana.",
+      modo: "Sacar punta y seguir la dirección del crecimiento del pelo."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-lapiz-de-ojos",
+    name: "Toleriane lápiz de ojos",
+    img: "imagenes/lrp/lrp-toleriane-lapiz-de-ojos.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles.",
+      tipo: "Lápiz de ojos.",
+      necesidad: "Define la mirada con un trazo suave, intenso y duradero.",
+      cuando: "Por la mañana.",
+      modo: "Trazar una línea a lo largo de la base de las pestañas superiores o inferiores."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-mascara-volumen",
+    name: "Toleriane máscara volumen",
+    img: "imagenes/lrp/lrp-toleriane-mascara-volumen.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Máscara de pestañas hipoalergénica.",
+      necesidad: "Aporta volumen, refuerza y estructura las pestañas.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Colocar el cepillo en la raíz y deslizar hacia las puntas girándolo suavemente, en una sola pasada."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-mascara-waterproof",
+    name: "Toleriane máscara de pestañas waterproof",
+    img: "imagenes/lrp/lrp-toleriane-mascara-waterproof.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Máscara de pestañas resistente al agua.",
+      necesidad: "Aporta volumen resistente al agua, refuerza y alisa las pestañas.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Colocar el cepillo en la raíz y deslizar hacia las puntas girándolo suavemente, en una sola pasada."
+    }
+  },
+
+  {
+    id: "lrp-toleriane-silicium-laca-de-unas",
+    name: "Toleriane laca de uñas Silicium",
+    img: "imagenes/lrp/lrp-toleriane-silicium-laca-de-unas.webp",
+    brand: "lrp",
+    line: "lrp-tolmake",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Laca de uñas fortalecedora con silicio.",
+      necesidad: "Repara y refuerza las uñas y las protege de los rayos UVA-UVB con filtro Mexoryl XL.",
+      cuando: "Siempre que se quiera.",
+      modo: "Una capa de base, dos de color y una de top coat, en toda la uña."
+    }
+  },
+
+  /* ---------- La Roche Posay · Vitamin C ---------- */
+  {
+    id: "lrp-pure-vitamin-c12-serum",
+    name: "Sérum Pure Vitamin C12",
+    img: "imagenes/lrp/lrp-pure-vitamin-c12-serum.webp",
+    brand: "lrp",
+    line: "lrp-vitaminc",
+    n: ["arrugas", "apagada", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Arrugas, falta de luminosidad y tono irregular; probado en piel sensible.",
+      tipo: "Sérum con 12 % de vitamina C pura.",
+      necesidad: "Corrige arrugas, renueva, mejora la luminosidad y unifica el tono.",
+      cuando: "Por la mañana.",
+      modo: "2 a 3 gotas en rostro, cuello y escote después de la limpieza; solo o bajo una hidratante."
+    }
+  },
+
+  {
+    id: "lrp-redermic-c-para-piel-normal-a-mixta",
+    name: "Pure Vitamin C crema ligera",
+    img: "imagenes/lrp/lrp-redermic-c-para-piel-normal-a-mixta.webp",
+    brand: "lrp",
+    line: "lrp-vitaminc",
+    n: ["arrugas", "flacidez", "apagada"],
+    sk: ["mixta"],
+    d: {
+      paciente: "Piel normal a mixta.",
+      tipo: "Crema con vitamina C, de acabado mate.",
+      necesidad: "Reduce arrugas, mejora la firmeza y la luminosidad, y unifica el tono.",
+      cuando: "Por la mañana.",
+      modo: "Una avellana en cara, cuello y escote limpios."
+    }
+  },
+
+  {
+    id: "lrp-redermic-c-ojos",
+    name: "Pure Vitamin C ojos",
+    img: "imagenes/lrp/lrp-redermic-c-ojos.webp",
+    brand: "lrp",
+    line: "lrp-vitaminc",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno de ojos con arrugas. La Roche-Posay no especifica un tipo de piel.",
+      tipo: "Contorno de ojos con vitamina C.",
+      necesidad: "Reduce arrugas, mejora la firmeza, unifica el tono e ilumina la mirada.",
+      cuando: "Por la mañana.",
+      modo: "Un grano de arroz en el contorno, desde el borde interior al exterior."
     }
   }
 ];
