@@ -14,7 +14,7 @@
       modo: cómo se aplica.
       solar: qué indica la marca sobre fotoprotección (opcional; solo si la marca lo dice).
       nota: advertencias o aclaraciones (opcional).
-   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com). */
+   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es). */
 var D = D || {};
 
 D.prods = [
@@ -2115,6 +2115,2221 @@ D.prods = [
       modo: "Aplicar sobre las manos.",
       solar: "Terminar con el solar UV CELLULAR-PROTECT para proteger las manos y prevenir nuevas manchas.",
       nota: "Contiene vitamina A: Filorga aconseja tener en cuenta la ingesta diaria antes de usarlo."
+    }
+  },
+
+  /* ---------- Sensilis · Higiene ---------- */
+  {
+    id: "sen-calmin",
+    name: "Calm In Balm",
+    img: "imagenes/sensilis/sen-calmin.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y reactiva; también antes y después de tratamientos médico-estéticos.",
+      tipo: "Bálsamo limpiador en textura de cera fundente.",
+      necesidad: "Limpieza profunda, incluso del maquillaje waterproof; calma la piel.",
+      limpieza: "Doble limpieza · 1.er paso",
+      limpiezaDet: "Sensilis lo indica como primer paso por su base de aceite.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear una pequeña cantidad sobre el rostro con ayuda de la espátula. Retirar con un paño o algodón empapado en agua tibia."
+    }
+  },
+
+  {
+    id: "sen-mousse",
+    name: "Gentle Cleansing Mousse",
+    img: "imagenes/sensilis/sen-mousse.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca, sensible y reactiva; también para preparar la piel antes de un tratamiento médico-estético.",
+      tipo: "Espuma limpiadora sin jabón (syndet).",
+      necesidad: "Limpia, hidrata y calma respetando microbiota, pH y manto lipídico.",
+      limpieza: "Doble limpieza · 2.º paso",
+      limpiezaDet: "Sensilis la indica como segundo paso por su base de agua.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Humedecer el rostro, masajear suavemente y retirar con abundante agua."
+    }
+  },
+
+  {
+    id: "sen-purify",
+    name: "Purify Essential Cleanser",
+    img: "imagenes/sensilis/sen-purify.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel normal, grasa o propensa al acné.",
+      tipo: "Gel limpiador purificante.",
+      necesidad: "Elimina impurezas, minimiza poros y normaliza el sebo sin efecto rebote.",
+      limpieza: "Doble limpieza · 2.º paso",
+      limpiezaDet: "Sensilis lo indica como segundo paso por su base de agua.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar sobre el rostro ligeramente húmedo y masajear en círculos hasta emulsionar. Retirar con agua."
+    }
+  },
+
+  {
+    id: "sen-succinic",
+    name: "Succinic Jelly Oil Cleanser",
+    img: "imagenes/sensilis/sen-succinic.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "acne"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta o grasa, con tendencia a imperfecciones.",
+      tipo: "Limpiador facial en 3 fases: gel, aceite y leche.",
+      necesidad: "Reduce imperfecciones, controla el sebo, hidrata y calma.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Su ficha no lo sitúa en una rutina de varios pasos.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-micellar",
+    name: "Micellar Water AR",
+    img: "imagenes/sensilis/sen-micellar.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente sensible y con rojeces.",
+      tipo: "Agua micelar sin aclarado.",
+      necesidad: "Desmaquilla rostro y ojos; hidrata, calma y restaura la barrera.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Humedecer un algodón y limpiar la piel hasta eliminar todo el maquillaje. No es necesario aclarar."
+    }
+  },
+
+  {
+    id: "sen-biphasic",
+    name: "Bi-Phasic Make-Up Remover",
+    img: "imagenes/sensilis/sen-biphasic.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de contorno de ojos, incluso sensible y reactivo.",
+      tipo: "Desmaquillante bifásico para ojos y labios.",
+      necesidad: "Elimina todo tipo de maquillaje, incluido el resistente al agua.",
+      limpieza: "Desmaquillante de ojos y labios",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Agitar. Aplicar con un algodón y deslizar del interior al exterior del ojo."
+    }
+  },
+
+  {
+    id: "sen-palpebral",
+    name: "Palpebral Relief ECZ",
+    img: "imagenes/sensilis/sen-palpebral.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "ojos"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Párpados y contorno secos, reactivos y sensibles; párpados irritados con tendencia a eczema.",
+      tipo: "Emulsión 2 en 1: desmaquillante y tratamiento de párpados.",
+      necesidad: "Desmaquilla, incluso waterproof, y trata párpados irritados.",
+      limpieza: "Desmaquillante y tratamiento",
+      limpiezaDet: "Su ficha no le asigna un paso concreto de la rutina.",
+      cuando: "A diario como tratamiento, o para desmaquillar.",
+      modo: "Para desmaquillar: aplicar con un algodón sobre el ojo cerrado, esperar unos minutos y arrastrar hacia las sienes sin frotar. Como tratamiento: aplicar sobre el párpado limpio y seco, sin retirar."
+    }
+  },
+
+  {
+    id: "sen-micropeelfoam",
+    name: "Micro-Peeling Foam ATX B3",
+    img: "imagenes/sensilis/sen-micropeelfoam.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["limpieza", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Melasma, manchas solares o marcas postinflamatorias, en pieles sensibles.",
+      tipo: "Espuma limpiadora microexfoliante despigmentante.",
+      necesidad: "Limpia, exfolia suavemente y ayuda a reducir las manchas.",
+      limpieza: "Limpiador microexfoliante",
+      limpiezaDet: "Sensilis lo llama primer paso de la rutina despigmentante.",
+      cuando: "Mañana y noche.",
+      modo: "Masajear sobre la piel húmeda 30 segundos, evitando el contorno de ojos. Aclarar y secar sin frotar. Continuar con el sérum despigmentante.",
+      solar: "Finalizar la rutina de día con un fotoprotector de amplio espectro."
+    }
+  },
+
+  {
+    id: "sen-blackpeel",
+    name: "Resurfacing Black Peel",
+    img: "imagenes/sensilis/sen-blackpeel.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente con textura irregular, apagada o estresada; también antes de un tratamiento cosmético.",
+      tipo: "Peeling físico con carbón vegetal.",
+      necesidad: "Elimina células muertas, aporta luminosidad y alisa el relieve.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling físico de microdermoabrasión suave.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-toner",
+    name: "Purify Balancing Toner",
+    img: "imagenes/sensilis/sen-toner.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel normal, grasa o propensa al acné, con poros visibles o brillos.",
+      tipo: "Tónico purificante.",
+      necesidad: "Minimiza poros y regula el sebo sin efecto rebote; hidrata.",
+      limpieza: "Tónico, después de la limpieza",
+      limpiezaDet: "Se aplica sobre el rostro ya limpio.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tras la limpieza, aplicar con un algodón o con los dedos a pequeños toques. Esperar un minuto antes del tratamiento."
+    }
+  },
+
+  {
+    id: "sen-coolrescue",
+    name: "The Cool Rescue",
+    img: "imagenes/sensilis/sen-coolrescue.webp",
+    brand: "sensilis",
+    line: "sen-higiene",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible, reactiva, irritada o con rojeces; también tras un procedimiento médico-estético.",
+      tipo: "Bruma calmante e hidratante.",
+      necesidad: "Calma y refresca de forma inmediata.",
+      cuando: "Durante el día, a demanda, o como tónico en la rutina diaria.",
+      modo: "Pulverizar sobre el rostro a unos 10-15 cm."
+    }
+  },
+
+  /* ---------- Sensilis · Upgrade ---------- */
+  {
+    id: "sen-upgradeday",
+    name: "Upgrade Day Cream",
+    img: "imagenes/sensilis/sen-upgradeday.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["flacidez", "arrugas"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel sensible con tendencia a la sequedad y envejecimiento moderado.",
+      tipo: "Crema reafirmante de día.",
+      necesidad: "Firmeza, arrugas y redefinición del óvalo facial.",
+      cuando: "Por el día.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-upgradear",
+    name: "Upgrade AR",
+    img: "imagenes/sensilis/sen-upgradear.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["flacidez", "arrugas", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel enrojecida, con ardor o picor, en retinización o tras tratamientos que sensibilizan (peelings, láser no ablativo...).",
+      tipo: "Crema sorbete reafirmante y calmante.",
+      necesidad: "Arrugas, firmeza y rojeces.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-upgradefluid",
+    name: "Upgrade Fluid",
+    img: "imagenes/sensilis/sen-upgradefluid.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["flacidez", "arrugas"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa y, especialmente, sensible.",
+      tipo: "Fluido reafirmante con acabado mate.",
+      necesidad: "Arrugas, líneas de expresión y óvalo facial.",
+      cuando: "Por el día.",
+      modo: "Aplicar unas gotas de medio rostro hasta el mentón, de dentro hacia fuera, y en la frente, de abajo hacia arriba. Añadir una gota para el cuello y masajear hacia arriba."
+    }
+  },
+
+  {
+    id: "sen-upgradeserum",
+    name: "Upgrade High Potency Serum",
+    img: "imagenes/sensilis/sen-upgradeserum.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["flacidez", "arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente deshidratada o flácida.",
+      tipo: "Gel-sérum reafirmante concentrado.",
+      necesidad: "Arrugas, flacidez y tono apagado.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar unas gotas de medio rostro hasta el mentón, de dentro hacia fuera, y en la frente, de abajo hacia arriba. Añadir una gota para el cuello y masajear hacia arriba."
+    }
+  },
+
+  {
+    id: "sen-upgradenight",
+    name: "Upgrade Night Cream",
+    img: "imagenes/sensilis/sen-upgradenight.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["flacidez", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel propensa a la sequedad con pérdida de firmeza, o que busca un descanso del retinol.",
+      tipo: "Tratamiento reafirmante de noche.",
+      necesidad: "Reafirma, remodela, reduce arrugas y renueva la piel.",
+      cuando: "Por la noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes.",
+      nota: "Sensilis la considera ideal en embarazo y lactancia."
+    }
+  },
+
+  {
+    id: "sen-upgradeeyes",
+    name: "Upgrade Eyes",
+    img: "imagenes/sensilis/sen-upgradeeyes.webp",
+    brand: "sensilis",
+    line: "sen-upgrade",
+    n: ["ojos", "flacidez"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel normal o grasa que busca reafirmar el contorno de ojos; indicado para el párpado superior.",
+      tipo: "Emulsión restauradora para contorno de ojos.",
+      necesidad: "Flacidez del contorno, bolsas y ojeras.",
+      cuando: "Día y noche.",
+      modo: "Aplicar con las yemas por todo el contorno, del ángulo interno al externo, con un ligero masaje."
+    }
+  },
+
+  /* ---------- Sensilis · Eternalist A.G.E. ---------- */
+  {
+    id: "sen-eternday",
+    name: "Eternalist A.G.E. Day Cream",
+    img: "imagenes/sensilis/sen-eternday.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["arrugas", "flacidez", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel con tendencia a la sequedad, edad aparente mayor de 45 años, arrugas en reposo y pérdida de firmeza; también en perimenopausia.",
+      tipo: "Crema de día antiglicación.",
+      necesidad: "Redensifica, retexturiza e ilumina.",
+      cuando: "Por el día.",
+      modo: "Aplicar con las yemas sobre pómulos y mentón con masajes ascendentes; después la frente, del centro a los extremos."
+    }
+  },
+
+  {
+    id: "sen-eternretinol",
+    name: "Eternalist A.G.E. Retinol",
+    img: "imagenes/sensilis/sen-eternretinol.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["arrugas", "flacidez", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Quien quiere iniciar la retinización o descansar del retinol puro; también piel con rojeces o tendencia a rosácea o cuperosis.",
+      tipo: "Crema de noche antiedad con retinyl palmitate liposomado.",
+      necesidad: "Redensifica, retexturiza e ilumina.",
+      cuando: "Por la noche: empezar en noches alternas y aumentar según tolerancia.",
+      modo: "Aplicar con las yemas sobre pómulos, mentón y frente. Evitar el contorno de ojos, excepto la pata de gallo.",
+      nota: "Sensilis indica en la ficha de Peptide Reti-V que el retinol está contraindicado en embarazo y lactancia."
+    }
+  },
+
+  {
+    id: "sen-eternretinolserum",
+    name: "Eternalist A.G.E. Retinol Serum",
+    img: "imagenes/sensilis/sen-eternretinolserum.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["arrugas"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel grasa que quiere iniciar la retinización o descansar del retinol puro.",
+      tipo: "Sérum de retinol rellenador con efecto lifting.",
+      necesidad: "Rellena y corrige arrugas.",
+      cuando: "Por la noche: empezar en noches alternas y aumentar según tolerancia.",
+      modo: "Aplicar con las yemas sobre pómulos, mentón y frente. Evitar el contorno de ojos, excepto la pata de gallo.",
+      nota: "Sensilis indica en la ficha de Peptide Reti-V que el retinol está contraindicado en embarazo y lactancia."
+    }
+  },
+
+  {
+    id: "sen-eternalistretexp",
+    name: "Eternalist A.G.E. Retinol Expert",
+    img: "imagenes/sensilis/sen-eternalistretexp.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["arrugas", "flacidez", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Personas ya habituadas al retinol que quieren subir la concentración; actúa en pieles con rosácea.",
+      tipo: "Tratamiento de noche con 0,3 % de retinol puro microencapsulado.",
+      necesidad: "Arrugas, flacidez y pérdida de función barrera por glicación.",
+      cuando: "Por la noche: empezar en noches alternas y aumentar según tolerancia.",
+      modo: "Aplicar en rostro y escote. Evitar el contorno de ojos, excepto las patas de gallo.",
+      nota: "Sensilis indica en la ficha de Peptide Reti-V que el retinol está contraindicado en embarazo y lactancia."
+    }
+  },
+
+  {
+    id: "sen-eternserumai",
+    name: "Eternalist A.G.E. Serum AI",
+    img: "imagenes/sensilis/sen-eternserumai.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["arrugas", "flacidez", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, edad aparente de 45 años o más, con arrugas en reposo; también perimenopausia y rojeces.",
+      tipo: "Sérum redensificante antiglicación.",
+      necesidad: "Mejora la condición global de la piel y disminuye el enrojecimiento.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tomar 3 cantidades del tamaño de un guisante. Masajear pómulos y mentón hacia arriba, y la frente del centro a los extremos."
+    }
+  },
+
+  {
+    id: "sen-eterneyes",
+    name: "Eternalist A.G.E. Eyes",
+    img: "imagenes/sensilis/sen-eterneyes.webp",
+    brand: "sensilis",
+    line: "sen-eternalist",
+    n: ["ojos", "arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca mejorar arrugas y flacidez en el contorno de ojos.",
+      tipo: "Crema bálsamo para contorno de ojos con aplicador metálico.",
+      necesidad: "Arrugas, bolsas, ojeras y párpado caído.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar con el aplicador metálico en círculos por el contorno exterior y terminar con toquecitos."
+    }
+  },
+
+  /* ---------- Sensilis · Peptide [AR] ---------- */
+  {
+    id: "sen-peptidetriserum",
+    name: "Peptide Nad+ PDRN",
+    img: "imagenes/sensilis/sen-peptidetriserum.webp",
+    brand: "sensilis",
+    line: "sen-peptide",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un sérum 'todo en uno' antiedad.",
+      tipo: "Tri-sérum rejuvenecedor con 3 texturas.",
+      necesidad: "Revierte los signos del envejecimiento; no necesita crema a continuación.",
+      cuando: "Día y noche.",
+      modo: "Una pulsación. Aplicar sobre la piel limpia y seca, de dentro hacia fuera y de abajo arriba. Si se usa crema, va antes de ella.",
+      solar: "No contiene filtros ni sensibiliza al sol. Por la mañana, terminar siempre con protección solar.",
+      nota: "Embarazo y lactancia: Sensilis indica que no hay estudios de incompatibilidad, pero recomienda consultar con el dermatólogo."
+    }
+  },
+
+  {
+    id: "sen-peptidecream",
+    name: "Peptide AR Cream",
+    img: "imagenes/sensilis/sen-peptidecream.webp",
+    brand: "sensilis",
+    line: "sen-peptide",
+    n: ["flacidez", "rojeces"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel normal o con tendencia grasa que busca firmeza y calma.",
+      tipo: "Crema sorbete lifting y calmante.",
+      necesidad: "Firmeza, elasticidad, sequedad y sensibilidad.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-peptidebalm",
+    name: "Peptide AR Balm",
+    img: "imagenes/sensilis/sen-peptidebalm.webp",
+    brand: "sensilis",
+    line: "sen-peptide",
+    n: ["flacidez", "seca", "rojeces"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal o seca que busca firmeza y calma.",
+      tipo: "Bálsamo sorbete lifting y calmante.",
+      necesidad: "Firmeza, elasticidad, sequedad y sensibilidad.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-peptideeyelisss",
+    name: "Peptide Eye Lisss",
+    img: "imagenes/sensilis/sen-peptideeyelisss.webp",
+    brand: "sensilis",
+    line: "sen-peptide",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Preocupación por las arrugas del contorno y la caída del párpado.",
+      tipo: "Contorno de ojos lifting con aplicador metálico.",
+      necesidad: "Alisa arrugas, eleva el párpado superior e ilumina.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar el tamaño de una lenteja sobre la piel limpia y seca, antes del tratamiento, con el aplicador hacia el contorno y el párpado superior."
+    }
+  },
+
+  {
+    id: "sen-peptideretiv",
+    name: "Peptide Reti-V",
+    img: "imagenes/sensilis/sen-peptideretiv.webp",
+    brand: "sensilis",
+    line: "sen-peptide",
+    n: ["arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Quien no tolera o no puede usar retinol, incluidas embarazadas y lactantes.",
+      tipo: "Perlas regeneradoras nocturnas con bakuchiol.",
+      necesidad: "Corrige 10 signos del envejecimiento de la piel sensible.",
+      cuando: "Todas las noches, como último paso y en lugar de la crema. No necesita retinización.",
+      modo: "Aplicar con la espátula incluida.",
+      solar: "Puede sensibilizar ligeramente la piel al día siguiente. Siempre es recomendable usar protector solar.",
+      nota: "Segura en embarazo y lactancia, según Sensilis, aunque aconseja consultar con el dermatólogo o ginecólogo."
+    }
+  },
+
+  /* ---------- Sensilis · Origin Pro EGF-5 ---------- */
+  {
+    id: "sen-originserum",
+    name: "Origin Pro EGF-5 Serum",
+    img: "imagenes/sensilis/sen-originserum.webp",
+    brand: "sensilis",
+    line: "sen-originpro",
+    n: ["arrugas", "flacidez"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta o con tendencia grasa, en retinización, o que busca una rutina minimalista.",
+      tipo: "Sérum rejuvenecedor con 5 factores de crecimiento.",
+      necesidad: "Todos los signos de la edad.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar unas gotas de medio rostro hasta el mentón, de dentro hacia fuera, y en la frente, de abajo hacia arriba. Añadir una gota para el cuello y masajear hacia arriba."
+    }
+  },
+
+  {
+    id: "sen-origincream",
+    name: "Origin Pro EGF-5 Cream",
+    img: "imagenes/sensilis/sen-origincream.webp",
+    brand: "sensilis",
+    line: "sen-originpro",
+    n: ["arrugas", "flacidez"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal o con tendencia a la sequedad, en retinización, o que busca una rutina minimalista.",
+      tipo: "Crema rica rejuvenecedora y regeneradora.",
+      necesidad: "Todos los signos de la edad.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-origineyes",
+    name: "Origin Pro EGF-5 Eyes",
+    img: "imagenes/sensilis/sen-origineyes.webp",
+    brand: "sensilis",
+    line: "sen-originpro",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hinchazón, ojeras vasculares e hiperpigmentadas y signos de la edad en el contorno.",
+      tipo: "Contorno de ojos con pigmentos beige iluminadores.",
+      necesidad: "Bolsas, ojeras y envejecimiento del contorno.",
+      cuando: "Día y noche.",
+      modo: "Aplicar con el aplicador del ángulo interno al externo. Presionar en círculos alrededor del ojo."
+    }
+  },
+
+  /* ---------- Sensilis · Origin Exo ---------- */
+  {
+    id: "sen-originproexo",
+    name: "Origin Exo Energy",
+    img: "imagenes/sensilis/sen-originproexo.webp",
+    brand: "sensilis",
+    line: "sen-originexo",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con signos de daño acumulado y poca capacidad de recuperación; también tras láser fraccionado no ablativo.",
+      tipo: "Crema de regeneración avanzada con exosomas.",
+      necesidad: "Refuerza la regeneración y la estructura cutánea.",
+      cuando: "Mañana y/o noche, a diario.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  /* ---------- Sensilis · Supreme ---------- */
+  {
+    id: "sen-supremeday",
+    name: "Supreme Day Cream SPF15",
+    img: "imagenes/sensilis/sen-supremeday.webp",
+    brand: "sensilis",
+    line: "sen-supreme",
+    n: ["arrugas", "flacidez"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal o con tendencia a la sequedad, con líneas de expresión; también afectada por la contaminación.",
+      tipo: "Crema de día antioxidante con SPF 15.",
+      necesidad: "Elasticidad, firmeza e hidratación.",
+      cuando: "Por el día.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-supremenight",
+    name: "Supreme Night Cream",
+    img: "imagenes/sensilis/sen-supremenight.webp",
+    brand: "sensilis",
+    line: "sen-supreme",
+    n: ["arrugas", "flacidez", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con arrugas de expresión, flacidez incipiente y falta de brillo.",
+      tipo: "Crema-gel de noche detox y reparadora.",
+      necesidad: "Repara las agresiones durante la noche.",
+      cuando: "Por la noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-supremebooster",
+    name: "Supreme Booster FeCE",
+    img: "imagenes/sensilis/sen-supremebooster.webp",
+    brand: "sensilis",
+    line: "sen-supreme",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, para prevenir el envejecimiento prematuro y ganar luminosidad.",
+      tipo: "Sérum antioxidante y antipolución.",
+      necesidad: "Protege de agentes externos y aporta luminosidad.",
+      cuando: "En la rutina diaria.",
+      modo: "Aplicar unas gotas de medio rostro al mentón, o mezclarlas con el tratamiento habitual. Añadir una gota para el cuello."
+    }
+  },
+
+  {
+    id: "sen-supremeeyes",
+    name: "Supreme Eyes",
+    img: "imagenes/sensilis/sen-supremeeyes.webp",
+    brand: "sensilis",
+    line: "sen-supreme",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Primeras arrugas de expresión, contorno deshidratado u ojeras pigmentadas.",
+      tipo: "Emulsión fluida para contorno de ojos.",
+      necesidad: "Alisa arrugas, hidrata y reduce la coloración de las ojeras.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar de la parte externa a la interna del ojo, a toquecitos, hasta su absorción."
+    }
+  },
+
+  /* ---------- Sensilis · Skin Glow ---------- */
+  {
+    id: "sen-glowserum",
+    name: "Skin Glow Beyond C Serum",
+    img: "imagenes/sensilis/sen-glowserum.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel cansada, estresada o fatigada, sin luminosidad ni hidratación, con envejecimiento prematuro.",
+      tipo: "Sérum revitalizante iluminador.",
+      necesidad: "Reactiva la luminosidad e hidrata.",
+      cuando: "Día y noche, justo después de la limpieza.",
+      modo: "Probar antes en el antebrazo y, si no irrita, incluir en la rutina.",
+      solar: "Complementar la rutina de día con fotoprotector solar por las mañanas."
+    }
+  },
+
+  {
+    id: "sen-glowcream",
+    name: "Skin Glow Juicy Cream",
+    img: "imagenes/sensilis/sen-glowcream.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: ["apagada", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca que necesita luminosidad; cansada, estresada o fatigada.",
+      tipo: "Crema hidratante de luminosidad inmediata.",
+      necesidad: "Reactiva la luz de las pieles apagadas e hidrata.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-glowglycolic",
+    name: "Skin Glow Glycolic",
+    img: "imagenes/sensilis/sen-glowglycolic.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: ["apagada", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible que quiere usar ácido glicólico sin irritarse.",
+      tipo: "Gel de noche con 8 % de ácido glicólico.",
+      necesidad: "Renueva, ilumina, hidrata y unifica el tono.",
+      cuando: "Por la noche, en días alternos hasta lograr tolerancia.",
+      modo: "Aplicar un pump sobre la piel limpia y seca y dejar toda la noche. Por la mañana, limpiar la cara.",
+      solar: "A la mañana siguiente, aplicar protección solar alta o muy alta."
+    }
+  },
+
+  {
+    id: "sen-glowkeyes",
+    name: "Skin Glow K Eyes",
+    img: "imagenes/sensilis/sen-glowkeyes.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Fatiga del contorno, ojeras vasculares y pigmentadas y envejecimiento prematuro.",
+      tipo: "Emulsión correctora de ojeras con pigmentos iluminadores.",
+      necesidad: "Ojeras, bolsas, luminosidad e hidratación.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar el tamaño de un grano de arroz, del ángulo interno al externo. Presionar en círculos alrededor del ojo."
+    }
+  },
+
+  {
+    id: "sen-skinglowhighlighter",
+    name: "Skin Glow Highlighter",
+    img: "imagenes/sensilis/sen-skinglowhighlighter.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca iluminar, definir y esculpir el rostro.",
+      tipo: "Corrector iluminador fluido.",
+      necesidad: "Efecto lifting visible; difumina líneas y ojeras.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar en arco de la ceja, pómulo, arco de cupido, centro de la frente, canto interno del ojo, puente de la nariz y barbilla."
+    }
+  },
+
+  {
+    id: "sen-skinglowbronze",
+    name: "Skin Glow Bronze",
+    img: "imagenes/sensilis/sen-skinglowbronze.webp",
+    brand: "sensilis",
+    line: "sen-skinglow",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un bronceado natural sin exponerse al sol.",
+      tipo: "Gotas bronceadoras iluminadoras para el rostro.",
+      necesidad: "Tono dorado modulable.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Añadir unas gotas a la crema o la base, o aplicar solas. También en escote, brazos o piernas."
+    }
+  },
+
+  /* ---------- Sensilis · Skin D-Pigment ---------- */
+  {
+    id: "sen-dpigmentserum",
+    name: "Skin D-Pigment Serum ATX B3",
+    img: "imagenes/sensilis/sen-dpigmentserum.webp",
+    brand: "sensilis",
+    line: "sen-dpigment",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel hiperpigmentada, incluidos fototipos oscuros, con melasma, cloasma o lentigos; también junto a procedimientos médico-estéticos.",
+      tipo: "Sérum corrector con ácido tranexámico y niacinamida.",
+      necesidad: "Reduce y previene las manchas oscuras.",
+      cuando: "Por la mañana y, en noches alternas, alternando con AHA 10 Overnight.",
+      modo: "Aplicar sobre la piel limpia y seca de cara, cuello y escote con un suave masaje. No usar en el contorno de ojos."
+    }
+  },
+
+  {
+    id: "sen-dpigmentaha10",
+    name: "Skin D-Pigment AHA 10 Overnight",
+    img: "imagenes/sensilis/sen-dpigmentaha10.webp",
+    brand: "sensilis",
+    line: "sen-dpigment",
+    n: ["manchas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel hiperpigmentada, incluidos fototipos oscuros, con melasma, cloasma o lentigos; también junto a procedimientos médico-estéticos.",
+      tipo: "Crema despigmentante de noche.",
+      necesidad: "Reduce las manchas y aporta luminosidad.",
+      cuando: "Por la noche, en días alternos, alternando con el Serum ATX B3.",
+      modo: "Aplicar una cantidad abundante sobre la piel limpia y seca, como una mascarilla fina, y dejar toda la noche.",
+      solar: "Por la mañana, terminar la rutina con Photocorrection D-Pigment 50+."
+    }
+  },
+
+  {
+    id: "sen-dpigmentcolordrops",
+    name: "Skin D-Pigment Color Drops",
+    img: "imagenes/sensilis/sen-dpigmentcolordrops.webp",
+    brand: "sensilis",
+    line: "sen-dpigment",
+    n: ["manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con hiperpigmentación o manchas (melasma, lentigos).",
+      tipo: "Maquillaje dermatológico fluido de alta cobertura.",
+      necesidad: "Oculta imperfecciones y unifica el tono.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Sensilis · Skin Rescue ---------- */
+  {
+    id: "sen-rescuebarrier",
+    name: "Skin Rescue Barrier",
+    img: "imagenes/sensilis/sen-rescuebarrier.webp",
+    brand: "sensilis",
+    line: "sen-skinrescue",
+    n: ["rojeces", "seca"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Tras un procedimiento médico-estético o retinización; también piel con rojeces o propensa a rosácea o cuperosis.",
+      tipo: "Crema ligera reparadora de la barrera cutánea.",
+      necesidad: "Repara la barrera, hidrata, calma y reduce rojeces.",
+      cuando: "Día y noche.",
+      modo: "Aplicar de medio rostro hasta el mentón, de dentro hacia fuera; después en la frente, de abajo hacia arriba, y terminar en el cuello con movimientos ascendentes."
+    }
+  },
+
+  {
+    id: "sen-rescueserum",
+    name: "Skin Rescue Serum S.O.S",
+    img: "imagenes/sensilis/sen-rescueserum.webp",
+    brand: "sensilis",
+    line: "sen-skinrescue",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Tras un procedimiento médico-estético, retinización, depilación o quemaduras solares; también piel con rojeces.",
+      tipo: "Sérum calmante y reparador ultraligero.",
+      necesidad: "Calma y repara la piel, reduce el enrojecimiento.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tomar 3 cantidades del tamaño de un guisante. Masajear pómulos y mentón hacia arriba, y la frente del centro a los extremos.",
+      nota: "No aplicar en heridas abiertas."
+    }
+  },
+
+  {
+    id: "sen-skinrescuemistsos",
+    name: "Skin Rescue S.O.S. 24 7",
+    img: "imagenes/sensilis/sen-skinrescuemistsos.webp",
+    brand: "sensilis",
+    line: "sen-skinrescue",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y con tendencia a la rojez; previene brotes de sensibilidad.",
+      tipo: "Bruma calmante de uso diario.",
+      necesidad: "Confort inmediato frente a cambios de temperatura, contaminación, estrés o fricción.",
+      cuando: "En cualquier momento del día.",
+      modo: "Pulverizar sobre el rostro. Se puede aplicar encima del maquillaje."
+    }
+  },
+
+  /* ---------- Sensilis · Pure Age Perfection ---------- */
+  {
+    id: "sen-pureageserum",
+    name: "Pure Age Perfection Cicakn Serum",
+    img: "imagenes/sensilis/sen-pureageserum.webp",
+    brand: "sensilis",
+    line: "sen-pureage",
+    n: ["acne", "arrugas"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible, grasa, con tendencia al acné o con acné adulto; también junto a procedimientos médico-estéticos.",
+      tipo: "Sérum oil-free de doble corrección.",
+      necesidad: "Imperfecciones y arrugas.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar 3-4 gotas sobre la piel limpia y seca de cara, cuello y escote con un suave masaje. También localmente sobre imperfecciones."
+    }
+  },
+
+  {
+    id: "sen-pureageretinal",
+    name: "Pure Age Perfection Retinal",
+    img: "imagenes/sensilis/sen-pureageretinal.webp",
+    brand: "sensilis",
+    line: "sen-pureage",
+    n: ["acne", "arrugas", "flacidez"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa con edad aparente de más de 40 años, sensible o con imperfecciones; también tras procedimientos médico-estéticos.",
+      tipo: "Sérum de noche oil-free redensificante.",
+      necesidad: "Redensifica y perfecciona la piel grasa.",
+      cuando: "Por la noche.",
+      modo: "Aplicar 3-4 gotas sobre la piel limpia y seca de cara, cuello y escote con un suave masaje."
+    }
+  },
+
+  /* ---------- Sensilis · Pure ---------- */
+  {
+    id: "sen-pure15az",
+    name: "Pure 15AZ",
+    img: "imagenes/sensilis/sen-pure15az.webp",
+    brand: "sensilis",
+    line: "sen-pure",
+    n: ["acne", "manchas"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible con acné comedogénico, inflamatorio o hiperpigmentación postinflamatoria.",
+      tipo: "Sérum con 15 % de ácido azelaico.",
+      necesidad: "Imperfecciones, exceso de sebo, inflamación y marcas postacné.",
+      cuando: "Mañana y/o noche. Si la piel es muy sensible, empezar de forma gradual.",
+      modo: "Aplicar una cantidad del tamaño de un guisante sobre la piel limpia y seca.",
+      solar: "Usar siempre con fotoprotección por la mañana.",
+      nota: "Al principio puede notarse picor o cosquilleo. Si la irritación persiste, espaciar las aplicaciones."
+    }
+  },
+
+  {
+    id: "sen-pureisorelief",
+    name: "Pure Iso-Relief",
+    img: "imagenes/sensilis/sen-pureisorelief.webp",
+    brand: "sensilis",
+    line: "sen-pure",
+    n: ["seca", "rojeces", "acne"],
+    sk: ["grasa", "sensible"],
+    d: {
+      paciente: "Piel fragilizada por tratamientos para el acné, como isotretinoína o peróxido de benzoilo.",
+      tipo: "Gel-crema reparador y calmante, no comedogénico.",
+      necesidad: "Repara la barrera, calma el enrojecimiento e hidrata.",
+      cuando: "Mañana y noche.",
+      modo: "Extender una cantidad generosa sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "sen-pureoilcontrolpads",
+    name: "Pure Oil Control Pads",
+    img: "imagenes/sensilis/sen-pureoilcontrolpads.webp",
+    brand: "sensilis",
+    line: "sen-pure",
+    n: ["acne", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica, puntos negros y poros visibles.",
+      tipo: "Discos seborreguladores de micropeeling.",
+      necesidad: "Sebo, poros, puntos negros y prevención de manchas postacné.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Micropeeling sin aclarado con ácido salicílico y mandélico.",
+      cuando: "Mañana y/o noche.",
+      modo: "Deslizar el disco en círculos sobre la piel limpia y seca, insistiendo en la zona T. No aclarar. Desechar tras cada uso.",
+      solar: "No fotosensibilizante, según su ficha."
+    }
+  },
+
+  /* ---------- Sensilis · Hyaluronic ---------- */
+  {
+    id: "sen-hyaluronicfillerserum",
+    name: "Hyaluronic Filler Serum",
+    img: "imagenes/sensilis/sen-hyaluronicfillerserum.webp",
+    brand: "sensilis",
+    line: "sen-hyaluronic",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel y edad, incluso mixta y grasa.",
+      tipo: "Concentrado rellenador con 3 tipos de ácido hialurónico.",
+      necesidad: "Rellena e hidrata, con acción antiarrugas.",
+      cuando: "Día y noche.",
+      modo: "Aplicar un pump sobre la piel limpia y seca. Las pieles más secas pueden añadir sérum o crema.",
+      solar: "Continuar con Photocorrection HA 50+."
+    }
+  },
+
+  {
+    id: "sen-hyaluronicpuffyeyes",
+    name: "Hyaluronic Puffy Eyes",
+    img: "imagenes/sensilis/sen-hyaluronicpuffyeyes.webp",
+    brand: "sensilis",
+    line: "sen-hyaluronic",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Bolsas y mirada cansada.",
+      tipo: "Gel refrescante antibolsas con aplicador metálico.",
+      necesidad: "Bolsas, ojeras e hidratación del contorno.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-hyaluronicfillerlips",
+    name: "Hyaluronic Filler Lips",
+    img: "imagenes/sensilis/sen-hyaluronicfillerlips.webp",
+    brand: "sensilis",
+    line: "sen-hyaluronic",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios que buscan volumen, hidratación y reparación; especialmente tras medicina estética.",
+      tipo: "Tratamiento labial voluminizador.",
+      necesidad: "Volumen, definición e hidratación de los labios.",
+      cuando: "Tantas veces como se desee. También de noche, como mascarilla.",
+      modo: "Deslizar el aplicador biselado sobre los labios."
+    }
+  },
+
+  /* ---------- Sensilis · Hydra Essence ---------- */
+  {
+    id: "sen-hydrasorbet",
+    name: "Hydra Essence Sorbet Gel",
+    img: "imagenes/sensilis/sen-hydrasorbet.webp",
+    brand: "sensilis",
+    line: "sen-hydraessence",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["mixta", "grasa", "sensible"],
+    d: {
+      paciente: "Piel normal a grasa que necesita hidratación o alivio; sensible y con rojeces.",
+      tipo: "Gel-crema ultrahidratante.",
+      necesidad: "Hidrata, calma y protege.",
+      cuando: "Día y noche.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-hydracream",
+    name: "Hydra Essence Cream",
+    img: "imagenes/sensilis/sen-hydracream.webp",
+    brand: "sensilis",
+    line: "sen-hydraessence",
+    n: ["seca", "deshidratacion", "rojeces"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca que necesita hidratación o alivio; sensible y con rojeces.",
+      tipo: "Crema ultrahidratante rica, no grasa.",
+      necesidad: "Hidrata, calma y protege.",
+      cuando: "Día y noche.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Sensilis · Hydraction ---------- */
+  {
+    id: "sen-hydraction",
+    name: "Hydraction Balm",
+    img: "imagenes/sensilis/sen-hydraction.webp",
+    brand: "sensilis",
+    line: "sen-hydraction",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los labios, incluso sensibles.",
+      tipo: "Stick labial hidratante y protector.",
+      necesidad: "Hidrata, protege y repara los labios.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar sobre los labios."
+    }
+  },
+
+  /* ---------- Sensilis · Pretratamiento ---------- */
+  {
+    id: "sen-prepdrops",
+    name: "Prep4+ Drops",
+    img: "imagenes/sensilis/sen-prepdrops.webp",
+    brand: "sensilis",
+    line: "sen-pretratamiento",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere potenciar su rutina antiedad preparando la piel.",
+      tipo: "Sérum exfoliante con 13 % de ácidos (glicólico y mandélico).",
+      necesidad: "Acelera la renovación, mejora la luminosidad y el sebo.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Pretratamiento exfoliante químico.",
+      cuando: "Cada noche.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-prep4polish",
+    name: "Prep4+ Polish",
+    img: "imagenes/sensilis/sen-prep4polish.webp",
+    brand: "sensilis",
+    line: "sen-pretratamiento",
+    n: ["apagada", "poros"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel con tendencia a rosácea, grasa o mixta, opaca o con el estrato córneo engrosado; también si no tolera exfoliantes químicos.",
+      tipo: "Mousse microexfoliante con cristales de cuarzo.",
+      necesidad: "Elimina células muertas y afina la textura.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Pretratamiento exfoliante mecánico.",
+      cuando: "1 a 3 veces por semana, por la mañana. También de noche, en lugar de Drops.",
+      modo: "Masajear en círculos sobre la cara limpia y ligeramente seca. En piel muy sensible, se puede usar con el limpiador habitual.",
+      nota: "No se recomienda con hiperpigmentación postinflamatoria."
+    }
+  },
+
+  /* ---------- Sensilis · Azelaic [Peel] ---------- */
+  {
+    id: "sen-azelaic",
+    name: "Azelaic Peel",
+    img: "imagenes/sensilis/sen-azelaic.webp",
+    brand: "sensilis",
+    line: "sen-azelaic",
+    n: ["acne", "manchas", "rojeces"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible, grasa, con tendencia acneica o a rosácea, e hiperpigmentada.",
+      tipo: "Loción retexturizante en gel.",
+      necesidad: "Seborregula, aclara manchas y reduce rojeces.",
+      limpieza: "Pretratamiento",
+      limpiezaDet: "Se aplica después de la limpieza y antes de la rutina.",
+      cuando: "Día y noche.",
+      modo: "Tras la limpieza, aplicar un pump a toques sobre la piel limpia y seca, con las manos o un algodón. Continuar con la rutina."
+    }
+  },
+
+  /* ---------- Sensilis · Photocorrection ---------- */
+  {
+    id: "sen-photoha",
+    name: "Photocorrection HA 50+",
+    img: "imagenes/sensilis/sen-photoha.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "arrugas", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con signos de envejecimiento y falta de hidratación.",
+      tipo: "Fluido solar SPF 50+ hidratante y antiarrugas.",
+      necesidad: "Protección UVA, UVB y luz azul.",
+      cuando: "Por la mañana, como último paso de la rutina, 30 minutos antes de la exposición al sol.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para rostro y cuello. Después se puede maquillar."
+    }
+  },
+
+  {
+    id: "sen-photohacolor",
+    name: "Photocorrection HA 50+ Color",
+    img: "imagenes/sensilis/sen-photohacolor.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "arrugas", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con signos de envejecimiento y falta de hidratación.",
+      tipo: "Fluido solar SPF 50+ con color, hidratante y antiarrugas.",
+      necesidad: "Protección UVA, UVB y luz azul.",
+      cuando: "Por la mañana, como último paso de la rutina, 30 minutos antes de la exposición al sol.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para rostro y cuello. Después se puede maquillar."
+    }
+  },
+
+  {
+    id: "sen-photocorrpure50",
+    name: "Photocorrection Pure 50",
+    img: "imagenes/sensilis/sen-photocorrpure50.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible, grasa y con tendencia a imperfecciones.",
+      tipo: "Fluido solar seborregulador de alta protección.",
+      necesidad: "Protege de UVA, UVB, luz visible, IR-A, polución y oxidación.",
+      cuando: "Cada mañana. Reaplicar cada 2 horas.",
+      modo: "Aplicar una pequeña cantidad en el rostro."
+    }
+  },
+
+  {
+    id: "sen-photopure",
+    name: "Photocorrection Pure Age Perfection 50+",
+    img: "imagenes/sensilis/sen-photopure.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel sensible, grasa o con tendencia al acné.",
+      tipo: "Fluido solar SPF 50+ matificante.",
+      necesidad: "Protección UVA, UVB y luz azul; controla el sebo.",
+      cuando: "Por la mañana, como último paso de la rutina, 30 minutos antes de la exposición al sol.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para rostro y cuello. Después se puede maquillar."
+    }
+  },
+
+  {
+    id: "sen-photoar",
+    name: "Photocorrection AR 50+",
+    img: "imagenes/sensilis/sen-photoar.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "rojeces", "flacidez"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible, con tendencia a la rosácea o cuperosis.",
+      tipo: "Fluido solar SPF 50+ reafirmante y antirojeces.",
+      necesidad: "Protección UVA, UVB y luz azul; calma las rojeces.",
+      cuando: "Por la mañana, como último paso de la rutina, 30 minutos antes de la exposición al sol.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para rostro y cuello. Después se puede maquillar."
+    }
+  },
+
+  {
+    id: "sen-photodpigment",
+    name: "Photocorrection D-Pigment 50+",
+    img: "imagenes/sensilis/sen-photodpigment.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel hiperpigmentada de cualquier edad, también de fototipo oscuro.",
+      tipo: "Mousse solar SPF 50+ con color y despigmentante.",
+      necesidad: "Protección UVA, UVB y luz azul; difumina las manchas.",
+      cuando: "Por la mañana, como último paso de la rutina, 30 minutos antes de la exposición al sol.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para rostro y cuello. Después se puede maquillar."
+    }
+  },
+
+  {
+    id: "sen-photocorrectionmineral",
+    name: "Photocorrection Mineral 30",
+    img: "imagenes/sensilis/sen-photocorrectionmineral.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible y reactiva a los filtros químicos.",
+      tipo: "Fluido solar mineral SPF 30.",
+      necesidad: "Protección diaria frente a UVA, UVB y luz azul.",
+      cuando: "A diario. Sensilis no detalla más pautas.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-nevermistmespf50",
+    name: "Never Mist Me SPF50",
+    img: "imagenes/sensilis/sen-nevermistmespf50.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, para reaplicar incluso con maquillaje.",
+      tipo: "Bruma facial solar SPF 50, invisible y fijadora.",
+      necesidad: "Reaplicación de la protección solar.",
+      cuando: "Para reaplicar. Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-sticktosport",
+    name: "Stick To Sport SPF50+",
+    img: "imagenes/sensilis/sen-sticktosport.webp",
+    brand: "sensilis",
+    line: "sen-photo",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, incluso para deporte al aire libre.",
+      tipo: "Stick solar SPF 50+ resistente al agua y al sudor.",
+      necesidad: "Reaplicación precisa de la protección.",
+      cuando: "Para reaplicar. Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Sensilis · Solares ---------- */
+  {
+    id: "sen-waterfluid",
+    name: "Water Fluid 50+",
+    img: "imagenes/sensilis/sen-waterfluid.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible que busca un protector ligero e hidratante.",
+      tipo: "Fluido solar facial ultraligero SPF 50+.",
+      necesidad: "Protege de UVA, UVB, luz visible, IR-A, polución y oxidación.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-waterfluidcolor",
+    name: "Water Fluid 50+ Color",
+    img: "imagenes/sensilis/sen-waterfluidcolor.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente fototipos II y III.",
+      tipo: "Fluido solar facial con color SPF 50+.",
+      necesidad: "Protección con cobertura natural y tono unificado.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-oilcontrol",
+    name: "Oil Control 50+",
+    img: "imagenes/sensilis/sen-oilcontrol.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Quien necesita controlar los brillos sin resecar.",
+      tipo: "Fotoprotector SPF 50+ de toque seco, invisible.",
+      necesidad: "Efecto mate hasta 7 horas; absorbe sebo y minimiza poros.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-oilcontrollight",
+    name: "Oil Control 50+ Light",
+    img: "imagenes/sensilis/sen-oilcontrollight.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Quien necesita controlar los brillos sin resecar.",
+      tipo: "Fotoprotector SPF 50+ de toque seco con color, tono claro.",
+      necesidad: "Efecto mate hasta 7 horas; absorbe sebo y minimiza poros.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-oilcontrolmedium",
+    name: "Oil Control 50+ Medium",
+    img: "imagenes/sensilis/sen-oilcontrolmedium.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion", "poros"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Quien necesita controlar los brillos sin resecar.",
+      tipo: "Fotoprotector SPF 50+ de toque seco con color, tono medio.",
+      necesidad: "Efecto mate hasta 7 horas; absorbe sebo y minimiza poros.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-mattgel",
+    name: "Matt Gel 50 Invisible",
+    img: "imagenes/sensilis/sen-mattgel.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["grasa", "todas"],
+    d: {
+      paciente: "Todo tipo de piel y fototipo; perfecto para piel grasa.",
+      tipo: "Gel solar invisible matificante y antiedad.",
+      necesidad: "Alta protección con acción hidratante y antioxidante.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-gelcream",
+    name: "Gel Cream 50+",
+    img: "imagenes/sensilis/sen-gelcream.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo y fototipo de piel.",
+      tipo: "Fotoprotector antiedad en gel-crema.",
+      necesidad: "Protege, hidrata y refresca.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-solarallergy",
+    name: "Fluid 100 Solar Allergy",
+    img: "imagenes/sensilis/sen-solarallergy.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente clara, sensible, reactiva o fotosensible.",
+      tipo: "Fluido facial de muy alta protección.",
+      necesidad: "Protege, hidrata y neutraliza el daño solar.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-pediatrics",
+    name: "Lotion Spray 50+ Pediatrics",
+    img: "imagenes/sensilis/sen-pediatrics.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Niños desde 3 años; todo tipo de piel, especialmente con tendencia atópica.",
+      tipo: "Fotoprotector infantil en loción spray.",
+      necesidad: "Muy alta protección con sensación calmante.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-drytouch",
+    name: "Body Spray 50 Dry Touch",
+    img: "imagenes/sensilis/sen-drytouch.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente fototipos II y III.",
+      tipo: "Bruma solar corporal de toque seco.",
+      necesidad: "Alta protección; se aplica sobre piel seca o mojada.",
+      cuando: "30 minutos antes de ir a la playa o la piscina. Reaplicar en exposición prolongada, con sudoración intensa o después de mojarse o secarse.",
+      modo: "Aplicar una línea en el índice y otra en el corazón para el rostro, sin olvidar las orejas."
+    }
+  },
+
+  {
+    id: "sen-dryoiltanoptim",
+    name: "Dry Oil Spf50",
+    img: "imagenes/sensilis/sen-dryoiltanoptim.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca broncearse más rápido sin renunciar a alta protección.",
+      tipo: "Aceite seco corporal SPF 50.",
+      necesidad: "Protección UVA/UVB y bronceado más uniforme.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-sticktoglow",
+    name: "Stick To Glow",
+    img: "imagenes/sensilis/sen-sticktoglow.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel que quiere reaplicar con efecto luminoso.",
+      tipo: "Stick solar SPF 50+ con acabado perlado.",
+      necesidad: "Reaplicación con efecto glow.",
+      cuando: "Para reaplicar. Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-sticktosnow",
+    name: "Stick To Snow",
+    img: "imagenes/sensilis/sen-sticktosnow.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, para actividades de invierno.",
+      tipo: "Stick solar SPF 50+ resistente al agua y al sudor.",
+      necesidad: "Reaplicación en actividades de invierno.",
+      cuando: "Al menos 30 minutos antes de la exposición solar.",
+      modo: "Aplicar sobre las zonas deseadas, sin extender con las manos."
+    }
+  },
+
+  {
+    id: "sen-aftersun",
+    name: "After Sun Repair",
+    img: "imagenes/sensilis/sen-aftersun.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel.",
+      tipo: "Emulsión after-sun calmante y reparadora.",
+      necesidad: "Hidrata y calma la piel tras el sol.",
+      cuando: "Después del sol. Tantas veces como sea necesario.",
+      modo: "Aplicar generosamente sobre la piel limpia y masajear hasta su absorción."
+    }
+  },
+
+  {
+    id: "sen-selftannbronze",
+    name: "Sss Self Tanning Toallitas - Bronze",
+    img: "imagenes/sensilis/sen-selftannbronze.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un bronceado natural sin exponerse al sol.",
+      tipo: "Toallitas autobronceadoras faciales, tono bronze.",
+      necesidad: "Bronceado uniforme e hidratación.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Exfoliar antes. Aplicar sobre el rostro en círculos, sin dejar zonas. Hidratar para prolongar el bronceado."
+    }
+  },
+
+  {
+    id: "sen-selftanngold",
+    name: "Sss Self Tanning Toallitas - Gold",
+    img: "imagenes/sensilis/sen-selftanngold.webp",
+    brand: "sensilis",
+    line: "sen-solares",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un bronceado natural sin exponerse al sol.",
+      tipo: "Toallitas autobronceadoras faciales, tono gold.",
+      necesidad: "Bronceado uniforme e hidratación.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Exfoliar antes. Aplicar sobre el rostro en círculos, sin dejar zonas. Hidratar para prolongar el bronceado."
+    }
+  },
+
+  /* ---------- Sensilis · Hair & Scalp ---------- */
+  {
+    id: "sen-hairdsshampoo",
+    name: "DS Shampoo",
+    img: "imagenes/sensilis/sen-hairdsshampoo.webp",
+    brand: "sensilis",
+    line: "sen-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo graso y sensible con caspa, descamación, exceso de sebo o picor.",
+      tipo: "Champú anticaspa con climbazol y ciclopirox olamina.",
+      necesidad: "Controla el sebo, limita Malassezia, elimina escamas y calma el picor.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar sobre el cuero cabelludo mojado, masajear, dejar actuar unos minutos y aclarar."
+    }
+  },
+
+  {
+    id: "sen-hairdscontrol",
+    name: "DS Control Rescue Lotion",
+    img: "imagenes/sensilis/sen-hairdscontrol.webp",
+    brand: "sensilis",
+    line: "sen-hair",
+    n: ["corporal", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro, cuero cabelludo o cuerpo con descamación seborreica, sebo, enrojecimiento o picor.",
+      tipo: "Loción intensiva sin aclarado.",
+      necesidad: "Controla Malassezia, elimina escamas y calma picor y enrojecimiento.",
+      cuando: "Hasta 2 veces al día.",
+      modo: "Aplicar sobre la zona y dejar actuar sin aclarar."
+    }
+  },
+
+  {
+    id: "sen-hairsuplement",
+    name: "Hair Supplement 30 Sticks",
+    img: "imagenes/sensilis/sen-hairsuplement.webp",
+    brand: "sensilis",
+    line: "sen-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Mujeres con envejecimiento capilar: pelo más fino y con menos cantidad y volumen.",
+      tipo: "Nutricosmético bebible con 24 activos.",
+      necesidad: "Estimula el crecimiento y refuerza el cabello.",
+      cuando: "Un stick al día, por la mañana, durante 3 meses.",
+      modo: "Mezclar con agua o zumo. No superar un stick al día.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "sen-prepshampoo",
+    name: "Hair Prep Shampoo",
+    img: "imagenes/sensilis/sen-prepshampoo.webp",
+    brand: "sensilis",
+    line: "sen-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Mujeres con envejecimiento capilar: pelo más fino y con menos cantidad y volumen; cuero cabelludo sensible.",
+      tipo: "Champú preparador sin sulfatos con ácido glicólico y succínico.",
+      necesidad: "Limpia, exfolia y prepara el cuero cabelludo para tratamientos anticaída.",
+      cuando: "Se puede usar a diario y combinar con el champú habitual.",
+      modo: "Aplicar 2 o 3 pulsaciones en la raíz del cabello mojado. Masajear un minuto, dejar actuar 1 o 2 minutos y aclarar abundantemente.",
+      nota: "No contraindicado en embarazo ni lactancia, según Sensilis. Apto para cabello teñido o con queratina."
+    }
+  },
+
+  {
+    id: "sen-hairlotion",
+    name: "Exosome Hair Lotion",
+    img: "imagenes/sensilis/sen-hairlotion.webp",
+    brand: "sensilis",
+    line: "sen-hair",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Mujeres con envejecimiento capilar: pelo más fino y con menos cantidad y volumen.",
+      tipo: "Loción capilar ultraligera con exosomas, sin aclarado.",
+      necesidad: "Frena la caída y mejora la densidad desde la raíz.",
+      cuando: "5 a 7 veces por semana durante 12 semanas.",
+      modo: "Mejor sobre el cabello seco. Dividir el cabello en secciones, aplicar sobre la raíz y masajear en círculos. No aclarar.",
+      nota: "No contraindicada en embarazo ni lactancia, según Sensilis."
+    }
+  },
+
+  /* ---------- Sensilis · Body Treatments ---------- */
+  {
+    id: "sen-createurdinstants",
+    name: "Créateur D'instants",
+    img: "imagenes/sensilis/sen-createurdinstants.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Personas con piel sensible que buscan una fragancia.",
+      tipo: "Eau de toilette floral y fresca.",
+      necesidad: "Fragancia de uso diario.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Pulverizar ligeramente en cuello, muñecas o detrás de las orejas."
+    }
+  },
+
+  {
+    id: "sen-bodyretinol",
+    name: "Retinol Body Treatment",
+    img: "imagenes/sensilis/sen-bodyretinol.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: ["corporal", "flacidez", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible que busca un tratamiento corporal rejuvenecedor con retinol.",
+      tipo: "Loción corporal reafirmante con retinol.",
+      necesidad: "Reafirma, hidrata, unifica el tono, aclara manchas y reduce arrugas en piernas, glúteos, vientre, brazos, cuello y escote.",
+      cuando: "Por la noche, en días alternos hasta que la piel se acostumbre.",
+      modo: "Aplicar sobre la piel limpia y seca con un suave masaje.",
+      solar: "Al día siguiente, usar protector solar en las zonas expuestas del cuerpo.",
+      nota: "Sensilis indica en la ficha de Peptide Reti-V que el retinol está contraindicado en embarazo y lactancia."
+    }
+  },
+
+  {
+    id: "sen-glycolicbodytreatment",
+    name: "Glycolic Body Treatment",
+    img: "imagenes/sensilis/sen-glycolicbodytreatment.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: ["corporal", "apagada"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible que busca un tratamiento corporal retexturizante.",
+      tipo: "Loción corporal con ácido glicólico, láctico y málico.",
+      necesidad: "Alisa, ilumina, mejora rugosidades, hidrata y unifica el tono.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-bodyglowcerine",
+    name: "Glowcerine Body Treatment",
+    img: "imagenes/sensilis/sen-bodyglowcerine.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: ["corporal", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel deshidratada que necesita hidratación y uniformidad.",
+      tipo: "Loción corporal reparadora y perfeccionadora.",
+      necesidad: "Hidrata, repara la barrera y unifica el tono de forma inmediata.",
+      cuando: "1 o 2 veces al día, o cuando sea necesario.",
+      modo: "Aplicar sobre la piel limpia y seca con un suave masaje hasta su absorción."
+    }
+  },
+
+  {
+    id: "sen-encoresoir",
+    name: "Encore Un Soir",
+    img: "imagenes/sensilis/sen-encoresoir.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sensilis no indica un tipo de piel concreto.",
+      tipo: "Eau de toilette floral y amaderada.",
+      necesidad: "Fragancia.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-merveilleusesdifferences",
+    name: "Merveilleuses Différences",
+    img: "imagenes/sensilis/sen-merveilleusesdifferences.webp",
+    brand: "sensilis",
+    line: "sen-body",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sensilis no indica un tipo de piel concreto.",
+      tipo: "Eau de toilette floral y cítrica.",
+      necesidad: "Fragancia.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Sensilis · Maquillaje ---------- */
+  {
+    id: "sen-pureagemakeup",
+    name: "Pure Age Perfection Fluid",
+    img: "imagenes/sensilis/sen-pureagemakeup.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: ["acne"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o propensa al acné.",
+      tipo: "Maquillaje dermatológico fluido de alta cobertura.",
+      necesidad: "Controla el sebo y cubre imperfecciones.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar con las manos, difuminando del centro hacia fuera. Sellar con polvos."
+    }
+  },
+
+  {
+    id: "sen-photomakeup",
+    name: "Photocorrection D-Pigment Make-Up 50+",
+    img: "imagenes/sensilis/sen-photomakeup.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: ["manchas", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con imperfecciones que necesita protección diaria.",
+      tipo: "Maquillaje en crema despigmentante SPF 50+.",
+      necesidad: "Corrige manchas, disimula imperfecciones y protege de UVA y UVB.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar generosamente de manera uniforme."
+    }
+  },
+
+  {
+    id: "sen-glowmakeup",
+    name: "Skin Glow Make-Up",
+    img: "imagenes/sensilis/sen-glowmakeup.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel cansada, estresada o fatigada, sin luminosidad.",
+      tipo: "Maquillaje dermatológico antioxidante.",
+      necesidad: "Luminosidad inmediata e hidratación.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar con brocha plana o con los dedos desde el centro del rostro."
+    }
+  },
+
+  {
+    id: "sen-upgrademakeup",
+    name: "Upgrade Make-Up",
+    img: "imagenes/sensilis/sen-upgrademakeup.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente con rojeces.",
+      tipo: "Maquillaje dermatológico con efecto lifting.",
+      necesidad: "Reafirma, ilumina y corrige arrugas; cobertura media-alta.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Depositar en frente, nariz y barbilla y difuminar del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "sen-coveressencespot",
+    name: "Coveressence Concealer Antispot",
+    img: "imagenes/sensilis/sen-coveressencespot.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere camuflar manchas, ojeras, zonas oscuras o manchas del embarazo.",
+      tipo: "Corrector en stick antimanchas.",
+      necesidad: "Camufla hiperpigmentaciones.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-coveressencered",
+    name: "Coveressence Concealer Antiredness",
+    img: "imagenes/sensilis/sen-coveressencered.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: ["rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere neutralizar rojeces o marcas de acné.",
+      tipo: "Corrector verde en stick.",
+      necesidad: "Neutraliza rojeces, venitas y marcas de acné.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar una pequeña cantidad en la zona, después de la base."
+    }
+  },
+
+  {
+    id: "sen-velvetskin",
+    name: "Velvet Skin",
+    img: "imagenes/sensilis/sen-velvetskin.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sensible que busca un corrector de alta cobertura; ideal para ojeras.",
+      tipo: "Corrector líquido.",
+      necesidad: "Difumina arrugas, unifica el tono y cubre.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-blush",
+    name: "Velvet Blush",
+    img: "imagenes/sensilis/sen-blush.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sensible que quiere dar color a las mejillas.",
+      tipo: "Colorete hidratante en polvo.",
+      necesidad: "Rubor luminoso y natural.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tomar con brocha, retirar el exceso y aplicar en mejillas."
+    }
+  },
+
+  {
+    id: "sen-bonboncreamblush",
+    name: "Bonbon Cream Blush",
+    img: "imagenes/sensilis/sen-bonboncreamblush.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, para un toque de color luminoso.",
+      tipo: "Colorete en crema.",
+      necesidad: "Color modulable y aspecto natural.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar en mejillas y difuminar con los dedos o con brocha."
+    }
+  },
+
+  {
+    id: "sen-terracotta",
+    name: "Velvet Terracotta",
+    img: "imagenes/sensilis/sen-terracotta.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sensible que quiere un efecto bronceado y esculpir el rostro.",
+      tipo: "Polvos bronceadores iluminadores.",
+      necesidad: "Calidez y luminosidad.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tomar con brocha, retirar el exceso y aplicar."
+    }
+  },
+
+  {
+    id: "sen-invisiblematte",
+    name: "Invisible Matt",
+    img: "imagenes/sensilis/sen-invisiblematte.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere matificar brillos y sellar el maquillaje.",
+      tipo: "Polvos compactos matificantes.",
+      necesidad: "Fija el maquillaje y matifica.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Tomar con brocha, retirar el exceso y extender sobre la zona."
+    }
+  },
+
+  {
+    id: "sen-skinglowpearl",
+    name: "Skin Glow Pearl",
+    img: "imagenes/sensilis/sen-skinglowpearl.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sensible que busca luminosidad.",
+      tipo: "Iluminador con perlas ultrafinas.",
+      necesidad: "Acabado luminoso y uniforme.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar antes del maquillaje, para un toque sutil, o después, para más efecto."
+    }
+  },
+
+  {
+    id: "sen-ownthematte",
+    name: "Own The Matte",
+    img: "imagenes/sensilis/sen-ownthematte.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un labial mate de larga duración.",
+      tipo: "Labial ultracremoso mate.",
+      necesidad: "Color intenso hasta 8 horas.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Deslizar definiendo el contorno y aplicar capas para intensificar."
+    }
+  },
+
+  {
+    id: "sen-eternallips",
+    name: "Eternal Lips",
+    img: "imagenes/sensilis/sen-eternallips.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de labios, especialmente secos y sensibles.",
+      tipo: "Labial líquido mate que no transfiere.",
+      necesidad: "Color duradero 8 horas sin resecar.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar con el aplicador definiendo la forma."
+    }
+  },
+
+  {
+    id: "sen-rougefondant",
+    name: "Rouge Fondant",
+    img: "imagenes/sensilis/sen-rougefondant.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sensilis no indica un perfil concreto.",
+      tipo: "Barra de labios de cobertura media.",
+      necesidad: "Nutre y aporta acabado brillante.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar en el labio definiendo la forma."
+    }
+  },
+
+  {
+    id: "sen-lipglowoil",
+    name: "Lip Glow Oil Repair",
+    img: "imagenes/sensilis/sen-lipglowoil.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de labios, especialmente secos y sensibles.",
+      tipo: "Gloss labial con aceites.",
+      necesidad: "Brillo, color y reparación de los labios.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar con el aplicador definiendo la forma."
+    }
+  },
+
+  {
+    id: "sen-peptidelipcolo",
+    name: "Peptide Lip Color",
+    img: "imagenes/sensilis/sen-peptidelipcolo.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios que quieren volumen, color y brillo.",
+      tipo: "Labial gloss voluminizador con péptidos.",
+      necesidad: "Volumen inmediato y color.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Sensilis no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "sen-eyeliner",
+    name: "Eternalist Eyeliner",
+    img: "imagenes/sensilis/sen-eyeliner.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un delineador líquido fácil de usar.",
+      tipo: "Delineador líquido negro.",
+      necesidad: "Trazos precisos en una sola pasada.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Retirar el exceso en un pañuelo y trazar la línea."
+    }
+  },
+
+  {
+    id: "sen-jumbo",
+    name: "Jumbo Eyes 3 In 1",
+    img: "imagenes/sensilis/sen-jumbo.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de ojos, incluso sensibles.",
+      tipo: "Delineador y sombra waterproof.",
+      necesidad: "Alta cobertura y larga duración.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Delinear la línea de los ojos o aplicar sobre el párpado y difuminar."
+    }
+  },
+
+  {
+    id: "sen-infiniteeyes",
+    name: "Infinite Eyes",
+    img: "imagenes/sensilis/sen-infiniteeyes.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien quiere enmarcar y definir la mirada.",
+      tipo: "Lápiz de ojos automático waterproof.",
+      necesidad: "Trazos firmes de larga duración.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Dibujar sobre la línea de las pestañas, de dentro hacia fuera."
+    }
+  },
+
+  {
+    id: "sen-lecrayon",
+    name: "Le Crayon",
+    img: "imagenes/sensilis/sen-lecrayon.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca una mirada intensa.",
+      tipo: "Lápiz kajal ultracremoso.",
+      necesidad: "Alta intensidad durante 24 horas.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar en la línea de agua o por fuera. Retirar con Bi-Phasic Make-Up Remover."
+    }
+  },
+
+  {
+    id: "sen-lestylo",
+    name: "Le Stylo",
+    img: "imagenes/sensilis/sen-lestylo.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles que quieren intensificar la mirada.",
+      tipo: "Delineador automático de punta ultrafina.",
+      necesidad: "Trazo preciso y de larga duración.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar dentro y fuera de la línea de agua. Retirar con Bi-Phasic Make-Up Remover."
+    }
+  },
+
+  {
+    id: "sen-sublime",
+    name: "Sublime Lashes",
+    img: "imagenes/sensilis/sen-sublime.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca efecto de pestañas postizas.",
+      tipo: "Máscara curva y voluminizadora.",
+      necesidad: "Volumen e intensidad; cuida las pestañas.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Retirar el exceso en un pañuelo y aplicar."
+    }
+  },
+
+  {
+    id: "sen-endless",
+    name: "Endless Mascara",
+    img: "imagenes/sensilis/sen-endless.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Todo tipo de ojos, incluso sensibles.",
+      tipo: "Máscara de longitud.",
+      necesidad: "Longitud y larga duración.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Retirar el exceso en un pañuelo y aplicar."
+    }
+  },
+
+  {
+    id: "sen-mascaramegavolumen",
+    name: "Unbelievable Lashes",
+    img: "imagenes/sensilis/sen-mascaramegavolumen.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Quien busca un efecto de volumen extremo.",
+      tipo: "Máscara de volumen con biotina y pantenol.",
+      necesidad: "Volumen extremo y fortalecimiento.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar desde la raíz en zigzag hasta el extremo."
+    }
+  },
+
+  {
+    id: "sen-eyeconicmasc",
+    name: "Eye-Conic HD Mascara",
+    img: "imagenes/sensilis/sen-eyeconicmasc.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles que quieren definición a prueba de manchas.",
+      tipo: "Máscara tubing de alta definición.",
+      necesidad: "Larga duración hasta 24 horas.",
+      cuando: "Sensilis no indica la frecuencia.",
+      modo: "Aplicar desde la raíz en zigzag. Retirar con agua tibia."
+    }
+  },
+
+  {
+    id: "sen-daymascara",
+    name: "Day Treatment Mascara",
+    img: "imagenes/sensilis/sen-daymascara.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Pestañas y cejas, especialmente debilitadas.",
+      tipo: "Máscara de tratamiento en gel.",
+      necesidad: "Fortalece y aporta volumen y longitud.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar sobre pestañas y cejas, de la raíz a las puntas."
+    }
+  },
+
+  {
+    id: "sen-nightmascara",
+    name: "Night Treatment Mascara",
+    img: "imagenes/sensilis/sen-nightmascara.webp",
+    brand: "sensilis",
+    line: "sen-makeup",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Pestañas y cejas, especialmente debilitadas.",
+      tipo: "Máscara de tratamiento nocturno.",
+      necesidad: "Fortalece y regenera.",
+      cuando: "Por la noche.",
+      modo: "Aplicar sobre pestañas y cejas, de la raíz a las puntas."
     }
   }
 ];

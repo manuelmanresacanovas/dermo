@@ -41,7 +41,34 @@ D.brands = [
     ]
   },
 
-  { id: "sensilis", name: "Sensilis", lines: [] },
+  {
+    id: "sensilis",
+    name: "Sensilis",
+    lines: [
+      { id: "sen-higiene", name: "Higiene" },
+      { id: "sen-upgrade", name: "Upgrade" },
+      { id: "sen-eternalist", name: "Eternalist A.G.E." },
+      { id: "sen-peptide", name: "Peptide [AR]" },
+      { id: "sen-originpro", name: "Origin Pro EGF-5" },
+      { id: "sen-originexo", name: "Origin Exo" },
+      { id: "sen-supreme", name: "Supreme" },
+      { id: "sen-skinglow", name: "Skin Glow" },
+      { id: "sen-dpigment", name: "Skin D-Pigment" },
+      { id: "sen-skinrescue", name: "Skin Rescue" },
+      { id: "sen-pureage", name: "Pure Age Perfection" },
+      { id: "sen-pure", name: "Pure" },
+      { id: "sen-hyaluronic", name: "Hyaluronic" },
+      { id: "sen-hydraessence", name: "Hydra Essence" },
+      { id: "sen-hydraction", name: "Hydraction" },
+      { id: "sen-pretratamiento", name: "Pretratamiento" },
+      { id: "sen-azelaic", name: "Azelaic [Peel]" },
+      { id: "sen-photo", name: "Photocorrection" },
+      { id: "sen-solares", name: "Solares" },
+      { id: "sen-hair", name: "Hair & Scalp" },
+      { id: "sen-body", name: "Body Treatments" },
+      { id: "sen-makeup", name: "Maquillaje" }
+    ]
+  },
 
   { id: "isdin", name: "Isdin", lines: [] },
 
