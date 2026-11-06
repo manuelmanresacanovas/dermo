@@ -84,7 +84,21 @@ D.brands = [
 
   { id: "avene", name: "Avène", lines: [] },
 
-  { id: "gemaherrerias", name: "Gema Herrerías", lines: [] },
+  {
+    id: "gemaherrerias",
+    name: "Gema Herrerías",
+    lines: [
+      { id: "gh-limpieza", name: "Limpieza" },
+      { id: "gh-exfoliacion", name: "Exfoliación" },
+      { id: "gh-lociones", name: "Lociones y brumas" },
+      { id: "gh-antioxidantes", name: "Antioxidantes" },
+      { id: "gh-intensiva", name: "Acción intensiva" },
+      { id: "gh-barrera", name: "Hidratantes Función Barrera" },
+      { id: "gh-ojos", name: "Contorno de ojos" },
+      { id: "gh-solar", name: "Protección solar" },
+      { id: "gh-complementos", name: "Complementos alimenticios" }
+    ]
+  },
 
   { id: "svr", name: "SVR", lines: [] }
 ];

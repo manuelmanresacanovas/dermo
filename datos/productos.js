@@ -14,7 +14,7 @@
       modo: cómo se aplica.
       solar: qué indica la marca sobre fotoprotección (opcional; solo si la marca lo dice).
       nota: advertencias o aclaraciones (opcional).
-   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es). */
+   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com). */
 var D = D || {};
 
 D.prods = [
@@ -4330,6 +4330,792 @@ D.prods = [
       necesidad: "Fortalece y regenera.",
       cuando: "Por la noche.",
       modo: "Aplicar sobre pestañas y cejas, de la raíz a las puntas."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Limpieza ---------- */
+  {
+    id: "gh-aceite-limpiador-desmaquillante",
+    name: "ACEITE LIMPIADOR Desmaquillante gel-to-milk",
+    img: "imagenes/gemaherrerias/gh-aceite-limpiador-desmaquillante.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza"],
+    sk: ["grasa", "seca"],
+    d: {
+      paciente: "Código Piel grasa y seca.",
+      tipo: "Aceite limpiador desmaquillante de uso diario, no comedogénico.",
+      necesidad: "Limpia y desmaquilla rostro y ojos sin residuo graso.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Uso diario.",
+      modo: "Aplicar 2 pulsaciones sobre la piel seca, masajear unos segundos, emulsionar con agua y aclarar abundantemente."
+    }
+  },
+
+  {
+    id: "gh-kire-emulsion-limpiadora-x-cristina-mitre",
+    name: "きれい KIRĒ x Cristina Mitre Emulsión limpiadora japonesa",
+    img: "imagenes/gemaherrerias/gh-kire-emulsion-limpiadora-x-cristina-mitre.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Emulsión limpiadora hidratante de uso diario.",
+      necesidad: "Elimina impurezas oleosas, polución, maquillaje y protector solar.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre el rostro humedecido, masajear en círculos hasta formar espuma y aclarar."
+    }
+  },
+
+  {
+    id: "gh-limpiador-espumante-syndet",
+    name: "LIMPIADOR ESPUMANTE Syndet complejo aminoácidos",
+    img: "imagenes/gemaherrerias/gh-limpiador-espumante-syndet.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Espuma limpiadora facial de uso diario con cepillo aplicador.",
+      necesidad: "Limpieza en profundidad respetando la función barrera.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Uso diario.",
+      modo: "Aplicar 2 pulsaciones sobre la piel humedecida, masajear con el cepillo y aclarar. Limpiar el cepillo con agua tras cada uso."
+    }
+  },
+
+  {
+    id: "gh-5-gel-limpiador-syndet",
+    name: "5 GEL LIMPIADOR Syndet piel grasa",
+    img: "imagenes/gemaherrerias/gh-5-gel-limpiador-syndet.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Código Piel grasa con imperfecciones.",
+      tipo: "Gel limpiador facial con ácido succínico e inulina.",
+      necesidad: "Limpieza suave y seborreguladora, con efecto prebiótico.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Aplicar una pequeña cantidad sobre el rostro humedecido, masajear hasta formar espuma y aclarar."
+    }
+  },
+
+  {
+    id: "gh-limpiador-hidratante-desmaquillante",
+    name: "LIMPIADOR HIDRATANTE Desmaquillante micelar",
+    img: "imagenes/gemaherrerias/gh-limpiador-hidratante-desmaquillante.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Limpiador híbrido entre solución micelar y tónico.",
+      necesidad: "Limpia, hidrata, calma y revitaliza.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar con un disco sobre la piel seca. No requiere aclarado."
+    }
+  },
+
+  {
+    id: "gh-sistema-bifase-desmaquillante",
+    name: "SISTEMA BIFASE Desmaquillante de ojos y labios",
+    img: "imagenes/gemaherrerias/gh-sistema-bifase-desmaquillante.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Desmaquillante bifásico para ojos y labios.",
+      necesidad: "Desmaquilla sin dejar residuo graso.",
+      limpieza: "Desmaquillante de ojos y labios",
+      limpiezaDet: "Sin paso indicado en su ficha.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Agitar. Aplicar sobre un disco y deslizar por párpados, pestañas y labios. Sin aclarado."
+    }
+  },
+
+  {
+    id: "gh-limpiador-en-polvo-enzimatico-uso-diario",
+    name: "LIMPIADOR EN POLVO Enzimático uso diario",
+    img: "imagenes/gemaherrerias/gh-limpiador-en-polvo-enzimatico-uso-diario.webp",
+    brand: "gemaherrerias",
+    line: "gh-limpieza",
+    n: ["limpieza", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Limpiador en polvo con arcilla blanca, papaína y bromelaína.",
+      necesidad: "Limpia y exfolia delicadamente, eliminando impurezas y células muertas.",
+      limpieza: "Limpiador y exfoliante",
+      limpiezaDet: "Limpia y exfolia. Sin paso indicado en su ficha.",
+      cuando: "Uso diario.",
+      modo: "Poner un poco de polvo en la palma, añadir agua y emulsionar. Aplicar en círculos y aclarar con agua tibia.",
+      solar: "Es recomendable usar protector solar de amplio espectro durante el tratamiento."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Exfoliación ---------- */
+  {
+    id: "gh-peeling-8-pha-discos-piel-sensible",
+    name: "PEELING 8 PHA Piel sensible",
+    img: "imagenes/gemaherrerias/gh-peeling-8-pha-discos-piel-sensible.webp",
+    brand: "gemaherrerias",
+    line: "gh-exfoliacion",
+    n: ["apagada", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Código Piel sensible.",
+      tipo: "Peeling químico con 8 % de PHA, no comedogénico.",
+      necesidad: "Exfoliación suave, hidratación y renovación.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling químico suave.",
+      cuando: "2 noches a la semana, en días no consecutivos.",
+      modo: "Aplicar sobre el rostro limpio y seco, evitando contorno de ojos y labios. Dejar toda la noche.",
+      solar: "Es recomendable usar protector solar de amplio espectro durante el tratamiento."
+    }
+  },
+
+  {
+    id: "gh-peeling-10-aha-discos-piel-iniciacion",
+    name: "PEELING 10 AHA Piel resistente [Iniciación]",
+    img: "imagenes/gemaherrerias/gh-peeling-10-aha-discos-piel-iniciacion.webp",
+    brand: "gemaherrerias",
+    line: "gh-exfoliacion",
+    n: ["arrugas", "manchas", "acne", "apagada"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Código Piel resistente.",
+      tipo: "Peeling químico de iniciación con 10 % de AHA.",
+      necesidad: "Antiedad, exfoliante y despigmentante; reduce imperfecciones.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling químico de iniciación.",
+      cuando: "2 noches a la semana, en días no consecutivos.",
+      modo: "Aplicar sobre el rostro limpio y seco, evitando contorno de ojos y labios. Dejar de 15 minutos a toda la noche, según tolerancia. Aclarado opcional.",
+      solar: "Es recomendable usar protector solar de amplio espectro durante el tratamiento.",
+      nota: "Es habitual un ligero escozor pasajero. Si persiste, aclarar con agua."
+    }
+  },
+
+  {
+    id: "gh-peeling-20-aha-discos-intensivos",
+    name: "PEELING 20 AHA Piel resistente [Intensivo]",
+    img: "imagenes/gemaherrerias/gh-peeling-20-aha-discos-intensivos.webp",
+    brand: "gemaherrerias",
+    line: "gh-exfoliacion",
+    n: ["arrugas", "manchas", "acne", "apagada"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Código Piel resistente. No apto en piel sensible.",
+      tipo: "Peeling químico intensivo con 20 % de AHA.",
+      necesidad: "Antiedad, exfoliante y despigmentante; reduce imperfecciones.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling químico intensivo.",
+      cuando: "2 noches a la semana, en días no consecutivos.",
+      modo: "Aplicar sobre el rostro limpio y seco, evitando contorno de ojos y labios. Dejar de 15 minutos a toda la noche, según tolerancia. Aclarado opcional.",
+      solar: "Es recomendable usar protector solar de amplio espectro durante el tratamiento.",
+      nota: "No apto en piel sensible. Es habitual un ligero escozor pasajero; si persiste, aclarar con agua."
+    }
+  },
+
+  {
+    id: "gh-mascarilla-purificante-arcilla-mediterranea",
+    name: "MASCARILLA PURIFICANTE Arcilla mediterránea",
+    img: "imagenes/gemaherrerias/gh-mascarilla-purificante-arcilla-mediterranea.webp",
+    brand: "gemaherrerias",
+    line: "gh-exfoliacion",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Código Piel grasa con imperfecciones.",
+      tipo: "Mascarilla y peeling enzimático en polvo 2 en 1.",
+      necesidad: "Seborregula, purifica, exfolia y limpia el poro.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Mascarilla con peeling enzimático.",
+      cuando: "2 veces por semana, por la noche.",
+      modo: "Mezclar 2 cucharadas con 2 pulsaciones de 5 AZELAIC-S. Aplicar evitando contorno de ojos y labios, dejar secar 10 minutos y aclarar con agua tibia."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Lociones y brumas ---------- */
+  {
+    id: "gh-esencia-4fnh-x-cristina-mitre-locion-hidratante",
+    name: "ESENCIA 4FNH x Cristina Mitre Loción hidratante diaria",
+    img: "imagenes/gemaherrerias/gh-esencia-4fnh-x-cristina-mitre-locion-hidratante.webp",
+    brand: "gemaherrerias",
+    line: "gh-lociones",
+    n: ["deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Loción hidratante con 4 ácidos hialurónicos y sales minerales.",
+      necesidad: "Restablece el factor natural de hidratación y preserva la barrera.",
+      cuando: "1 o 2 veces al día, antes del tratamiento diario.",
+      modo: "Aplicar con las palmas sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "gh-5-azelaic-s-x-cristina-mitre-locion-exfoliante",
+    name: "5 AZELAIC-S x Cristina Mitre Loción exfoliante diaria",
+    img: "imagenes/gemaherrerias/gh-5-azelaic-s-x-cristina-mitre-locion-exfoliante.webp",
+    brand: "gemaherrerias",
+    line: "gh-lociones",
+    n: ["poros", "apagada", "acne"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Loción exfoliante con 2 % de ácido salicílico y azeloglicina.",
+      necesidad: "Elimina células muertas, minimiza poros, seborregula y aporta luminosidad.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Loción exfoliante diaria sin aclarado.",
+      cuando: "1 o 2 veces al día, antes del tratamiento diario.",
+      modo: "Impregnar un disco y deslizar sobre el rostro limpio y seco, evitando el contorno de ojos. Sin aclarado."
+    }
+  },
+
+  {
+    id: "gh-bruma-universal-dermobiota",
+    name: "BRUMA UNIVERSAL Dermobiota defensa diaria",
+    img: "imagenes/gemaherrerias/gh-bruma-universal-dermobiota.webp",
+    brand: "gemaherrerias",
+    line: "gh-lociones",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel, incluidas las más sensibles con tendencia a rojeces.",
+      tipo: "Bruma facial hidratante y reparadora.",
+      necesidad: "Hidrata, refuerza la barrera y equilibra la dermobiota.",
+      cuando: "Mañana y noche; se puede renovar durante el día.",
+      modo: "Vaporizar a 15 cm sobre rostro, cuello y escote limpios y secos, con ojos y labios cerrados."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Antioxidantes ---------- */
+  {
+    id: "gh-5-cica-e-serum-piel-sensible",
+    name: "5 CICA-E Sérum antioxidante piel sensible",
+    img: "imagenes/gemaherrerias/gh-5-cica-e-serum-piel-sensible.webp",
+    brand: "gemaherrerias",
+    line: "gh-antioxidantes",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Código Piel sensible con rojeces y pérdida de función barrera.",
+      tipo: "Sérum antioxidante con vitamina E y centella asiática.",
+      necesidad: "Antioxidante; piel sensible y con rojeces.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración."
+    }
+  },
+
+  {
+    id: "gh-15-antiox-c-serum-antioxidante",
+    name: "15 ANTIOX-C Sérum antioxidante antiedad",
+    img: "imagenes/gemaherrerias/gh-15-antiox-c-serum-antioxidante.webp",
+    brand: "gemaherrerias",
+    line: "gh-antioxidantes",
+    n: ["arrugas", "flacidez", "manchas"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Código Piel resistente con arrugas, flacidez y pigmentación. No apto en piel sensible.",
+      tipo: "Sérum con 10 % de vitamina C estabilizada.",
+      necesidad: "Antioxidante y despigmentante; signos del envejecimiento.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración. Evitar el cuello.",
+      nota: "No apto en piel sensible."
+    }
+  },
+
+  {
+    id: "gh-12-azelaic-n-serum-imperfecciones",
+    name: "12 AZELAIC-N Sérum antioxidante imperfecciones",
+    img: "imagenes/gemaherrerias/gh-12-azelaic-n-serum-imperfecciones.webp",
+    brand: "gemaherrerias",
+    line: "gh-antioxidantes",
+    n: ["acne", "manchas"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Código Piel grasa con imperfecciones.",
+      tipo: "Sérum con 8 % de azeloglicina y 4 % de niacinamida.",
+      necesidad: "Seborregula, despigmenta y reduce imperfecciones.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración."
+    }
+  },
+
+  {
+    id: "gh-10-nam-td-serum-despigmentante",
+    name: "10 NAM-TD Sérum antioxidante despigmentante",
+    img: "imagenes/gemaherrerias/gh-10-nam-td-serum-despigmentante.webp",
+    brand: "gemaherrerias",
+    line: "gh-antioxidantes",
+    n: ["manchas", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con alteraciones de la pigmentación.",
+      tipo: "Sérum con niacinamida y 2,5 % de ácido tranexámico.",
+      necesidad: "Manchas y signos del envejecimiento.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Acción intensiva ---------- */
+  {
+    id: "gh-600-retinal-r-serum-antiedad",
+    name: "600 RETINAL-R Sérum antiedad piel sensible",
+    img: "imagenes/gemaherrerias/gh-600-retinal-r-serum-antiedad.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["arrugas", "flacidez", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Código Piel sensible con arrugas, flacidez, pigmentación y textura irregular.",
+      tipo: "Multirretinoide con retinaldehído en lipovesículas.",
+      necesidad: "Despigmenta y reduce los signos del envejecimiento.",
+      cuando: "Por la noche, de forma progresiva según tolerancia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento.",
+      nota: "No apto en embarazo o lactancia."
+    }
+  },
+
+  {
+    id: "gh-2000-retinal-r-serum-antiedad",
+    name: "2000 RETINAL-R Sérum antiedad arrugas y manchas",
+    img: "imagenes/gemaherrerias/gh-2000-retinal-r-serum-antiedad.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["arrugas", "manchas"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel con arrugas y manchas.",
+      tipo: "Triple retinoide con retinal, retinol y activo de exosomas.",
+      necesidad: "Arrugas y manchas.",
+      cuando: "Por la noche, de forma progresiva según tolerancia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento.",
+      nota: "No apto en embarazo o lactancia. Contiene vitamina A: tener en cuenta la ingesta diaria."
+    }
+  },
+
+  {
+    id: "gh-3000-retinol-np-serum-antiedad",
+    name: "3000 RETINOL-NP Sérum antiedad arrugas y flacidez",
+    img: "imagenes/gemaherrerias/gh-3000-retinol-np-serum-antiedad.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["arrugas", "flacidez", "manchas"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Código Piel resistente con arrugas, flacidez, pigmentación y textura irregular.",
+      tipo: "Sérum con 0,3 % de retinol puro, niacinamida y hexapéptido.",
+      necesidad: "Antioxidante, antiglicación y despigmentante; arrugas y flacidez.",
+      cuando: "Por la noche, de forma progresiva según tolerancia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento.",
+      nota: "No apto en embarazo o lactancia. Contiene vitamina A: tener en cuenta la ingesta diaria."
+    }
+  },
+
+  {
+    id: "gh-1600-retinal-z-serum-imperfecciones",
+    name: "1600 RETINAL-Z Sérum imperfecciones",
+    img: "imagenes/gemaherrerias/gh-1600-retinal-z-serum-imperfecciones.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Código Piel grasa con imperfecciones.",
+      tipo: "Multirretinoide con retinaldehído y hexapéptido de zinc, no comedogénico.",
+      necesidad: "Seborregula, reduce imperfecciones e hiperqueratinización y mejora los poros.",
+      cuando: "Por la noche, de forma progresiva según tolerancia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento.",
+      nota: "No apto en embarazo o lactancia."
+    }
+  },
+
+  {
+    id: "gh-25-peptidos-th-serum-antiedad",
+    name: "25 PÉPTIDOS-TH Sérum antiedad arrugas y flacidez",
+    img: "imagenes/gemaherrerias/gh-25-peptidos-th-serum-antiedad.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con arrugas y flacidez.",
+      tipo: "Sérum de multipéptidos señal con ácido hialurónico.",
+      necesidad: "Reafirma, reduce arrugas y estimula el colágeno.",
+      cuando: "Gema Herrerías no indica la frecuencia.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración."
+    }
+  },
+
+  {
+    id: "gh-25-peptidos-th-cremagel-roll-on-para-cuello-y-escote",
+    name: "25 PÉPTIDOS-TH Cremagel roll-on para cuello y escote",
+    img: "imagenes/gemaherrerias/gh-25-peptidos-th-cremagel-roll-on-para-cuello-y-escote.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con arrugas y flacidez en cuello y escote.",
+      tipo: "Cremagel reafirmante de multipéptidos con roll-on.",
+      necesidad: "Firmeza y arrugas de cuello y escote.",
+      cuando: "2 veces al día.",
+      modo: "Desbloquear el cierre y deslizar el roll-on con movimientos ascendentes por cuello y escote hasta su penetración."
+    }
+  },
+
+  {
+    id: "gh-triple-ceramida-serum-antiedad",
+    name: "TRIPLE CERAMIDA Sérum antiedad piel seca",
+    img: "imagenes/gemaherrerias/gh-triple-ceramida-serum-antiedad.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["seca", "arrugas", "deshidratacion"],
+    sk: ["seca"],
+    d: {
+      paciente: "Código Piel seca a muy seca con signos de envejecimiento.",
+      tipo: "Sérum con triple ceramida, omegas y colesterol.",
+      necesidad: "Repara, hidrata y nutre; reduce arrugas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración."
+    }
+  },
+
+  {
+    id: "gh-10-aza-gz-crema-polvo-imperfecciones",
+    name: "10 AZA-GZ Crema polvo imperfecciones",
+    img: "imagenes/gemaherrerias/gh-10-aza-gz-crema-polvo-imperfecciones.webp",
+    brand: "gemaherrerias",
+    line: "gh-intensiva",
+    n: ["acne", "manchas"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Código Piel grasa con imperfecciones.",
+      tipo: "Tratamiento con 10 % de ácido azelaico, no comedogénico.",
+      necesidad: "Seborregula, despigmenta y mejora imperfecciones.",
+      cuando: "Preferentemente por la noche.",
+      modo: "Aplicar una pulsación sobre el rostro, evitando el contorno de ojos.",
+      solar: "Es recomendable el uso diario de protección solar de amplio espectro durante el tratamiento."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Hidratantes Función Barrera ---------- */
+  {
+    id: "gh-funcion-barrera-crema-piel-seca",
+    name: "FUNCIÓN BARRERA Crema piel seca",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-crema-piel-seca.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["seca", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Código Piel seca.",
+      tipo: "Hidratante antiedad reparadora de la barrera.",
+      necesidad: "Hidrata, refuerza la barrera, mejora la firmeza y minimiza arrugas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar 1 o 2 pulsaciones sobre rostro y cuello, con presiones lineales del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-cremagel-piel-grasa",
+    name: "FUNCIÓN BARRERA Cremagel piel grasa",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-cremagel-piel-grasa.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Código Piel grasa.",
+      tipo: "Hidratante antiedad reparadora, no comedogénica.",
+      necesidad: "Hidrata, refuerza la barrera, mejora la firmeza y minimiza arrugas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar 1 o 2 pulsaciones sobre rostro y cuello, con presiones lineales del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-formula-plus-antiedad-intensiva",
+    name: "FUNCIÓN BARRERA Fórmula plus antiedad intensiva",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-formula-plus-antiedad-intensiva.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con signos del envejecimiento y barrera alterada.",
+      tipo: "Fórmula antiedad intensiva con 5 ácidos hialurónicos y péptidos.",
+      necesidad: "Todos los signos del envejecimiento; efecto tensor en 30 minutos.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar una pulsación sobre rostro y cuello, con presiones lineales del centro hacia fuera."
+    }
+  },
+
+  {
+    id: "gh-calmante-y-reparadora-x-boticaria-garcia-mano-de-santo",
+    name: "CALMANTE REPARADORA x Boticaria García \"Mano de Santo\"",
+    img: "imagenes/gemaherrerias/gh-calmante-y-reparadora-x-boticaria-garcia-mano-de-santo.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["rojeces", "seca"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Código Piel sensible; pieles agredidas y con picor.",
+      tipo: "Crema calmante con pantenol y centella, no comedogénica.",
+      necesidad: "Calma y repara la función barrera.",
+      cuando: "Mañana y/o noche; se puede renovar durante el día.",
+      modo: "Aplicar sobre el rostro limpio y seco hasta su total penetración."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-mascarilla-ultrahidratante",
+    name: "FUNCIÓN BARRERA Mascarilla ultrahidratante",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-mascarilla-ultrahidratante.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["deshidratacion", "seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Mascarilla de noche con doble ácido hialurónico, no comedogénica.",
+      necesidad: "Hidrata, regenera y repara la barrera.",
+      cuando: "2 veces por semana, durante toda la noche.",
+      modo: "Extender una capa gruesa sobre rostro y cuello limpios, incluido el contorno de ojos, y masajear."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-cremagel-corporal",
+    name: "FUNCIÓN BARRERA Cremagel corporal",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-cremagel-corporal.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel.",
+      tipo: "Cremagel corporal con ceramida NG.",
+      necesidad: "Repara la barrera, hidrata y mantiene la dermobiota.",
+      cuando: "Mañana y/o noche.",
+      modo: "Aplicar sobre la piel del cuerpo limpia y seca."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-balsamo-multifuncion",
+    name: "FUNCIÓN BARRERA Bálsamo multifunción",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-balsamo-multifuncion.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel; labios, cejas, cutículas y zonas secas.",
+      tipo: "Bálsamo multiusos con ceramida NG.",
+      necesidad: "Nutre, repara y protege zonas secas.",
+      cuando: "Según necesidad, a lo largo del día.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "gh-funcion-barrera-balsamo-labial-copia",
+    name: "FUNCIÓN BARRERA Bálsamo labial",
+    img: "imagenes/gemaherrerias/gh-funcion-barrera-balsamo-labial-copia.webp",
+    brand: "gemaherrerias",
+    line: "gh-barrera",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Labios de todos los Código Piel.",
+      tipo: "Bálsamo labial no pegajoso (edición limitada con charm de regalo).",
+      necesidad: "Hidrata, repara y protege de la sequedad.",
+      cuando: "Según necesidad, a lo largo del día.",
+      modo: "Aplicar una pequeña cantidad sobre los labios limpios y secos."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Contorno de ojos ---------- */
+  {
+    id: "gh-funcion-global-contorno-de-ojos",
+    name: "FUNCIÓN GLOBAL Contorno de ojos antiedad",
+    img: "imagenes/gemaherrerias/gh-funcion-global-contorno-de-ojos.webp",
+    brand: "gemaherrerias",
+    line: "gh-ojos",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno de ojos y labios de todos los Código Piel.",
+      tipo: "Cremagel antiedad con hexapéptidos y ácido hialurónico.",
+      necesidad: "Arrugas, firmeza, hidratación, ojeras y bolsas.",
+      cuando: "2 veces al día.",
+      modo: "Aplicar sobre el hueso de la órbita y el labio superior y masajear hasta su penetración."
+    }
+  },
+
+  {
+    id: "gh-k-at-serum-contorno-de-ojos",
+    name: "K-AT SÉRUM Contorno de ojos para ojeras y bolsas",
+    img: "imagenes/gemaherrerias/gh-k-at-serum-contorno-de-ojos.webp",
+    brand: "gemaherrerias",
+    line: "gh-ojos",
+    n: ["ojos"],
+    sk: ["seca", "grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Código Piel resistente con ojeras y bolsas. No apto en piel sensible.",
+      tipo: "Sérum con vitamina K óxido, ácido tranexámico y tri roll-on.",
+      necesidad: "Ojeras pigmentarias y vasculares y bolsas persistentes.",
+      cuando: "2 veces al día.",
+      modo: "Deslizar el roll-on sobre ojera y bolsa y masajear hasta su penetración.",
+      nota: "No apto en piel sensible."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Protección solar ---------- */
+  {
+    id: "gh-factor-invisible-spf50-amplio-espectro",
+    name: "FACTOR INVISIBLE SPF50 Amplio espectro",
+    img: "imagenes/gemaherrerias/gh-factor-invisible-spf50-amplio-espectro.webp",
+    brand: "gemaherrerias",
+    line: "gh-solar",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel, incluidas las grasas con imperfecciones.",
+      tipo: "Protector solar incoloro en gel invisible.",
+      necesidad: "Protección UVB, UVA, luz azul e IR-A.",
+      cuando: "Cada mañana, antes de la exposición. Renovar a lo largo del día.",
+      modo: "Aplicar en cantidad suficiente y uniforme sobre el rostro, evitando el contorno de ojos.",
+      solar: "Un exceso de exposición es perjudicial incluso con protección. Una aplicación insuficiente reduce mucho la protección."
+    }
+  },
+
+  {
+    id: "gh-factor-fotobioma-spf50-amplio-espectro",
+    name: "FACTOR FOTOBIOMA SPF50+ Amplio espectro",
+    img: "imagenes/gemaherrerias/gh-factor-fotobioma-spf50-amplio-espectro.webp",
+    brand: "gemaherrerias",
+    line: "gh-solar",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todos los Código Piel, incluidas las sensibles.",
+      tipo: "Protector solar incoloro de textura ligera con niacinamida.",
+      necesidad: "Protección UVB, UVA, luz azul e IR-A.",
+      cuando: "Cada mañana, antes de la exposición. Renovar a lo largo del día.",
+      modo: "Aplicar en cantidad suficiente y uniforme sobre el rostro, evitando el contorno de ojos.",
+      solar: "Una aplicación insuficiente reduce mucho la protección."
+    }
+  },
+
+  /* ---------- Gema Herrerías · Complementos alimenticios ---------- */
+  {
+    id: "gh-agederm-ceramide-complemento-alimenticio",
+    name: "AGEDERM CERAMIDE Complemento alimenticio",
+    img: "imagenes/gemaherrerias/gh-agederm-ceramide-complemento-alimenticio.webp",
+    brand: "gemaherrerias",
+    line: "gh-complementos",
+    n: ["arrugas", "flacidez", "seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con arrugas y/o flacidez o piel muy seca.",
+      tipo: "Complemento con fitoceramidas, ácido hialurónico y niacina.",
+      necesidad: "Cuidado de la piel desde el interior.",
+      cuando: "2 cápsulas al día, preferiblemente con una comida principal.",
+      modo: "Tomar con un vaso de agua. No superar la dosis diaria."
+    }
+  },
+
+  {
+    id: "gh-aoxderm-pigment-complemento-alimenticio",
+    name: "AOXDERM PIGMENT Complemento alimenticio",
+    img: "imagenes/gemaherrerias/gh-aoxderm-pigment-complemento-alimenticio.webp",
+    brand: "gemaherrerias",
+    line: "gh-complementos",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con pigmentación.",
+      tipo: "Complemento con 500 mg de nicotinamida y luteína.",
+      necesidad: "Cuidado de la piel desde el interior.",
+      cuando: "2 cápsulas al día, preferiblemente con una comida principal.",
+      modo: "Tomar enteras con un vaso de agua. No superar la dosis diaria.",
+      nota: "No recomendado en embarazo ni lactancia. Consultar con un profesional en caso de enfermedad hepática o tratamiento farmacológico."
+    }
+  },
+
+  {
+    id: "gh-probioderm-balance-complemento-alimenticio",
+    name: "PROBIODERM BALANCE Complemento alimenticio",
+    img: "imagenes/gemaherrerias/gh-probioderm-balance-complemento-alimenticio.webp",
+    brand: "gemaherrerias",
+    line: "gh-complementos",
+    n: ["acne"],
+    sk: ["todas"],
+    d: {
+      paciente: "Código Piel con imperfecciones, a partir de 12 años.",
+      tipo: "Complemento con 5 cepas probióticas, nicotinamida y zinc.",
+      necesidad: "Cuidado de la piel desde el interior.",
+      cuando: "1 cápsula al día, preferiblemente en ayunas.",
+      modo: "Tomar con un vaso de agua. No superar la dosis diaria.",
+      nota: "Consultar con un profesional en caso de embarazo, lactancia o inmunodepresión."
+    }
+  },
+
+  {
+    id: "gh-magnesio-global-complemento-alimenticio",
+    name: "MAGNESIO GLOBAL Complemento alimenticio",
+    img: "imagenes/gemaherrerias/gh-magnesio-global-complemento-alimenticio.webp",
+    brand: "gemaherrerias",
+    line: "gh-complementos",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: ayuda a disminuir el cansancio y la fatiga.",
+      tipo: "Complemento con 3 fuentes de magnesio, taurina y vitamina B6.",
+      necesidad: "Cansancio y fatiga.",
+      cuando: "2 cápsulas al día, preferiblemente con una comida principal.",
+      modo: "Tomar con un vaso de agua. No superar la dosis diaria."
+    }
+  },
+
+  {
+    id: "gh-omega-1500epa-dha-complemento-alimenticio",
+    name: "OMEGA 1500 EPA/DHA Complemento alimenticio",
+    img: "imagenes/gemaherrerias/gh-omega-1500epa-dha-complemento-alimenticio.webp",
+    brand: "gemaherrerias",
+    line: "gh-complementos",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Sin perfil de piel: aporte de omega-3.",
+      tipo: "Complemento de aceite de pescado con EPA, DHA y vitamina E.",
+      necesidad: "Aporte de ácidos grasos omega-3.",
+      cuando: "2 cápsulas al día, preferiblemente con una comida principal.",
+      modo: "Tomar con un vaso de agua. No superar la dosis diaria."
     }
   }
 ];
