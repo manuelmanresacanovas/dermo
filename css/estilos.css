@@ -1,0 +1,73 @@
+:root{--bg:#faf9fc;--s:#fff;--t:#2a2a2a;--m:#5b6670;--a:#2f6aa3;--a2:#e8f0f8;--b:#e0e4ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11161d;--s:#1a212b;--t:#e8edf3;--m:#a3afbc;--a:#8db8e6;--a2:#22303f;--b:#2c3745;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#11161d;--s:#1a212b;--t:#e8edf3;--m:#a3afbc;--a:#8db8e6;--a2:#22303f;--b:#2c3745;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--s);z-index:10}
+a{color:var(--a)}
+:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--s);padding:8px;z-index:20}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--s);border-bottom:1px solid var(--b);z-index:5}
+.bar{max-width:1100px;margin:auto;padding:10px 16px;display:grid;gap:8px;grid-template-columns:1fr}
+.logo{font-weight:700;color:var(--t);text-decoration:none;font-size:1.1rem}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:10px 14px;min-height:44px;border-radius:10px;text-decoration:none;color:var(--m);font-weight:600;display:inline-flex;align-items:center}
+nav a[aria-current=page]{background:var(--a2);color:var(--a)}
+input[type=search],select{width:100%;min-height:44px;padding:0 14px;border:1px solid var(--b);border-radius:10px;background:var(--bg);color:var(--t);font:inherit}
+main{max-width:1100px;margin:auto;padding:20px 16px 48px}
+main:focus-visible{outline:none}
+h1{font-size:1.6rem;margin:.3em 0 .2em;line-height:1.2}h2{font-size:1.2rem;margin:1.6em 0 .6em}
+.crumbs{font-size:.9rem;color:var(--m);margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.crumbs li+li::before{content:"›";margin-right:6px}
+.crumbs{align-items:center}
+.crumbs a{display:inline-block;min-height:0;padding:4px 0;border-radius:0;color:var(--a);font-weight:400}
+.lead{color:var(--m);margin:0 0 20px}
+.grid{display:grid;gap:12px;grid-template-columns:1fr;padding:0;list-style:none;margin:0}
+.card{display:flex;flex-direction:column;gap:2px;min-height:64px;padding:14px 16px;background:var(--s);border:1px solid var(--b);border-radius:12px;text-decoration:none;color:var(--t)}
+.card:hover{border-color:var(--a)}.card span{color:var(--m);font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:99px;background:var(--a2);color:var(--a);text-decoration:none;font-weight:600;font-size:.9rem}
+.box{background:var(--s);border:1px solid var(--b);border-radius:12px;padding:16px;margin-top:16px}
+.empty{padding:24px;text-align:center;color:var(--m);border:1px dashed var(--b);border-radius:12px}
+.th h2:first-child{margin-top:0}.th li{margin:.3em 0}
+.acc{background:var(--s);border:1px solid var(--b);border-radius:12px;margin:0 0 12px}
+.acc>summary{display:flex;align-items:center;gap:12px;min-height:56px;padding:12px 16px;font-weight:600;cursor:pointer;list-style:none}
+.acc>summary::-webkit-details-marker{display:none}
+.acc>summary span{color:var(--m);font-weight:400;font-size:.9rem}
+.acc>summary::after{content:"+";font-size:1.4rem;color:var(--a);margin-left:auto}
+.acc[open]>summary::after{content:"–"}
+.acc>*:not(summary){margin-left:16px;margin-right:16px}.acc[open]{padding-bottom:12px}
+/* Listado de productos de una línea: foto cuadrada y nombre debajo */
+.pgrid{display:grid;gap:24px 16px;grid-template-columns:repeat(2,minmax(0,1fr));padding:0;margin:0;list-style:none}
+.ptile{display:block;color:var(--t);text-decoration:none}
+.ptile img,.ptile .ph{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff}
+.ptile .ph{background:var(--a2)}
+.pname{display:block;margin-top:8px;font-size:.95rem;line-height:1.35}
+.ptile:hover .pname{color:var(--a);text-decoration:underline}
+/* Tarjeta con foto pequeña en los desplegables de «Elección de producto» */
+/* Todas las tarjetas de una página miden lo mismo: toman la altura de la más alta */
+.grid,.pgrid{grid-auto-rows:1fr}
+.grid>li,.pgrid>li{min-width:0}
+.card{height:100%;justify-content:center}
+.ptile{height:100%}
+.cmini{flex-direction:row;align-items:center;gap:12px;height:132px;padding:10px 12px}
+.cmini img,.cmini .ph{flex:none;display:block;width:72px;height:72px;object-fit:contain;background:#fff;border-radius:8px}
+.cmini .ph{background:var(--a2)}
+.cmini>div{min-width:0}
+.cmini>div{flex:1}
+.cmini strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;line-height:1.3}
+.cmini span{display:block;margin-top:2px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Ficha del producto: foto a un lado, paciente destacado arriba y datos debajo */
+.fgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:0 24px}
+.fimg{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:1;object-fit:contain;margin:16px auto 0;background:#fff}
+.fpac{margin-top:16px;padding:16px;background:var(--a2);border-left:4px solid var(--a);border-radius:12px}
+.fpac h2{margin:0 0 4px;font-size:.85rem;font-weight:600;color:var(--a)}
+.fpac p{margin:0;font-size:1.15rem;font-weight:600;line-height:1.35}
+.fdat h2{margin:14px 0 2px;font-size:.85rem;font-weight:600;color:var(--m)}
+.fdat h2:first-child{margin-top:0}
+.fdat p{margin:0}
+.fdat p+p{margin-top:6px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}.pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}.bar{grid-template-columns:auto 1fr;align-items:center}.bar nav{grid-column:1/-1}.bar input{grid-column:2;grid-row:1}.fgrid{grid-template-columns:240px minmax(0,1fr);align-items:start}.fimg{margin:16px 0 0}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}.pgrid{grid-template-columns:repeat(4,minmax(0,1fr))}h1{font-size:2rem}}
+@media(min-width:1100px){.bar{grid-template-columns:auto 1fr 260px}.bar nav{grid-column:auto}.bar input{grid-column:auto;grid-row:auto}}
