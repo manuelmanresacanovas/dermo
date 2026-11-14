@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Complementos alimenticios: frasco de cápsulas, cápsulas, comprimidos y hojas">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef5ee"/>
+      <stop offset="1" stop-color="#f6efe6"/>
+    </linearGradient>
+    <linearGradient id="frasco" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9822f"/>
+      <stop offset=".55" stop-color="#e3a457"/>
+      <stop offset="1" stop-color="#b8722a"/>
+    </linearGradient>
+    <linearGradient id="tapa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e3e6ea"/>
+    </linearGradient>
+    <linearGradient id="capA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c75a"/>
+      <stop offset="1" stop-color="#e2a82c"/>
+    </linearGradient>
+    <linearGradient id="capB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7cc5a2"/>
+      <stop offset="1" stop-color="#4fa57d"/>
+    </linearGradient>
+    <radialGradient id="perla" cx=".35" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff6d6"/>
+      <stop offset=".5" stop-color="#f3c955"/>
+      <stop offset="1" stop-color="#d9a12a"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#fondo)"/>
+  <circle cx="470" cy="70" r="120" fill="#e4efe2"/>
+  <circle cx="90" cy="360" r="110" fill="#f1e4d2"/>
+
+  <!-- hojas -->
+  <g fill="#6aab7d">
+    <path d="M118 250c-40-40-30-110 30-140 10 60-5 105-30 140z"/>
+    <path d="M150 250c20-55 75-80 130-60-30 45-75 65-130 60z" fill="#8cc49a"/>
+  </g>
+  <path d="M118 250c8-45 18-85 30-140M150 250c40-25 80-45 130-60" stroke="#4d8a5f" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- sombra -->
+  <ellipse cx="300" cy="338" rx="210" ry="16" fill="#000" opacity=".07"/>
+
+  <!-- frasco -->
+  <rect x="236" y="96" width="128" height="38" rx="8" fill="url(#tapa)" stroke="#d3d8de"/>
+  <rect x="244" y="104" width="112" height="4" rx="2" fill="#d3d8de"/>
+  <rect x="244" y="114" width="112" height="4" rx="2" fill="#d3d8de"/>
+  <path d="M226 142h148c12 0 20 9 20 20v156c0 12-9 20-20 20H226c-12 0-20-8-20-20V162c0-11 8-20 20-20z" fill="url(#frasco)"/>
+  <rect x="222" y="190" width="156" height="92" rx="6" fill="#fffaf2"/>
+  <rect x="244" y="210" width="112" height="10" rx="5" fill="#4fa57d"/>
+  <rect x="256" y="232" width="88" height="7" rx="3.5" fill="#e3a457"/>
+  <rect x="266" y="250" width="68" height="7" rx="3.5" fill="#e3a457" opacity=".6"/>
+  <path d="M232 160c0-6 3-9 8-9" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".45" fill="none"/>
+  <rect x="226" y="160" width="10" height="170" rx="5" fill="#fff" opacity=".18"/>
+
+  <!-- cápsulas -->
+  <g transform="rotate(-25 440 300)">
+    <rect x="400" y="282" width="80" height="34" rx="17" fill="url(#capB)"/>
+    <path d="M440 282h23a17 17 0 0 1 0 34h-23z" fill="#fff" opacity=".85"/>
+    <rect x="410" y="288" width="22" height="6" rx="3" fill="#fff" opacity=".5"/>
+  </g>
+  <g transform="rotate(18 500 230)">
+    <rect x="462" y="214" width="76" height="32" rx="16" fill="url(#capA)"/>
+    <path d="M500 214h22a16 16 0 0 1 0 32h-22z" fill="#c9822f"/>
+    <rect x="472" y="220" width="20" height="5" rx="2.5" fill="#fff" opacity=".55"/>
+  </g>
+  <g transform="rotate(-8 120 315)">
+    <rect x="82" y="300" width="72" height="30" rx="15" fill="url(#capA)"/>
+    <path d="M118 300h21a15 15 0 0 1 0 30h-21z" fill="#fff" opacity=".9"/>
+  </g>
+
+  <!-- perlas de omega -->
+  <ellipse cx="455" cy="345" rx="20" ry="15" fill="url(#perla)"/>
+  <ellipse cx="495" cy="325" rx="17" ry="13" fill="url(#perla)"/>
+  <ellipse cx="185" cy="335" rx="16" ry="12" fill="url(#perla)"/>
+
+  <!-- comprimidos -->
+  <circle cx="530" cy="290" r="18" fill="#ffffff" stroke="#d8dde3" stroke-width="2"/>
+  <path d="M514 290h32" stroke="#d8dde3" stroke-width="2"/>
+  <circle cx="400" cy="350" r="15" fill="#ffffff" stroke="#d8dde3" stroke-width="2"/>
+  <path d="M387 350h26" stroke="#d8dde3" stroke-width="2"/>
+  <circle cx="160" cy="290" r="13" fill="#fbe3e6" stroke="#efc4ca" stroke-width="2"/>
+</svg>
