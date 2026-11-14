@@ -14,7 +14,7 @@
       modo: cómo se aplica.
       solar: qué indica la marca sobre fotoprotección (opcional; solo si la marca lo dice).
       nota: advertencias o aclaraciones (opcional).
-   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com, es.medik8.com, es.svr.com, es.nuxe.com, laroche-posay.es). */
+   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com, es.medik8.com, es.svr.com, es.nuxe.com, laroche-posay.es, isdin.com/es, cantabrialabs.es, eau-thermale-avene.es). */
 var D = D || {};
 
 D.prods = [
@@ -5424,9 +5424,18 @@ D.prods = [
     n: ["arrugas", "manchas", "flacidez"],
     sk: ["todas"],
     d: {
-      paciente: "Quien quiere usar vitamina A; se elige la fuerza adecuada (6 versiones).",
+      paciente: "Quien quiere usar vitamina A: hay 6 concentraciones, desde la piel sensible hasta usuarios expertos en vitamina A.",
       tipo: "Sérum nocturno con retinal.",
       necesidad: "Arrugas, manchas, congestión y firmeza.",
+      variantes: [
+        ["Crystal Retinal 1", "0,01 %", "Piel sensible que quiere resultados antiedad visibles."],
+        ["Crystal Retinal 3", "0,03 %", "Quien empieza con la vitamina A."],
+        ["Crystal Retinal 6", "0,06 %", "Usuario habitual de vitamina A."],
+        ["Crystal Retinal 10", "0,1 %", "Usuario avanzado que quiere potenciar los resultados obtenidos con Crystal Retinal 6."],
+        ["Crystal Retinal 20", "0,2 %", "Usuario con experiencia en vitamina A (ha usado al menos un tubo de Crystal Retinal 10)."],
+        ["Crystal Retinal 24", "0,24 %", "Solo usuario experto en vitamina A (ha usado al menos un tubo de Crystal Retinal 20). Vigilar la piel las dos primeras semanas; si hay sensibilidad, usar menos producto o en noches alternas al principio."]
+      ],
+      variantesNota: "Medik8 recomienda usar al menos un tubo de cada concentración antes de pasar a la siguiente. Al subir de concentración no hace falta volver a introducirlo poco a poco. Las concentraciones 20 y 24 tienen color melocotón y pueden teñir la piel o las sábanas: dejar absorber y sellar con la crema de noche.",
       cuando: "Introducir poco a poco: 2 veces por semana las 2 primeras semanas, cada 2 noches las 2 siguientes y luego todas las noches.",
       modo: "Tras limpiar, aplicar 2 pulsaciones en rostro y cuello. Dejar absorber e hidratar.",
       solar: "Usar siempre protector solar por la mañana mientras se use vitamina A. Medik8 recomienda Advanced Day Ultimate Protect.",
@@ -11665,7 +11674,7 @@ D.prods = [
     img: "imagenes/lrp/lrp-lipikar-aceite-lavante-ap-plus.webp",
     brand: "lrp",
     line: "lrp-lipikar",
-    n: ["limpieza", "seca", "corporal"],
+    n: ["seca", "corporal"],
     sk: ["seca", "sensible"],
     d: {
       paciente: "Piel muy seca, sensible o con tendencia atópica, para toda la familia.",
@@ -11703,7 +11712,7 @@ D.prods = [
     img: "imagenes/lrp/lrp-lipikar-pain-surgras.webp",
     brand: "lrp",
     line: "lrp-lipikar",
-    n: ["limpieza", "corporal"],
+    n: ["corporal"],
     sk: ["seca", "sensible"],
     d: {
       paciente: "Piel seca y sensible de toda la familia, incluidos niños y adultos.",
@@ -12509,6 +12518,5432 @@ D.prods = [
       necesidad: "Reduce arrugas, mejora la firmeza, unifica el tono e ilumina la mirada.",
       cuando: "Por la mañana.",
       modo: "Un grano de arroz en el contorno, desde el borde interior al exterior."
+    }
+  },
+
+  /* ---------- Isdin · Isdinceutics ---------- */
+  {
+    id: "isd-isdinceutics-essential-cleansing",
+    name: "Essential Cleansing",
+    img: "imagenes/isdin/isd-isdinceutics-essential-cleansing.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["limpieza"],
+    sk: ["todas", "grasa"],
+    d: {
+      paciente: "Todo tipo de piel, ideal para piel grasa.",
+      tipo: "Aceite limpiador facial oil-to-milk.",
+      necesidad: "Elimina maquillaje, protector solar, sebo y polución; hidrata y respeta la barrera.",
+      limpieza: "Doble limpieza · 1.er paso",
+      limpiezaDet: "También se puede usar como limpiador único. Isdin lo combina con Essential Purifier o Essential Scrub.",
+      cuando: "Una o dos veces al día.",
+      modo: "2 o 3 pulsaciones en manos secas sobre el rostro seco; desmaquillar párpados con los ojos cerrados; humedecer, masajear hasta emulsionar y aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-essential-purifier",
+    name: "Essential Purifier",
+    img: "imagenes/isdin/isd-isdinceutics-essential-purifier.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["limpieza"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, apto para piel sensible.",
+      tipo: "Espuma limpiadora extradensa.",
+      necesidad: "Elimina sebo, sudor, residuos y polución sin comprometer la hidratación.",
+      limpieza: "Doble limpieza · 2.º paso",
+      limpiezaDet: "Va después de Essential Cleansing; también sirve como limpiador único.",
+      cuando: "A diario, mañana y noche.",
+      modo: "Aplicar con un masaje y aclarar."
+    }
+  },
+
+  {
+    id: "isd-essential-scrub-mini-icon-15-g",
+    name: "Essential Scrub",
+    img: "imagenes/isdin/isd-essential-scrub-mini-icon-15-g.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["limpieza", "poros"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, apto para piel sensible. Uso adulto.",
+      tipo: "Gel limpiador exfoliante con semillas de oliva.",
+      necesidad: "Limpia y exfolia en un paso, elimina células muertas y reduce la apariencia de los poros.",
+      limpieza: "Doble limpieza · 2.º paso",
+      limpiezaDet: "Va después de Essential Cleansing; también se usa solo, como 2 en 1 para limpiar y exfoliar.",
+      cuando: "A diario, mañana o noche.",
+      modo: "Una cantidad del tamaño de una moneda sobre el rostro húmedo (en seco, para exfoliar más), con movimientos circulares y ojos cerrados. Aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "isd-hyaluronic-concentrate",
+    name: "Hyaluronic Concentrate",
+    img: "imagenes/isdin/isd-hyaluronic-concentrate.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel; piel deshidratada y primeras arrugas.",
+      tipo: "Sérum aqua-gel con ácido hialurónico y péptidos.",
+      necesidad: "Hidrata intensamente, redensifica, suaviza las líneas finas y aporta luminosidad.",
+      cuando: "Mañana y noche.",
+      modo: "1 o 2 pulsaciones sobre la piel limpia y seca, con movimientos circulares."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-hyaluronic-moisture-normal",
+    name: "Hyaluronic Moisture Normal to Dry Skin",
+    img: "imagenes/isdin/isd-isdinceutics-hyaluronic-moisture-normal.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca con falta de hidratación y primeras arrugas.",
+      tipo: "Crema hidratante con ácido hialurónico y antioxidantes.",
+      necesidad: "Hidrata intensamente, previene los primeros signos de la edad y protege de agresiones externas.",
+      cuando: "Isdin no indica la frecuencia.",
+      modo: "Sobre la piel limpia y seca de rostro, cuello y escote, masajeando hasta absorber."
+    }
+  },
+
+  {
+    id: "isd-hyaluronic-moisture-oily",
+    name: "Hyaluronic Moisture Oily",
+    img: "imagenes/isdin/isd-hyaluronic-moisture-oily.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["deshidratacion", "poros", "arrugas"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta o grasa con falta de hidratación, primeras arrugas y brillos.",
+      tipo: "Crema hidratante matificante.",
+      necesidad: "Hidrata, reduce el exceso de sebo y los brillos, minimiza imperfecciones y corrige los primeros signos de la edad.",
+      cuando: "Isdin no indica la frecuencia.",
+      modo: "Sobre la piel limpia y seca de rostro, cuello y escote, masajeando hasta absorber."
+    }
+  },
+
+  {
+    id: "isd-hyaluronic-moisture-sensitive-skin",
+    name: "Hyaluronic Moisture Sensitive Skin",
+    img: "imagenes/isdin/isd-hyaluronic-moisture-sensitive-skin.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con falta de hidratación, tendencia a rojeces y primeras arrugas.",
+      tipo: "Crema hidratante con ácido hialurónico y niacinamida.",
+      necesidad: "Hidrata, calma, reduce la sensación de incomodidad y corrige los primeros signos de la edad.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia y seca de rostro, cuello y escote, masajeando hasta absorber."
+    }
+  },
+
+  {
+    id: "isd-flavo-c",
+    name: "Flavo-C",
+    img: "imagenes/isdin/isd-flavo-c.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con líneas de expresión, arrugas, pérdida de firmeza o daño solar.",
+      tipo: "Sérum antioxidante con 8 % de vitamina C.",
+      necesidad: "Previene y corrige los signos del fotoenvejecimiento; ilumina e hidrata.",
+      cuando: "Por la mañana.",
+      modo: "3-4 gotas en la palma y masajear en rostro, cuello y escote limpios y secos, evitando el contorno de ojos.",
+      nota: "En piel sensible es normal una ligera rojez en las primeras aplicaciones."
+    }
+  },
+
+  {
+    id: "isd-flavo-c-forte",
+    name: "Flavo-C Forte",
+    img: "imagenes/isdin/isd-flavo-c-forte.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con líneas de expresión, arrugas y falta de luminosidad.",
+      tipo: "Sérum con 15 % de vitamina C pura que se activa en el momento.",
+      necesidad: "Potente acción antioxidante; ilumina, revitaliza y mejora firmeza y elasticidad.",
+      cuando: "Por la mañana. Cada vial dura 10 días una vez activado.",
+      modo: "Cambiar el tapón por el de la vitamina C en polvo, presionar y agitar 30 segundos. Con el gotero, 3-4 gotas en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "isd-flavo-c-intense",
+    name: "Flavo-C Intense",
+    img: "imagenes/isdin/isd-flavo-c-intense.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con signos de envejecimiento, tono irregular y falta de luminosidad.",
+      tipo: "Sérum bifásico con 15 % de vitamina C.",
+      necesidad: "Acción antioxidante que corrige los 9 signos de la edad y aporta luminosidad y uniformidad.",
+      cuando: "A diario, en la rutina de la mañana.",
+      modo: "2 pulsaciones en la palma, mezclar las fases hasta un color homogéneo y extender en el rostro limpio y seco con suaves toques."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-flavo-c-ultraglican",
+    name: "Flavo-C Ultraglican",
+    img: "imagenes/isdin/isd-isdinceutics-flavo-c-ultraglican.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con líneas de expresión, arrugas y pérdida de firmeza.",
+      tipo: "Ampollas con vitamina C, ultraglicanos y ácido hialurónico.",
+      necesidad: "Antioxidante; aporta luminosidad e hidratación y refuerza la firmeza.",
+      cuando: "Por la mañana.",
+      modo: "Agitar, abrir la ampolla con el rompedor y aplicar media ampolla en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-instant-flash",
+    name: "Instant Flash",
+    img: "imagenes/isdin/isd-isdinceutics-instant-flash.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel deshidratada, con líneas finas, arrugas o pérdida de firmeza, antes de una ocasión especial.",
+      tipo: "Ampolla de efecto lifting inmediato.",
+      necesidad: "Efecto lifting inmediato durante 8 horas; revitaliza y reduce los signos de fatiga.",
+      cuando: "Antes de una ocasión especial, después de la limpieza y justo antes de maquillarse.",
+      modo: "Agitar, abrir con el rompedor y aplicar media ampolla en rostro, cuello y escote limpios y secos, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "isd-age-reverse-day",
+    name: "A.G.E. Reverse Day",
+    img: "imagenes/isdin/isd-age-reverse-day.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con arrugas, pérdida de firmeza y elasticidad o falta de hidratación.",
+      tipo: "Crema de día antiedad.",
+      necesidad: "Antiglicación, remodelante y antipolución; mejora la firmeza y el óvalo facial.",
+      cuando: "De día (crema de día). Isdin no indica la frecuencia.",
+      modo: "Sobre la piel limpia y seca de rostro, cuello y escote, hasta su absorción."
+    }
+  },
+
+  {
+    id: "isd-age-reverse-night",
+    name: "A.G.E. Reverse Night",
+    img: "imagenes/isdin/isd-age-reverse-night.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con arrugas, pérdida de firmeza y elasticidad o falta de hidratación.",
+      tipo: "Crema de noche reparadora con melatonina.",
+      necesidad: "Antiglicación, reparadora y remodelante; mejora la firmeza y la elasticidad.",
+      cuando: "Por la noche.",
+      modo: "Sobre la piel limpia y seca de rostro y cuello, hasta su absorción."
+    }
+  },
+
+  {
+    id: "isd-retinal-intense",
+    name: "Retinal Intense",
+    img: "imagenes/isdin/isd-retinal-intense.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con arrugas, líneas de expresión y pérdida de firmeza.",
+      tipo: "Sérum bifásico de noche con retinaldehído.",
+      necesidad: "Acelera la renovación y reduce arrugas y líneas de expresión.",
+      cuando: "Por la noche. Si es la primera vez con un retinoide: la 1.ª semana, 3 noches dejando 2 entre aplicaciones; la 2.ª, noches alternas; desde la 3.ª, aumentar si no hay irritación.",
+      modo: "2 pulsaciones, mezclar hasta un color homogéneo y extender una fina capa en el rostro limpio y seco, evitando contorno de ojos y mucosas.",
+      solar: "Usar fotoprotector durante el día y evitar el sol directo mientras se utiliza.",
+      nota: "No combinar con otros productos con retinol o derivados. Al principio puede dar picor, enrojecimiento o descamación."
+    }
+  },
+
+  {
+    id: "isd-retinal-smooth",
+    name: "Retinal Smooth",
+    img: "imagenes/isdin/isd-retinal-smooth.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con primeras arrugas, piel apagada o deshidratada.",
+      tipo: "Sérum bifásico de noche con retinaldehído suave.",
+      necesidad: "Renueva la piel con suavidad, previene los primeros signos de la edad y aporta luminosidad.",
+      cuando: "Por la noche. Si hay molestias: la 1.ª semana, 3 noches dejando 2 entre aplicaciones; la 2.ª, noches alternas; desde la 3.ª, aumentar si no hay irritación.",
+      modo: "2 pulsaciones, mezclar las fases y extender en el rostro limpio y seco, evitando el contorno de ojos.",
+      solar: "Usar fotoprotector a la mañana siguiente y evitar la luz solar directa."
+    }
+  },
+
+  {
+    id: "isd-retinal-eyes",
+    name: "Retinal Eyes",
+    img: "imagenes/isdin/isd-retinal-eyes.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; contorno con arrugas, bolsas, ojeras, falta de firmeza y fatiga.",
+      tipo: "Sérum bifásico de noche con retinal para el contorno de ojos.",
+      necesidad: "Corrige los cinco signos de la edad del contorno.",
+      cuando: "Por la noche. Si es la primera vez con un retinoide: la 1.ª semana, 3 noches dejando 2 entre aplicaciones; la 2.ª, noches alternas; desde la 3.ª, aumentar si no hay irritación.",
+      modo: "Una dosis en la yema del dedo, mezclar las fases y aplicar en el contorno con suaves toques.",
+      solar: "Usar fotoprotector por la mañana.",
+      nota: "Para usarlo durante el embarazo, consultar a un médico."
+    }
+  },
+
+  {
+    id: "isd-vital-eyes",
+    name: "Vital Eyes",
+    img: "imagenes/isdin/isd-vital-eyes.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con líneas de expresión y arrugas en el contorno.",
+      tipo: "Contorno de ojos reparador nocturno con melatonina.",
+      necesidad: "Suaviza arrugas y líneas de expresión, y aporta una mirada más luminosa y descansada.",
+      cuando: "Por la noche (reparador nocturno). Isdin no indica la frecuencia.",
+      modo: "Una pequeña cantidad con la yema del dedo y masajear con el aplicador frío desde dentro hacia fuera, hasta las patas de gallo."
+    }
+  },
+
+  {
+    id: "isd-k-ox-eyes",
+    name: "K-Ox Eyes",
+    img: "imagenes/isdin/isd-k-ox-eyes.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con bolsas y ojeras.",
+      tipo: "Contorno de ojos con vitamina K óxido y péptidos.",
+      necesidad: "Reduce la apariencia de bolsas y ojeras y mejora la firmeza.",
+      cuando: "Isdin no indica la frecuencia.",
+      modo: "Un grano de arroz en la yema del dedo, aplicar en el contorno y masajear de dentro hacia fuera con el aplicador cerámico frío."
+    }
+  },
+
+  {
+    id: "isd-hyaluronic-eyes",
+    name: "Hyaluronic Eyes",
+    img: "imagenes/isdin/isd-hyaluronic-eyes.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["ojos", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; hidratación y prevención de las primeras arrugas del contorno. Apto para ojos sensibles y usuarios de lentillas.",
+      tipo: "Contorno de ojos en gel-sorbete con ácido hialurónico.",
+      necesidad: "Hidrata, suaviza las líneas de expresión y refresca la mirada.",
+      cuando: "Mañana y noche.",
+      modo: "Un grano de arroz extendido con el aplicador frío por el contorno, incluido el párpado superior. Se puede enfriar 15 minutos en el congelador."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-melaclear",
+    name: "Melaclear",
+    img: "imagenes/isdin/isd-isdinceutics-melaclear.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["manchas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible, con manchas solares, de la edad, postacné o postembarazo.",
+      tipo: "Sérum antimanchas con ácido tranexámico y niacinamida.",
+      necesidad: "Reduce las manchas oscuras, corrige el tono irregular y previene nuevas manchas.",
+      cuando: "Mañana y noche, durante al menos 3 meses.",
+      modo: "2 pulsaciones en la palma y una fina capa en rostro, cuello y escote limpios y secos, evitando contorno de ojos y mucosas.",
+      solar: "Contiene AHA, que aumentan la sensibilidad al sol: usar protector, ropa de protección y limitar el sol durante el uso y la semana siguiente.",
+      nota: "No aplicar sobre piel irritada o dañada."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-salicylic-renewal",
+    name: "Salicylic Renewal",
+    img: "imagenes/isdin/isd-isdinceutics-salicylic-renewal.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["acne", "arrugas"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta o grasa con imperfecciones y arrugas.",
+      tipo: "Sérum con ácido salicílico.",
+      necesidad: "Reduce imperfecciones y arrugas en dos semanas.",
+      cuando: "Mañana y noche. La primera semana, en días alternos y en poca cantidad.",
+      modo: "Agitar; 2-3 gotas en una fina capa sobre el rostro limpio y seco, evitando el contorno de ojos.",
+      solar: "Evitar la exposición solar durante su uso y usar fotoprotector si la piel va a recibir sol.",
+      nota: "No usar en niños. No aplicar sobre piel irritada o dañada."
+    }
+  },
+
+  {
+    id: "isd-glicoisdin-8-soft",
+    name: "Glicoisdin 8 Soft",
+    img: "imagenes/isdin/isd-glicoisdin-8-soft.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["apagada", "arrugas"],
+    sk: ["todas", "seca"],
+    d: {
+      paciente: "Todo tipo de piel, especialmente seca, con tono irregular, líneas de expresión y arrugas.",
+      tipo: "Crema exfoliante con 3,2 % de ácido glicólico libre.",
+      necesidad: "Renueva la piel y mejora textura, uniformidad y luminosidad.",
+      cuando: "Preferiblemente de noche: la 1.ª semana, noches alternas; después, todas las noches. Empezar por concentraciones bajas y subir concentración y frecuencia según la tolerancia.",
+      modo: "Sobre la piel limpia, con un suave masaje hasta su absorción.",
+      solar: "Usar fotoprotección con SPF alto durante el día."
+    }
+  },
+
+  {
+    id: "isd-glicoisdin-15-moderate",
+    name: "Glicoisdin 15 Moderate",
+    img: "imagenes/isdin/isd-glicoisdin-15-moderate.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["apagada", "arrugas"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta, grasa o con tendencia acneica, con tono irregular, líneas de expresión y arrugas.",
+      tipo: "Gel exfoliante con 6,1 % de ácido glicólico libre.",
+      necesidad: "Renueva la piel y mejora textura, uniformidad y luminosidad.",
+      cuando: "Preferiblemente de noche. Empezar por concentraciones bajas y subir concentración y frecuencia según la tolerancia.",
+      modo: "Sobre la piel limpia, con un suave masaje hasta su absorción.",
+      solar: "Usar fotoprotección con SPF alto durante el día."
+    }
+  },
+
+  {
+    id: "isd-isdinceutics-glicoisdin-25",
+    name: "Glicoisdin 25 Intense",
+    img: "imagenes/isdin/isd-isdinceutics-glicoisdin-25.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["apagada", "arrugas"],
+    sk: ["mixta", "grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta, grasa o con tendencia acneica, con tono irregular, líneas de expresión y arrugas.",
+      tipo: "Gel exfoliante con 9,5 % de ácido glicólico libre.",
+      necesidad: "Renueva la piel y mejora textura, uniformidad y luminosidad.",
+      cuando: "Preferiblemente de noche. Empezar por concentraciones bajas y subir concentración y frecuencia según la tolerancia.",
+      modo: "Sobre la piel limpia, con un suave masaje hasta su absorción.",
+      solar: "Usar fotoprotección con SPF alto durante el día."
+    }
+  },
+
+  {
+    id: "isd-auriderm",
+    name: "Auriderm",
+    img: "imagenes/isdin/isd-auriderm.webp",
+    brand: "isdin",
+    line: "isd-ceutics",
+    n: ["rojeces"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel antes y después de tratamientos estéticos o quirúrgicos.",
+      tipo: "Crema con vitamina K óxido.",
+      necesidad: "Disminuye la apariencia de rojeces y contusiones posinflamatorias y posquirúrgicas.",
+      cuando: "Mañana y noche, de 10 a 15 días antes y después del tratamiento estético.",
+      modo: "Aplicar en la zona con un suave masaje hasta su absorción."
+    }
+  },
+
+  /* ---------- Isdin · Acniben ---------- */
+  {
+    id: "isd-micellar-cleanser",
+    name: "Acniben Micellar Cleanser",
+    img: "imagenes/isdin/isd-micellar-cleanser.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica. Apto para piel sensible.",
+      tipo: "Limpiador micelar desmaquillante.",
+      necesidad: "Limpia el rostro, elimina el maquillaje y matifica sin resecar.",
+      limpieza: "Doble limpieza · 1.er paso",
+      limpiezaDet: "Isdin propone usarlo primero y seguir con una espuma o gel limpiador.",
+      cuando: "Por la mañana y por la noche.",
+      modo: "Aplicar con un disco limpiador por rostro y ojos, sin aclarado."
+    }
+  },
+
+  {
+    id: "isd-acniben-limpiador-purificante",
+    name: "Acniben Limpiador Purificante",
+    img: "imagenes/isdin/isd-acniben-limpiador-purificante.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica.",
+      tipo: "Espuma limpiadora facial.",
+      necesidad: "Elimina el exceso de sebo y purifica sin resecar; reduce la apariencia de poros, puntos negros y brillos.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Es el primer paso de la rutina facial de Acniben; Isdin no lo asigna a ningún paso de limpieza en concreto.",
+      cuando: "Mañana y noche, como primer paso de la rutina facial.",
+      modo: "Presionar hasta que salga espuma y masajear en círculos sobre la piel húmeda de rostro y cuello. Aclarar con abundante agua."
+    }
+  },
+
+  {
+    id: "isd-acniben-limpiador-matificante",
+    name: "Acniben Limpiador Matificante",
+    img: "imagenes/isdin/isd-acniben-limpiador-matificante.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica.",
+      tipo: "Gel limpiador matificante de rostro y cuerpo.",
+      necesidad: "Limpia en profundidad sin resecar, desobstruye los poros y reduce el exceso de sebo.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Isdin no indica paso.",
+      cuando: "A diario, mañana y noche.",
+      modo: "Humedecer rostro y manos, extender y masajear, sobre todo en frente, nariz y barbilla. Aclarar con abundante agua."
+    }
+  },
+
+  {
+    id: "isd-exfoliante-suave",
+    name: "Acniben Exfoliante Suave",
+    img: "imagenes/isdin/isd-exfoliante-suave.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta, grasa o con tendencia acneica; testado en piel sensible.",
+      tipo: "Gel exfoliante con micropartículas naturales.",
+      necesidad: "Elimina células muertas, desobstruye los poros y reduce los brillos.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Exfoliación semanal de la piel grasa.",
+      cuando: "1 o 2 veces por semana.",
+      modo: "Sobre piel húmeda, masajear en círculos evitando el contorno de ojos. Aclarar y secar con suavidad."
+    }
+  },
+
+  {
+    id: "isd-acniben-mascarilla-purificante",
+    name: "Acniben Mascarilla Purificante",
+    img: "imagenes/isdin/isd-acniben-mascarilla-purificante.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica.",
+      tipo: "Mascarilla facial purificante.",
+      necesidad: "Limpia en profundidad, absorbe el sebo y reduce los brillos; con su uso, menos puntos negros y poros.",
+      cuando: "1 o 2 veces por semana, en la rutina de noche.",
+      modo: "Una capa sobre el rostro limpio y seco, evitando ojos y labios. Dejar secar 10-15 minutos y retirar con agua templada."
+    }
+  },
+
+  {
+    id: "isd-acniben-pore-minimizer-pads-30u",
+    name: "Acniben Pore Minimizer Pads",
+    img: "imagenes/isdin/isd-acniben-pore-minimizer-pads-30u.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica. Aptos para piel sensible y atópica.",
+      tipo: "Discos exfoliantes de triple acción.",
+      necesidad: "Mantienen los poros limpios, controlan el exceso de sebo y mejoran la textura.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Se usan después de la limpieza facial.",
+      cuando: "Isdin no indica la frecuencia.",
+      modo: "Aplicar después de la limpieza facial. Tienen dos caras con texturas distintas para cada zona del rostro."
+    }
+  },
+
+  {
+    id: "isd-acniben-control-de-brillos-y-granos",
+    name: "Acniben Control de Brillos y Granos",
+    img: "imagenes/isdin/isd-acniben-control-de-brillos-y-granos.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica.",
+      tipo: "Gel-crema hidratante matificante.",
+      necesidad: "Regula el sebo, ayuda a reducir los granos e hidrata con acabado mate.",
+      cuando: "Por la mañana o por la noche, como segundo paso de la rutina, tras el limpiador.",
+      modo: "Masajear hasta su absorción."
+    }
+  },
+
+  {
+    id: "isd-acniben-night-concentrate",
+    name: "Acniben Night Concentrate",
+    img: "imagenes/isdin/isd-acniben-night-concentrate.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica. Adolescentes y adultos.",
+      tipo: "Sérum de noche con retinaldehído.",
+      necesidad: "Reduce y previene granos, puntos negros y marcas residuales, y unifica el tono.",
+      cuando: "Cada noche.",
+      modo: "Agitar antes de usar. 5 gotas sobre la piel limpia y seca del rostro, masajeando hasta absorber.",
+      nota: "Puede dar un leve enrojecimiento temporal, calor u hormigueo al principio."
+    }
+  },
+
+  {
+    id: "isd-on-the-spot",
+    name: "Acniben On The Spot",
+    img: "imagenes/isdin/isd-on-the-spot.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica. Granos localizados.",
+      tipo: "Gel secante localizado.",
+      necesidad: "Reduce rápidamente el volumen de los granos, desobstruye el poro y previene marcas.",
+      cuando: "Una o varias veces al día, hasta que desaparezca el grano.",
+      modo: "Aplicar directamente sobre el grano. Invisible bajo el maquillaje."
+    }
+  },
+
+  {
+    id: "isd-acniben-cc-cream-bronze-spf30-40ml",
+    name: "Acniben CC+ Cream SPF30",
+    img: "imagenes/isdin/isd-acniben-cc-cream-bronze-spf30-40ml.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne", "fotoproteccion"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica.",
+      tipo: "Crema hidratante con color y SPF30, en tres tonos (Light, Medium y Bronze).",
+      necesidad: "Cubre y reduce las imperfecciones, matifica y unifica el tono.",
+      cuando: "Isdin no indica la frecuencia.",
+      modo: "Una fina capa sobre el rostro limpio y seco, del centro hacia afuera, por capas hasta el acabado deseado; con brocha, esponja húmeda o dedos.",
+      solar: "Para mantener la protección, reaplicar un fotoprotector cada 2 horas."
+    }
+  },
+
+  {
+    id: "isd-acniben-body-spray",
+    name: "Acniben Body Spray",
+    img: "imagenes/isdin/isd-acniben-body-spray.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["acne", "corporal"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica. Granos del cuerpo: espalda, pecho y zonas de difícil acceso.",
+      tipo: "Spray corporal con ácido salicílico y glicólico.",
+      necesidad: "Reduce granos e imperfecciones corporales, exfolia y controla el sebo.",
+      cuando: "A diario.",
+      modo: "Pulverizar a 5-10 cm de la piel y masajear. No pulverizar sobre el rostro.",
+      solar: "Se recomienda usar fotoprotector durante el día mientras se utiliza.",
+      nota: "No usar en niños."
+    }
+  },
+
+  {
+    id: "isd-acniben-repair-limpiador",
+    name: "Acniben Repair Emulsión Limpiadora Suave",
+    img: "imagenes/isdin/isd-acniben-repair-limpiador.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["limpieza", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel fragilizada por tratamientos dermatológicos.",
+      tipo: "Emulsión limpiadora facial.",
+      necesidad: "Limpia sin resecar, hidrata, calma y alivia la sensación de irritación.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Isdin no indica paso.",
+      cuando: "A diario.",
+      modo: "Aplicar con ligeros masajes circulares, con o sin aclarado."
+    }
+  },
+
+  {
+    id: "isd-gel-crema",
+    name: "Acniben Repair Gel Crema Calmante",
+    img: "imagenes/isdin/isd-gel-crema.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["seca", "rojeces"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel con tendencia acneica fragilizada por tratamientos dermatológicos.",
+      tipo: "Gel-crema hidratante calmante.",
+      necesidad: "Hidrata, calma y ayuda a reparar; alivia sequedad, descamación, picor y enrojecimiento.",
+      cuando: "1 o 2 veces al día.",
+      modo: "Sobre el rostro limpio y seco, masajeando con suavidad."
+    }
+  },
+
+  {
+    id: "isd-acniben-repair-renovador-labial",
+    name: "Acniben Repair Renovador Labial",
+    img: "imagenes/isdin/isd-acniben-repair-renovador-labial.webp",
+    brand: "isdin",
+    line: "isd-acniben",
+    n: ["seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Labios secos y fragilizados por tratamientos dermatológicos.",
+      tipo: "Bálsamo labial reparador.",
+      necesidad: "Hidrata 24 horas, protege y ayuda a reparar los labios.",
+      cuando: "A diario, tantas veces como sea necesario.",
+      modo: "Aplicar sobre los labios."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Heliocare ---------- */
+  {
+    id: "cl-heliocare-360-age-active-fluid-spf-50",
+    name: "Heliocare 360º Age Active Fluid SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-age-active-fluid-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; prevención y corrección del fotoenvejecimiento.",
+      tipo: "Fluido fotoprotector facial SPF 50+.",
+      necesidad: "Fotoprotección de amplio espectro (UVB, UVA, luz visible e infrarrojos), también frente a la luz azul de las pantallas; hidrata y puede sustituir a la hidratante.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-sensation",
+    name: "Heliocare 360º Sensation SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-sensation.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel.",
+      tipo: "Fotoprotector facial ultraligero SPF 50+.",
+      necesidad: "Fotoprotección muy alta de uso diario frente al daño solar y el envejecimiento asociado.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-water-gel-spf-50",
+    name: "Heliocare 360º Water Gel SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-water-gel-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "deshidratacion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, incluida la sensible.",
+      tipo: "Fotoprotector facial acuoso SPF 50+.",
+      necesidad: "Fotoprotección diaria que hidrata y mantiene el confort; puede sustituir a la hidratante.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-color-water-gel-spf-50",
+    name: "Heliocare 360º Color Water Gel SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-color-water-gel-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, incluso sensible.",
+      tipo: "Fotoprotector facial con color SPF 50+.",
+      necesidad: "Unifica el tono, difumina imperfecciones e hidrata 48 horas.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-gel-oil-free-spf-50",
+    name: "Heliocare 360º Gel Oil-Free SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-gel-oil-free-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "poros"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica, incluso sensible.",
+      tipo: "Fotoprotector facial en gel sin aceites.",
+      necesidad: "Fotoprotección con acción matificante y seborreguladora, sin brillos. No pica en los ojos.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-color-gel-oil-free-spf-50",
+    name: "Heliocare 360º Color Gel Oil-Free SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-color-gel-oil-free-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "poros"],
+    sk: ["grasa", "mixta", "sensible"],
+    d: {
+      paciente: "Piel mixta o grasa, incluso sensible.",
+      tipo: "Fotoprotector facial con color, oil-free.",
+      necesidad: "Fotoprotección con color, seborreguladora y de acabado mate.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-acnimat",
+    name: "Heliocare 360º Acnimat SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-acnimat.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica.",
+      tipo: "Fotoprotector facial antiimperfecciones SPF 50+.",
+      necesidad: "Fotoprotección de amplio espectro (UVB, UVA, luz visible e infrarrojos) con acción antiimperfecciones.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-pigment-solution-fluid-spf-50",
+    name: "Heliocare 360º Pigment Solution Fluid SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-pigment-solution-fluid-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con hiperpigmentaciones y manchas solares.",
+      tipo: "Fotoprotector facial despigmentante SPF 50+.",
+      necesidad: "Previene y reduce las manchas solares y unifica el tono, con protección frente a luz visible e infrarrojos.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme.",
+      nota: "Puede notarse algo de picor por su concentración en ácido elágico."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-md-a-r-emulsion-spf50",
+    name: "Heliocare 360º MD A-R Emulsion SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-md-a-r-emulsion-spf50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con tendencia al enrojecimiento; apto para piel atópica y con tendencia a la rosácea.",
+      tipo: "Fotoprotector facial antirrojeces SPF 50+.",
+      necesidad: "Fotoprotección muy alta con sistema mitigador de rojeces y unificador del tono.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-mineral-tolerance-fluid-spf-50",
+    name: "Heliocare 360º Mineral Tolerance Fluid SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-mineral-tolerance-fluid-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible o tras técnicas y procedimientos dermatológicos.",
+      tipo: "Fotoprotector facial con filtros solo minerales.",
+      necesidad: "Fotoprotección de alta tolerancia, sin perfume, invisible incluso en pieles oscuras.",
+      cuando: "Antes de la exposición solar, como último paso de la rutina y antes del maquillaje. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-md-ak-fluid",
+    name: "Heliocare 360º MD AK Fluid SPF 100+",
+    img: "imagenes/cantabria/cl-heliocare-360-md-ak-fluid.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Queratosis actínicas y otros cánceres de piel no melanoma (prevención y adyuvante); pieles con exposición solar prolongada.",
+      tipo: "Tratamiento protector adyuvante SPF 100+.",
+      necesidad: "Protección muy alta con complejo reparador del daño solar.",
+      cuando: "Antes de la exposición solar, sobre piel limpia e intacta.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme. Tras tratamiento farmacológico o cirugía, usar cuando la piel haya cicatrizado."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360o-compactos",
+    name: "Heliocare 360º Oil-Free Compact SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360o-compactos.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Personas con imperfecciones o tono desigual, especialmente piel grasa; apto para piel sensible.",
+      tipo: "Fotomaquillaje compacto SPF 50+.",
+      necesidad: "Protección muy alta portátil que cubre imperfecciones y previene manchas.",
+      cuando: "Antes de la exposición solar; reaplicar con frecuencia.",
+      modo: "Aplicar con esponja de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-pigment-stick-color-solar-despigmentante",
+    name: "Heliocare Pigment Stick Color SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-pigment-stick-color-solar-despigmentante.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con hiperpigmentaciones.",
+      tipo: "Stick facial con color y filtros minerales.",
+      necesidad: "Previene, reduce y camufla las manchas para unificar el tono.",
+      cuando: "Antes de la exposición solar; reaplicar con frecuencia.",
+      modo: "Aplicar de forma generosa y uniforme.",
+      nota: "No se ha probado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-heliocare-color-gelcream-spf-50",
+    name: "Heliocare Color Gelcream SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-color-gelcream-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal o seca que busca fotoprotección diaria con color.",
+      tipo: "Gel-crema fotoprotector con color.",
+      necesidad: "Fotoprotección alta con Fernblock y antioxidantes; hidratante y no comedogénico.",
+      cuando: "Antes de la exposición solar. Cantabria Labs no indica más.",
+      modo: "Distribuir pequeñas cantidades por toda la zona y extender con suavidad."
+    }
+  },
+
+  {
+    id: "cl-heliocare-ultra-90-gel-spf-50",
+    name: "Heliocare Ultra 90 Gel SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-ultra-90-gel-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["mixta", "grasa"],
+    d: {
+      paciente: "Piel mixta o grasa en exposición solar intensa.",
+      tipo: "Gel fotoprotector SPF 50+.",
+      necesidad: "Protección para exposición intensa, ligera y sin residuo blanco.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-airgel-spf-50",
+    name: "Heliocare 360º Airgel SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-airgel-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel, también grasa o mixta; uso corporal.",
+      tipo: "Fotoprotector corporal en espuma.",
+      necesidad: "Fotoprotección fresca y no comedogénica de fácil aplicación.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar y dispensar en vertical una pequeña cantidad en la mano; aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-fluid-spray-spf-50",
+    name: "Heliocare 360º Fluid Spray SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-fluid-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Toda la familia, incluida la piel sensible; testado en niños.",
+      tipo: "Spray fotoprotector fluido.",
+      necesidad: "Fotoprotección alta de rápida absorción que además hidrata.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-invisible-spray-spf-50",
+    name: "Heliocare 360º Invisible Spray SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-invisible-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; uso corporal.",
+      tipo: "Spray solar transparente para el cuerpo.",
+      necesidad: "Protección muy alta, eficaz incluso sobre la piel mojada.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360o-body-glow",
+    name: "Heliocare 360º Body Glow SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360o-body-glow.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Óleo-gel fotoprotector corporal.",
+      necesidad: "Protección muy alta frente al daño solar y las manchas del escote; no comedogénico.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-advanced-gel-spf-50-2",
+    name: "Heliocare 360º Advanced Gel SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-advanced-gel-spf-50-2.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Toda la familia, incluida la piel sensible; niños desde 2 años.",
+      tipo: "Gel fotoprotector corporal.",
+      necesidad: "Fotoprotección de amplio espectro (UVB, UVA, luz visible e infrarrojos) en gel fresco, aplicable sobre piel húmeda.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-advanced-spray-spf-50",
+    name: "Heliocare Advanced Spray SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-advanced-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; uso corporal.",
+      tipo: "Spray fotoprotector corporal.",
+      necesidad: "Protección resistente al agua, ligera y de rápida absorción.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-sport-spray-spf-50",
+    name: "Heliocare 360º Sport Spray SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-sport-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Deportistas; todo tipo de piel, incluso sensible. Uso corporal.",
+      tipo: "Spray fotoprotector para deporte.",
+      necesidad: "Protección alta refrescante, resistente al agua y al sudor; se aplica sobre piel mojada.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar con fuerza y aplicar a unos 20 cm de la piel, de forma generosa y uniforme."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-sport-transparent-stick-spf-50",
+    name: "Heliocare 360º Sport Transparent Stick SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-sport-transparent-stick-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Deportistas; todo tipo de piel, incluso sensible.",
+      tipo: "Stick fotoprotector transparente.",
+      necesidad: "Protección muy alta portátil, sin necesidad de extender con las manos.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Aplicar de forma generosa y uniforme en las zonas expuestas."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-pediatrics-lotion-spf-50",
+    name: "Heliocare 360º Pediatrics Lotion SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360-pediatrics-lotion-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños, incluida la piel sensible con tendencia atópica; cara y cuerpo.",
+      tipo: "Loción fotoprotectora infantil hipoalergénica.",
+      necesidad: "Fotoprotección de textura ligera y fácil aplicación con dosificador.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme.",
+      nota: "No exponer a los niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-pediatrics-mineral-spf-50",
+    name: "Heliocare 360º Pediatrics Mineral SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-pediatrics-mineral-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños con piel sensible o atópica; testado desde los 3 meses. Cara y cuerpo.",
+      tipo: "Fotoprotector infantil con filtros solo minerales.",
+      necesidad: "Protección de alta tolerancia, resistente al agua y la arena.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme.",
+      nota: "No exponer a los niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-pediatrics-stick",
+    name: "Heliocare 360º Pediatrics Stick SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-pediatrics-stick.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Rostro de los niños; testado en mayores de 2 años. Seguro en la zona periocular.",
+      tipo: "Stick fotoprotector facial infantil.",
+      necesidad: "Protección muy alta e hidratante, fácil de aplicar.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Aplicar de forma generosa y uniforme.",
+      nota: "No exponer a los niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-pediatrics-transparent-spray-spf-50",
+    name: "Heliocare 360º Pediatrics Transparent Spray SPF 50+",
+    img: "imagenes/cantabria/cl-heliocare-360-pediatrics-transparent-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Niños; aplicación corporal.",
+      tipo: "Spray solar transparente infantil.",
+      necesidad: "Protección eficaz incluso sobre piel mojada.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar y pulverizar a unos 20 cm del cuerpo; no hace falta extender. No vaporizar sobre el rostro.",
+      nota: "No exponer a los niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360o-pediatrics-atopic-lotion-spray-spf-50",
+    name: "Heliocare 360º Pediatrics Atopic Lotion Spray SPF 50",
+    img: "imagenes/cantabria/cl-heliocare-360o-pediatrics-atopic-lotion-spray-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Niños con piel sensible o atópica; aplicación corporal.",
+      tipo: "Loción fotoprotectora infantil en spray.",
+      necesidad: "Fotoprotección con arginina y glicerina que hidratan y cuidan la barrera.",
+      cuando: "Antes de la exposición solar. Reaplicar con frecuencia, sobre todo tras baños prolongados o sudor.",
+      modo: "Agitar antes de usar y aplicar de forma generosa y uniforme.",
+      nota: "No exponer a los niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-heliocare-oral-capsulas",
+    name: "Heliocare Oral Cápsulas",
+    img: "imagenes/cantabria/cl-heliocare-oral-capsulas.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sana que quiere combinar protección solar y bronceado.",
+      tipo: "Complemento alimenticio con Fernblock.",
+      necesidad: "Mejora la resistencia de la piel al daño solar desde la primera toma.",
+      cuando: "2 cápsulas al día, antes de la exposición solar.",
+      modo: "Vía oral.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-capsulas",
+    name: "Heliocare 360º Cápsulas",
+    img: "imagenes/cantabria/cl-heliocare-360-capsulas.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; prevención del fotoenvejecimiento y las manchas.",
+      tipo: "Complemento alimenticio.",
+      necesidad: "Ayuda a prevenir el fotoenvejecimiento, las manchas y otras alteraciones por el sol.",
+      cuando: "1 cápsula al día, antes de la exposición solar.",
+      modo: "Vía oral.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-d-plus-capsulas",
+    name: "Heliocare 360º D Plus Cápsulas",
+    img: "imagenes/cantabria/cl-heliocare-360-d-plus-capsulas.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Exposición solar intensa, pieles con alteraciones cutáneas y las más sensibles al sol.",
+      tipo: "Complemento alimenticio con Aspa-Fernblock.",
+      necesidad: "Aumenta la resistencia de la piel al sol desde la primera toma y ayuda a reparar el daño solar.",
+      cuando: "1 cápsula al día, antes de la exposición solar.",
+      modo: "Vía oral.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  {
+    id: "cl-heliocare-capsulas-ultra-d",
+    name: "Heliocare Cápsulas Ultra D",
+    img: "imagenes/cantabria/cl-heliocare-capsulas-ultra-d.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel que busca protección extra; también quien quiere aporte de vitamina D.",
+      tipo: "Complemento alimenticio con Aspa-Fernblock y vitamina D.",
+      necesidad: "Aumenta la resistencia de la piel al sol y ayuda a reparar el daño solar.",
+      cuando: "1 cápsula al día, antes de la exposición solar.",
+      modo: "Vía oral.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  {
+    id: "cl-heliocare-oral-capsulas-bronce",
+    name: "Heliocare Oral Cápsulas Bronze",
+    img: "imagenes/cantabria/cl-heliocare-oral-capsulas-bronce.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel sin manchas que quiere acelerar el bronceado.",
+      tipo: "Complemento alimenticio.",
+      necesidad: "Estimula la melanina y acelera el bronceado, con Fernblock frente al daño solar.",
+      cuando: "1 cápsula al día, desde un mes antes de la exposición.",
+      modo: "Vía oral.",
+      solar: "Combinar siempre con un fotoprotector tópico."
+    }
+  },
+
+  {
+    id: "cl-heliocare-sport-sun-sticks",
+    name: "Heliocare 360º SportSun Oral Sticks",
+    img: "imagenes/cantabria/cl-heliocare-sport-sun-sticks.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible; deportistas.",
+      tipo: "Complemento alimenticio en sticks bucodispersables.",
+      necesidad: "Aumenta la resistencia al daño solar combinado con fotoprotección tópica.",
+      cuando: "1 sobre al día, preferiblemente antes de la exposición solar.",
+      modo: "Directamente en la boca o disuelto en agua.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  {
+    id: "cl-heliocare-360-junior-oral-sticks",
+    name: "Heliocare 360º Junior Oral Sticks",
+    img: "imagenes/cantabria/cl-heliocare-360-junior-oral-sticks.webp",
+    brand: "cantabria",
+    line: "cl-heliocare",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 4 años antes de exposición intensa, con alergia solar o piel atópica.",
+      tipo: "Complemento alimenticio infantil en sticks.",
+      necesidad: "Aumenta la resistencia de la piel de los niños al sol y reduce el riesgo de quemaduras.",
+      cuando: "1 sobre al día de 4 a 10 años y 2 desde los 10 años, preferiblemente antes del sol.",
+      modo: "Directamente en la boca o disuelto en agua o zumo.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Aktuva ---------- */
+  {
+    id: "cl-aktuva-ak100-prevent-stick-solar-facial-labial",
+    name: "Aktuva AK100 Prevent Stick",
+    img: "imagenes/cantabria/cl-aktuva-ak100-prevent-stick-solar-facial-labial.webp",
+    brand: "cantabria",
+    line: "cl-aktuva",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pieles con exposición solar continuada; todo tipo de piel.",
+      tipo: "Stick de fotoprotección muy alta para cara, labios y cuero cabelludo.",
+      necesidad: "Protege y repara la función barrera de la piel y los labios.",
+      cuando: "Especialmente antes de la exposición solar; reaplicar con frecuencia.",
+      modo: "Aplicar en piel, labios y cuero cabelludo.",
+      nota: "No exponer a niños pequeños directamente al sol."
+    }
+  },
+
+  {
+    id: "cl-aktuva-ak100-repair-cream-crema-solar-reparadora",
+    name: "Aktuva AK100 Repair Cream",
+    img: "imagenes/cantabria/cl-aktuva-ak100-repair-cream-crema-solar-reparadora.webp",
+    brand: "cantabria",
+    line: "cl-aktuva",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Pieles con exposición solar intensa y continuada; apto para piel sensible.",
+      tipo: "Crema fotoprotectora reparadora.",
+      necesidad: "Repara y protege la piel expuesta de forma prolongada al sol y la polución.",
+      cuando: "Antes de la exposición solar; reaplicar con frecuencia.",
+      modo: "Agitar con fuerza y extender de forma generosa y uniforme en la cara."
+    }
+  },
+
+  {
+    id: "cl-aktuva-ak-control-capsulas-dano-solar",
+    name: "Aktuva AK Control",
+    img: "imagenes/cantabria/cl-aktuva-ak-control-capsulas-dano-solar.webp",
+    brand: "cantabria",
+    line: "cl-aktuva",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Personas con exposición solar continuada; todo tipo de piel.",
+      tipo: "Complemento alimenticio con Aspa-Fernblock y nicotinamida.",
+      necesidad: "Contribuye al mantenimiento de la piel expuesta al sol.",
+      cuando: "1 cápsula al día, antes de la exposición solar.",
+      modo: "Vía oral.",
+      solar: "No sustituye al fotoprotector tópico: hay que aplicarlo igualmente durante la exposición solar."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Essential y Hydractive ---------- */
+  {
+    id: "cl-endocare-hydractive-agua-micelar",
+    name: "Endocare Hydractive Agua Micelar",
+    img: "imagenes/cantabria/cl-endocare-hydractive-agua-micelar.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["limpieza"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible; piel expuesta a polución y estrés ambiental.",
+      tipo: "Agua micelar desmaquillante.",
+      necesidad: "Limpia y desmaquilla, incluso el maquillaje waterproof, sin resecar.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "No se aclara. La marca no indica paso.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Agitar; con un disco de algodón, limpiar rostro y ojos sin aclarado."
+    }
+  },
+
+  {
+    id: "cl-endocare-aquafoam",
+    name: "Endocare Essential Aquafoam",
+    img: "imagenes/cantabria/cl-endocare-aquafoam.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["limpieza"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible.",
+      tipo: "Espuma limpiadora facial.",
+      necesidad: "Elimina impurezas, sebo y maquillaje de cara, cuello y contorno de ojos.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "De día y/o de noche.",
+      modo: "Agitar, aplicar sobre la piel húmeda con masaje circular y aclarar."
+    }
+  },
+
+  {
+    id: "cl-endocare-gelcream",
+    name: "Endocare Essential Gelcream",
+    img: "imagenes/cantabria/cl-endocare-gelcream.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; también tras tratamientos dermocosméticos.",
+      tipo: "Gel-crema antiedad reparadora.",
+      necesidad: "Cuida y previene los signos del fotoenvejecimiento y acelera la recuperación de la piel.",
+      cuando: "1 o 2 veces al día.",
+      modo: "Aplicar en rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "cl-endocare-day-spf-30",
+    name: "Endocare Essential Day SPF 30",
+    img: "imagenes/cantabria/cl-endocare-day-spf-30.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; primeros signos de la edad.",
+      tipo: "Emulsión de día con SPF 30.",
+      necesidad: "Hidrata, regenera y protege; previene los primeros signos del envejecimiento.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar en rostro y cuello. Se puede maquillar encima.",
+      solar: "Para una exposición solar duradera, usar un protector solar específico."
+    }
+  },
+
+  {
+    id: "cl-endocare-ampollas-1-second-flash",
+    name: "Endocare Essential Ampollas 1 Second Flash",
+    img: "imagenes/cantabria/cl-endocare-ampollas-1-second-flash.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con signos de fatiga.",
+      tipo: "Ampollas de efecto inmediato.",
+      necesidad: "Efecto buena cara: piel luminosa, hidratada y tersa antes del maquillaje.",
+      cuando: "De día y/o de noche; aptas para uso diario.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar sobre el rostro antes del maquillaje."
+    }
+  },
+
+  {
+    id: "cl-endocare-contorno-de-ojos-y-labios",
+    name: "Endocare Essential Contorno de ojos y labios",
+    img: "imagenes/cantabria/cl-endocare-contorno-de-ojos-y-labios.webp",
+    brand: "cantabria",
+    line: "cl-essential",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno de ojos y labios con bolsas, ojeras y primeras arrugas. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Loción regeneradora de contorno.",
+      necesidad: "Descongestiona bolsas y reduce ojeras y primeras arrugas alrededor de ojos y boca.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Age Barrier ---------- */
+  {
+    id: "cl-endocare-hyaluboost-age-barrier",
+    name: "Endocare Age Barrier Hyaluboost Sérum",
+    img: "imagenes/cantabria/cl-endocare-hyaluboost-age-barrier.webp",
+    brand: "cantabria",
+    line: "cl-agebarrier",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible, con la barrera debilitada por tratamientos o agresores externos.",
+      tipo: "Sérum antiedad reparador de la barrera.",
+      necesidad: "Activa y repara la función barrera y previene los signos de la edad.",
+      cuando: "Dos veces al día (mañana y/o noche).",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Unas gotas en rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "cl-endocare-age-barrier-niacinal-serum-gel",
+    name: "Endocare Age Barrier Niacinal Serum Gel",
+    img: "imagenes/cantabria/cl-endocare-age-barrier-niacinal-serum-gel.webp",
+    brand: "cantabria",
+    line: "cl-agebarrier",
+    n: ["deshidratacion", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensibilizada, con la barrera debilitada por retinoides, láser u otros tratamientos.",
+      tipo: "Sérum gel con 10 % de niacinamida y ácido hialurónico.",
+      necesidad: "Hidrata en profundidad, calma y repara la función barrera.",
+      cuando: "Dos veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro, cuello y escote evitando el contorno de ojos, con masajes circulares."
+    }
+  },
+
+  {
+    id: "cl-endocare-age-barrier-hyaluboost-gel-cream-crema-funcion-barrera",
+    name: "Endocare Age Barrier Hyaluboost Gel Cream",
+    img: "imagenes/cantabria/cl-endocare-age-barrier-hyaluboost-gel-cream-crema-funcion-barrera.webp",
+    brand: "cantabria",
+    line: "cl-agebarrier",
+    n: ["deshidratacion", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; prevención de los primeros signos de la edad.",
+      tipo: "Crema hidratante diaria.",
+      necesidad: "Hidrata y refuerza la barrera frente a las agresiones externas.",
+      cuando: "Dos veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro, cuello y escote hasta su absorción."
+    }
+  },
+
+  {
+    id: "cl-endocare-age-barrier-hyaluboost-eye-contour-contorno-ojos-funcion-barrera",
+    name: "Endocare Age Barrier Hyaluboost Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-age-barrier-hyaluboost-eye-contour-contorno-ojos-funcion-barrera.webp",
+    brand: "cantabria",
+    line: "cl-agebarrier",
+    n: ["ojos", "deshidratacion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Contorno con la barrera debilitada por agresores externos. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Contorno de ojos antiedad reparador.",
+      necesidad: "Hidrata, ilumina y atenúa las líneas finas y la mirada cansada.",
+      cuando: "Dos veces al día, mañana y noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Extender con ligeros masajes circulares."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Cellage ---------- */
+  {
+    id: "cl-endocare-cellage-crema",
+    name: "Endocare Cellage Crema",
+    img: "imagenes/cantabria/cl-endocare-cellage-crema.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["arrugas", "flacidez"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal y seca con signos de envejecimiento: pérdida de firmeza y elasticidad.",
+      tipo: "Crema rica antiedad.",
+      necesidad: "Actúa sobre arrugas, pérdida de densidad y textura irregular; nutre e hidrata.",
+      cuando: "Dos veces al día (mañana y/o noche).",
+      modo: "Aplicar en rostro, cuello y escote, evitando ojos y mucosas."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-gelcream",
+    name: "Endocare Cellage Gelcream",
+    img: "imagenes/cantabria/cl-endocare-cellage-gelcream.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas", "mixta", "grasa"],
+    d: {
+      paciente: "Todo tipo de piel, incluso mixta y grasa.",
+      tipo: "Gel-crema antiedad ligera.",
+      necesidad: "Corrige y previene la pérdida de densidad, las arrugas y el tono irregular.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Aplicar en rostro y cuello limpios, después de un sérum o ampollas.",
+      nota: "Es normal una ligera sensación de rubor por la actividad del producto."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-alta-potencia-serum",
+    name: "Endocare Cellage Alta Potencia Sérum",
+    img: "imagenes/cantabria/cl-endocare-cellage-alta-potencia-serum.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas", "mixta", "grasa"],
+    d: {
+      paciente: "Piel con pérdida de densidad y arrugas; apto para piel mixta y grasa.",
+      tipo: "Sérum reparador intensivo.",
+      necesidad: "Repara los signos de la edad y combate la pérdida de densidad y las arrugas.",
+      cuando: "1 o 2 veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en rostro, cuello y escote masajeando."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-firming-cream",
+    name: "Endocare Cellage Firming Cream",
+    img: "imagenes/cantabria/cl-endocare-cellage-firming-cream.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["flacidez", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel con arrugas y pérdida de firmeza, incluida la más seca.",
+      tipo: "Crema reafirmante rica.",
+      necesidad: "Efecto reafirmante inmediato que remodela el óvalo facial.",
+      cuando: "Por la noche; si hace falta, también por la mañana.",
+      modo: "Aplicar en rostro, cuello y escote masajeando hasta absorber."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-firming-day-cream-spf-30",
+    name: "Endocare Cellage Firming Day Cream SPF 30",
+    img: "imagenes/cantabria/cl-endocare-cellage-firming-day-cream-spf-30.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["flacidez", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal y seca con pérdida de firmeza y elasticidad.",
+      tipo: "Crema de día reafirmante con SPF 30.",
+      necesidad: "Efecto reafirmante inmediato y remodelador del óvalo, con filtros solares.",
+      cuando: "Por la mañana.",
+      modo: "Aplicar en rostro y cuello. Sirve como base de maquillaje.",
+      solar: "Para una exposición solar duradera, usar un protector solar específico."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-cuello-y-escote",
+    name: "Endocare Cellage Cuello y Escote",
+    img: "imagenes/cantabria/cl-endocare-cellage-cuello-y-escote.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuello y escote con piel laxa, flacidez o tono irregular. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Tratamiento redensificante y reafirmante.",
+      necesidad: "Corrige flacidez, tono irregular y signos de la edad de cuello y escote.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre cuello y escote limpios, con masajes circulares ascendentes; después, hidratante.",
+      solar: "Por la mañana, completar con fotoprotección."
+    }
+  },
+
+  {
+    id: "cl-endocare-cellage-contorno-de-ojos",
+    name: "Endocare Cellage Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-cellage-contorno-de-ojos.webp",
+    brand: "cantabria",
+    line: "cl-cellage",
+    n: ["ojos", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible.",
+      tipo: "Contorno de ojos antiedad.",
+      necesidad: "Corrige y previene bolsas, ojeras, arrugas y líneas de expresión.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Una pequeña cantidad con masaje circular y ascendente."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Tensage ---------- */
+  {
+    id: "cl-endocare-tensage-cream",
+    name: "Endocare Tensage Cream",
+    img: "imagenes/cantabria/cl-endocare-tensage-cream.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca con flacidez; también como complemento de técnicas como láser o peeling.",
+      tipo: "Crema reafirmante ligera.",
+      necesidad: "Efecto tensor y regenerador que devuelve firmeza y elasticidad y redefine el óvalo.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Aplicar en rostro y cuello limpios. Se puede maquillar encima."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-serum",
+    name: "Endocare Tensage Sérum",
+    img: "imagenes/cantabria/cl-endocare-tensage-serum.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con pérdida de firmeza y elasticidad.",
+      tipo: "Sérum reafirmante.",
+      necesidad: "Devuelve la firmeza y la elasticidad perdidas.",
+      cuando: "Dos veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro y cuello masajeando; después, crema hidratante."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-alta-potencia-serum",
+    name: "Endocare Tensage Alta Potencia Sérum",
+    img: "imagenes/cantabria/cl-endocare-tensage-alta-potencia-serum.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con pérdida de densidad, arrugas profundas y flacidez. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum redensificante y reafirmante.",
+      necesidad: "Regeneración intensiva, combate la pérdida de densidad y las arrugas profundas e hidrata.",
+      cuando: "1 o 2 veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en rostro, cuello y escote masajeando."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-ampollas",
+    name: "Endocare Tensage Ampollas",
+    img: "imagenes/cantabria/cl-endocare-tensage-ampollas.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con pérdida de firmeza y elasticidad.",
+      tipo: "Ampollas antiedad intensivas.",
+      necesidad: "Efecto tensor y regenerador que devuelve firmeza y elasticidad.",
+      cuando: "Una vez al día, por la mañana, por la noche o antes de un evento. Cada ampolla da para tres aplicaciones.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar la ampolla y aplicar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-nourishing-cream",
+    name: "Endocare Tensage Crema Nutritiva",
+    img: "imagenes/cantabria/cl-endocare-tensage-nourishing-cream.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "arrugas", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal y seca, apta para piel sensible.",
+      tipo: "Crema nutritiva reafirmante.",
+      necesidad: "Efecto reafirmante inmediato sobre arrugas y pérdida de firmeza; remodela el óvalo.",
+      cuando: "Por la noche; si hace falta, también por la mañana.",
+      modo: "Aplicar en rostro, cuello y escote masajeando hasta absorber."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-firming-cream-crema-reafirmante-facial",
+    name: "Endocare Tensage Firming Cream",
+    img: "imagenes/cantabria/cl-endocare-tensage-firming-cream-crema-reafirmante-facial.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez"],
+    sk: ["mixta"],
+    d: {
+      paciente: "Piel normal a mixta con falta de firmeza, densidad e hidratación.",
+      tipo: "Crema reafirmante ligera.",
+      necesidad: "Potencia la firmeza y la elasticidad y previene el descolgamiento.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre rostro y cuello limpios, masajeando hasta absorber.",
+      solar: "Completar la rutina con una crema fotoprotectora."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-firming-nourishing-cream-reafirmante-crema-nutritiva",
+    name: "Endocare Tensage Reafirmante Crema Nutritiva",
+    img: "imagenes/cantabria/cl-endocare-tensage-firming-nourishing-cream-reafirmante-crema-nutritiva.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "seca"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca con falta de firmeza, densidad y nutrición.",
+      tipo: "Crema reafirmante rica.",
+      necesidad: "Potencia firmeza y elasticidad y combate el descolgamiento facial.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre rostro y cuello limpios, masajeando hasta absorber.",
+      solar: "Completar la rutina con una crema fotoprotectora."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-firming-serum-reafirmante",
+    name: "Endocare Tensage Firming Serum",
+    img: "imagenes/cantabria/cl-endocare-tensage-firming-serum-reafirmante.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con falta de firmeza, densidad e hidratación.",
+      tipo: "Sérum redensificante y reafirmante.",
+      necesidad: "Aporta firmeza y elasticidad, combate flacidez y arrugas con efecto tensor.",
+      cuando: "Dos veces al día, todo el año.",
+      modo: "Agitar y aplicar en cuello y rostro limpios, masajeando.",
+      solar: "Completar la rutina con fotoprotección."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-cuello-y-escote-crema-reafirmante",
+    name: "Endocare Tensage Cuello y Escote",
+    img: "imagenes/cantabria/cl-endocare-tensage-cuello-y-escote-crema-reafirmante.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuello y escote con piel laxa o flacidez. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Tratamiento redensificante y reafirmante.",
+      necesidad: "Corrige flacidez, tono irregular y signos de la edad de cuello y escote.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre cuello y escote limpios, con masajes circulares ascendentes; después, hidratante.",
+      solar: "Por la mañana, completar con fotoprotección."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-contorno-de-ojos",
+    name: "Endocare Tensage Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-tensage-contorno-de-ojos.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["ojos", "flacidez"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso sensible.",
+      tipo: "Contorno de ojos iluminador con color.",
+      necesidad: "Corrige ojeras, bolsas, falta de firmeza y arrugas de expresión.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Una pequeña cantidad con pequeños toques."
+    }
+  },
+
+  {
+    id: "cl-endocare-tensage-firming-contour-reafirmante-contorno-ojos",
+    name: "Endocare Tensage Reafirmante Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-tensage-firming-contour-reafirmante-contorno-ojos.webp",
+    brand: "cantabria",
+    line: "cl-tensage",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con arrugas, patas de gallo, bolsas y fatiga en el contorno.",
+      tipo: "Contorno de ojos reafirmante.",
+      necesidad: "Suaviza líneas de expresión y reduce bolsas y signos de fatiga.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre el contorno limpio con el aplicador, evitando los párpados; limpiar el aplicador tras cada uso."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Radiance ---------- */
+  {
+    id: "cl-endocare-radiance-vitamin-c-20-serum-vitamina-pura",
+    name: "Endocare Radiance Vitamina C20 Sérum",
+    img: "imagenes/cantabria/cl-endocare-radiance-vitamin-c-20-serum-vitamina-pura.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada", "manchas", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel apagada con signos de fotoenvejecimiento: líneas finas y pequeñas manchas.",
+      tipo: "Sérum con vitamina C pura.",
+      necesidad: "Acción antioxidante que unifica el tono e ilumina.",
+      cuando: "Por la mañana.",
+      modo: "3-4 gotas en rostro y cuello limpios y secos, evitando los ojos, antes de la hidratante o el fotoprotector."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-c-ferulic-serum-gel-antipolucion",
+    name: "Endocare Radiance C Ferulic Serum Gel",
+    img: "imagenes/cantabria/cl-endocare-radiance-c-ferulic-serum-gel-antipolucion.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel expuesta a la contaminación. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum gel antioxidante con vitamina C.",
+      necesidad: "Protege de la contaminación, potencia la luminosidad y aporta efecto detox.",
+      cuando: "Una vez al día, por la mañana.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro, cuello y escote evitando el contorno de ojos, antes de la hidratante o el fotoprotector."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-c-oil-free-ampollas",
+    name: "Endocare Radiance C Oil-Free Ampollas",
+    img: "imagenes/cantabria/cl-endocare-radiance-c-oil-free-ampollas.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada", "arrugas"],
+    sk: ["todas", "mixta", "grasa"],
+    d: {
+      paciente: "Todo tipo de piel con fotoenvejecimiento leve a moderado, incluso mixta y grasa.",
+      tipo: "Ampollas intensivas con vitamina C.",
+      necesidad: "Reducen y previenen los signos del envejecimiento sin residuo graso.",
+      cuando: "Una vez al día. Cada ampolla da para tres aplicaciones.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar la ampolla y aplicar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-c-20-proteoglicanos-ampollas",
+    name: "Endocare Radiance C20 Proteoglicanos Ampollas",
+    img: "imagenes/cantabria/cl-endocare-radiance-c-20-proteoglicanos-ampollas.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada", "arrugas"],
+    sk: ["todas", "mixta", "grasa"],
+    d: {
+      paciente: "Todo tipo de piel, incluso mixta y grasa; prevención del fotoenvejecimiento.",
+      tipo: "Ampollas intensivas con vitamina C y proteoglicanos.",
+      necesidad: "Reducen y previenen los signos del fotoenvejecimiento e iluminan.",
+      cuando: "Una vez al día. Cada ampolla da para tres aplicaciones.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar la ampolla y aplicar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-c-proteoglicanos-oil-free-ampollas",
+    name: "Endocare Radiance C Proteoglicanos Oil-Free Ampollas",
+    img: "imagenes/cantabria/cl-endocare-radiance-c-proteoglicanos-oil-free-ampollas.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada", "arrugas"],
+    sk: ["todas", "mixta", "grasa"],
+    d: {
+      paciente: "Todo tipo de piel, incluso mixta y grasa.",
+      tipo: "Ampollas intensivas sin residuo graso.",
+      necesidad: "Reducen y previenen los signos del envejecimiento.",
+      cuando: "Una vez al día, de día o de noche. Cada ampolla da para tres aplicaciones.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar la ampolla y aplicar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-peel-mask",
+    name: "Endocare Radiance Peel Mask",
+    img: "imagenes/cantabria/cl-endocare-radiance-peel-mask.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel.",
+      tipo: "Mascarilla exfoliante en gel.",
+      necesidad: "Exfolia, purifica e ilumina; mejora la textura y difumina líneas de expresión.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Mascarilla exfoliante.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-contorno-de-ojos-antiojeras",
+    name: "Endocare Radiance Contorno de Ojos Antiojeras",
+    img: "imagenes/cantabria/cl-endocare-radiance-contorno-de-ojos-antiojeras.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Ojeras, bolsas y arrugas de expresión; también tras técnicas estéticas. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Contorno de ojos con micropigmentos.",
+      necesidad: "Reduce bolsas y arrugas superficiales e ilumina el contorno.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Una pequeña cantidad con pequeños toques."
+    }
+  },
+
+  {
+    id: "cl-endocare-radiance-illuminating-eye-contour-contorno-ojos-iluminador",
+    name: "Endocare Radiance Contorno de Ojos Iluminador",
+    img: "imagenes/cantabria/cl-endocare-radiance-illuminating-eye-contour-contorno-ojos-iluminador.webp",
+    brand: "cantabria",
+    line: "cl-radiance",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Ojeras, bolsas y arrugas de expresión. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Contorno de ojos con vitamina C, E y cafeína.",
+      necesidad: "Antiarrugas e iluminador; descongestiona y protege el contorno.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre el contorno limpio con el aplicador, evitando los párpados; limpiar el aplicador tras cada uso.",
+      solar: "Evitar el sol directo y usar protección solar alta de amplio espectro."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Endocare Renewal ---------- */
+  {
+    id: "cl-endocare-renewal-retinol-serum-0-2-retinol",
+    name: "Endocare Renewal Sérum Retinol 0,2 %",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinol-serum-0-2-retinol.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Signos de envejecimiento global: arrugas, textura y tono irregular. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum anhidro con retinol en microesponjas.",
+      necesidad: "Retexturiza y renueva la piel.",
+      cuando: "Preferentemente por la noche.",
+      modo: "Agitar antes de usar. Cantabria Labs no detalla más cómo aplicarlo.",
+      nota: "Es normal un ligero escozor y descamación al principio."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-retinol-intensive-serum-0-5-retinol",
+    name: "Endocare Renewal Sérum Retinol Intensivo 0,5 %",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinol-intensive-serum-0-5-retinol.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Signos de envejecimiento global intensos: arrugas profundas, textura y tono. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum anhidro con alta concentración de retinol.",
+      necesidad: "Retexturiza y renueva intensamente la piel.",
+      cuando: "Preferentemente por la noche.",
+      modo: "Agitar antes de usar. Cantabria Labs no detalla más cómo aplicarlo.",
+      nota: "Es normal un ligero escozor y descamación al principio."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-retinoid-serum-retinoide",
+    name: "Endocare Renewal Serum Retinoid",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinoid-serum-retinoide.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Signos de envejecimiento global: arrugas, textura y tono irregular. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum con retinol y retinal (RetinDuo).",
+      necesidad: "Mejora arrugas, textura y tono irregular.",
+      cuando: "Por la noche, empezando de forma gradual y aumentando la frecuencia según tolerancia.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en el rostro limpio y seco.",
+      solar: "Completar con protección solar SPF50+ y evitar el sol directo.",
+      nota: "Es normal una ligera descamación al principio. No aplicar sobre piel irritada."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-retinoid-intensive-serum-retinoide-intensivo",
+    name: "Endocare Renewal Retinoid Intensive Serum",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinoid-intensive-serum-retinoide-intensivo.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Signos de envejecimiento global intensos: arrugas profundas, textura y tono. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum intensivo con retinol y retinal (RetinDuo).",
+      necesidad: "Mejora intensamente arrugas profundas, textura y tono.",
+      cuando: "Por la noche, empezando de forma gradual y aumentando la frecuencia según tolerancia.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en el rostro limpio y seco.",
+      solar: "Completar con protección solar SPF50+ y evitar el sol directo.",
+      nota: "Es normal una ligera descamación al principio. No aplicar sobre piel irritada."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-retinoid-eye-contour-contorno-ojos-retinoides",
+    name: "Endocare Renewal Retinoid Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinoid-eye-contour-contorno-ojos-retinoides.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Arrugas y signos de envejecimiento del contorno. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Contorno de ojos con retinoides (RetinDuo).",
+      necesidad: "Tratamiento intensivo antiarrugas del contorno.",
+      cuando: "Por la noche.",
+      modo: "Aplicar con la cánula y extender con la zona metálica sobre el contorno limpio.",
+      solar: "Completar con protección solar SPF50+ y evitar el sol directo.",
+      nota: "No usar en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-retinol-contorno-de-ojos",
+    name: "Endocare Renewal Retinol Contorno de ojos",
+    img: "imagenes/cantabria/cl-endocare-renewal-retinol-contorno-de-ojos.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel; contorno de ojos y labios con arrugas.",
+      tipo: "Sérum de contorno con retinol puro.",
+      necesidad: "Retexturiza, renueva y reduce las arrugas del contorno.",
+      cuando: "Por la noche.",
+      modo: "Extender con la zona metálica sobre el contorno de ojos y labios limpio y seco; limpiar el aplicador.",
+      solar: "Evitar la exposición solar durante su uso.",
+      nota: "No usar en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-comfort-cream",
+    name: "Endocare Renewal Comfort Cream",
+    img: "imagenes/cantabria/cl-endocare-renewal-comfort-cream.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible e irritada; inicio del tratamiento con retinoides.",
+      tipo: "Crema antiedad hidratante y calmante.",
+      necesidad: "Alivia la irritación, repara la barrera y estimula la renovación.",
+      cuando: "Por la noche, según el régimen Endocare Renewal o lo que indique el prescriptor.",
+      modo: "Aplicar sobre rostro y cuello limpios.",
+      solar: "Completar con protección solar SPF50+ y evitar el sol directo."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-glycoperfect-intensive-serum",
+    name: "Endocare Glycoperfect Intensive Serum",
+    img: "imagenes/cantabria/cl-endocare-renewal-glycoperfect-intensive-serum.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["arrugas", "poros", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con textura irregular, arrugas, tono irregular y poros. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Sérum con ácido glicólico y azelaico.",
+      necesidad: "Retexturiza intensamente y mejora los signos del envejecimiento.",
+      cuando: "Por la noche: el primer mes, noches alternas; después, todas las noches si se tolera.",
+      modo: "Sobre rostro y cuello limpios y secos; después, crema hidratante.",
+      solar: "Imprescindible protector solar al día siguiente: el ácido glicólico aumenta la sensibilidad al sol.",
+      nota: "Es normal un ligero escozor al principio."
+    }
+  },
+
+  {
+    id: "cl-endocare-renewal-glycoperfect-creamy-cleanser",
+    name: "Endocare Glycoperfect Creamy Cleanser",
+    img: "imagenes/cantabria/cl-endocare-renewal-glycoperfect-creamy-cleanser.webp",
+    brand: "cantabria",
+    line: "cl-renewal",
+    n: ["limpieza", "poros", "apagada"],
+    sk: ["grasa"],
+    d: {
+      paciente: "Piel normal y grasa que busca exfoliación suave y reducir los poros.",
+      tipo: "Gel limpiador con 15 % de AHA.",
+      necesidad: "Limpia en profundidad, exfolia con suavidad y aporta luminosidad.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Limpiador exfoliante con AHA de uso nocturno.",
+      cuando: "Por la noche.",
+      modo: "Agitar; humedecer la piel con agua tibia, masajear hasta formar una leve espuma y aclarar.",
+      solar: "Es fundamental aplicar protector solar: los AHA aumentan la sensibilidad al sol."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Biretix ---------- */
+  {
+    id: "cl-biretix-cleanser",
+    name: "Biretix Cleanser",
+    img: "imagenes/cantabria/cl-biretix-cleanser.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel mixta, grasa y con tendencia acneica.",
+      tipo: "Gel limpiador purificante.",
+      necesidad: "Regula el exceso de grasa y reduce la proliferación de microorganismos.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Es el primer paso de la rutina Biretix; la marca no lo asigna a ningún paso de limpieza en concreto.",
+      cuando: "Mañana y noche, como primer paso de la rutina.",
+      modo: "Sobre la piel húmeda con un ligero masaje, dejar actuar 1-2 minutos y aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "cl-biretix-micropeel",
+    name: "Biretix Micropeel",
+    img: "imagenes/cantabria/cl-biretix-micropeel.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa o con tendencia acneica; acné leve o en mantenimiento.",
+      tipo: "Exfoliante físico y químico.",
+      necesidad: "Previene y elimina comedones y mejora la absorción de otros activos.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Exfoliación periódica.",
+      cuando: "2 o 3 veces por semana (en piel normal a mixta, la marca sugiere 1 vez).",
+      modo: "Sobre la piel húmeda con suaves masajes circulares y aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "cl-biretix-oil-control-solution",
+    name: "Biretix Oil Control Solution",
+    img: "imagenes/cantabria/cl-biretix-oil-control-solution.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["poros", "acne"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa y con tendencia acneica, incluso sensible.",
+      tipo: "Solución exfoliante y matificante con ácido glicólico y mandélico.",
+      necesidad: "Renueva la epidermis y matifica.",
+      cuando: "Una o dos veces al día, después de una limpieza suave.",
+      modo: "Aplicar con un algodón sobre el rostro limpio y seco, evitando el contorno de ojos.",
+      solar: "Usar fotoprotección.",
+      nota: "Es normal un ligero escozor al principio."
+    }
+  },
+
+  {
+    id: "cl-biretix-duo",
+    name: "Biretix Duo",
+    img: "imagenes/cantabria/cl-biretix-duo.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Lesiones leves a moderadas e imperfecciones en piel con tendencia acneica.",
+      tipo: "Gel antiimperfecciones.",
+      necesidad: "Reduce y mejora los primeros signos de la piel con tendencia acneica.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre la piel limpia y seca.",
+      solar: "No exponerse al sol directo ni a lámparas solares después de aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-biretix-tri-active-gel",
+    name: "Biretix Tri-Active Gel",
+    img: "imagenes/cantabria/cl-biretix-tri-active-gel.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "manchas"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Lesiones activas y marcas en piel con tendencia acneica moderada.",
+      tipo: "Gel facial antiimperfecciones.",
+      necesidad: "Reduce granos y marcas.",
+      cuando: "Una o dos veces al día, siguiendo las recomendaciones del médico.",
+      modo: "Agitar y aplicar en las zonas afectadas.",
+      nota: "No se recomienda en embarazo ni lactancia, por precaución (contiene retinoides). Es normal un ligero escozor al principio."
+    }
+  },
+
+  {
+    id: "cl-biretix-tri-active-control-gel",
+    name: "Biretix Tri-Active Control Gel",
+    img: "imagenes/cantabria/cl-biretix-tri-active-control-gel.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel grasa y con tendencia acneica, imperfecciones y poros dilatados; apto para piel sensible.",
+      tipo: "Gel seborregulador con retinoides.",
+      necesidad: "Seborregula y controla la apariencia de las imperfecciones y los poros.",
+      cuando: "Una vez al día, preferiblemente por la noche: empezar algunas noches y aumentar según tolerancia.",
+      modo: "Sobre la piel limpia y seca.",
+      solar: "Evitar el sol directo y usar fotoprotección alta de amplio espectro.",
+      nota: "No se recomienda en embarazo ni lactancia, por precaución (contiene retinoides)."
+    }
+  },
+
+  {
+    id: "cl-biretix-tri-active-intensive-gel",
+    name: "Biretix Tri-Active Intensive Gel",
+    img: "imagenes/cantabria/cl-biretix-tri-active-intensive-gel.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa con tendencia acneica. No recomendado para piel sensible.",
+      tipo: "Gel facial intensivo.",
+      necesidad: "Acción queratolítica y comedolítica para un cuidado intensivo de las imperfecciones.",
+      cuando: "Una vez al día, preferiblemente por la noche: empezar algunas noches y aumentar según tolerancia.",
+      modo: "Sobre la piel limpia y seca.",
+      solar: "Evitar el sol directo y usar fotoprotección alta de amplio espectro.",
+      nota: "No se recomienda en embarazo ni lactancia, por precaución (contiene retinoides)."
+    }
+  },
+
+  {
+    id: "cl-biretix-double-correction-serum",
+    name: "Biretix Double Correction Serum",
+    img: "imagenes/cantabria/cl-biretix-double-correction-serum.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "arrugas"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel adulta mixta o grasa con imperfecciones y primeros signos de la edad.",
+      tipo: "Sérum antiimperfecciones y antiedad.",
+      necesidad: "Tratamiento global de imperfecciones y primeros signos del envejecimiento.",
+      cuando: "Mañana y noche.",
+      modo: "3-6 gotas en la palma y extender sobre el rostro limpio y seco.",
+      solar: "Completar la rutina con fotoprotección.",
+      nota: "Es normal un ligero escozor al principio."
+    }
+  },
+
+  {
+    id: "cl-biretix-hydramat-day-spf-30",
+    name: "Biretix Hydramat Day SPF 30",
+    img: "imagenes/cantabria/cl-biretix-hydramat-day-spf-30.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "deshidratacion"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel grasa y/o con tendencia acneica.",
+      tipo: "Hidratante de día oil-free con SPF 30.",
+      necesidad: "Hidrata y cuida a diario la piel grasa.",
+      cuando: "Una o varias veces al día.",
+      modo: "Agitar y extender sobre la piel limpia con un ligero masaje."
+    }
+  },
+
+  {
+    id: "cl-biretix-hydramat-day-spf-30-color",
+    name: "Biretix Hydramat Day SPF 30 Color",
+    img: "imagenes/cantabria/cl-biretix-hydramat-day-spf-30-color.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "manchas"],
+    sk: ["grasa", "mixta"],
+    d: {
+      paciente: "Piel grasa y/o mixta.",
+      tipo: "Hidratante de día con color y SPF 30.",
+      necesidad: "Cuida la piel grasa y reduce las marcas, con cobertura ultraligera.",
+      cuando: "Una o varias veces al día.",
+      modo: "Agitar y extender sobre la piel limpia con un ligero masaje.",
+      nota: "No usar en embarazo ni lactancia (contiene vitamina A)."
+    }
+  },
+
+  {
+    id: "cl-biretix-gel",
+    name: "Biretix Gel Reconfortante",
+    img: "imagenes/cantabria/cl-biretix-gel.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Piel tras tratamientos orales o tópicos para el acné (prevención y mantenimiento).",
+      tipo: "Gel reconfortante.",
+      necesidad: "Mejora la piel, mantiene los resultados y ayuda a reducir las recaídas.",
+      cuando: "Mañana y noche.",
+      modo: "Aplicar sobre la piel limpia y seca.",
+      solar: "No exponerse al sol directo ni a lámparas solares después de aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-biretix-isorepair",
+    name: "Biretix Isorepair Crema hidratante",
+    img: "imagenes/cantabria/cl-biretix-isorepair.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["seca", "rojeces"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel sensibilizada por tratamientos con retinoides orales o tópicos.",
+      tipo: "Crema hidratante reparadora.",
+      necesidad: "Regenera e hidrata con ceramidas, ácido hialurónico y vitamina E.",
+      cuando: "Una o varias veces al día.",
+      modo: "Aplicar sobre la piel limpia y seca."
+    }
+  },
+
+  {
+    id: "cl-biretix-isorepair-creamy-cleanser-limpiador-facial-cremoso",
+    name: "Biretix Isorepair Limpiador Cremoso",
+    img: "imagenes/cantabria/cl-biretix-isorepair-creamy-cleanser-limpiador-facial-cremoso.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["limpieza", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel sensibilizada por retinoides orales o tópicos; apto para piel seca o deshidratada.",
+      tipo: "Limpiador syndet cremoso.",
+      necesidad: "Limpia sin jabón devolviendo el confort a la piel con tendencia acneica sensibilizada.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel húmeda con un ligero masaje y aclarar con agua tibia."
+    }
+  },
+
+  {
+    id: "cl-biretix-isorepair-lip-balm-balsamo-labial",
+    name: "Biretix Isorepair Bálsamo Labial",
+    img: "imagenes/cantabria/cl-biretix-isorepair-lip-balm-balsamo-labial.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Labios secos o sensibilizados por retinoides orales.",
+      tipo: "Bálsamo labial reparador.",
+      necesidad: "Recupera los labios con un complejo de lípidos biomiméticos.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar uniformemente en los labios.",
+      solar: "No exponer a la luz solar directa."
+    }
+  },
+
+  {
+    id: "cl-biretix-tri-active-spray",
+    name: "Biretix Tri-Active Spray",
+    img: "imagenes/cantabria/cl-biretix-tri-active-spray.webp",
+    brand: "cantabria",
+    line: "cl-biretix",
+    n: ["acne", "corporal"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Granos y marcas en zonas extensas como pecho y espalda.",
+      tipo: "Spray corporal antiimperfecciones.",
+      necesidad: "Reduce granos y marcas en zonas extensas.",
+      cuando: "Una o dos veces al día, preferiblemente por la noche.",
+      modo: "Agitar y aplicar sobre la piel limpia de las zonas afectadas.",
+      solar: "No exponerse al sol justo después de aplicarlo.",
+      nota: "No se recomienda en embarazo ni lactancia, por precaución (contiene retinoides)."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Neoretin ---------- */
+  {
+    id: "cl-neoretin-cleanser-limpiador-facial-antimanchas",
+    name: "Neoretin Limpiador Microexfoliante",
+    img: "imagenes/cantabria/cl-neoretin-cleanser-limpiador-facial-antimanchas.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["limpieza", "manchas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Piel con hiperpigmentación y tono desigual o apagado.",
+      tipo: "Limpiador microexfoliante de triple acción.",
+      necesidad: "Exfolia con suavidad, ilumina y unifica la textura.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Limpiador con microexfoliación de uso diario.",
+      cuando: "Una vez al día; apto para uso diario.",
+      modo: "Sobre la piel humedecida con agua tibia, masajear y aclarar."
+    }
+  },
+
+  {
+    id: "cl-neoretin-serum-booster-fluid",
+    name: "Neoretin Discrom Control Serum Booster Fluid",
+    img: "imagenes/cantabria/cl-neoretin-serum-booster-fluid.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con manchas y fotoenvejecimiento.",
+      tipo: "Sérum despigmentante.",
+      necesidad: "Despigmenta y unifica el tono.",
+      cuando: "Mañana y noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en rostro y cuello.",
+      solar: "Usar protección solar durante el día."
+    }
+  },
+
+  {
+    id: "cl-neoretin-gelcream-spf-50",
+    name: "Neoretin Discrom Control Gelcream SPF 50",
+    img: "imagenes/cantabria/cl-neoretin-gelcream-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas", "fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con manchas y fotoenvejecimiento.",
+      tipo: "Gel-crema despigmentante con SPF 50.",
+      necesidad: "Atenúa las manchas y previene su aparición con filtros UVB y UVA.",
+      cuando: "Por la mañana.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "cl-neoretin-pigment-neutralizer-serum",
+    name: "Neoretin Pigment Neutralizer Serum",
+    img: "imagenes/cantabria/cl-neoretin-pigment-neutralizer-serum.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas", "apagada"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible o intolerante al retinol o a los AHA, con manchas.",
+      tipo: "Sérum unificador con ácido azelaico y bakuchiol.",
+      necesidad: "Previene y atenúa las manchas; unifica e ilumina el tono.",
+      cuando: "Mañana y noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar con ligeros masajes circulares.",
+      solar: "No es fotosensibilizante, pero de día hay que usar protección solar."
+    }
+  },
+
+  {
+    id: "cl-neoretin-discrom-control-concentrate",
+    name: "Neoretin Discrom Control Concentrate",
+    img: "imagenes/cantabria/cl-neoretin-discrom-control-concentrate.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con hiperpigmentación (melasma, manchas solares, postacné, léntigos); apto para baja tolerancia a retinoides.",
+      tipo: "Concentrado despigmentante intensivo.",
+      necesidad: "Reduce las manchas, exfolia, renueva e ilumina el tono.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en rostro y cuello limpios.",
+      solar: "Evitar el sol directo y utilizar protección solar.",
+      nota: "Al principio puede haber leve escozor, enrojecimiento o descamación."
+    }
+  },
+
+  {
+    id: "cl-neoretin-ultra-emulsion",
+    name: "Neoretin Discrom Control Ultra Emulsion Advanced",
+    img: "imagenes/cantabria/cl-neoretin-ultra-emulsion.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Hiperpigmentación persistente (discromías, postinflamatoria). No indicado para piel sensible.",
+      tipo: "Emulsión despigmentante intensiva.",
+      necesidad: "Corrige el tono y la textura de las manchas persistentes.",
+      cuando: "Por la noche, empezando de forma gradual y aumentando la frecuencia.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Agitar y aplicar en el rostro evitando el contorno de ojos.",
+      nota: "No usar en embarazo ni lactancia ni sobre piel irritada."
+    }
+  },
+
+  {
+    id: "cl-neoretin-transition-crema",
+    name: "Neoretin Discrom Control Transition Cream",
+    img: "imagenes/cantabria/cl-neoretin-transition-crema.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con hiperpigmentación de cualquier tipo, incluso sensible; mantenimiento o alternancia con tratamientos despigmentantes.",
+      tipo: "Crema despigmentante de mantenimiento.",
+      necesidad: "Mantiene los resultados con alta tolerancia.",
+      cuando: "Por la noche.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Aplicar en rostro y cuello.",
+      solar: "Fundamental usar protector solar para evitar nuevas manchas.",
+      nota: "Puede notarse un ligero picor o peeling al principio."
+    }
+  },
+
+  {
+    id: "cl-neoretin-peeling-despigmentante",
+    name: "Neoretin Discrom Control Peeling Despigmentante",
+    img: "imagenes/cantabria/cl-neoretin-peeling-despigmentante.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de piel con manchas; coadyuvante de otros despigmentantes.",
+      tipo: "Peeling domiciliario en discos.",
+      necesidad: "Exfolia química y enzimáticamente y potencia los despigmentantes.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Peeling domiciliario.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Pasar el disco por la zona con un movimiento circular de 30 a 60 segundos y dejar actuar.",
+      nota: "Es normal un ligero escozor. No aplicar en heridas ni zonas inflamadas."
+    }
+  },
+
+  {
+    id: "cl-neoretin-discrom-control-k-contorno-de-ojos",
+    name: "Neoretin Discrom Control K-Contorno de Ojos",
+    img: "imagenes/cantabria/cl-neoretin-discrom-control-k-contorno-de-ojos.webp",
+    brand: "cantabria",
+    line: "cl-neoretin",
+    n: ["ojos", "manchas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Ojeras hiperpigmentadas, vasculares y genéticas. Cantabria Labs no especifica un tipo de piel.",
+      tipo: "Contorno de ojos despigmentante.",
+      necesidad: "Trata y previene las ojeras con vitamina K óxido y ácido tranexámico.",
+      cuando: "Dos veces al día.",
+      modo: "Limpiar el rostro con un limpiador suave y secar sin frotar. Masajes circulares y toques del interior del ojo hacia fuera."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Retincare ---------- */
+  {
+    id: "cl-retincare",
+    name: "Retincare",
+    img: "imagenes/cantabria/cl-retincare.webp",
+    brand: "cantabria",
+    line: "cl-retincare",
+    n: ["manchas", "seca", "arrugas"],
+    sk: ["seca"],
+    d: {
+      paciente: "Hiperpigmentaciones, foto y cronoenvejecimiento y xerosis.",
+      tipo: "Producto sanitario en gel.",
+      necesidad: "Tratamiento de la xerosis, la dermatoheliosis y las alteraciones de la pigmentación.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Skin Resist ---------- */
+  {
+    id: "cl-skin-resist-velvet-cleanser",
+    name: "Skin Resist Velvet Cleanser",
+    img: "imagenes/cantabria/cl-skin-resist-velvet-cleanser.webp",
+    brand: "cantabria",
+    line: "cl-skinresist",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con tendencia reactiva.",
+      tipo: "Gel limpiador desmaquillante de rostro y ojos.",
+      necesidad: "Limpia y desmaquilla con acción calmante.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre la piel húmeda con agua tibia, masajear hasta una espuma delicada y aclarar."
+    }
+  },
+
+  {
+    id: "cl-skin-resist-sensage-serum",
+    name: "Skin Resist Sensage Serum",
+    img: "imagenes/cantabria/cl-skin-resist-sensage-serum.webp",
+    brand: "cantabria",
+    line: "cl-skinresist",
+    n: ["rojeces", "arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible con tendencia reactiva y signos de la edad.",
+      tipo: "Sérum antiedad renovador.",
+      necesidad: "Reduce la sensibilidad y la sequedad y apoya la barrera.",
+      cuando: "Una vez al día.",
+      modo: "Sobre el rostro limpio y seco; seguir con Skin Resist Daily Fluid.",
+      solar: "Por la mañana, usar protección solar."
+    }
+  },
+
+  {
+    id: "cl-skin-resist-daily-fluid",
+    name: "Skin Resist Daily Fluid",
+    img: "imagenes/cantabria/cl-skin-resist-daily-fluid.webp",
+    brand: "cantabria",
+    line: "cl-skinresist",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible", "mixta", "grasa"],
+    d: {
+      paciente: "Piel reactiva, especialmente mixta y grasa.",
+      tipo: "Fluido hidratante ligero.",
+      necesidad: "Reduce la sensibilidad y la reactividad y aporta confort.",
+      cuando: "Una vez al día.",
+      modo: "Sobre el rostro limpio y seco, masajeando.",
+      solar: "No lleva filtros solares: aplicar protector después."
+    }
+  },
+
+  {
+    id: "cl-skin-resist-daily-cream-crema-piel-sensible",
+    name: "Skin Resist Daily Cream",
+    img: "imagenes/cantabria/cl-skin-resist-daily-cream-crema-piel-sensible.webp",
+    brand: "cantabria",
+    line: "cl-skinresist",
+    n: ["rojeces", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Piel reactiva, especialmente seca y deshidratada.",
+      tipo: "Crema rica de cuidado diario.",
+      necesidad: "Calma, hidrata y aporta confort a la piel sensible.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Sobre rostro y cuello limpios y secos, masajeando.",
+      solar: "No lleva filtros solares: de día, aplicar protector después."
+    }
+  },
+
+  {
+    id: "cl-skin-resist-sensage-eye-contorno-ojos-piel-sensible",
+    name: "Skin Resist Sensage Eye",
+    img: "imagenes/cantabria/cl-skin-resist-sensage-eye-contorno-ojos-piel-sensible.webp",
+    brand: "cantabria",
+    line: "cl-skinresist",
+    n: ["ojos", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Contorno de piel sensible con tendencia reactiva y signos de la edad.",
+      tipo: "Contorno de ojos hipoalergénico.",
+      necesidad: "Cuida el contorno y los párpados sensibles frente a los signos de la edad.",
+      cuando: "Mañana y noche.",
+      modo: "Una pequeña cantidad sobre contorno y párpados limpios, con suaves toques."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Rosacure ---------- */
+  {
+    id: "cl-rosacure-gentle-cleansing-gel",
+    name: "Rosacure Gentle Cleansing Gel",
+    img: "imagenes/cantabria/cl-rosacure-gentle-cleansing-gel.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["limpieza", "rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con rosácea eritemato-telangiectásica y pápulo-pustulosa.",
+      tipo: "Gel limpiador facial calmante.",
+      necesidad: "Limpia a diario calmando y respetando el equilibrio de la piel con rosácea.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "La marca no indica paso.",
+      cuando: "A diario. Cantabria Labs no indica más.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-rosacure-fast",
+    name: "Rosacure Fast",
+    img: "imagenes/cantabria/cl-rosacure-fast.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Rosácea eritemato-telangiectásica y pápulo-pustulosa en fase aguda.",
+      tipo: "Gel de rápida absorción (producto sanitario).",
+      necesidad: "Atenúa el eritema, el picor y el escozor de la rosácea en fase aguda.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo.",
+      nota: "Si hay pápulas o pústulas, consultar al médico antes de empezar."
+    }
+  },
+
+  {
+    id: "cl-rosacure-intensive-spf-30",
+    name: "Rosacure Intensive SPF 30",
+    img: "imagenes/cantabria/cl-rosacure-intensive-spf-30.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Rosácea en fase eritemato-telangiectásica y pápulo-pustulosa.",
+      tipo: "Emulsión de día con SPF 30.",
+      necesidad: "Combate el eritema intermitente y permanente y atenúa las molestias.",
+      cuando: "De día. Cantabria Labs no indica más.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-rosacure-intensive-spf30-color",
+    name: "Rosacure Intensive SPF 30 Color",
+    img: "imagenes/cantabria/cl-rosacure-intensive-spf30-color.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con rojeces o tendencia a la rosácea.",
+      tipo: "Emulsión de día con color y SPF 30.",
+      necesidad: "Cuida, previene y difumina las rojeces.",
+      cuando: "De día. Cantabria Labs no indica más.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-rosacure-ultra-spf-50",
+    name: "Rosacure Ultra SPF 50+",
+    img: "imagenes/cantabria/cl-rosacure-ultra-spf-50.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["rojeces", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Rosácea en fase eritemato-telangiectásica y pápulo-pustulosa.",
+      tipo: "Crema de día con SPF 50+.",
+      necesidad: "Protección muy alta frente a UVB y UVA para la piel con rosácea.",
+      cuando: "De día. Cantabria Labs no indica más.",
+      modo: "Cantabria Labs no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "cl-rosacure-combi",
+    name: "Rosacure Combi",
+    img: "imagenes/cantabria/cl-rosacure-combi.webp",
+    brand: "cantabria",
+    line: "cl-rosacure",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel con rosácea.",
+      tipo: "Complemento alimenticio con MSM, cardo mariano y zinc.",
+      necesidad: "Contribuye al mantenimiento de la piel con rosácea.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Vía oral. Cantabria Labs no detalla la toma."
+    }
+  },
+
+  /* ---------- Cantabria Labs · Iraltone ---------- */
+  {
+    id: "cl-iraltone-aga",
+    name: "Iraltone AGA Cápsulas",
+    img: "imagenes/cantabria/cl-iraltone-aga.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída capilar crónica de componente hormonal; debilitamiento del cabello. Complemento a tratamientos anticaída.",
+      tipo: "Complemento alimenticio.",
+      necesidad: "Ayuda a mantener un cabello más fuerte y sano.",
+      cuando: "Una cápsula al día por la mañana.",
+      modo: "Con un vaso de agua.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-aga-plus",
+    name: "Iraltone AGA Plus Cápsulas",
+    img: "imagenes/cantabria/cl-iraltone-aga-plus.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída capilar crónica severa de origen hormonal. Complemento a tratamientos anticaída.",
+      tipo: "Complemento alimenticio de fórmula reforzada.",
+      necesidad: "Fortalece y ayuda a recuperar el cabello.",
+      cuando: "Una cápsula al día por la mañana.",
+      modo: "Con un vaso de agua.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-aga-supreme",
+    name: "Iraltone AGA 5α Supreme",
+    img: "imagenes/cantabria/cl-iraltone-aga-supreme.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída capilar crónica severa de componente hormonal. Complemento a tratamientos anticaída.",
+      tipo: "Complemento alimenticio con complejo 5α.",
+      necesidad: "Cuidado del cabello con caída hormonal.",
+      cuando: "Una cápsula al día por la mañana.",
+      modo: "Con un vaso de agua.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-forte",
+    name: "Iraltone Forte Cápsulas",
+    img: "imagenes/cantabria/cl-iraltone-forte.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída capilar aguda o estacional; cabello fino, frágil o apagado y uñas débiles.",
+      tipo: "Complemento alimenticio.",
+      necesidad: "Ayuda en la caída aguda y fortalece cabello y uñas.",
+      cuando: "Una cápsula al día por la mañana.",
+      modo: "Con un vaso de agua.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-forte-melatonin",
+    name: "Iraltone Forte Melatonin",
+    img: "imagenes/cantabria/cl-iraltone-forte-melatonin.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Fases de caída estacional del cabello.",
+      tipo: "Complemento alimenticio con melatonina.",
+      necesidad: "Nutrientes que contribuyen a mantener el cabello en condiciones normales.",
+      cuando: "Una cápsula al día antes de dormir.",
+      modo: "Con un vaso de agua.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-efflu-booster-bebible-anticaida",
+    name: "Iraltone Hair Efflu Booster",
+    img: "imagenes/cantabria/cl-iraltone-hair-efflu-booster-bebible-anticaida.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída estacional del cabello, por cambios hormonales o estrés.",
+      tipo: "Complemento alimenticio bebible.",
+      necesidad: "Ayuda en el manejo de la caída estacional.",
+      cuando: "Un vial al día por la mañana.",
+      modo: "Agitar el vial antes de tomarlo.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-resilience-booster-bebible-densidad-capilar",
+    name: "Iraltone Hair Resilience Booster",
+    img: "imagenes/cantabria/cl-iraltone-hair-resilience-booster-bebible-densidad-capilar.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de cabello con signos de envejecimiento capilar.",
+      tipo: "Complemento alimenticio bebible.",
+      necesidad: "Fortalece, nutre y aumenta la resiliencia capilar.",
+      cuando: "Un vial al día por la mañana.",
+      modo: "Agitar el vial antes de tomarlo.",
+      nota: "No recomendado en embarazo ni lactancia."
+    }
+  },
+
+  {
+    id: "cl-iraltone-anti-hair-loss-lotion",
+    name: "Iraltone Loción Anticaída",
+    img: "imagenes/cantabria/cl-iraltone-anti-hair-loss-lotion.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Caída del cabello de diversos orígenes, como la alopecia androgénica; adyuvante de otros tratamientos.",
+      tipo: "Loción anticaída de triple acción.",
+      necesidad: "Ayuda a frenar la caída aguda y restaurar el crecimiento.",
+      cuando: "Una vez al día, preferiblemente por la noche.",
+      modo: "Pulverizar con la cánula sobre las zonas afectadas del cuero cabelludo. No hace falta lavar el pelo después."
+    }
+  },
+
+  {
+    id: "cl-iraltone-2in1-lashes-eyebrows-serum-booster",
+    name: "Iraltone Sérum 2 en 1 Pestañas y Cejas",
+    img: "imagenes/cantabria/cl-iraltone-2in1-lashes-eyebrows-serum-booster.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["ojos"],
+    sk: ["todas"],
+    d: {
+      paciente: "Pérdida de densidad en cejas y pestañas.",
+      tipo: "Sérum potenciador de pestañas y cejas.",
+      necesidad: "Aumenta la densidad y la longitud de pestañas y cejas.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Escurrir el pincel y deslizarlo sobre la raíz de las pestañas superiores. Quitar las lentillas antes."
+    }
+  },
+
+  {
+    id: "cl-iraltone-champu-fortificante",
+    name: "Iraltone Champú Fortificante",
+    img: "imagenes/cantabria/cl-iraltone-champu-fortificante.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello fino y debilitado; complemento del tratamiento de la caída.",
+      tipo: "Champú fortificante.",
+      necesidad: "Estimula el folículo y aporta hidratación, brillo y suavidad.",
+      cuando: "A diario.",
+      modo: "Sobre el cabello húmedo, masajear el cuero cabelludo y aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-champu-ds",
+    name: "Iraltone Champú DS",
+    img: "imagenes/cantabria/cl-iraltone-champu-ds.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo con descamación, picor y enrojecimiento, con tendencia seborreica.",
+      tipo: "Champú anticaspa.",
+      necesidad: "Reduce la caspa, el picor y las rojeces.",
+      cuando: "3 veces por semana.",
+      modo: "Sobre el cabello húmedo, masajear y dejar actuar 2-3 minutos; aclarar.",
+      nota: "No usar en menores de 3 años ni con lesiones en el cuero cabelludo."
+    }
+  },
+
+  {
+    id: "cl-iraltone-champu-exfoliante-y-purificante",
+    name: "Iraltone Champú Exfoliante y Purificante",
+    img: "imagenes/cantabria/cl-iraltone-champu-exfoliante-y-purificante.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo con caspa o descamación, incluso sensible.",
+      tipo: "Champú exfoliante.",
+      necesidad: "Exfolia con suavidad el cuero cabelludo y reduce la descamación.",
+      cuando: "Al menos 3 veces por semana, según la evolución de la caspa.",
+      modo: "Sobre el cabello húmedo, masajear y dejar actuar 3 minutos; aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-champu-seborregulador",
+    name: "Iraltone Champú Seborregulador",
+    img: "imagenes/cantabria/cl-iraltone-champu-seborregulador.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo graso y caspa grasa.",
+      tipo: "Champú seborregulador.",
+      necesidad: "Regula el exceso de sebo y purifica.",
+      cuando: "A diario.",
+      modo: "Sobre el cabello húmedo, masajear y dejar actuar 3-5 minutos; aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-champu-suave-uso-frecuente",
+    name: "Iraltone Champú Suave Uso Frecuente",
+    img: "imagenes/cantabria/cl-iraltone-champu-suave-uso-frecuente.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de cabello; adultos.",
+      tipo: "Champú de uso diario.",
+      necesidad: "Limpia y repara el cabello; sirve para alternar con champús específicos.",
+      cuando: "A diario.",
+      modo: "Sobre el cabello húmedo, masajear y aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-scalp-care-barrier-comfort-shampoo-funcion-barrera-champu",
+    name: "Iraltone Barrier Comfort Champú",
+    img: "imagenes/cantabria/cl-iraltone-hair-scalp-care-barrier-comfort-shampoo-funcion-barrera-champu.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo normal a seco.",
+      tipo: "Champú suave de uso diario.",
+      necesidad: "Refuerza la barrera y alivia la sequedad del cuero cabelludo.",
+      cuando: "A diario.",
+      modo: "Sobre el cuero cabelludo mojado, masajear hasta hacer espuma y aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-scalp-care-reset-shampoo-champu-purificante",
+    name: "Iraltone Reset Champú Purificante",
+    img: "imagenes/cantabria/cl-iraltone-hair-scalp-care-reset-shampoo-champu-purificante.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cuero cabelludo equilibrado a graso.",
+      tipo: "Champú purificante.",
+      necesidad: "Limpia en profundidad sin agredir y calma el picor.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Sobre el cuero cabelludo mojado, masajear hasta hacer espuma y aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-scalp-care-restore-conditioner-acondicionador-capilar-fibra",
+    name: "Iraltone Restore Acondicionador",
+    img: "imagenes/cantabria/cl-iraltone-hair-scalp-care-restore-conditioner-acondicionador-capilar-fibra.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello seco y/o dañado.",
+      tipo: "Acondicionador hidratante con queratina vegana.",
+      necesidad: "Refuerza la fibra y mejora la resistencia a la rotura.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Sobre el cabello lavado, de medios a puntas; dejar 1-2 minutos y aclarar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-scalp-care-perfect10-leave-in-acondicionador-sin-aclarado",
+    name: "Iraltone Perfect10 Leave-in Acondicionador",
+    img: "imagenes/cantabria/cl-iraltone-hair-scalp-care-perfect10-leave-in-acondicionador-sin-aclarado.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Todo tipo de cabello.",
+      tipo: "Acondicionador sin aclarado.",
+      necesidad: "Suaviza, reestructura el cabello seco y dañado y reduce la rotura.",
+      cuando: "Cantabria Labs no indica la frecuencia.",
+      modo: "Agitar y extender de medios a puntas sobre el cabello húmedo o seco; peinar."
+    }
+  },
+
+  {
+    id: "cl-iraltone-hair-scalp-care-sublime-hair-oil-aceite-capilar",
+    name: "Iraltone Sublime Hair Oil",
+    img: "imagenes/cantabria/cl-iraltone-hair-scalp-care-sublime-hair-oil-aceite-capilar.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Cabello normal a seco y/o dañado.",
+      tipo: "Aceite capilar.",
+      necesidad: "Sella las puntas abiertas y aporta brillo y resistencia.",
+      cuando: "Las veces que sea necesario.",
+      modo: "Una pequeña cantidad en medios y puntas, en cabello húmedo o seco."
+    }
+  },
+
+  {
+    id: "cl-iraltone-ds-emulsion",
+    name: "Iraltone DS Emulsion",
+    img: "imagenes/cantabria/cl-iraltone-ds-emulsion.webp",
+    brand: "cantabria",
+    line: "cl-iraltone",
+    n: ["rojeces", "corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Estados descamativos seborreicos del rostro y del cuerpo.",
+      tipo: "Emulsión ligera.",
+      necesidad: "Trata la descamación seborreica y reequilibra el microbioma.",
+      cuando: "Una o dos veces al día.",
+      modo: "Limpiar y secar la zona y masajear hasta su absorción."
+    }
+  },
+
+  /* ---------- Avène · Agua termal ---------- */
+  {
+    id: "av-agua-termal-de-avene-spray",
+    name: "Agua termal de Avène spray",
+    img: "imagenes/avene/av-agua-termal-de-avene-spray.webp",
+    brand: "avene",
+    line: "av-aguatermal",
+    n: ["rojeces"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel sensible, irritada o con tendencia alérgica, también durante o tras un tratamiento oncológico.",
+      tipo: "Agua termal en spray.",
+      necesidad: "Calma de inmediato, refuerza la barrera y alivia molestias, rojeces, picor y tirantez.",
+      cuando: "Varias veces al día, por ejemplo después de la limpieza y antes de los cuidados.",
+      modo: "Rociar abundantemente unos segundos, esperar y secar con suavidad. Como compresa: empaparla, aplicar sobre la zona y dejar 10 minutos."
+    }
+  },
+
+  /* ---------- Avène · Les Essentiels ---------- */
+  {
+    id: "av-agua-micelar-desmaquillante",
+    name: "Agua micelar desmaquillante",
+    img: "imagenes/avene/av-agua-micelar-desmaquillante.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos y desde 12 años; todo tipo de piel, incluida la sensible.",
+      tipo: "Agua micelar desmaquillante.",
+      necesidad: "Desmaquilla, limpia (incluso la contaminación), hidrata y calma rostro y ojos en un solo paso.",
+      limpieza: "Limpieza única",
+      limpiezaDet: "Avène dice que desmaquilla y limpia en un solo paso.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Aplicar con un disco de algodón, sin aclarado."
+    }
+  },
+
+  {
+    id: "av-espuma-limpiadora",
+    name: "Espuma limpiadora",
+    img: "imagenes/avene/av-espuma-limpiadora.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Adultos y desde 12 años; piel sensible normal o mixta.",
+      tipo: "Espuma limpiadora desmaquillante.",
+      necesidad: "Desmaquilla rostro y ojos, purifica y elimina impurezas y exceso de sebo.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre la piel húmeda o seca y aclarar bien."
+    }
+  },
+
+  {
+    id: "av-leche-limpiadora",
+    name: "Leche limpiadora",
+    img: "imagenes/avene/av-leche-limpiadora.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos y desde 12 años; piel sensible seca o muy seca.",
+      tipo: "Leche desmaquillante.",
+      necesidad: "Desmaquilla, limpia, hidrata y aporta comodidad.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Avène indica completar el desmaquillado con un tónico.",
+      cuando: "A diario.",
+      modo: "Aplicar con las yemas de los dedos o un disco de algodón."
+    }
+  },
+
+  {
+    id: "av-locion-tonica-calmante",
+    name: "Loción tónica calmante",
+    img: "imagenes/avene/av-locion-tonica-calmante.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza", "rojeces"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Loción tónica con agua termal.",
+      necesidad: "Refresca, calma e hidrata manteniendo el equilibrio de la piel.",
+      limpieza: "Rutina de limpieza · último paso",
+      limpiezaDet: "Avène la usa después de la leche limpiadora.",
+      cuando: "A diario: por la mañana al despertar y/o por la noche.",
+      modo: "En un disco de algodón por rostro y cuello; por la noche, después de la leche desmaquillante."
+    }
+  },
+
+  {
+    id: "av-desmaquillante-suave-de-ojos",
+    name: "Desmaquillante suave de ojos",
+    img: "imagenes/avene/av-desmaquillante-suave-de-ojos.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles, incluidos usuarios de lentillas.",
+      tipo: "Desmaquillante de ojos.",
+      necesidad: "Elimina el maquillaje sin irritar y protege los párpados.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Específico de ojos.",
+      cuando: "A diario.",
+      modo: "Dejar un disco empapado 3 segundos sobre el párpado y desmaquillar con movimientos verticales."
+    }
+  },
+
+  {
+    id: "av-desmaquillante-de-ojos-intenso",
+    name: "Desmaquillante de ojos intenso",
+    img: "imagenes/avene/av-desmaquillante-de-ojos-intenso.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Ojos sensibles, incluidos usuarios de lentillas; maquillaje intenso o resistente al agua.",
+      tipo: "Desmaquillante bifásico de ojos.",
+      necesidad: "Elimina el maquillaje permanente, intenso y waterproof.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "Específico de ojos.",
+      cuando: "A diario.",
+      modo: "Agitar, empapar un disco, dejarlo 3 segundos sobre el párpado y retirar con suavidad."
+    }
+  },
+
+  {
+    id: "av-gel-exfoliante-suave",
+    name: "Gel exfoliante suave",
+    img: "imagenes/avene/av-gel-exfoliante-suave.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["limpieza", "apagada"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Gel exfoliante con microesferas de celulosa.",
+      necesidad: "Elimina suavemente las células muertas y purifica.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Exfoliación semanal.",
+      cuando: "1 a 2 veces por semana.",
+      modo: "Sobre la piel húmeda, masajear y aclarar; terminar con Agua termal."
+    }
+  },
+
+  {
+    id: "av-mascarilla-calmante-hidratante",
+    name: "Mascarilla calmante hidratante",
+    img: "imagenes/avene/av-mascarilla-calmante-hidratante.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["deshidratacion", "apagada"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible fatigada, con tono apagado y falta de hidratación.",
+      tipo: "Mascarilla calmante.",
+      necesidad: "Aporta confort, hidratación y vitalidad.",
+      cuando: "1 a 2 veces por semana.",
+      modo: "Capa gruesa en rostro y cuello 10-15 minutos; retirar el exceso con algodón o masaje."
+    }
+  },
+
+  {
+    id: "av-crema-nutritiva-revitalizante",
+    name: "Crema nutritiva revitalizante",
+    img: "imagenes/avene/av-crema-nutritiva-revitalizante.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["seca", "apagada"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel sensible seca y apagada.",
+      tipo: "Crema nutritiva.",
+      necesidad: "Nutre, calma y protege; actúa sobre los signos de fatiga.",
+      cuando: "A diario.",
+      modo: "Con la espátula, extender en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-tratamiento-calmante-para-el-contorno-de-los-ojos",
+    name: "Tratamiento calmante contorno de ojos",
+    img: "imagenes/avene/av-tratamiento-calmante-para-el-contorno-de-los-ojos.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["ojos"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos; contorno y párpados sensibles.",
+      tipo: "Contorno de ojos calmante.",
+      necesidad: "Descongestiona, hidrata y calma la zona.",
+      cuando: "A diario.",
+      modo: "Dos guisantes con los dedos anulares, a toques sobre los párpados."
+    }
+  },
+
+  {
+    id: "av-balsamo-hidratacion-intensa-24h",
+    name: "Bálsamo labial hidratación intensa 24h",
+    img: "imagenes/avene/av-balsamo-hidratacion-intensa-24h.webp",
+    brand: "avene",
+    line: "av-essentiels",
+    n: ["seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Familia, desde 2 años; labios secos y sensibles.",
+      tipo: "Bálsamo labial.",
+      necesidad: "Hidrata 24 horas, ilumina y protege de la sequedad.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Masajear los labios con la yema de los dedos."
+    }
+  },
+
+  /* ---------- Avène · Tolérance ---------- */
+  {
+    id: "av-tolerance-control-crema-calmante-reparadora-de-cosmetica-esteril-r",
+    name: "Tolérance Control crema calmante",
+    img: "imagenes/avene/av-tolerance-control-crema-calmante-reparadora-de-cosmetica-esteril-r.webp",
+    brand: "avene",
+    line: "av-tolerance",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel hipersensible, reactiva, intolerante o alérgica; también en tratamiento oncológico.",
+      tipo: "Crema calmante de cosmética estéril.",
+      necesidad: "Calma en 30 segundos y reduce de forma duradera las molestias.",
+      cuando: "Mañana y noche.",
+      modo: "En rostro, cuello y contorno de ojos con movimientos suaves."
+    }
+  },
+
+  {
+    id: "av-tolerance-control-balsamo-calmante-reparador-de-cosmetica-esteril-r",
+    name: "Tolérance Control bálsamo calmante",
+    img: "imagenes/avene/av-tolerance-control-balsamo-calmante-reparador-de-cosmetica-esteril-r.webp",
+    brand: "avene",
+    line: "av-tolerance",
+    n: ["rojeces", "seca"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel seca hipersensible, reactiva o alérgica; también en tratamiento oncológico.",
+      tipo: "Bálsamo nutritivo calmante de cosmética estéril.",
+      necesidad: "Calma en 30 segundos, nutre y refuerza la barrera.",
+      cuando: "Mañana y noche.",
+      modo: "En rostro, cuello y contorno de ojos con movimientos suaves."
+    }
+  },
+
+  {
+    id: "av-crema-hidratante-tolerance-hydra-10",
+    name: "Tolérance Hydra-10 crema hidratante",
+    img: "imagenes/avene/av-crema-hidratante-tolerance-hydra-10.webp",
+    brand: "avene",
+    line: "av-tolerance",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Bebés desde 1 mes, niños y adultos con piel seca o muy seca y deshidratada.",
+      tipo: "Crema hidratante 100 % de origen natural.",
+      necesidad: "Hidrata 48 horas con alta tolerancia, sin conservantes ni perfume.",
+      cuando: "Mañana y noche.",
+      modo: "En rostro, cuello y contorno de ojos. Se puede usar como mascarilla 1-2 veces por semana."
+    }
+  },
+
+  {
+    id: "av-tolerance-hydra-10-fluido-hidratante",
+    name: "Tolérance Hydra-10 fluido hidratante",
+    img: "imagenes/avene/av-tolerance-hydra-10-fluido-hidratante.webp",
+    brand: "avene",
+    line: "av-tolerance",
+    n: ["deshidratacion"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Bebés desde 1 mes, niños y adultos con piel normal o mixta deshidratada.",
+      tipo: "Fluido hidratante 100 % de origen natural.",
+      necesidad: "Hidrata 48 horas con alta tolerancia.",
+      cuando: "Mañana y noche.",
+      modo: "En rostro, cuello y contorno de ojos."
+    }
+  },
+
+  {
+    id: "av-tolerance-locion-limpiadora-gelificada",
+    name: "Tolérance loción limpiadora gelificada",
+    img: "imagenes/avene/av-tolerance-locion-limpiadora-gelificada.webp",
+    brand: "avene",
+    line: "av-tolerance",
+    n: ["limpieza"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel sensible y reactiva.",
+      tipo: "Loción limpiadora desmaquillante.",
+      necesidad: "Limpia y desmaquilla rostro, ojos y labios sin irritar ni resecar.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "No se aclara. Avène no indica paso.",
+      cuando: "A diario.",
+      modo: "Con un algodón o las yemas de los dedos, sin frotar y sin aclarado."
+    }
+  },
+
+  /* ---------- Avène · Antirougeurs Rosamed ---------- */
+  {
+    id: "av-antirougeurs-rosamed-concentrado-para-rojeces-instaladas",
+    name: "Rosamed concentrado para rojeces instaladas",
+    img: "imagenes/avene/av-antirougeurs-rosamed-concentrado-para-rojeces-instaladas.webp",
+    brand: "avene",
+    line: "av-rosamed",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible con tendencia a rojeces, reactiva o intolerante.",
+      tipo: "Concentrado antirrojeces.",
+      necesidad: "Reduce las rojeces instaladas, limita su reaparición, calma el ardor e hidrata 24 horas.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Aplicar en rostro y cuello, evitando los ojos."
+    }
+  },
+
+  {
+    id: "av-antirrojeces-rosamed-spf-50-concentrado-hidratante-protector",
+    name: "Rosamed SPF 50+ concentrado hidratante protector",
+    img: "imagenes/avene/av-antirrojeces-rosamed-spf-50-concentrado-hidratante-protector.webp",
+    brand: "avene",
+    line: "av-rosamed",
+    n: ["rojeces", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible con tendencia a rojeces.",
+      tipo: "Cuidado antirrojeces de día con SPF 50+.",
+      necesidad: "Actúa sobre las rojeces y protege de los rayos UV.",
+      cuando: "1 a 2 veces al día; por la noche, Rosamed concentrado.",
+      modo: "Aplicar en rostro y cuello, evitando los ojos.",
+      solar: "No es un producto de protección solar: en exposición intensa o prolongada, usar un protector adecuado."
+    }
+  },
+
+  /* ---------- Avène · Hydrance ---------- */
+  {
+    id: "av-hydrance-light-crema-hidratante",
+    name: "Hydrance Light crema hidratante",
+    img: "imagenes/avene/av-hydrance-light-crema-hidratante.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Piel sensible deshidratada, normal o mixta.",
+      tipo: "Crema hidratante ligera.",
+      necesidad: "Hidrata, flexibiliza y suaviza todo el día.",
+      cuando: "Mañana y/o noche.",
+      modo: "En rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "av-hydrance-crema-hidratante-rica",
+    name: "Hydrance crema hidratante rica",
+    img: "imagenes/avene/av-hydrance-crema-hidratante-rica.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel sensible seca o muy seca y deshidratada.",
+      tipo: "Crema hidratante nutritiva.",
+      necesidad: "Hidrata y aporta confort todo el día.",
+      cuando: "A diario.",
+      modo: "Extender en rostro y cuello con las yemas de los dedos."
+    }
+  },
+
+  {
+    id: "av-hydrance-aqua-gel-crema-hidratante",
+    name: "Hydrance Aqua-Gel crema hidratante",
+    img: "imagenes/avene/av-hydrance-aqua-gel-crema-hidratante.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluso seca, sensible y deshidratada; apta en embarazo y para madres recientes, según la marca.",
+      tipo: "Aqua-gel hidratante.",
+      necesidad: "Hidrata con frescor, ilumina y rellena.",
+      cuando: "1 a 2 veces al día.",
+      modo: "En rostro, cuello y escote; también como contorno de ojos o mascarilla."
+    }
+  },
+
+  {
+    id: "av-hydrance-spf-30-crema-hidratante",
+    name: "Hydrance SPF 30 crema hidratante",
+    img: "imagenes/avene/av-hydrance-spf-30-crema-hidratante.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion", "fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel sensible; apta en embarazo y para madres recientes, según la marca.",
+      tipo: "Crema hidratante con SPF 30.",
+      necesidad: "Hidrata, protege de agresiones externas y previene el fotoenvejecimiento.",
+      cuando: "Una vez al día, por la mañana.",
+      modo: "En rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "av-serum-hidratante-concentrado",
+    name: "Hydrance Boost sérum hidratante concentrado",
+    img: "imagenes/avene/av-serum-hidratante-concentrado.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel deshidratada y sensible.",
+      tipo: "Sérum hidratante con ácido hialurónico y vitamina B3.",
+      necesidad: "Hidrata 48 horas y refuerza la barrera.",
+      cuando: "Mañana y/o noche.",
+      modo: "En rostro, cuello y escote, solo o antes de la crema."
+    }
+  },
+
+  {
+    id: "av-hydrance-bb-ligera-emulsion-hidratante-con-color",
+    name: "Hydrance BB-Ligera emulsión con color",
+    img: "imagenes/avene/av-hydrance-bb-ligera-emulsion-hidratante-con-color.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Piel normal a mixta, sensible y deshidratada.",
+      tipo: "Emulsión hidratante con color.",
+      necesidad: "Hidrata 24 horas y unifica la tez.",
+      cuando: "A diario.",
+      modo: "Una avellana extendida del centro hacia el contorno del rostro y el cuello."
+    }
+  },
+
+  {
+    id: "av-hydrance-bb-rica-crema-hidratante-con-color",
+    name: "Hydrance BB-Rica crema con color",
+    img: "imagenes/avene/av-hydrance-bb-rica-crema-hidratante-con-color.webp",
+    brand: "avene",
+    line: "av-hydrance",
+    n: ["deshidratacion", "seca"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel seca o muy seca, sensible y deshidratada.",
+      tipo: "Crema hidratante con color.",
+      necesidad: "Hidrata 24 horas y unifica la tez.",
+      cuando: "A diario.",
+      modo: "Una avellana extendida del centro hacia el contorno del rostro y el cuello."
+    }
+  },
+
+  /* ---------- Avène · Cleanance ---------- */
+  {
+    id: "av-cleanance-agua-micelar",
+    name: "Cleanance agua micelar",
+    img: "imagenes/avene/av-cleanance-agua-micelar.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Adolescentes y adultos desde 12 años con piel mixta, grasa o con tendencia acneica.",
+      tipo: "Agua micelar purificante.",
+      necesidad: "Limpia, desmaquilla, purifica y matifica.",
+      limpieza: "Desmaquillante (sin paso indicado)",
+      limpiezaDet: "No se aclara. Avène no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Con un algodón por rostro y ojos, sin aclarado; terminar con Agua termal."
+    }
+  },
+
+  {
+    id: "av-cleanance-gel-limpiador",
+    name: "Cleanance gel limpiador",
+    img: "imagenes/avene/av-cleanance-gel-limpiador.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["limpieza", "acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Adolescentes y adultos con piel grasa o con tendencia acneica, sensible.",
+      tipo: "Gel limpiador purificante y matificante.",
+      necesidad: "Limpia con suavidad, purifica y reduce los brillos; rostro y cuerpo.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Sobre rostro, cuello o espalda húmedos, con movimientos circulares; aclarar y secar a toques."
+    }
+  },
+
+  {
+    id: "av-cleanance-comedomed-gel-exfoliante",
+    name: "Cleanance Comedomed gel exfoliante",
+    img: "imagenes/avene/av-cleanance-comedomed-gel-exfoliante.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Adolescentes desde 13 años y adultos con piel grasa con tendencia acneica e imperfecciones persistentes.",
+      tipo: "Gel limpiador exfoliante diario.",
+      necesidad: "Reduce imperfecciones, desobstruye poros y matifica; rostro, torso y espalda.",
+      limpieza: "Exfoliante",
+      limpiezaDet: "Limpiador exfoliante de uso diario.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Sobre la piel húmeda del rostro, el torso y la espalda; aclarar."
+    }
+  },
+
+  {
+    id: "av-cleanance-hydra-crema-limpiadora-calmante",
+    name: "Cleanance Hydra crema limpiadora calmante",
+    img: "imagenes/avene/av-cleanance-hydra-crema-limpiadora-calmante.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["limpieza", "acne", "seca"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel con tendencia acneica, reseca e irritada por tratamientos medicamentosos para el acné.",
+      tipo: "Crema limpiadora de pH fisiológico.",
+      necesidad: "Limpia respetando la barrera y devuelve el confort.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel húmeda, emulsionar, aclarar y secar."
+    }
+  },
+
+  {
+    id: "av-cleanance-mascarilla-detox",
+    name: "Cleanance mascarilla detox",
+    img: "imagenes/avene/av-cleanance-mascarilla-detox.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones", "sensible"],
+    d: {
+      paciente: "Adolescentes desde 12 años y adultos con piel grasa sensible e imperfecciones; también embarazadas, según la marca.",
+      tipo: "Mascarilla de arcillas.",
+      necesidad: "Matifica, purifica y cierra los poros en 5 minutos.",
+      cuando: "1 a 2 veces por semana.",
+      modo: "Sobre la piel limpia y seca, 5 minutos; aclarar masajeando."
+    }
+  },
+
+  {
+    id: "av-cleanance-serum-exfoliante-aha",
+    name: "Cleanance sérum exfoliante AHA",
+    img: "imagenes/avene/av-cleanance-serum-exfoliante-aha.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne", "poros"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Adultos con piel con tendencia acneica, imperfecciones y sensibilidad.",
+      tipo: "Sérum exfoliante con ácido láctico y succínico.",
+      necesidad: "Reduce imperfecciones, afina los poros y atenúa marcas.",
+      cuando: "1 a 2 veces al día, mañana y/o noche.",
+      modo: "Sobre piel limpia y seca de rostro, cuello y escote, evitando el contorno de ojos."
+    }
+  },
+
+  {
+    id: "av-cleanance-aqua-gel-matificante",
+    name: "Cleanance aqua-gel matificante",
+    img: "imagenes/avene/av-cleanance-aqua-gel-matificante.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["poros", "acne"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Adolescentes y adultos con piel mixta, grasa o con imperfecciones, sensible.",
+      tipo: "Aqua-gel hidratante matificante.",
+      necesidad: "Reduce los brillos a la mitad, cierra los poros e hidrata 24 horas.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Sobre la piel limpia y seca de todo el rostro."
+    }
+  },
+
+  {
+    id: "av-cleanance-comedomed-cuidado-intensivo-anti-imperfecciones",
+    name: "Cleanance Comedomed+ cuidado intensivo",
+    img: "imagenes/avene/av-cleanance-comedomed-cuidado-intensivo-anti-imperfecciones.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Desde 9 años, adolescentes y adultos con piel grasa o con tendencia acneica; también embarazadas, según la marca.",
+      tipo: "Cuidado intensivo antiimperfecciones.",
+      necesidad: "Combate granos, puntos negros y marcas, con eficacia antirrecidiva.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia con un limpiador Cleanance. Se puede combinar con un medicamento antiacné."
+    }
+  },
+
+  {
+    id: "av-comedomed-fluido-intensivo-antiimperfecciones-spf30",
+    name: "Cleanance Comedomed+ fluido SPF30",
+    img: "imagenes/avene/av-comedomed-fluido-intensivo-antiimperfecciones-spf30.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne", "fotoproteccion"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Adolescentes y adultos con piel con tendencia acneica expuesta al sol.",
+      tipo: "Fluido antiimperfecciones con SPF30.",
+      necesidad: "Actúa contra granos, puntos negros y marcas, con filtros UV.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Sobre la piel limpia con un producto de higiene Cleanance."
+    }
+  },
+
+  {
+    id: "av-comedomed-serum-intensivo",
+    name: "Cleanance Comedomed sérum intensivo",
+    img: "imagenes/avene/av-comedomed-serum-intensivo.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne", "manchas"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Adolescentes y adultos con piel con tendencia acneica.",
+      tipo: "Sérum concentrado.",
+      necesidad: "Actúa sobre imperfecciones y marcas de cicatrices, alisa la textura.",
+      cuando: "Mañana y noche.",
+      modo: "Sobre la piel limpia con un limpiador Cleanance."
+    }
+  },
+
+  {
+    id: "av-cleanance-comedomed-peeling-crema-intensiva-para-brotes-de-granos",
+    name: "Cleanance Comedomed Peeling crema para brotes",
+    img: "imagenes/avene/av-cleanance-comedomed-peeling-crema-intensiva-para-brotes-de-granos.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Adolescentes y adultos con brotes de granos persistentes, también piel sensible.",
+      tipo: "Crema intensiva para brotes.",
+      necesidad: "Actúa sobre granos superficiales y marcas residuales.",
+      cuando: "Por la noche en todo el rostro mientras haya imperfecciones (máximo 15 días), y localmente dos veces al día.",
+      modo: "Sobre el rostro limpio y seco."
+    }
+  },
+
+  {
+    id: "av-cleanance-hydra-crema-calmante",
+    name: "Cleanance Hydra crema calmante",
+    img: "imagenes/avene/av-cleanance-hydra-crema-calmante.webp",
+    brand: "avene",
+    line: "av-cleanance",
+    n: ["acne", "seca"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Piel con tendencia acneica, seca e irritada por tratamientos medicamentosos para el acné.",
+      tipo: "Crema calmante relipidizante.",
+      necesidad: "Restaura la piel y devuelve el confort.",
+      cuando: "Por la mañana y/o por la noche.",
+      modo: "Una pequeña cantidad masajeando, sobre todo en las zonas secas."
+    }
+  },
+
+  /* ---------- Avène · Cicalfate+ ---------- */
+  {
+    id: "av-cicalfate-crema-protectora-reparadora",
+    name: "Cicalfate+ crema reparadora protectora",
+    img: "imagenes/avene/av-cicalfate-crema-protectora-reparadora.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["rojeces", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel irritada y dañada, también en tratamiento oncológico.",
+      tipo: "Crema reparadora.",
+      necesidad: "Alivia las molestias, repara en 48 horas y limita la proliferación bacteriana.",
+      cuando: "Dos veces al día.",
+      modo: "Masajear en la zona irritada; antes se puede poner una compresa de Agua termal."
+    }
+  },
+
+  {
+    id: "av-cicalfate-crema-reparadora-protectora-spf-50",
+    name: "Cicalfate+ crema reparadora SPF 50+",
+    img: "imagenes/avene/av-cicalfate-crema-reparadora-protectora-spf-50.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["rojeces", "fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel frágil expuesta al sol, también en tratamiento oncológico.",
+      tipo: "Crema reparadora con SPF 50+.",
+      necesidad: "Repara y protege la piel frágil del sol para limitar hiperpigmentación y cicatrices.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre la piel ya reepidermizada, masajeando."
+    }
+  },
+
+  {
+    id: "av-cicalfate-gel-limpiador-purificante",
+    name: "Cicalfate+ gel limpiador purificante",
+    img: "imagenes/avene/av-cicalfate-gel-limpiador-purificante.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["limpieza", "rojeces", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel sensible, frágil e irritada, también en tratamiento oncológico.",
+      tipo: "Gel limpiador antisequedad.",
+      necesidad: "Limpia, alivia y purifica la piel irritada.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Enjabonar la zona, aclarar y secar a toques sin frotar."
+    }
+  },
+
+  {
+    id: "av-cicalfate-crema-hidratante-reparadora-post-acto-y-post-tattoo",
+    name: "Cicalfate+ hidratante reparadora posprocedimiento y postatuaje",
+    img: "imagenes/avene/av-cicalfate-crema-hidratante-reparadora-post-acto-y-post-tattoo.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["rojeces"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos desde 16 años con piel debilitada tras un procedimiento dermatológico (peeling, láser, microneedling) o un tatuaje.",
+      tipo: "Crema reparadora fluida.",
+      necesidad: "Hidrata, calma y repara la piel sensibilizada.",
+      cuando: "Dos veces al día, desde el primer día, con el gel limpiador purificante.",
+      modo: "Aplicar sobre la piel debilitada."
+    }
+  },
+
+  {
+    id: "av-cicalfate-serum-reparador-intenso",
+    name: "Cicalfate+ sérum reparador intenso",
+    img: "imagenes/avene/av-cicalfate-serum-reparador-intenso.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["rojeces", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible, debilitada o irritada.",
+      tipo: "Sérum reparador.",
+      necesidad: "Repara y restaura de forma duradera los mecanismos de reparación de la piel.",
+      cuando: "Mañana y noche.",
+      modo: "Unas gotas con la pipeta en rostro, cuello y contorno de ojos, antes del cuidado habitual."
+    }
+  },
+
+  {
+    id: "av-cicalfate-gel-remodelante-de-cicatrices",
+    name: "Cicalfate+ gel remodelante de cicatrices",
+    img: "imagenes/avene/av-cicalfate-gel-remodelante-de-cicatrices.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["corporal"],
+    sk: ["todas"],
+    d: {
+      paciente: "Familia desde 1 año, también en tratamiento oncológico; cicatrices.",
+      tipo: "Gel de siliconas.",
+      necesidad: "Ayuda a refinar el aspecto de las cicatrices con masaje.",
+      cuando: "Dos veces al día.",
+      modo: "Sobre cicatrices limpias, secas y ya reepidermizadas, masajeando.",
+      solar: "Al sol, proteger la cicatriz con un protector solar."
+    }
+  },
+
+  {
+    id: "av-cicalfate-spray-secante-reparador",
+    name: "Cicalfate+ spray secante reparador",
+    img: "imagenes/avene/av-cicalfate-spray-secante-reparador.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["rojeces", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel irritada y propensa a la maceración (pliegues).",
+      tipo: "Spray secante reparador.",
+      necesidad: "Desinfecta, seca y repara; no sustituye a un antiséptico.",
+      cuando: "Dos veces al día.",
+      modo: "Limpiar y desinfectar la zona, agitar y pulverizar. Después, Cicalfate+ crema."
+    }
+  },
+
+  {
+    id: "av-cicalfate-manos-crema-reparadora-efecto-barrera",
+    name: "Cicalfate+ Manos crema reparadora",
+    img: "imagenes/avene/av-cicalfate-manos-crema-reparadora-efecto-barrera.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["seca", "corporal"],
+    sk: ["sensible", "seca"],
+    d: {
+      paciente: "Adolescentes y adultos con manos muy secas, cortadas, agrietadas o irritadas.",
+      tipo: "Crema de manos reparadora.",
+      necesidad: "Repara, calma y protege.",
+      cuando: "Al menos dos veces al día; idealmente tras cada lavado.",
+      modo: "Por toda la mano, insistiendo en las zonas irritadas."
+    }
+  },
+
+  {
+    id: "av-cicalfate-balsamo-labial-reparador",
+    name: "Cicalfate+ bálsamo labial reparador",
+    img: "imagenes/avene/av-cicalfate-balsamo-labial-reparador.webp",
+    brand: "avene",
+    line: "av-cicalfate",
+    n: ["seca"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Desde 1 mes; labios agrietados, muy secos e irritados.",
+      tipo: "Bálsamo labial reparador.",
+      necesidad: "Repara en 48 horas, hidrata 24 horas y protege.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Aplicar en los labios o pequeñas zonas secas."
+    }
+  },
+
+  /* ---------- Avène · XeraCalm ---------- */
+  {
+    id: "av-xeracalm-ad-aceite-limpiador-relipidizante",
+    name: "XeraCalm A.D aceite limpiador relipidizante",
+    img: "imagenes/avene/av-xeracalm-ad-aceite-limpiador-relipidizante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel muy seca con tendencia atópica y picor.",
+      tipo: "Aceite limpiador sin jabón.",
+      necesidad: "Limpia, calma y aporta lípidos; es el primer paso de la rutina antipicor.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "1 a 2 veces al día.",
+      modo: "En la ducha, emulsionar en las manos mojadas y aplicar. En el baño, 5 pulsaciones en el agua."
+    }
+  },
+
+  {
+    id: "av-xeracalm-ad-crema-relipidizante",
+    name: "XeraCalm A.D crema relipidizante",
+    img: "imagenes/avene/av-xeracalm-ad-crema-relipidizante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Desde el nacimiento; piel muy seca a atópica con picor; también embarazadas y en tratamiento oncológico.",
+      tipo: "Crema relipidizante.",
+      necesidad: "Hidrata, alivia el picor, restaura la barrera y espacia los brotes.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Sobre las zonas muy secas, tras el aceite limpiador; extender por todo el cuerpo."
+    }
+  },
+
+  {
+    id: "av-xeracalm-ad-balsamo-relipidizante",
+    name: "XeraCalm A.D bálsamo relipidizante",
+    img: "imagenes/avene/av-xeracalm-ad-balsamo-relipidizante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Desde el nacimiento; piel muy seca a atópica con picor; también embarazadas y en tratamiento oncológico.",
+      tipo: "Bálsamo relipidizante.",
+      necesidad: "Relipidiza, alivia el picor, restaura la barrera y espacia los brotes.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Sobre las zonas muy secas, tras el aceite limpiador; extender por todo el cuerpo."
+    }
+  },
+
+  {
+    id: "av-concentrado-calmante",
+    name: "XeraCalm A.D concentrado calmante",
+    img: "imagenes/avene/av-concentrado-calmante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Desde el nacimiento; zonas secas con picor intenso o eczema atópico.",
+      tipo: "Cuidado SOS localizado.",
+      necesidad: "Alivia de inmediato el picor localizado.",
+      cuando: "Hasta 4 veces al día, cuando haya picor.",
+      modo: "Aplicar localmente y retirar el exceso."
+    }
+  },
+
+  {
+    id: "av-balsamo-hidratante",
+    name: "XeraCalm Nutrition bálsamo hidratante",
+    img: "imagenes/avene/av-balsamo-hidratante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde 1 mes; piel sensible y muy seca.",
+      tipo: "Bálsamo hidratante nutritivo de rostro y cuerpo.",
+      necesidad: "Refuerza la barrera, alivia la tirantez y nutre.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Aplicar después de limpiar la piel."
+    }
+  },
+
+  {
+    id: "av-leche-hidratante",
+    name: "XeraCalm Nutrition leche hidratante",
+    img: "imagenes/avene/av-leche-hidratante.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde 1 mes; piel sensible y seca.",
+      tipo: "Leche hidratante de rostro y cuerpo.",
+      necesidad: "Hidrata, nutre y refuerza la barrera.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Aplicar después de limpiar la piel."
+    }
+  },
+
+  {
+    id: "av-xeracalm-nutrition-gel-limpiador",
+    name: "XeraCalm Nutrition gel limpiador",
+    img: "imagenes/avene/av-xeracalm-nutrition-gel-limpiador.webp",
+    brand: "avene",
+    line: "av-xeracalm",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Desde el nacimiento; piel sensible y seca de toda la familia.",
+      tipo: "Gel limpiador nutritivo.",
+      necesidad: "Limpia con suavidad y aporta comodidad.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "A diario.",
+      modo: "Sobre la piel húmeda, hacer espuma, aclarar y secar."
+    }
+  },
+
+  /* ---------- Avène · Cold Cream ---------- */
+  {
+    id: "av-cold-cream-crema",
+    name: "Cold Cream crema",
+    img: "imagenes/avene/av-cold-cream-crema.webp",
+    brand: "avene",
+    line: "av-coldcream",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Familia desde 1 mes; piel seca o muy seca y sensible.",
+      tipo: "Crema nutritiva de rostro y cuerpo.",
+      necesidad: "Nutre, hidrata, calma y protege de agresiones como el frío.",
+      cuando: "Dos veces al día.",
+      modo: "En rostro y cuerpo, insistiendo en las zonas secas."
+    }
+  },
+
+  {
+    id: "av-cold-cream-pan-limpiador-ultranutritivo",
+    name: "Cold Cream pan limpiador ultranutritivo",
+    img: "imagenes/avene/av-cold-cream-pan-limpiador-ultranutritivo.webp",
+    brand: "avene",
+    line: "av-coldcream",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Familia desde el nacimiento; piel sensible, seca o muy seca.",
+      tipo: "Pan limpiador sin jabón.",
+      necesidad: "Limpia y nutre respetando la barrera.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "A diario.",
+      modo: "Emulsionar en las manos y aplicar sobre la piel húmeda; aclarar y secar."
+    }
+  },
+
+  {
+    id: "av-cold-cream-crema-de-manos-concentrada",
+    name: "Cold Cream crema de manos concentrada",
+    img: "imagenes/avene/av-cold-cream-crema-de-manos-concentrada.webp",
+    brand: "avene",
+    line: "av-coldcream",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Desde 2 años; manos secas, agrietadas o dañadas (frío, gel hidroalcohólico, lavados frecuentes).",
+      tipo: "Crema de manos nutritiva.",
+      necesidad: "Nutre, hidrata 24 horas y protege.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Extender en las palmas y aplicar con masaje; si están muy secas, dar toques antes."
+    }
+  },
+
+  {
+    id: "av-cold-cream-balsamo-labial-nutricion-intensa",
+    name: "Cold Cream bálsamo labial nutrición intensa",
+    img: "imagenes/avene/av-cold-cream-balsamo-labial-nutricion-intensa.webp",
+    brand: "avene",
+    line: "av-coldcream",
+    n: ["seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Familia desde 2 años; labios secos o agrietados.",
+      tipo: "Bálsamo labial.",
+      necesidad: "Hidrata, nutre y protege con una capa resistente al agua.",
+      cuando: "Tantas veces como sea necesario.",
+      modo: "Masajear lentamente los labios."
+    }
+  },
+
+  {
+    id: "av-stick-labial-nutritivo-al-cold-cream",
+    name: "Cold Cream stick labial nutritivo",
+    img: "imagenes/avene/av-stick-labial-nutritivo-al-cold-cream.webp",
+    brand: "avene",
+    line: "av-coldcream",
+    n: ["seca"],
+    sk: ["todas"],
+    d: {
+      paciente: "Familia desde 2 años; labios secos y agrietados.",
+      tipo: "Stick labial.",
+      necesidad: "Nutre de forma duradera y protege del frío.",
+      cuando: "Tantas veces como sea necesario; por la noche, capa gruesa si están resecos.",
+      modo: "Aplicar en todos los labios."
+    }
+  },
+
+  /* ---------- Avène · Hyaluron Activ B3 ---------- */
+  {
+    id: "av-crema-regeneradora-celular",
+    name: "Hyaluron Activ B3 crema regeneradora celular",
+    img: "imagenes/avene/av-crema-regeneradora-celular.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Crema antiedad con ácido hialurónico y niacinamida.",
+      necesidad: "Reafirma, reduce las arrugas y regenera.",
+      cuando: "Una vez al día.",
+      modo: "En rostro, cuello y escote, sola o tras el sérum."
+    }
+  },
+
+  {
+    id: "av-aqua-gel-crema-regeneradora-celular",
+    name: "Hyaluron Activ B3 aqua gel-crema",
+    img: "imagenes/avene/av-aqua-gel-crema-regeneradora-celular.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["arrugas", "flacidez", "apagada"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la seca y sensible.",
+      tipo: "Gel-crema 3 en 1 (día, noche y mascarilla).",
+      necesidad: "Reduce arrugas, ilumina, rellena y reafirma.",
+      cuando: "1 a 2 veces al día, mañana y/o noche.",
+      modo: "En rostro, cuello y escote, sola o tras el sérum. También como mascarilla."
+    }
+  },
+
+  {
+    id: "av-crema-de-noche-multi-intensiva",
+    name: "Hyaluron Activ B3 crema de noche multiintensiva",
+    img: "imagenes/avene/av-crema-de-noche-multi-intensiva.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Crema de noche con retinal.",
+      necesidad: "Regenera, reafirma y reduce las arrugas.",
+      cuando: "Una vez al día, por la noche.",
+      modo: "2 dosis en rostro, cuello y escote. Si hay hormigueo, espaciar."
+    }
+  },
+
+  {
+    id: "av-serum-concentrado-voluminizador",
+    name: "Hyaluron Activ B3 sérum concentrado voluminizador",
+    img: "imagenes/avene/av-serum-concentrado-voluminizador.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum con ácido hialurónico y niacinamida.",
+      necesidad: "Reafirma, reduce las arrugas y regenera.",
+      cuando: "1 a 2 veces al día, mañana y/o noche.",
+      modo: "1-2 gotas en rostro, alrededor de los ojos, cuello y escote, solo o antes del tratamiento."
+    }
+  },
+
+  {
+    id: "av-hyaluron-activ-b3-cuidado-de-ojos-triple-correccion",
+    name: "Hyaluron Activ B3 contorno de ojos triple corrección",
+    img: "imagenes/avene/av-hyaluron-activ-b3-cuidado-de-ojos-triple-correccion.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Contorno de ojos antiedad.",
+      necesidad: "Reduce bolsas, ojeras y arrugas.",
+      cuando: "Mañana y/o noche.",
+      modo: "Solo o después del sérum; apto para el contorno de labios."
+    }
+  },
+
+  {
+    id: "av-hyaluron-activ-uv-fluido-triple-eficacia-antiedad-spf50",
+    name: "Hyaluron Activ UV fluido antiedad SPF50",
+    img: "imagenes/avene/av-hyaluron-activ-uv-fluido-triple-eficacia-antiedad-spf50.webp",
+    brand: "avene",
+    line: "av-hyaluron",
+    n: ["arrugas", "manchas", "fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Fluido antiedad de día con SPF50.",
+      necesidad: "Protege el colágeno, corrige arrugas y reduce las manchas.",
+      cuando: "Una vez al día, por la mañana; se puede repetir si hace falta.",
+      modo: "En rostro, cuello y escote.",
+      solar: "No es un producto de protección solar: en exposición intensa o prolongada, usar un protector adecuado."
+    }
+  },
+
+  /* ---------- Avène · Hyaluron Activ Procedure ---------- */
+  {
+    id: "av-serum-lifting-0-1-de-retinal",
+    name: "Hyaluron Activ Procedure sérum lifting 0,1 % retinal",
+    img: "imagenes/avene/av-serum-lifting-0-1-de-retinal.webp",
+    brand: "avene",
+    line: "av-procedure",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Sérum con retinal al 0,1 %.",
+      necesidad: "Corrige las arrugas y mejora la firmeza y la luminosidad.",
+      cuando: "1-2 veces por semana las dos primeras semanas; después, aumentar hasta una vez al día, preferiblemente por la noche, según tolerancia.",
+      modo: "Solo o como complemento de un tratamiento estético."
+    }
+  },
+
+  {
+    id: "av-hyaluron-activ-procedure-crema-lifting-0-1-retinal",
+    name: "Hyaluron Activ Procedure crema lifting 0,1 % retinal",
+    img: "imagenes/avene/av-hyaluron-activ-procedure-crema-lifting-0-1-retinal.webp",
+    brand: "avene",
+    line: "av-procedure",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Crema lifting con retinal al 0,1 %.",
+      necesidad: "Reduce las arrugas, alisa y realza la luminosidad.",
+      cuando: "1-2 veces por semana las dos primeras semanas; después, aumentar hasta una vez al día, preferiblemente por la noche, según tolerancia.",
+      modo: "Espaciar si aparecen molestias."
+    }
+  },
+
+  {
+    id: "av-hyaluron-activ-procedure-crema-micro-lift-ojos-y-labios-0-05-retinal",
+    name: "Hyaluron Activ Procedure crema micro-lift ojos y labios",
+    img: "imagenes/avene/av-hyaluron-activ-procedure-crema-micro-lift-ojos-y-labios-0-05-retinal.webp",
+    brand: "avene",
+    line: "av-procedure",
+    n: ["ojos", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; contorno de ojos y labios.",
+      tipo: "Crema con retinal al 0,05 %.",
+      necesidad: "Reduce arrugas y líneas de expresión.",
+      cuando: "1 a 2 veces al día; reducir si aparecen molestias.",
+      modo: "En contorno de ojos y labios y en arrugas localizadas; también tras un tratamiento estético, cuando la piel esté reepidermizada."
+    }
+  },
+
+  {
+    id: "av-hyaluron-activ-procedure-serum-tensor-solucion-de-hexapeptidos-10",
+    name: "Hyaluron Activ Procedure sérum tensor hexapéptidos",
+    img: "imagenes/avene/av-hyaluron-activ-procedure-serum-tensor-solucion-de-hexapeptidos-10.webp",
+    brand: "avene",
+    line: "av-procedure",
+    n: ["arrugas", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Tratamiento tensor de 14 días.",
+      necesidad: "Afina la textura, reduce las arrugas instauradas y da luminosidad.",
+      cuando: "Dos veces al día durante 14 días.",
+      modo: "Reconstituir la mezcla de las dos soluciones según las instrucciones y aplicar en el rostro."
+    }
+  },
+
+  {
+    id: "av-serum-peeling-10-de-acido-glicolico",
+    name: "Hyaluron Activ Procedure sérum peeling 10 % glicólico",
+    img: "imagenes/avene/av-serum-peeling-10-de-acido-glicolico.webp",
+    brand: "avene",
+    line: "av-procedure",
+    n: ["arrugas", "apagada"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Sérum exfoliante con 10 % de ácido glicólico.",
+      necesidad: "Renueva, afina la textura, difumina las arrugas y aporta luminosidad.",
+      cuando: "2 a 3 veces por semana, por la noche.",
+      modo: "Tras la limpieza, una dosis sobre la piel seca de rostro, cuello y escote, sin aclarar."
+    }
+  },
+
+  /* ---------- Avène · DermAbsolu ---------- */
+  {
+    id: "av-crema-de-dia-redensificante",
+    name: "DermAbsolu crema de día redensificante",
+    img: "imagenes/avene/av-crema-de-dia-redensificante.webp",
+    brand: "avene",
+    line: "av-dermabsolu",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Crema de día con bakuchiol.",
+      necesidad: "Redensifica, redefine el óvalo y nutre.",
+      cuando: "Por la mañana.",
+      modo: "En rostro, cuello y escote."
+    }
+  },
+
+  {
+    id: "av-dermabsolu-crema-remodeladora-intensiva-noche",
+    name: "DermAbsolu crema remodeladora noche",
+    img: "imagenes/avene/av-dermabsolu-crema-remodeladora-intensiva-noche.webp",
+    brand: "avene",
+    line: "av-dermabsolu",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Crema de noche con bakuchiol.",
+      necesidad: "Redensifica, redefine el óvalo y nutre.",
+      cuando: "Una vez al día, por la noche; como mascarilla, 1-3 veces por semana.",
+      modo: "En rostro, cuello y escote, sola o tras el sérum."
+    }
+  },
+
+  {
+    id: "av-dermabsolu-serum-concentrado-remodelador",
+    name: "DermAbsolu sérum concentrado remodelador",
+    img: "imagenes/avene/av-dermabsolu-serum-concentrado-remodelador.webp",
+    brand: "avene",
+    line: "av-dermabsolu",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum con 1,5 % de bakuchiol.",
+      necesidad: "Redensifica y redefine el óvalo.",
+      cuando: "Mañana y/o noche.",
+      modo: "Agitar y aplicar en rostro, cuello y escote antes de los cuidados."
+    }
+  },
+
+  {
+    id: "av-dermabsolu-contorno-de-ojos-rellenador",
+    name: "DermAbsolu contorno de ojos rellenador",
+    img: "imagenes/avene/av-dermabsolu-contorno-de-ojos-rellenador.webp",
+    brand: "avene",
+    line: "av-dermabsolu",
+    n: ["ojos", "flacidez"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos; todo tipo de piel.",
+      tipo: "Contorno de ojos con bakuchiol.",
+      necesidad: "Redensifica, ilumina y reduce bolsas y ojeras.",
+      cuando: "Mañana y/o noche.",
+      modo: "A toques en el contorno de ojos; apto para el contorno de labios."
+    }
+  },
+
+  /* ---------- Avène · Vitamin Activ Cg ---------- */
+  {
+    id: "av-vitamina-activ-cg-serum-luminosidad-corrector",
+    name: "Vitamin Activ Cg sérum corrector luminosidad",
+    img: "imagenes/avene/av-vitamina-activ-cg-serum-luminosidad-corrector.webp",
+    brand: "avene",
+    line: "av-vitamin",
+    n: ["apagada", "manchas", "arrugas"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos.",
+      tipo: "Sérum con vitamina C estable y bakuchiol.",
+      necesidad: "Alisa las arrugas, potencia la luminosidad y reduce las manchas oscuras.",
+      cuando: "Mañana y/o noche.",
+      modo: "En rostro, cuello y escote, evitando los ojos."
+    }
+  },
+
+  {
+    id: "av-crema-luminosidad-intensiva",
+    name: "Vitamin Activ Cg crema luminosidad intensiva",
+    img: "imagenes/avene/av-crema-luminosidad-intensiva.webp",
+    brand: "avene",
+    line: "av-vitamin",
+    n: ["apagada", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Crema con vitamina C, niacinamida y ácido hialurónico.",
+      necesidad: "Unifica el tono, alisa y reduce las manchas oscuras.",
+      cuando: "Mañana y/o noche.",
+      modo: "Sola o tras el sérum en rostro, cuello y escote, evitando los ojos."
+    }
+  },
+
+  /* ---------- Avène · Protección solar ---------- */
+  {
+    id: "av-fluido-spf-50",
+    name: "Fluido SPF 50+",
+    img: "imagenes/avene/av-fluido-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Adultos con piel sensible normal o mixta.",
+      tipo: "Fluido solar facial.",
+      necesidad: "Protección muy alta de ultraamplio espectro con acabado invisible.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-crema-spf-50",
+    name: "Crema SPF 50+",
+    img: "imagenes/avene/av-crema-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos con piel sensible seca.",
+      tipo: "Crema solar facial.",
+      necesidad: "Protección muy alta que hidrata hasta 8 horas.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-crema-spf-50-sin-perfume",
+    name: "Crema SPF 50+ sin perfume",
+    img: "imagenes/avene/av-crema-spf-50-sin-perfume.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos con piel sensible seca.",
+      tipo: "Crema solar facial sin perfume.",
+      necesidad: "Protección muy alta que hidrata hasta 8 horas.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-crema-con-color-spf-50",
+    name: "Crema con color SPF 50+",
+    img: "imagenes/avene/av-crema-con-color-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos con piel sensible seca.",
+      tipo: "Crema solar facial con color.",
+      necesidad: "Protección muy alta que unifica el tono e hidrata.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-cleanance-solare-spf-50",
+    name: "Cleanance Solar SPF 50+",
+    img: "imagenes/avene/av-cleanance-solare-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "acne"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Adultos con piel grasa e imperfecciones.",
+      tipo: "Fotoprotector facial seborregulador.",
+      necesidad: "Protección muy alta que reduce los granitos.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-fluido-invisible-spf50",
+    name: "Ultra Fluido Invisible SPF50",
+    img: "imagenes/avene/av-ultra-fluido-invisible-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Piel sensible.",
+      tipo: "Fluido solar facial ultraligero.",
+      necesidad: "Protección alta frente a UVB, UVA y luz azul; acabado invisible.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-fluido-mat-perfect-spf-50",
+    name: "Ultra Fluido Mat Perfect SPF 50+",
+    img: "imagenes/avene/av-ultra-fluido-mat-perfect-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible", "grasa"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Fluido solar facial con color, acabado mate.",
+      necesidad: "Protección muy alta que unifica y matifica.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-ultra-fluido-oil-control-spf50",
+    name: "Ultra Fluido Oil Control SPF50",
+    img: "imagenes/avene/av-eau-thermale-avene-ultra-fluido-oil-control-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "poros"],
+    sk: ["sensible", "grasa"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Fluido solar facial matificante.",
+      necesidad: "Protección muy alta que matifica y previene el fotoenvejecimiento.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-eau-thermal-avene-ultra-fluido-radiance-spf50",
+    name: "Ultra Fluido Radiance SPF50+",
+    img: "imagenes/avene/av-eau-thermal-avene-ultra-fluido-radiance-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "apagada"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos desde 18 años con piel sensible.",
+      tipo: "Fluido solar facial iluminador.",
+      necesidad: "Protección alta que mejora la luminosidad natural.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-fluido-antiedad-spf50",
+    name: "Fluido antiedad SPF50",
+    img: "imagenes/avene/av-eau-thermale-avene-fluido-antiedad-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "arrugas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Fluido solar facial antiedad.",
+      necesidad: "Protección alta que previene y corrige el fotoenvejecimiento.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-fluido-antiimperfecciones-spf50",
+    name: "Fluido antiimperfecciones SPF50",
+    img: "imagenes/avene/av-eau-thermale-avene-fluido-antiimperfecciones-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "acne"],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Adultos con piel sensible e imperfecciones.",
+      tipo: "Fluido solar facial antiimperfecciones.",
+      necesidad: "Protección alta que previene las marcas de acné.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-fluido-antimanchas-spf50",
+    name: "Fluido antimanchas SPF50+",
+    img: "imagenes/avene/av-eau-thermale-avene-fluido-antimanchas-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible y manchas.",
+      tipo: "Fluido solar facial con color.",
+      necesidad: "Protección muy alta frente a las manchas fotoinducidas.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-serum-spf50-hidratacion-duradera",
+    name: "Ultra Sérum SPF50+ hidrata",
+    img: "imagenes/avene/av-ultra-serum-spf50-hidratacion-duradera.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum solar diario.",
+      necesidad: "Protección muy alta con hidratación duradera.",
+      cuando: "Todas las mañanas, en lugar del sérum habitual y antes de la crema de día y el maquillaje.",
+      modo: "Dos pipetas para rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-serum-spf50-activa-la-luminosidad",
+    name: "Ultra Sérum SPF50+ luminosidad",
+    img: "imagenes/avene/av-ultra-serum-spf50-activa-la-luminosidad.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "apagada"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum solar diario.",
+      necesidad: "Protección muy alta con acción iluminadora.",
+      cuando: "Todas las mañanas, en lugar del sérum habitual y antes de la crema de día y el maquillaje.",
+      modo: "Dos pipetas para rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-serum-spf50-rellena-instantaneamente",
+    name: "Ultra Sérum SPF50+ rellena",
+    img: "imagenes/avene/av-ultra-serum-spf50-rellena-instantaneamente.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Adultos; todo tipo de piel, incluida la sensible.",
+      tipo: "Sérum solar diario.",
+      necesidad: "Protección muy alta con efecto redensificante.",
+      cuando: "Todas las mañanas, en lugar del sérum habitual y antes de la crema de día y el maquillaje.",
+      modo: "Dos pipetas para rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-ultra-stick-spf50",
+    name: "Ultra Stick SPF50",
+    img: "imagenes/avene/av-ultra-stick-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Toda la familia; todo tipo de piel.",
+      tipo: "Stick solar de viaje.",
+      necesidad: "Alta protección ultrarresistente.",
+      cuando: "Avène no indica la frecuencia.",
+      modo: "Avène no detalla cómo aplicarlo."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-intense-protect-spf50",
+    name: "Intense Protect SPF50+",
+    img: "imagenes/avene/av-eau-thermale-avene-intense-protect-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Bebés, niños y adultos con piel muy sensible o atópica; sol intenso.",
+      tipo: "Fluido solar de rostro y cuerpo.",
+      necesidad: "Protección muy alta de ultraamplio espectro.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar generosamente (por ejemplo, 2 dedos en el brazo)."
+    }
+  },
+
+  {
+    id: "av-reflexe-solar-50",
+    name: "Reflexe Solar 50+",
+    img: "imagenes/avene/av-reflexe-solar-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Bebés desde 6 meses, niños y adultos con piel sensible; condiciones intensas.",
+      tipo: "Fotoprotector de bolsillo, rostro y cuerpo.",
+      necesidad: "Protección muy alta frente a UVA, UVB y luz azul.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar generosamente (1 dedo para rostro y cuello)."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-leche-ninos-spf50",
+    name: "Leche niños SPF50+",
+    img: "imagenes/avene/av-eau-thermale-avene-leche-ninos-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños con piel sensible.",
+      tipo: "Leche solar infantil.",
+      necesidad: "Protección muy alta y resistente.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar generosamente en rostro y cuerpo (2 dedos en el brazo)."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-spray-ninos-spf50",
+    name: "Spray niños SPF50+",
+    img: "imagenes/avene/av-eau-thermale-avene-spray-ninos-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños y familia con piel sensible.",
+      tipo: "Spray solar familiar.",
+      necesidad: "Protección muy alta y resistente.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar abundantemente (3-4 pulverizaciones por antebrazo)."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-leche-solar-spf50",
+    name: "Leche solar SPF50",
+    img: "imagenes/avene/av-eau-thermale-avene-leche-solar-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Leche solar invisible.",
+      necesidad: "Protección alta resistente al agua, la arena y el sudor.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar abundantemente en rostro y/o cuerpo."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-spray-solar-spf50",
+    name: "Spray solar SPF50",
+    img: "imagenes/avene/av-eau-thermale-avene-spray-solar-spf50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Spray solar invisible.",
+      necesidad: "Protección alta resistente al agua, la arena y el sudor.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar abundantemente en rostro y/o cuerpo."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-spray-spf30",
+    name: "Spray SPF30",
+    img: "imagenes/avene/av-eau-thermale-avene-spray-spf30.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Spray solar.",
+      necesidad: "Protección alta sin marcas blancas.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar abundantemente (6 pulverizaciones por antebrazo)."
+    }
+  },
+
+  {
+    id: "av-eau-thermale-avene-aceite-solar-spf-30",
+    name: "Aceite solar SPF 30",
+    img: "imagenes/avene/av-eau-thermale-avene-aceite-solar-spf-30.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible; cuerpo.",
+      tipo: "Aceite solar corporal.",
+      necesidad: "Protección alta con acabado satinado.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar generosamente en el cuerpo (6 pulverizaciones por antebrazo). No pulverizar hacia la cara."
+    }
+  },
+
+  {
+    id: "av-bruma-satinada-spf-30",
+    name: "Bruma satinada SPF 30",
+    img: "imagenes/avene/av-bruma-satinada-spf-30.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible; rostro y cuerpo.",
+      tipo: "Bruma solar.",
+      necesidad: "Protección alta con acabado satinado.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Pulverizar a 15 cm de forma uniforme y abundante."
+    }
+  },
+
+  {
+    id: "av-balsamo-labial-spf-50",
+    name: "Bálsamo labial SPF 50+",
+    img: "imagenes/avene/av-balsamo-labial-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos con labios sensibles.",
+      tipo: "Bálsamo labial solar.",
+      necesidad: "Protección muy alta que hidrata.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Aplicar 9 capas en los labios."
+    }
+  },
+
+  {
+    id: "av-fluido-mineral-spf-50-3282770148671",
+    name: "Fluido mineral SPF 50+",
+    img: "imagenes/avene/av-fluido-mineral-spf-50-3282770148671.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel intolerante a los filtros químicos y a los perfumes.",
+      tipo: "Fluido solar 100 % mineral.",
+      necesidad: "Protección muy alta frente a UVB y UVA de alta tolerancia.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-fluido-mineral-con-color-spf-50-3282770388381",
+    name: "Fluido mineral con color SPF 50+",
+    img: "imagenes/avene/av-fluido-mineral-con-color-spf-50-3282770388381.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel intolerante a los filtros químicos y a los perfumes.",
+      tipo: "Fluido solar 100 % mineral con color.",
+      necesidad: "Protección muy alta que unifica la tez.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-crema-mineral-de-muy-alta-proteccion-spf-50",
+    name: "Crema mineral SPF 50+",
+    img: "imagenes/avene/av-crema-mineral-de-muy-alta-proteccion-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel intolerante a los filtros químicos y a los perfumes.",
+      tipo: "Crema solar facial 100 % mineral.",
+      necesidad: "Protección muy alta, nutritiva.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo de producto en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-leche-mineral-spf-50",
+    name: "Leche mineral SPF 50+",
+    img: "imagenes/avene/av-leche-mineral-spf-50.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años y adultos con piel intolerante a los filtros químicos y a los perfumes.",
+      tipo: "Leche solar 100 % mineral de rostro y cuerpo.",
+      necesidad: "Protección muy alta adaptada a la piel intolerante.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Un dedo en rostro y cuello; generosamente en el cuerpo."
+    }
+  },
+
+  {
+    id: "av-compacto-con-color-alta-proteccion-spf-50-arena",
+    name: "Compacto con color SPF 50 (Arena y Dorado)",
+    img: "imagenes/avene/av-compacto-con-color-alta-proteccion-spf-50-arena.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel intolerante a los filtros químicos y a los perfumes.",
+      tipo: "Maquillaje compacto 100 % mineral.",
+      necesidad: "Alta protección y maquillaje sin perfume.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "Al menos 1 g en la cara con la esponja; difuminar en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-locion-reparadora-aftersun",
+    name: "Leche reparadora aftersun",
+    img: "imagenes/avene/av-locion-reparadora-aftersun.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Niños desde 2 años, adolescentes y adultos con piel sensible.",
+      tipo: "Loción after-sun.",
+      necesidad: "Hidrata hasta 48 horas, calma y repara tras el sol.",
+      cuando: "Después de la exposición al sol, tantas veces como sea necesario.",
+      modo: "Abundantemente sobre la piel limpia y seca del rostro y/o el cuerpo."
+    }
+  },
+
+  {
+    id: "av-gel-autobronceador-hidratante",
+    name: "Gel autobronceador hidratante",
+    img: "imagenes/avene/av-gel-autobronceador-hidratante.webp",
+    brand: "avene",
+    line: "av-solar",
+    n: ["corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Autobronceador en gel.",
+      necesidad: "Bronceado natural y progresivo desde 1 hora, e hidrata.",
+      cuando: "2 a 3 veces por semana.",
+      modo: "Capa fina sobre rostro y/o cuerpo limpios y secos; difuminar en cejas y nacimiento del pelo.",
+      solar: "El autobronceado no protege del sol."
+    }
+  },
+
+  /* ---------- Avène · SunsiMed ---------- */
+  {
+    id: "av-sunsimed-ka",
+    name: "SunsiMed KA",
+    img: "imagenes/avene/av-sunsimed-ka.webp",
+    brand: "avene",
+    line: "av-sunsimed",
+    n: ["fotoproteccion"],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos con piel propensa a la queratosis actínica.",
+      tipo: "Producto sanitario SPF50+.",
+      necesidad: "Ayuda a prevenir lesiones precancerosas como la queratosis actínica y cánceres de piel no melanoma, y el daño en el ADN.",
+      cuando: "A diario, cada mañana.",
+      modo: "Cada mañana en las zonas expuestas: 1 dosis en el cuello, 1 en el escote, 1 en cada mano y 2 en el rostro."
+    }
+  },
+
+  {
+    id: "av-sunsimed-pigment",
+    name: "SunsiMed Pigment",
+    img: "imagenes/avene/av-sunsimed-pigment.webp",
+    brand: "avene",
+    line: "av-sunsimed",
+    n: ["fotoproteccion", "manchas"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos desde 18 años con piel sensible propensa a trastornos de pigmentación, léntigo y melasma; también embarazadas, según la marca.",
+      tipo: "Producto sanitario SPF50+.",
+      necesidad: "Previene el fotoenvejecimiento y la aparición de manchas.",
+      cuando: "A diario, cada mañana.",
+      modo: "Cada mañana en las zonas expuestas: 1 dosis en el cuello, 1 en el escote, 1 en cada mano y 2 en el rostro."
+    }
+  },
+
+  {
+    id: "av-sunsistick-ka-spf-50",
+    name: "SunsiStick KA SPF 50+",
+    img: "imagenes/avene/av-sunsistick-ka-spf-50.webp",
+    brand: "avene",
+    line: "av-sunsimed",
+    n: ["fotoproteccion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible, con riesgo y propensa a la queratosis actínica.",
+      tipo: "Stick solar para zonas localizadas.",
+      necesidad: "Protección muy alta para frente, nariz, pómulos, cabeza y dorso de las manos.",
+      cuando: "Antes de la exposición al sol; reaplicar con frecuencia, sobre todo tras sudar, nadar o secarse.",
+      modo: "10 capas en cada zona. Avène lo combina con SunsiMed por la mañana."
+    }
+  },
+
+  /* ---------- Avène · Cuerpo ---------- */
+  {
+    id: "av-body-gel-de-ducha-suave",
+    name: "Body gel de ducha suave",
+    img: "imagenes/avene/av-body-gel-de-ducha-suave.webp",
+    brand: "avene",
+    line: "av-cuerpo",
+    n: ["limpieza", "corporal"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible; rostro y cuerpo.",
+      tipo: "Gel de ducha.",
+      necesidad: "Limpia con suavidad e hidrata.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Avène no indica paso.",
+      cuando: "A diario.",
+      modo: "Emulsionar en las manos húmedas y aplicar."
+    }
+  },
+
+  {
+    id: "av-body-balsamo-fundente-hidratante",
+    name: "Body bálsamo fundente hidratante",
+    img: "imagenes/avene/av-body-balsamo-fundente-hidratante.webp",
+    brand: "avene",
+    line: "av-cuerpo",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Familia desde 3 años; piel sensible, seca o deshidratada.",
+      tipo: "Bálsamo corporal.",
+      necesidad: "Hidrata de forma duradera y calma.",
+      cuando: "1 a 2 veces al día.",
+      modo: "Extender por el cuerpo con amplios movimientos circulares."
+    }
+  },
+
+  {
+    id: "av-body-desodorante-eficacia-24h",
+    name: "Body desodorante eficacia 24h",
+    img: "imagenes/avene/av-body-desodorante-eficacia-24h.webp",
+    brand: "avene",
+    line: "av-cuerpo",
+    n: [],
+    sk: ["todas"],
+    d: {
+      paciente: "Adultos y desde 12 años; incluso piel rasurada o depilada.",
+      tipo: "Desodorante roll-on.",
+      necesidad: "Protege de los olores 24 horas y absorbe la humedad.",
+      cuando: "A diario.",
+      modo: "Aplicar bajo la axila."
+    }
+  },
+
+  /* ---------- Avène · Hombre ---------- */
+  {
+    id: "av-men-espuma-de-afeitar",
+    name: "Men espuma de afeitar",
+    img: "imagenes/avene/av-men-espuma-de-afeitar.webp",
+    brand: "avene",
+    line: "av-hombre",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Hombres con piel sensible.",
+      tipo: "Espuma de afeitar.",
+      necesidad: "Facilita el deslizamiento de la cuchilla y protege de la irritación.",
+      cuando: "A diario.",
+      modo: "Agitar, extender sobre el rostro húmedo, afeitar, aclarar y secar."
+    }
+  },
+
+  {
+    id: "av-men-gel-de-afeitar",
+    name: "Men gel de afeitar",
+    img: "imagenes/avene/av-men-gel-de-afeitar.webp",
+    brand: "avene",
+    line: "av-hombre",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Hombres con piel sensible.",
+      tipo: "Gel de afeitar.",
+      necesidad: "Evita la irritación y permite un afeitado preciso.",
+      cuando: "A diario.",
+      modo: "Aplicar sobre el rostro húmedo formando espuma, afeitar, aclarar y secar."
+    }
+  },
+
+  {
+    id: "av-balsamo-para-despues-del-afeitado",
+    name: "Men bálsamo para después del afeitado",
+    img: "imagenes/avene/av-balsamo-para-despues-del-afeitado.webp",
+    brand: "avene",
+    line: "av-hombre",
+    n: ["rojeces"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Hombres con piel seca o sensible.",
+      tipo: "Bálsamo after-shave.",
+      necesidad: "Alivia la irritación del afeitado y la repara.",
+      cuando: "A diario, después del afeitado.",
+      modo: "Extender en rostro y cuello."
+    }
+  },
+
+  {
+    id: "av-men-cuidado-hidratante-antiedad",
+    name: "Men cuidado hidratante antiedad",
+    img: "imagenes/avene/av-men-cuidado-hidratante-antiedad.webp",
+    brand: "avene",
+    line: "av-hombre",
+    n: ["arrugas", "deshidratacion"],
+    sk: ["sensible"],
+    d: {
+      paciente: "Hombres con piel sensible.",
+      tipo: "Crema hidratante ligera.",
+      necesidad: "Hidrata, tonifica y actúa sobre los signos de la edad.",
+      cuando: "A diario; también justo después del afeitado.",
+      modo: "2 dosis en rostro y cuello."
+    }
+  },
+
+  /* ---------- Avène · Couvrance ---------- */
+  {
+    id: "av-couvrance-base-de-maquillaje-fluida-correctora-beige",
+    name: "Couvrance base de maquillaje fluida correctora",
+    img: "imagenes/avene/av-couvrance-base-de-maquillaje-fluida-correctora-beige.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible.",
+      tipo: "Base de maquillaje fluida (tonos Beige y Dorado).",
+      necesidad: "Corrige imperfecciones leves y moderadas y unifica la tez.",
+      cuando: "A diario.",
+      modo: "Una avellana extendida del centro hacia el contorno del rostro y el cuello."
+    }
+  },
+
+  {
+    id: "av-couvrance-base-de-maquillaje-en-crema-compacta-1-1-naturel",
+    name: "Couvrance base de maquillaje en crema compacta",
+    img: "imagenes/avene/av-couvrance-base-de-maquillaje-en-crema-compacta-1-1-naturel.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Adultos con piel sensible o con imperfecciones.",
+      tipo: "Base compacta de alta cobertura con SPF30 (tonos 1.1 Naturel, 1.2 Arena, 1.3 Miel y 1.4 Dorado).",
+      necesidad: "Cubre, corrige rojeces e imperfecciones y unifica, 12 horas.",
+      cuando: "A diario.",
+      modo: "Con la esponja a toques y difuminar; rostro y cuerpo."
+    }
+  },
+
+  {
+    id: "av-couvrance-stick-corrector-verde",
+    name: "Couvrance stick corrector",
+    img: "imagenes/avene/av-couvrance-stick-corrector-verde.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible", "imperfecciones"],
+    d: {
+      paciente: "Adultos con piel sensible e imperfecciones severas localizadas.",
+      tipo: "Stick corrector de cobertura intensa con SPF 20.",
+      necesidad: "Neutraliza y camufla imperfecciones localizadas.",
+      variantesTitulo: "Colores: ¿cuál elegir?",
+      variantes: [["Verde","Camufla las rojeces."], ["Amarillo","Camufla las manchas de tonos azulados."], ["Coral","Camufla la hiperpigmentación marrón."]],
+      cuando: "A diario.",
+      modo: "Con la yema del dedo a ligeros toques; en zonas muy localizadas, con pincel fino y fijar a toques."
+    }
+  },
+
+  {
+    id: "av-polvos-mosaico-translucido",
+    name: "Couvrance polvos mosaico",
+    img: "imagenes/avene/av-polvos-mosaico-translucido.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluida la sensible.",
+      tipo: "Polvos faciales sin perfume.",
+      necesidad: "Fijan el maquillaje y unifican la tez.",
+      variantesTitulo: "Tonos: ¿cuál elegir?",
+      variantes: [["Translúcido","Matifica y fija el maquillaje."], ["Iluminador","Fija, difumina imperfecciones e ilumina."], ["Buena Cara","Fija, esculpe y realza la tez."], ["Bronceado","Efecto bronceado natural y esculpido."]],
+      cuando: "A diario.",
+      modo: "Mezclar los colores con esponja o brocha y aplicar por todo el rostro."
+    }
+  },
+
+  {
+    id: "av-couvrance-balsamo-embellecedor-de-labios-nude",
+    name: "Couvrance bálsamo embellecedor de labios",
+    img: "imagenes/avene/av-couvrance-balsamo-embellecedor-de-labios-nude.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos; labios sensibles.",
+      tipo: "Barra de labios nutritiva (tonos Nude, Rosa y Rojo).",
+      necesidad: "Maquilla con sutileza, nutre e hidrata.",
+      cuando: "Varias veces al día.",
+      modo: "Del centro del labio superior hacia las comisuras y después el inferior; más capas para más intensidad."
+    }
+  },
+
+  {
+    id: "av-couvrance-lapiz-de-cejas-claro",
+    name: "Couvrance lápiz de cejas",
+    img: "imagenes/avene/av-couvrance-lapiz-de-cejas-claro.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con piel sensible, también en tratamiento oncológico.",
+      tipo: "Lápiz de cejas (Claro y Oscuro).",
+      necesidad: "Da forma y corrige cejas finas o irregulares.",
+      cuando: "A diario.",
+      modo: "Pequeños trazos de abajo arriba, fijar con polvos y difuminar con el pincel."
+    }
+  },
+
+  {
+    id: "av-lapiz-de-ojos-negro-de-alta-definicion",
+    name: "Couvrance lápiz de ojos alta definición",
+    img: "imagenes/avene/av-lapiz-de-ojos-negro-de-alta-definicion.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con ojos y piel sensibles.",
+      tipo: "Lápiz de ojos negro resistente al agua.",
+      necesidad: "Acentúa e intensifica la mirada.",
+      cuando: "A diario.",
+      modo: "Línea en el párpado superior desde el ángulo exterior al interior."
+    }
+  },
+
+  {
+    id: "av-couvrance-mascara-de-alta-tolerancia-negro",
+    name: "Couvrance máscara de alta tolerancia",
+    img: "imagenes/avene/av-couvrance-mascara-de-alta-tolerancia-negro.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos con ojos y piel ultrasensibles.",
+      tipo: "Máscara de pestañas hipoalergénica sin perfume.",
+      necesidad: "Intensifica, separa y riza las pestañas.",
+      cuando: "A diario.",
+      modo: "Primero el lado hueco del cepillo desde la raíz; terminar con el lado curvado."
+    }
+  },
+
+  {
+    id: "av-couvrance-mascara-de-pestanas-de-alta-definicion-negro",
+    name: "Couvrance máscara alta definición",
+    img: "imagenes/avene/av-couvrance-mascara-de-pestanas-de-alta-definicion-negro.webp",
+    brand: "avene",
+    line: "av-couvrance",
+    n: [],
+    sk: ["sensible"],
+    d: {
+      paciente: "Adultos desde 16 años con ojos sensibles.",
+      tipo: "Máscara de pestañas negro intenso.",
+      necesidad: "Aporta volumen, separa y define.",
+      cuando: "A diario.",
+      modo: "Colocar el aplicador en la raíz y extender."
     }
   }
 ];

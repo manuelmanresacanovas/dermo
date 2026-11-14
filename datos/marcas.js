@@ -70,7 +70,14 @@ D.brands = [
     ]
   },
 
-  { id: "isdin", name: "Isdin", lines: [] },
+  {
+    id: "isdin",
+    name: "Isdin",
+    lines: [
+      { id: "isd-ceutics", name: "Isdinceutics", para: "Antiedad, manchas e hidratación" },
+      { id: "isd-acniben", name: "Acniben", para: "Piel grasa con tendencia acneica" }
+    ]
+  },
 
   {
     id: "lrp",
@@ -133,11 +140,51 @@ D.brands = [
     ]
   },
 
-  { id: "cantabria", name: "Cantabria Labs", lines: [] },
+  {
+    id: "cantabria",
+    name: "Cantabria Labs",
+    lines: [
+      { id: "cl-heliocare", name: "Heliocare", para: "Fotoprotección tópica y oral" },
+      { id: "cl-aktuva", name: "Aktuva", para: "Exposición solar continuada y daño actínico" },
+      { id: "cl-essential", name: "Endocare Essential y Hydractive", para: "Limpieza y primeros signos de la edad" },
+      { id: "cl-agebarrier", name: "Endocare Age Barrier", para: "Hidratación y función barrera" },
+      { id: "cl-cellage", name: "Endocare Cellage", para: "Arrugas y pérdida de densidad" },
+      { id: "cl-tensage", name: "Endocare Tensage", para: "Flacidez y pérdida de firmeza" },
+      { id: "cl-radiance", name: "Endocare Radiance", para: "Luminosidad y fotoenvejecimiento" },
+      { id: "cl-renewal", name: "Endocare Renewal", para: "Renovación con retinoides y ácidos" },
+      { id: "cl-biretix", name: "Biretix", para: "Piel grasa con tendencia acneica" },
+      { id: "cl-neoretin", name: "Neoretin", para: "Manchas e hiperpigmentaciones" },
+      { id: "cl-retincare", name: "Retincare", para: "Hiperpigmentación, fotoenvejecimiento y xerosis" },
+      { id: "cl-skinresist", name: "Skin Resist", para: "Piel sensible y reactiva" },
+      { id: "cl-rosacure", name: "Rosacure", para: "Rosácea y rojeces" },
+      { id: "cl-iraltone", name: "Iraltone", para: "Caída del cabello y cuero cabelludo" }
+    ]
+  },
 
-  { id: "uriage", name: "Uriage", lines: [] },
-
-  { id: "avene", name: "Avène", lines: [] },
+  {
+    id: "avene",
+    name: "Avène",
+    lines: [
+      { id: "av-aguatermal", name: "Agua termal", para: "Calmar la piel sensible e irritada" },
+      { id: "av-essentiels", name: "Les Essentiels", para: "Limpieza y cuidados básicos de la piel sensible" },
+      { id: "av-tolerance", name: "Tolérance", para: "Piel hipersensible, reactiva o intolerante" },
+      { id: "av-rosamed", name: "Antirougeurs Rosamed", para: "Rojeces instaladas" },
+      { id: "av-hydrance", name: "Hydrance", para: "Deshidratación" },
+      { id: "av-cleanance", name: "Cleanance", para: "Piel grasa con imperfecciones y acné" },
+      { id: "av-cicalfate", name: "Cicalfate+", para: "Reparación de la piel irritada o dañada" },
+      { id: "av-xeracalm", name: "XeraCalm", para: "Piel muy seca y atópica" },
+      { id: "av-coldcream", name: "Cold Cream", para: "Piel seca y muy seca: nutrición" },
+      { id: "av-hyaluron", name: "Hyaluron Activ B3", para: "Arrugas y pérdida de firmeza" },
+      { id: "av-procedure", name: "Hyaluron Activ Procedure", para: "Antiedad intensivo inspirado en la medicina estética" },
+      { id: "av-dermabsolu", name: "DermAbsolu", para: "Pérdida de densidad y del óvalo facial" },
+      { id: "av-vitamin", name: "Vitamin Activ Cg", para: "Luminosidad y manchas" },
+      { id: "av-solar", name: "Protección solar", para: "Protección solar para piel sensible" },
+      { id: "av-sunsimed", name: "SunsiMed", para: "Queratosis actínica y trastornos de pigmentación" },
+      { id: "av-cuerpo", name: "Cuerpo", para: "Cuidado corporal de la piel sensible" },
+      { id: "av-hombre", name: "Hombre", para: "Afeitado y cuidado masculino" },
+      { id: "av-couvrance", name: "Couvrance", para: "Maquillaje corrector para piel sensible" }
+    ]
+  },
 
   {
     id: "gemaherrerias",
