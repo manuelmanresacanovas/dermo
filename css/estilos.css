@@ -161,6 +161,14 @@ h1{font-size:1.6rem;margin:.3em 0 .2em;line-height:1.2}h2{font-size:1.2rem;margi
 .cbus>div{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
 .cbus strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;line-height:1.3}
 @media(max-width:400px){.cbus{min-height:120px;padding:10px}.cbus img,.cbus .ph{width:96px;height:96px}}
+/* Página de marcas: el logo va en un recuadro blanco del alto de la tarjeta */
+.cmarca .mlogo{flex:none;display:flex;align-items:center;justify-content:center;width:136px;height:136px;background:#fff;border-radius:8px;padding:10px;box-sizing:border-box}
+.cbus.cmarca .mlogo img{width:100%;height:100%;object-fit:contain;border-radius:0;background:none}
+@media(max-width:400px){.cmarca .mlogo{width:96px;height:96px;padding:6px}}
+/* El logo de Filorga es blanco: se oscurece para que se vea sobre fondo blanco */
+.cmarca .mlogo img[src*="filorga"]{filter:grayscale(1) brightness(.3)}
+/* Los logos en JPG traen fondo blanco: en el muro de inicio se funden con la casilla en lugar de oscurecerse */
+.logos img[src$=".jpg"]{filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply}
 .cmini>div{min-width:0}
 .cmini>div{flex:1}
 .cmini strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;line-height:1.3}
