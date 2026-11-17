@@ -100,7 +100,7 @@ const dermoTiles=()=>DERMO_SEC.map(s=>tile(s[0],s[1],s[2])).join("");
 /* Inicio: una tarjeta grande por área.
    Dermofarmacia muestra los logos de las marcas (imagenes/logos/<id de marca>.svg o .png; la marca sin logo no sale).
    Complementos muestra una ilustración (imagenes/complementos.svg). */
-const LOGOS={caudalie:"svg",filorga:"svg",sensilis:"svg",gemaherrerias:"svg",medik8:"svg",svr:"png",nuxe:"svg",lrp:"png",cantabria:"svg",avene:"png",isdin:"jpg"};
+const LOGOS={caudalie:"svg",filorga:"svg",sensilis:"svg",gemaherrerias:"svg",medik8:"svg",svr:"png",nuxe:"svg",lrp:"png",cantabria:"svg",avene:"png",isdin:"png"};
 /* Marca en la página de marcas: logo a la izquierda, ajustado a la altura de la tarjeta (igual que los productos en el buscador) */
 const brandTile=b=>`<li><a class="card cbus cmarca" href="#marca-${b.id}">${LOGOS[b.id]?`<span class="mlogo"><img src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="" loading="lazy"></span>`:`<i class="ph"></i>`}<div><strong>${esc(b.name)}</strong><span>${n(D.prods.filter(p=>p.brand===b.id).length,"producto")}</span></div></a></li>`;
 const muroLogos=()=>`<div class="logos">${D.brands.filter(b=>LOGOS[b.id]&&b.area!=="supl").map(b=>`<span><img src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="${esc(b.name)}" loading="lazy"></span>`).join("")}</div>`;

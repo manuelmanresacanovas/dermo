@@ -167,8 +167,8 @@ h1{font-size:1.6rem;margin:.3em 0 .2em;line-height:1.2}h2{font-size:1.2rem;margi
 @media(max-width:400px){.cmarca .mlogo{width:96px;height:96px;padding:6px}}
 /* El logo de Filorga es blanco: se oscurece para que se vea sobre fondo blanco */
 .cmarca .mlogo img[src*="filorga"]{filter:grayscale(1) brightness(.3)}
-/* Los logos en JPG traen fondo blanco: en el muro de inicio se funden con la casilla en lugar de oscurecerse */
-.logos img[src$=".jpg"]{filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply}
+/* El logo de Isdin trae fondo blanco: en el muro de inicio se funde con la casilla en lugar de oscurecerse */
+.logos img[src*="isdin"]{filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply}
 .cmini>div{min-width:0}
 .cmini>div{flex:1}
 .cmini strong{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;line-height:1.3}
