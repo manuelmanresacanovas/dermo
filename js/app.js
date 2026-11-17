@@ -47,8 +47,17 @@ const distancia=(a,b)=>{let f=Array.from({length:b.length+1},(_,j)=>j);for(let i
 /* Búsqueda por código nacional (datos/codigos_nacionales.js): 4 a 7 cifras, o códigos internos tipo 0P1234.
    Excel quita los ceros iniciales, así que el código se completa a 6 cifras; con 7 cifras se ignora el dígito de control.
    Si no hay coincidencia exacta, vale el principio del código. */
+/* Código de barras (EAN-8, UPC-12, EAN-13/14; datos/codigos_ean.js). El lector añade «$» delante: se quita.
+   Se compara sin ceros iniciales, porque el mismo código puede leerse con 12 o con 13 cifras. */
+const sinCeros=x=>x.replace(/^0+/,"");
+function buscarEAN(c){
+ if(!/^(\d{8}|\d{11,14})$/.test(c))return null;
+ const k=sinCeros(c),r=D.prods.filter(p=>p.ean&&p.ean.some(x=>sinCeros(x)===k));
+ return r.length?{r,bs:[],ps:[],fix:[]}:null;
+}
 function buscarCN(texto){
- const c=texto.replace(/[\s.\-]/g,"").toUpperCase();
+ const c=texto.replace(/[\s.\-$]/g,"").toUpperCase();
+ const porEAN=buscarEAN(c);if(porEAN)return porEAN;
  if(!/^(\d{4,7}|0P\d{3,4})$/.test(c))return null;
  const exactos=[/^\d+$/.test(c)&&c.length<6?("000000"+c).slice(-6):c];if(c.length===7)exactos.push(c.slice(0,6));
  const con=D.prods.filter(p=>p.cn);let r=con.filter(p=>p.cn.some(x=>exactos.includes(x)));
@@ -117,7 +126,7 @@ function page(h){
  if(h==="snec")return{t:"Complementos por necesidad",nav:"snec",html:`${crumbs([["Inicio",""],["Complementos","complementos"],["Por necesidad"]])}<h1>Por necesidad</h1><p class="lead">Elige la necesidad del cliente.</p><ul class="grid">${needsSupl().map(x=>tile("nec-"+x.id,x.name,n(suplEn(x).length,"producto"))).join("")}</ul>`};
  if(k==="nec"&&N(id)&&N(id).area==="supl"){const x=N(id),g=D.brands.map(b=>[b,suplEn(x).filter(p=>p.brand===b.id)]).filter(a=>a[1].length),ls=ps=>`<ul class="grid">${ps.map(prodMini).join("")}</ul>`,secciones=(b,ps)=>b.lines.filter(l=>ps.some(p=>lineIds(p)[0]===l.id)).map(l=>`<h3><a href="#linea-${l.id}">${esc(l.name)}</a></h3>${ls(ps.filter(p=>lineIds(p)[0]===l.id))}`).join("");
   return{t:x.name,nav:"snec",html:`${crumbs([["Inicio",""],["Complementos","complementos"],["Por necesidad","snec"],[x.name]])}<h1>${esc(x.name)}</h1><p class="lead">${esc(x.d||"")}</p>${g.length?g.map(a=>`<details class="acc"><summary>${esc(a[0].name)}<span>${n(a[1].length,"producto")}</span></summary>${secciones(a[0],a[1])}</details>`).join(""):`<p class="empty">Aún no hay productos cargados para esta necesidad.</p>`}`}}
- if(h==="marcas")return{t:"Marcas",nav:"marcas",html:`${crumbs([["Inicio",""],["Productos"]])}<h1>Productos</h1><p class="lead">Elige una marca.</p><ul class="grid">${D.brands.filter(b=>b.area!=="supl").map(b=>tile("marca-"+b.id,b.name,n(D.prods.filter(p=>p.brand===b.id).length,"producto"))).join("")}</ul>`};
+ if(h==="marcas")return{t:"Marcas",nav:"marcas",html:`${crumbs([["Inicio",""],["Productos"]])}<h1>Productos</h1><p class="lead">Elige una marca.</p><ul class="grid">${D.brands.filter(b=>b.area!=="supl").map(b=>tile("marca-"+b.id,b.name,n(D.prods.filter(p=>p.brand===b.id).length,"producto"))).join("")}${testTile("marcas")}</ul>`};
  if(h==="patologias")return{t:"Patologías",nav:"patologias",html:`${crumbs([["Inicio",""],["Patologías"]])}<h1>Patologías</h1><ul class="grid">${D.pats.map(x=>tile("pat-"+x.id,x.name,x.d)).join("")}${testTile("patologias")}</ul>`};
  if(h==="piel"||(k==="piel"&&D.piel.some(a=>a.id===id))){const x=h==="piel"?null:D.piel.find(a=>a.id===id),pa=x&&x.p?D.piel.find(a=>a.id===x.p):null,kids=D.piel.filter(a=>(a.p||"")===(x?x.id:"")),c=[["Inicio",""],x?["La piel","piel"]:["La piel"]];if(pa)c.push([pa.name,"piel-"+pa.id]);if(x)c.push([x.name]);
   return{t:x?x.name:"La piel",nav:"piel",html:`${crumbs(c)}<h1>${esc(x?x.name:"Fundamentos de la piel")}</h1>${kids.length?`<ul class="grid">${kids.map(a=>tile("piel-"+a.id,a.name,a.d||"")).join("")}${x?"":testTile("piel")}</ul>`:`<div class="box th">${md(x.t)}</div>`}`}}
@@ -125,10 +134,10 @@ function page(h){
  if(k==="cosm"&&D.cosm.some(a=>a.id===id)){const i=D.cosm.findIndex(a=>a.id===id),x=D.cosm[i],nx=D.cosm[i+1];return{t:x.name,nav:"cosmeticos",html:`${crumbs([["Inicio",""],["Cosméticos","cosmeticos"],[x.name]])}<h1>${esc(x.name)}</h1><div class="box th">${md(x.t)}</div>${window.FORM?FORM.enlaceTema("cosmeticos",x.id):""}${nx?`<p><a class="chip" href="#cosm-${nx.id}">Siguiente: ${esc(nx.name)} →</a></p>`:""}`}}
  if(h==="eleccion")return{t:"Elección de producto",nav:"eleccion",html:`${crumbs([["Inicio",""],["Elección de producto"]])}<h1>Elección de producto</h1><p class="lead">Elige la necesidad del cliente.</p><ul class="grid">${D.needs.filter(x=>x.area!=="supl").map(x=>tile("nec-"+x.id,x.name,n(D.prods.filter(p=>enEleccion(p,x)).length,"producto"))).join("")}</ul>`};
  if(k==="nec"&&N(id)){const x=N(id),g=D.brands.map(b=>[b,D.prods.filter(p=>p.brand===b.id&&enEleccion(p,x)&&ok(p))]).filter(a=>a[1].length),lista=ps=>`<ul class="grid">${ps.map(prodMini).join("")}</ul>`,secciones=(b,ps)=>x.tipo?lista(ps):b.lines.filter(l=>ps.some(p=>lineaPrincipal(p,x)===l.id)).map(l=>`<h3><a href="#linea-${l.id}">Línea ${esc(l.name)}</a></h3>${lista(ps.filter(p=>lineaPrincipal(p,x)===l.id))}`).join("")+D.needs.filter(t=>t.tipo&&ps.some(p=>!lineaPrincipal(p,x)&&tipoDe(p,x)===t)).map(t=>`<h3><a href="#nec-${t.id}">${esc(t.name)}</a></h3>${lista(ps.filter(p=>!lineaPrincipal(p,x)&&tipoDe(p,x)===t))}`).join("");return{t:x.name,nav:"eleccion",html:`${crumbs([["Inicio",""],["Elección de producto","eleccion"],[x.name]])}<h1>${esc(x.name)}</h1>${x.c?`<p class="lead"><a href="#cosm-${x.c}">Ver guía</a></p>`:""}<label for="sk">Tu tipo de piel</label><select id="sk"><option value="">Selecciona tu tipo de piel…</option>${SKS.map(o=>`<option value="${o[0]}"${SK===o[0]?" selected":""}>${o[1]}</option>`).join("")}</select><p class="lead" style="margin-top:8px;font-size:.9rem">${x.tipo?"Aparecen todos los productos de este tipo de cada marca; cada tarjeta indica su línea.":"Cada marca muestra su línea principal para esta necesidad y, aparte, sus contornos, limpiadores y fotoprotectores indicados para ella."} El tipo de piel es el que indica la ficha oficial de cada marca («todo tipo de piel» aparece en todas las opciones).</p>${!SK?`<p class="empty">Elige tu tipo de piel para ver los productos.</p>`:g.length?g.map(a=>`<details class="acc"><summary>${esc(a[0].name)}<span>${n(a[1].length,"producto")}</span></summary>${secciones(a[0],a[1])}</details>`).join(""):`<p class="empty">Aún no hay productos confirmados para este tipo de piel en esta necesidad.</p>`}`}}
- if(k==="marca"&&B(id)){const b=B(id);return{t:b.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name]])}<h1>${esc(b.name)}</h1><h2>Líneas</h2>${b.lines.length?`<ul class="grid">${b.lines.map(l=>lineTile(l,n(D.prods.filter(p=>inLine(p,l.id)).length,"producto"))).join("")}</ul>`:`<p class="empty">Esta marca aún no tiene líneas cargadas.</p>`}`}}
+ if(k==="marca"&&B(id)){const b=B(id);return{t:b.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name]])}<h1>${esc(b.name)}</h1><h2>Líneas</h2>${b.lines.length?`<ul class="grid">${b.lines.map(l=>lineTile(l,n(D.prods.filter(p=>inLine(p,l.id)).length,"producto"))).join("")}</ul>`:`<p class="empty">Esta marca aún no tiene líneas cargadas.</p>`}${b.area!=="supl"&&window.FORM?FORM.enlaceTema("marcas",b.id):""}`}}
  if(k==="linea"){const b=D.brands.find(b=>b.lines.some(l=>l.id===id));if(b){const l=b.lines.find(l=>l.id===id);return{t:l.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name,"marca-"+b.id],[l.name]])}<h1>${esc(l.name)}</h1><p class="lead">${esc(b.name)}${l.para?` · ${esc(l.para)}`:""}</p>${D.prods.some(p=>inLine(p,id))?`<ul class="pgrid">${D.prods.filter(p=>inLine(p,id)).map(prodTile).join("")}</ul>`:`<p class="empty">Esta línea aún no tiene productos cargados.</p>`}`}}}
  if(k==="pat"&&P(id)){const i=D.pats.findIndex(a=>a.id===id),x=D.pats[i],nx=D.pats[i+1];return{t:x.name,nav:"patologias",html:`${crumbs([["Inicio",""],["Patologías","patologias"],[x.name]])}<h1>${esc(x.name)}</h1><div class="box th">${md(x.t)}</div>${window.FORM?FORM.enlaceTema("patologias",x.id):""}${nx?`<p><a class="chip" href="#pat-${nx.id}">Siguiente: ${esc(nx.name)} →</a></p>`:""}`}}
- if(k==="prod"){const p=D.prods.find(p=>p.id===id);if(p){const b=B(p.brand);return{t:p.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name,"marca-"+b.id],[L(p.brand,lineIds(p)[0]),"linea-"+lineIds(p)[0]],[p.name]])}<h1>${esc(p.name)}</h1><div class="fgrid">${p.img?`<img class="fimg" src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="400">`:""}<div>${p.d?(p.d.pauta!==undefined?fichaSupl(p.d,b.name):prodFicha(p.d)):`<p class="empty">Ficha pendiente de completar.</p>`}<div class="box"><p><strong>Marca:</strong> <a href="#marca-${b.id}">${esc(b.name)}</a></p>${p.cn&&p.cn.length?`<p><strong>${p.cn.length>1?"Códigos nacionales":"Código nacional"}:</strong> ${p.cn.map(esc).join(", ")}</p>`:""}<p><strong>${lineIds(p).length>1?"Líneas":"Línea"}:</strong> ${lineIds(p).map(l=>`<a href="#linea-${l}">${esc(L(p.brand,l))}</a>`).join(", ")}</p>${prodNeeds(p).length?`<p><strong>Necesidades:</strong></p><ul class="chips">${prodNeeds(p).map(t=>`<li><a class="chip" href="#nec-${t}">${esc(N(t).name)}</a></li>`).join("")}</ul>`:""}</div></div></div>`}}}
+ if(k==="prod"){const p=D.prods.find(p=>p.id===id);if(p){const b=B(p.brand);return{t:p.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name,"marca-"+b.id],[L(p.brand,lineIds(p)[0]),"linea-"+lineIds(p)[0]],[p.name]])}<h1>${esc(p.name)}</h1><div class="fgrid">${p.img?`<img class="fimg" src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="400">`:""}<div>${p.d?(p.d.pauta!==undefined?fichaSupl(p.d,b.name):prodFicha(p.d)):`<p class="empty">Ficha pendiente de completar.</p>`}<div class="box"><p><strong>Marca:</strong> <a href="#marca-${b.id}">${esc(b.name)}</a></p>${p.cn&&p.cn.length?`<p><strong>${p.cn.length>1?"Códigos nacionales":"Código nacional"}:</strong> ${p.cn.map(esc).join(", ")}</p>`:""}${p.ean&&p.ean.length?`<p><strong>${p.ean.length>1?"Códigos de barras":"Código de barras"}:</strong> ${p.ean.map(esc).join(", ")}</p>`:""}<p><strong>${lineIds(p).length>1?"Líneas":"Línea"}:</strong> ${lineIds(p).map(l=>`<a href="#linea-${l}">${esc(L(p.brand,l))}</a>`).join(", ")}</p>${prodNeeds(p).length?`<p><strong>Necesidades:</strong></p><ul class="chips">${prodNeeds(p).map(t=>`<li><a class="chip" href="#nec-${t}">${esc(N(t).name)}</a></li>`).join("")}</ul>`:""}</div></div></div>`}}}
  if(h==="buscar"){const q=Q.value.trim(),{r,bs,ps,fix}=buscar(q);
   return{t:"Búsqueda",nav:"",html:`${crumbs([["Inicio",""],["Búsqueda"]])}<h1>Resultados</h1><p class="lead" role="status">${q?n(r.length+bs.length+ps.length,"resultado"):"Escribe para buscar."}${fix.length?` · Buscando: ${esc(fix.join(", "))}`:""}</p><ul class="grid">${bs.map(b=>tile("marca-"+b.id,b.name,"Marca")).join("")}${ps.map(x=>tile("pat-"+x.id,x.name,"Patología")).join("")}${r.map(prodCard).join("")}</ul>`}}
  return{t:"No encontrado",nav:"",html:`<h1>Página no encontrada</h1><p class="empty">El enlace no existe o el producto fue retirado.<br><a href="#">Volver al inicio</a></p>`};
@@ -146,4 +155,22 @@ function render(){
  last=h;
 }
 Q.addEventListener("input",()=>{location.hash==="#buscar"?render():(location.hash="buscar")});
+/* LECTOR DE CÓDIGOS DE BARRAS: el lector «teclea» un «$», las cifras muy seguidas y normalmente Enter.
+   Al detectar el «$» se captura todo lo que llega (esté donde esté el cursor, salvo en el formulario de inicio de sesión)
+   y se busca el código limpio, sustituyendo lo que hubiera en el buscador. Si solo hay un producto, se abre su ficha. */
+(function(){
+ let buf=null,t=null;
+ const fin=()=>{clearTimeout(t);const c=buf;buf=null;if(!c||!/^\d{8,14}$/.test(c))return;
+  Q.value=c;const r=buscar(c).r;
+  if(r.length===1)location.hash="prod-"+r[0].id;else if(location.hash==="#buscar")render();else location.hash="buscar";
+  Q.blur();};
+ document.addEventListener("keydown",e=>{
+  if(e.target&&e.target.closest&&e.target.closest("#login,#pform"))return;
+  if(buf===null){if(e.key==="$"){buf="";e.preventDefault();clearTimeout(t);t=setTimeout(fin,400);}return;}
+  if(/^\d$/.test(e.key)){buf+=e.key;e.preventDefault();clearTimeout(t);t=setTimeout(fin,400);return;}
+  if(e.key==="Enter"||e.key==="Tab"){e.preventDefault();fin();return;}
+  if(e.key==="Shift")return;
+  fin();   // cualquier otra tecla: termina la lectura y deja pasar la tecla
+ },true);
+})();
 addEventListener("hashchange",render);render();

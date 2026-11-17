@@ -7,12 +7,16 @@
    - Avance = preguntas acertadas alguna vez / total. Se guarda por usuario en el navegador (localStorage).
    Lo usan js/app.js (páginas, tarjeta «Test» y enlace en cada tema) y js/sesion.js (panel del nombre). */
 (function(){
-const ORDEN = ["piel", "cosmeticos", "patologias"];
+const ORDEN = ["piel", "cosmeticos", "patologias", "marcas"];
 const T = D.tests || {};
 const usuario = () => window.SESION && SESION.usuario();
 const clave = u => "catalogo-formacion-" + u;
 const e = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const temasDe = s => s === "piel" ? D.piel : s === "cosmeticos" ? D.cosm : D.pats;
+/* Temas de cada sección. En «marcas» (datos/tests_marcas.js) cada marca de dermofarmacia es un tema. */
+const temasDe = s => s === "piel" ? D.piel : s === "cosmeticos" ? D.cosm : s === "marcas" ? D.brands.filter(b => b.area !== "supl") : D.pats;
+/* Enlace principal de cada sección en el panel: la teoría, salvo en Marcas, que lleva a la lista de tests de marca */
+const enlaceSec = s => s === "marcas" ? "#test-marcas" : "#" + T[s].sec;
+const miga = t => t.cname || t.name;
 /* Temas con preguntas, en el orden de la página de teoría */
 const temas = s => (temasDe(s) || []).filter(x => T[s].q.some(q => q.s === x.id));
 const pregs = (s, tema) => tema ? T[s].q.filter(q => q.s === tema) : T[s].q;
@@ -54,7 +58,7 @@ function panel(){
   const a = avance(u);
   return `<h2>Formación</h2>
 <div class="fav"><div class="favt"><strong>Avance total</strong><span>${a.total.pct} %</span></div>${barra(a.total.pct, "Avance total")}<p class="fn">${a.total.ok} de ${a.total.total} preguntas acertadas</p></div>
-<ul class="flis">${ORDEN.filter(s => T[s]).map(s => `<li class="fsec"><div class="favt"><a class="fnom" href="#${T[s].sec}">${e(T[s].name)}</a><span>${a[s].pct} %</span></div>${barra(a[s].pct, "Avance de " + T[s].name)}<p class="fn">${a[s].ok} de ${a[s].total} preguntas acertadas${T[s].porTema ? " · " + temas(s).length + " tests" : ""}</p><div class="fops">${opciones(s)}</div></li>`).join("")}</ul>
+<ul class="flis">${ORDEN.filter(s => T[s]).map(s => `<li class="fsec"><div class="favt"><a class="fnom" href="${enlaceSec(s)}">${e(s === "marcas" ? "Tests de marca" : T[s].name)}</a><span>${a[s].pct} %</span></div>${barra(a[s].pct, "Avance de " + T[s].name)}<p class="fn">${a[s].ok} de ${a[s].total} preguntas acertadas${T[s].porTema ? " · " + temas(s).length + " tests" : ""}</p><div class="fops">${opciones(s)}</div></li>`).join("")}</ul>
 <p class="fnota">El avance se guarda en este dispositivo.</p>`;
 }
 
@@ -63,47 +67,49 @@ function tile(s){
   const u = usuario(); if (!u || !T[s]) return "";
   const a = cuenta(u, s);
   const sub = T[s].porTema ? `${temas(s).length} tests · ${a.total} preguntas · ${a.pct} % completado` : `${a.total} preguntas · ${a.pct} % completado`;
-  return `<li><a class="card ctest" href="#test-${s}"><strong>${T[s].porTema ? "Tests" : "Test"}: ${e(T[s].name)}</strong><span>${sub}</span>${barra(a.pct, "Avance")}</a></li>`;
+  return `<li><a class="card ctest" href="#test-${s}"><strong>${s === "marcas" ? "Tests de marca" : (T[s].porTema ? "Tests" : "Test") + ": " + e(T[s].name)}</strong><span>${sub}</span>${barra(a.pct, "Avance")}</a></li>`;
 }
 /* Enlace al test desde la página de un tema (solo con sesión) */
 function enlaceTema(s, tema){
   const u = usuario(); if (!u || !T[s] || !T[s].porTema || !pregs(s, tema).length) return "";
   const a = cuenta(u, s, tema);
-  return `<div class="box tenl"><div class="favt"><strong>Test: ${e(nombreTema(s, tema))}</strong><span>${a.pct} %</span></div>${barra(a.pct, "Avance")}<p class="fn">${a.ok} de ${a.total} preguntas acertadas</p><p class="tacc"><a class="bcuenta prim" href="#test-${s}-${tema}">Hacer el test</a></p></div>`;
+  return `<div class="box tenl"><div class="favt"><strong>${s === "marcas" ? "Test de marca" : "Test"}: ${e(nombreTema(s, tema))}</strong><span>${a.pct} %</span></div>${barra(a.pct, "Avance")}<p class="fn">${a.ok} de ${a.total} preguntas acertadas</p><p class="tacc"><a class="bcuenta prim" href="#test-${s}-${tema}">Hacer el test</a></p></div>`;
 }
 
 const sinSesion = (c, titulo) => ({html: `${c}<h1>${e(titulo)}</h1><div class="box"><p>Los tests de formación son para el personal de la farmacia.</p><p><button type="button" class="bcuenta prim" onclick="window.scrollTo(0,0);var b=document.getElementById('abrirLogin');if(b)b.click()">Iniciar sesión</button></p></div>`});
 
 /* Lista de temas (Cosméticos y Patologías) */
 function lista(s){
-  const t = T[s], c = crumbs([["Inicio",""],[t.name, t.sec],["Tests"]]), u = usuario(), tit = "Tests de " + t.name;
+  const t = T[s], esM = s === "marcas", c = crumbs([["Inicio",""],[miga(t), t.sec],[esM ? "Tests de marca" : "Tests"]]), u = usuario(), tit = esM ? "Tests de marca" : "Tests de " + t.name;
   if (!u) return Object.assign(sinSesion(c, tit), {t: tit, nav: t.sec});
   const a = cuenta(u, s);
   return {t: tit, nav: t.sec, html: `${c}<h1>${e(tit)}</h1>
-<p class="lead">Elige un tema. Cada test tiene al menos 10 preguntas con una sola respuesta correcta.</p>
-<div class="box tavance"><div class="favt"><strong>Tu avance en ${e(t.name)}</strong><span>${a.pct} %</span></div>${barra(a.pct, "Avance de " + t.name)}<p class="fn">${a.ok} de ${a.total} preguntas acertadas en ${temas(s).length} tests</p></div>
-<ul class="grid ttemas">${temas(s).map(x => { const b = cuenta(u, s, x.id); return `<li class="card ttema"><a class="ttit" href="#test-${s}-${x.id}">Test: ${e(x.name)}</a><span>${b.total} preguntas · ${b.ok} acertadas</span><div class="favt tpc"><span></span><span>${b.pct} %</span></div>${barra(b.pct, "Avance de " + x.name)}<div class="fops">${opciones(s + ":" + x.id)}</div></li>`; }).join("")}</ul>
-<p><a class="chip" href="#${t.sec}">← Volver a ${e(t.name)}</a></p>`};
+<p class="lead">${esM ? "Un test por marca de dermofarmacia: se responden con los productos de la marca, sus activos, cómo se usan y sus restricciones, aplicando la teoría." : "Elige un tema."} Cada test tiene al menos 10 preguntas con una sola respuesta correcta.</p>
+<div class="box tavance"><div class="favt"><strong>Tu avance en ${esM ? "los tests de marca" : e(t.name)}</strong><span>${a.pct} %</span></div>${barra(a.pct, "Avance de " + t.name)}<p class="fn">${a.ok} de ${a.total} preguntas acertadas en ${temas(s).length} tests</p></div>
+<ul class="grid ttemas">${temas(s).map(x => { const b = cuenta(u, s, x.id); return `<li class="card ttema"><a class="ttit" href="#test-${s}-${x.id}">${esM ? "Test de marca" : "Test"}: ${e(x.name)}</a><span>${b.total} preguntas · ${b.ok} acertadas</span><div class="favt tpc"><span></span><span>${b.pct} %</span></div>${barra(b.pct, "Avance de " + x.name)}<div class="fops">${opciones(s + ":" + x.id)}</div></li>`; }).join("")}</ul>
+<p><a class="chip" href="#${t.sec}">← Volver a ${e(miga(t))}</a></p>`};
 }
 
 /* Página de un test (sección entera o un tema) */
 const PERM = [[0,1,2],[1,0,2],[1,2,0],[2,0,1],[0,2,1],[2,1,0]];
 const perm = id => { let h = 0; for (const c of id) h = (h * 31 + c.charCodeAt(0)) >>> 0; return PERM[h % 6]; };
 function test(s, tema){
-  const t = T[s], nom = tema ? nombreTema(s, tema) : t.name, tit = "Test: " + nom;
-  const cc = [["Inicio",""],[t.name, t.sec]]; if (t.porTema) cc.push(["Tests", "test-" + s]); cc.push([tema ? nom : "Test"]);
+  const t = T[s], esM = s === "marcas", nom = tema ? nombreTema(s, tema) : t.name, tit = (esM ? "Test de marca: " : "Test: ") + nom;
+  const cc = [["Inicio",""],[miga(t), t.sec]]; if (t.porTema) cc.push([esM ? "Tests de marca" : "Tests", "test-" + s]); cc.push([tema ? nom : "Test"]);
   const c = crumbs(cc), u = usuario();
   if (!u) return Object.assign(sinSesion(c, tit), {t: tit, nav: t.sec});
   const qs = pregs(s, tema), hechas = leer(u)[s] || {}, a = cuenta(u, s, tema);
   const preg = qs.map((q, i) => {
-    const p = perm(q.id), x = (temasDe(s) || []).find(y => y.id === q.s);
+    const p = perm(q.id), pr = q.r && D.prods.find(y => y.id === q.r);
+    const x = pr ? {id: q.r, name: pr.name} : (temasDe(s) || []).find(y => y.id === q.s), pref = pr ? "prod-" : t.pref;
     return `<fieldset class="tq" data-sec="${s}" data-tema="${tema || ""}" data-id="${q.id}"${hechas[q.id] ? ' data-hecha="1"' : ""}>
 <legend><span class="tn">${i + 1}.</span> ${e(q.q)}${hechas[q.id] ? ' <span class="tya">Ya acertada</span>' : ""}</legend>
 <div class="topts">${p.map(k => `<button type="button" class="topc" data-c="${k === 0 ? 1 : 0}">${e(q.o[k])}</button>`).join("")}</div>
-<div class="tfb" hidden><p class="tres" role="status"></p><p>${e(q.e)}</p>${x ? `<p><a href="#${t.pref}${x.id}">Repasar: ${e(x.name)}</a></p>` : ""}</div>
+<div class="tfb" hidden><p class="tres" role="status"></p><p>${e(q.e)}</p>${x ? `<p><a href="#${pref}${x.id}">Repasar: ${e(x.name)}</a></p>` : ""}</div>
 </fieldset>`;
   }).join("");
-  const volver = t.porTema ? `<a class="chip" href="#test-${s}">← Volver a los tests de ${e(t.name)}</a>` : `<a class="chip" href="#${t.sec}">← Volver a ${e(t.name)}</a>`;
+  const volver = esM ? `<a class="chip" href="#marca-${tema}">← Volver a ${e(nom)}</a> <a class="chip" href="#test-marcas">Ver todos los tests de marca</a>`
+    : t.porTema ? `<a class="chip" href="#test-${s}">← Volver a los tests de ${e(t.name)}</a>` : `<a class="chip" href="#${t.sec}">← Volver a ${e(t.name)}</a>`;
   return {t: tit, nav: t.sec, html: `${c}<h1>${e(tit)}</h1>
 <p class="lead">${qs.length} preguntas con una sola respuesta correcta. Al elegir una opción verás si has acertado y por qué.</p>
 <div class="box tavance"><div class="favt"><strong>Tu avance en este test</strong><span id="tpct">${a.pct} %</span></div>${barra(a.pct, "Avance del test")}<p class="fn"><span id="tok">${a.ok}</span> de ${a.total} preguntas acertadas · En este intento: <span id="tint">0</span> de ${qs.length} contestadas, <span id="tbien">0</span> bien</p>
