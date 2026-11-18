@@ -1,7 +1,7 @@
 :root{--bg:#faf9fc;--s:#fff;--t:#2a2a2a;--m:#5b6670;--a:#2f6aa3;--a2:#e8f0f8;--b:#e0e4ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11161d;--s:#1a212b;--t:#e8edf3;--m:#a3afbc;--a:#8db8e6;--a2:#22303f;--b:#2c3745;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#11161d;--s:#1a212b;--t:#e8edf3;--m:#a3afbc;--a:#8db8e6;--a2:#22303f;--b:#2c3745;color-scheme:dark}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--s);z-index:10}
@@ -228,7 +228,16 @@ body.concmp{padding-bottom:80px}
 /* Asistente de rutina */
 .rutform{display:grid;gap:12px;margin-top:12px}
 @media(min-width:760px){.rutform{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.rutq label{display:block;font-size:.85rem;font-weight:600;color:var(--m);margin-bottom:4px}
+.rutq>label,.rutq>.rutlab{display:block;font-size:.85rem;font-weight:600;color:var(--m);margin-bottom:4px}
+/* Marca de la rutina: el desplegable de casillas con el aspecto de los otros campos */
+.rutq .tfg>summary{font:inherit;background:var(--bg);justify-content:space-between}
+.rutq .rutres{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* La lista abierta imita la de los desplegables nativos (Necesidad, Tipo de piel, Embarazo): letra del sistema y fondo blanco */
+.rutq .tfops{width:100%;min-width:240px;background:var(--s);font-family:system-ui,"Segoe UI",-apple-system,Roboto,sans-serif}
+.rutq .tfg[open]>summary{color:var(--t)}
+.rutq .tfop{font-size:.9375rem;min-height:34px;padding:4px 8px;border-radius:6px}
+/* Flecha en «v», como la de los otros desplegables */
+.rutq .tfg>summary .flecha,.rutq .tfg[open]>summary .flecha{flex:none;width:6px;height:6px;margin:0 4px 4px 8px;font-size:0;border:solid var(--t);border-width:0 1.25px 1.25px 0;transform:rotate(45deg)}
 .rut{margin-top:20px}.rut h2{margin:0 0 8px;font-size:1.2rem}
 .rutpasos{list-style:none;margin:0;padding:0}.rutpasos>li+li{margin-top:14px}
 .rutpasos h3{margin:0 0 8px;font-size:.95rem}

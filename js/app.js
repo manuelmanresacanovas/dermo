@@ -298,11 +298,11 @@ const complementosDe=p=>{const s=suplDe(p);return s.length?`<section class="box 
    de mañana y de noche (limpieza, sérum, contorno, crema y fotoprotección), con hasta 3 productos por paso.
    Prioriza la línea principal de la marca para esa necesidad, el tipo de piel concreto y el momento del día.
    En embarazo descarta lo que la ficha no recomienda y los retinoides. */
-const RUT={n:"",s:"",e:"",b:""};
+const RUT={n:"",s:"",e:"",b:[]}; // b: marcas elegidas (varias); vacío = cualquier marca
 const RUT_NEC=()=>D.needs.filter(x=>x.area!=="supl"&&!x.tipo||x.id==="atopica");
 function rutina(){
  const x=N(RUT.n),emb=RUT.e==="si",esp=RUT.s&&RUT.s!=="todos";
- const base=dermoProds().filter(p=>p.d&&(!RUT.b||p.brand===RUT.b)&&(!RUT.s||RUT.s==="todos"||(p.sk||[]).some(t=>t==="todas"||t===RUT.s))&&(!emb||(embCls(p)!=="no"&&!atrDe(p).c.includes("retinoide"))));
+ const base=dermoProds().filter(p=>p.d&&(!RUT.b.length||RUT.b.includes(p.brand))&&(!RUT.s||RUT.s==="todos"||(p.sk||[]).some(t=>t==="todas"||t===RUT.s))&&(!emb||(embCls(p)!=="no"&&!atrDe(p).c.includes("retinoide"))));
  const nota=p=>(prodNeeds(p).includes(RUT.n)?4:0)+(x&&!x.tipo&&lineaPrincipal(p,x)?3:0)+(esp&&(p.sk||[]).includes(RUT.s)?1:0)+(emb&&embCls(p)==="si"?2:0);
  const top=(f,m,extra)=>base.filter(p=>f(p)&&(!m||atrDe(p).m.includes(m))).map(p=>[p,nota(p)+(extra?extra(p):0)]).sort((a,b)=>b[1]-a[1]).slice(0,3).map(a=>a[0]);
  const tp=p=>norm(p.d.tipo||""),fo=p=>atrDe(p).f[0]||"";
@@ -320,8 +320,12 @@ function rutina(){
  return `${bloque("Mañana","dia")}${bloque("Noche","noche")}<p class="lead rutnota">Cada paso muestra hasta 3 opciones, ordenadas por: producto de la línea principal para esta necesidad, tipo de piel concreto${emb?" y adecuado en embarazo según la ficha":""}. ${emb?"Se han quitado los productos que la ficha no recomienda en embarazo y los que llevan retinoides. ":""}Usa «+ Comparar» para decidir entre ellos.</p><p class="noprint"><button type="button" class="bcuenta prim" onclick="window.print()">Imprimir rutina</button></p>`;
 }
 function paginaRutina(){
+ /* Marca: varias a la vez, con el mismo desplegable de casillas que «Todos los productos» */
+ const bs=D.brands.filter(b=>b.area!=="supl"),elegidas=bs.filter(b=>RUT.b.includes(b.id)).map(b=>b.name);
+ const resumen=!elegidas.length?"Cualquier marca":elegidas.length<=2?elegidas.join(", "):n(elegidas.length,"marca");
+ const marcas=`<div class="rutq"><span class="rutlab" id="r-b-lab">4. Marca (opcional)</span><details class="tfg" data-g="rutb"${TFO.rutb?" open":""}><summary aria-describedby="r-b-lab"><span class="rutres">${esc(resumen)}</span><span class="flecha" aria-hidden="true">▾</span></summary><div class="tfops" role="group" aria-labelledby="r-b-lab">${bs.map(b=>`<label class="tfop"><input type="checkbox" data-rutb value="${esc(b.id)}"${RUT.b.includes(b.id)?" checked":""}><span>${esc(b.name)}</span></label>`).join("")}</div></details></div>`;
  const sel=(id,lab,ph,opts,v)=>`<div class="rutq"><label for="${id}">${lab}</label><select id="${id}" data-rut="${id.slice(2)}"><option value="">${ph}</option>${opts.map(o=>`<option value="${esc(o[0])}"${v===o[0]?" selected":""}>${esc(o[1])}</option>`).join("")}</select></div>`;
- const form=`<div class="rutform">${sel("r-n","1. ¿Qué le preocupa?","Elige la necesidad…",RUT_NEC().map(x=>[x.id,x.name]),RUT.n)}${sel("r-s","2. Tipo de piel","Elige el tipo de piel…",SKS,RUT.s)}${sel("r-e","3. ¿Embarazo o lactancia?","No",[["si","Sí"]],RUT.e)}${sel("r-b","4. Marca (opcional)","Cualquier marca",D.brands.filter(b=>b.area!=="supl").map(b=>[b.id,b.name]),RUT.b)}</div>`;
+ const form=`<div class="rutform">${sel("r-n","1. ¿Qué le preocupa?","Elige la necesidad…",RUT_NEC().map(x=>[x.id,x.name]),RUT.n)}${sel("r-s","2. Tipo de piel","Elige el tipo de piel…",SKS,RUT.s)}${sel("r-e","3. ¿Embarazo o lactancia?","No",[["si","Sí"]],RUT.e)}${marcas}</div>`;
  return{t:"Rutina",nav:"rutina",html:`${crumbs([["Inicio",""],["Rutina"]])}<h1>Asistente de rutina</h1><p class="lead">Responde a las preguntas y te propone una rutina de mañana y noche con productos del catálogo.</p>${form}${RUT.n&&RUT.s?rutina():`<p class="empty">Elige la necesidad y el tipo de piel para ver la rutina.</p>`}`};
 }
 /* INTERACCIONES CON MEDICAMENTOS (Complementos › Interacciones).
@@ -396,6 +400,10 @@ function render(){
   const nc=[...document.querySelectorAll("[data-tf]")].find(x=>x.dataset.tf===k&&x.value===v);if(nc)nc.focus()});
  const tfx=$("#tfx");if(tfx)tfx.onclick=()=>{Object.keys(TF).forEach(k=>TF[k]=[]);last=h;render();const c=$("[data-tf]");if(c)c.focus()};
  document.querySelectorAll("[data-rut]").forEach(s=>s.onchange=()=>{RUT[s.dataset.rut]=s.value;last=h;render();$("#"+s.id).focus()});
+ /* Marcas de la rutina: al marcar o desmarcar se repinta con el desplegable abierto y el foco en la misma casilla */
+ document.querySelectorAll("[data-rutb]").forEach(c=>c.onchange=()=>{const v=c.value;RUT.b=c.checked?RUT.b.concat(v):RUT.b.filter(x=>x!==v);
+  const d=$(".tfg[data-g=rutb]"),sc=d?d.querySelector(".tfops").scrollTop:0;TFO.rutb=true;last=h;render();
+  const nd=$(".tfg[data-g=rutb]");if(nd)nd.querySelector(".tfops").scrollTop=sc;const nc=[...document.querySelectorAll("[data-rutb]")].find(x=>x.value===v);if(nc)nc.focus()});
  const med=$("#med");if(med)med.oninput=()=>{MEDQ=med.value;last=h;render();const m=$("#med");m.focus();m.setSelectionRange(m.value.length,m.value.length)};
  const cd=$("#cmpdif");if(cd)cd.onchange=()=>{CMPD=cd.checked;last=h;render();$("#cmpdif").focus()};
  pintaBarra();
