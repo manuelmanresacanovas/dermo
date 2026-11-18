@@ -5,6 +5,8 @@
 (function(){
 const A = {
   atopica: {name: "Piel atópica y eczema", ids: [
+    "cv-aceite-limpiador-espumoso", "cv-crema-hidratante",
+    "ad-exomega-aceite-limpiador", "ad-exomega-gel-2en1", "ad-exomega-bano", "ad-exomega-leche", "ad-exomega-crema", "ad-exomega-balsamo", "ad-exomega-crema-noche",
     "cau-co-leche",
     "cau-co-balsamo",
     "sen-palpebral",
@@ -32,6 +34,8 @@ const A = {
     "av-eau-thermale-avene-intense-protect-spf50"
   ]},
   bebe: {name: "Bebés y niños", ids: [
+    "cv-aceite-limpiador-espumoso",
+    "ad-exomega-aceite-limpiador", "ad-exomega-gel-2en1", "ad-exomega-bano", "ad-exomega-leche", "ad-exomega-crema", "ad-exomega-balsamo", "ad-exomega-crema-noche", "ad-epitheliale-ultra-repair",
     "cau-co-leche",
     "cau-vs-crema",
     "cau-vs-fluido",
@@ -220,6 +224,7 @@ const A = {
     "sen-hairdscontrol"
   ]},
   cicatrices: {name: "Piel dañada, cicatrices y post-tratamiento", ids: [
+    "ad-epitheliale-ultra-repair",
     "fil-neocica",
     "sen-coolrescue",
     "sen-originproexo",

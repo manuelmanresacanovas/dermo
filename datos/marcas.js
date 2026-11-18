@@ -187,6 +187,28 @@ D.brands = [
   },
 
   {
+    id: "aderma",
+    name: "A-Derma",
+    lines: [
+      { id: "ad-exomega", name: "Exomega", para: "Piel seca con tendencia al eccema atópico" },
+      { id: "ad-epitheliale", name: "Epitheliale", para: "Piel frágil o dañada: reparación y marcas" }
+    ]
+  },
+
+  {
+    id: "cerave",
+    name: "CeraVe",
+    lines: [
+      { id: "cv-limpiadores", name: "Limpiadores", para: "Limpieza de rostro y cuerpo según el tipo de piel" },
+      { id: "cv-rostro", name: "Hidratación rostro", para: "Hidratación facial y contorno de ojos" },
+      { id: "cv-cuerpo", name: "Hidratación cuerpo", para: "Piel seca, muy seca o rugosa del cuerpo" },
+      { id: "cv-imperfecciones", name: "Anti-imperfecciones", para: "Piel con tendencia acneica" },
+      { id: "cv-antiedad", name: "Antiedad Skin Renewing", para: "Primeros signos de la edad: arrugas, firmeza y luminosidad" },
+      { id: "cv-solar", name: "Protección solar", para: "Fotoprotección diaria con ceramidas" }
+    ]
+  },
+
+  {
     id: "gemaherrerias",
     name: "Gema Herrerías",
     lines: [

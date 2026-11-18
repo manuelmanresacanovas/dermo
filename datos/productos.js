@@ -14,7 +14,7 @@
       modo: cómo se aplica.
       solar: qué indica la marca sobre fotoprotección (opcional; solo si la marca lo dice).
       nota: advertencias o aclaraciones (opcional).
-   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com, es.medik8.com, es.svr.com, es.nuxe.com, laroche-posay.es, isdin.com/es, cantabrialabs.es, eau-thermale-avene.es). */
+   Información de la ficha tomada de la web oficial de cada marca (es.caudalie.com, es.filorga.com, sensilis.com/es, gemaherrerias.com, es.medik8.com, es.svr.com, es.nuxe.com, laroche-posay.es, isdin.com/es, cantabrialabs.es, eau-thermale-avene.es, aderma.es, cerave.es). */
 var D = D || {};
 
 D.prods = [
@@ -17944,6 +17944,639 @@ D.prods = [
       necesidad: "Aporta volumen, separa y define.",
       cuando: "A diario.",
       modo: "Colocar el aplicador en la raíz y extender."
+    }
+  },
+
+  /* ---------- A-Derma (aderma.es, noviembre de 2026) ----------
+     Solo los 8 productos que vende la farmacia (los 9 códigos de su stock; el aceite limpiador tiene dos tamaños). */
+  /* ---------- A-Derma · Exomega ---------- */
+  {
+    id: "ad-exomega-aceite-limpiador",
+    name: "Exomega Control aceite limpiador emoliente antipicor",
+    img: "imagenes/aderma/ad-exomega-aceite-limpiador.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento (bebés, niños y adultos); piel seca con tendencia al eccema atópico.",
+      tipo: "Aceite limpiador sin jabón para cuerpo, rostro y zonas íntimas externas.",
+      necesidad: "Limpia, nutre y calma el picor; protege la piel de la tirantez y la sequedad.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "A-Derma no indica paso: es el producto de higiene de la rutina Exomega Control.",
+      cuando: "Una vez al día, en la ducha o el baño.",
+      modo: "Aplicar sobre la piel húmeda, aclarar y secar sin frotar. Después, aplicar el emoliente Exomega Control.",
+      nota: "No pica en los ojos, según A-Derma. Fragancia delicada. Fórmula biodegradable con un 91 % de ingredientes de origen natural."
+    }
+  },
+
+  {
+    id: "ad-exomega-gel-2en1",
+    name: "Exomega Control gel limpiador emoliente 2 en 1",
+    img: "imagenes/aderma/ad-exomega-gel-2en1.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento, sobre todo bebés; piel seca con tendencia al eccema atópico.",
+      tipo: "Gel limpiador sin jabón y de pH fisiológico para cuerpo, cara y cabello.",
+      necesidad: "Limpia cuerpo, cara y cabello en un solo paso y calma el picor; también se puede usar en la costra láctea.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "A-Derma no indica paso: es el producto de higiene de la rutina Exomega Control.",
+      cuando: "Una vez al día, en la ducha o el baño.",
+      modo: "Aplicar sobre la piel húmeda, aclarar y secar sin frotar. Después, aplicar el producto Exomega Control.",
+      nota: "No provoca escozor en los ojos, según A-Derma. Delicadamente perfumado. Fórmula biodegradable con un 86 % de ingredientes de origen natural."
+    }
+  },
+
+  {
+    id: "ad-exomega-bano",
+    name: "Exomega Control baño calmante antipicor",
+    img: "imagenes/aderma/ad-exomega-bano.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Bebés y adultos con piel seca con tendencia al eccema atópico.",
+      tipo: "Tratamiento para el agua del baño: no hace espuma ni limpia.",
+      necesidad: "Suaviza la piel y calma la irritación y el picor antes de dormir; prepara la piel para el emoliente.",
+      cuando: "A diario, por la noche, en el baño. Se usa junto con el producto de higiene.",
+      modo: "Añadir 4 tapones al agua de la bañera para un niño y 8 para un adulto. No aclarar, secar sin frotar y aplicar después el emoliente Exomega.",
+      nota: "La web se contradice en la edad: en «Puede utilizarse para» dice desde el nacimiento y en la descripción, desde los 6 meses. Perfume delicado."
+    }
+  },
+
+  {
+    id: "ad-exomega-leche",
+    name: "Exomega Control leche emoliente antirrascado",
+    img: "imagenes/aderma/ad-exomega-leche.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel seca con tendencia al eccema atópico.",
+      tipo: "Leche emoliente para cuerpo y rostro.",
+      necesidad: "Calma el picor, reduce las rojeces y espacia los brotes de irritación; nutre, refuerza la barrera cutánea y ayuda a reequilibrar el microbioma.",
+      cuando: "Una vez al día.",
+      modo: "Tras limpiar la piel con un producto de higiene Exomega Control, calentar la leche en las manos y aplicar con movimientos amplios.",
+      nota: "Sin perfume. Citada como «emoliente plus» en las recomendaciones europeas para el eccema atópico (European Dermatology Forum, 2018)."
+    }
+  },
+
+  {
+    id: "ad-exomega-crema",
+    name: "Exomega Control crema emoliente antirrascado",
+    img: "imagenes/aderma/ad-exomega-crema.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel seca con tendencia al eccema atópico.",
+      tipo: "Crema emoliente para cuerpo y rostro, de textura cremosa, no grasa y de rápida absorción.",
+      necesidad: "Calma el picor, reduce las rojeces y espacia los brotes de irritación; nutre, refuerza la barrera cutánea y ayuda a reequilibrar el microbioma.",
+      cuando: "Una vez al día.",
+      modo: "Tras limpiar la piel con un producto de higiene Exomega Control, calentar la crema en las manos y aplicar con movimientos amplios.",
+      nota: "Sin perfume. Citada como «emoliente plus» en las recomendaciones europeas para el eccema atópico (European Dermatology Forum, 2018)."
+    }
+  },
+
+  {
+    id: "ad-exomega-balsamo",
+    name: "Exomega Control bálsamo emoliente antiirritación",
+    img: "imagenes/aderma/ad-exomega-balsamo.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel seca con tendencia al eccema atópico.",
+      tipo: "Bálsamo emoliente para cuerpo y rostro, de textura ultrarrica y no pegajosa.",
+      necesidad: "Calma el picor, reduce las rojeces y espacia los brotes de irritación; nutre, refuerza la barrera cutánea y ayuda a reequilibrar el microbioma.",
+      cuando: "Una vez al día.",
+      modo: "Tras limpiar la piel con un producto de higiene Exomega Control, calentar el bálsamo en las manos y aplicar con movimientos amplios.",
+      nota: "Sin perfume. Citado como «emoliente plus» en las recomendaciones europeas para el eccema atópico (European Dermatology Forum, 2018)."
+    }
+  },
+
+  {
+    id: "ad-exomega-crema-noche",
+    name: "Exomega Control crema de noche emoliente reparadora",
+    img: "imagenes/aderma/ad-exomega-crema-noche.webp",
+    brand: "aderma",
+    line: "ad-exomega",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Toda la familia desde el nacimiento; piel seca con tendencia atópica con picor que no deja dormir.",
+      tipo: "Crema emoliente de noche para cuerpo y rostro, de textura cremosa.",
+      necesidad: "Calma el picor nocturno y ayuda a dormir mejor; nutre, calma y repara la barrera cutánea.",
+      cuando: "Una vez al día, por la noche, antes de acostarse.",
+      modo: "Sola o en la rutina de noche completa: baño calmante en el agua de la bañera, gel limpiador 2 en 1 y después la crema de noche.",
+      nota: "Sin perfume. 97 % de ingredientes naturales."
+    }
+  },
+
+  /* ---------- A-Derma · Epitheliale ---------- */
+  {
+    id: "ad-epitheliale-ultra-repair",
+    name: "Epitheliale Ultra Repair crema reparadora antimarcas",
+    img: "imagenes/aderma/ad-epitheliale-ultra-repair.webp",
+    brand: "aderma",
+    line: "ad-epitheliale",
+    n: ["rojeces", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Bebés, niños y adultos con piel debilitada o dañada: tras procedimientos estéticos o dermatológicos superficiales (peeling, láser), lesiones superficiales o tatuajes, con riesgo de que queden marcas.",
+      tipo: "Crema reparadora antimarcas para rostro, cuerpo y zonas íntimas externas.",
+      necesidad: "Acelera la reparación de la piel, ayuda a reducir la apariencia de las marcas y calma las molestias.",
+      cuando: "1 o 2 veces al día.",
+      modo: "Limpiar antes con el CICA-Gel limpiador Dermalibour+, aclarar y secar suavemente; aplicar en las zonas fragilizadas. Se puede continuar con el gel-aceite de masaje Epitheliale A.H.",
+      nota: "Sin perfume y no comedogénica. En la web también aparece con su nombre anterior, Epitheliale A.H Ultra crema reparadora calmante."
+    }
+  },
+
+  /* ---------- CeraVe (cerave.es, noviembre de 2026) ----------
+     Solo los 25 productos que vende la farmacia (sin packs). La Crema Hidratante solo está en el stock como duplo.
+     Todos llevan 3 ceramidas esenciales; CeraVe casi no da advertencias de embarazo. */
+  /* ---------- CeraVe · Limpiadores ---------- */
+  {
+    id: "cv-aceite-limpiador-espumoso",
+    name: "Limpiador en Aceite Espumoso Hidratante",
+    img: "imagenes/cerave/cv-aceite-limpiador-espumoso.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Bebés desde 1 mes, niños y adultos con piel normal a muy seca o con tendencia atópica.",
+      tipo: "Limpiador de rostro y cuerpo con textura de aceite a espuma, con escualano.",
+      necesidad: "Limpia la suciedad y el exceso de sebo mientras hidrata y calma, sin dejar sensación grasa.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "CeraVe indica que disuelve el maquillaje, el protector solar y el exceso de sebo.",
+      cuando: "A diario.",
+      modo: "Mojar la piel con agua tibia, masajear con movimientos suaves y circulares y aclarar.",
+      nota: "Sin perfume y no comedogénico. Testado dermatológica y oftalmológicamente; aun así, evitar el contacto con los ojos."
+    }
+  },
+
+  {
+    id: "cv-limpiadora-hidratante",
+    name: "Limpiadora Hidratante",
+    img: "imagenes/cerave/cv-limpiadora-hidratante.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["limpieza", "seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos y niños con piel normal a seca, también sensible.",
+      tipo: "Limpiador cremoso para rostro y cuerpo.",
+      necesidad: "Limpia e hidrata sin alterar la barrera cutánea ni dejar la piel tirante o seca.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "CeraVe no indica paso.",
+      cuando: "A diario, por la mañana y por la noche.",
+      modo: "Masajear sobre la piel húmeda y aclarar.",
+      nota: "Sin perfume y no comedogénica. Evitar el contacto con los ojos."
+    }
+  },
+
+  {
+    id: "cv-limpiadora-crema-espuma",
+    name: "Limpiador Crema-Espuma Hidratante",
+    img: "imagenes/cerave/cv-limpiadora-crema-espuma.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["limpieza"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca, también sensible, que se maquilla.",
+      tipo: "Limpiador facial que sale en crema y se transforma en espuma, con aminoácidos.",
+      necesidad: "Elimina el maquillaje (también el de larga duración), la suciedad, la grasa y el protector solar sin resecar.",
+      limpieza: "Limpieza única",
+      limpiezaDet: "CeraVe indica que desmaquilla y limpia en un solo paso.",
+      cuando: "Dos veces al día: por la mañana y por la noche.",
+      modo: "Mojar la piel con agua tibia, masajear con movimientos suaves y circulares y aclarar bien.",
+      nota: "Sin perfume, no comedogénico y de pH equilibrado. Evitar el contacto directo con los ojos."
+    }
+  },
+
+  {
+    id: "cv-gel-limpiador-espumoso",
+    name: "Gel Limpiador Espumoso",
+    img: "imagenes/cerave/cv-gel-limpiador-espumoso.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["limpieza", "poros", "corporal"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel normal a grasa, también con tendencia acneica.",
+      tipo: "Limpiador de rostro y cuerpo con textura de gel a espuma, con niacinamida.",
+      necesidad: "Elimina el exceso de grasa y la suciedad y refresca sin dejar la piel tirante.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "CeraVe no indica paso.",
+      cuando: "A diario, por la mañana y por la noche.",
+      modo: "Mojar la piel con agua tibia, masajear con movimientos suaves y circulares y aclarar.",
+      nota: "Sin perfume y no comedogénico. Compatible con tratamientos para el acné, según CeraVe. Evitar el contacto con los ojos."
+    }
+  },
+
+  {
+    id: "cv-limpiador-foam-reequilibrante",
+    name: "Limpiador Air Foam Reequilibrante",
+    img: "imagenes/cerave/cv-limpiador-foam-reequilibrante.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["limpieza", "poros"],
+    sk: ["mixta", "sensible"],
+    d: {
+      paciente: "Piel normal a mixta, también sensible: brillo en la zona T y zonas más secas.",
+      tipo: "Limpiador facial en espuma ligera, con tecnología Glycolysine™ y alantoína.",
+      necesidad: "Limpia la suciedad, el exceso de sebo y el maquillaje y reequilibra la piel mixta: 8 horas de control de la grasa y 24 horas de hidratación.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "CeraVe no indica paso; elimina también el maquillaje.",
+      cuando: "A diario.",
+      modo: "Masajear sobre la piel húmeda y aclarar.",
+      nota: "Sin perfume ni parabenos y no comedogénico. Evitar el contacto con los ojos."
+    }
+  },
+
+  {
+    id: "cv-limpiador-arcilla-espuma",
+    name: "Limpiador Arcilla-Espuma Control Imperfecciones",
+    img: "imagenes/cerave/cv-limpiador-arcilla-espuma.webp",
+    brand: "cerave",
+    line: ["cv-imperfecciones", "cv-limpiadores"],
+    n: ["limpieza", "acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica.",
+      tipo: "Limpiador 3 en 1 con arcilla de caolín y un 2 % de ácido salicílico.",
+      necesidad: "Reduce las imperfecciones (menos granos en 3 días) y absorbe el exceso de sebo sin resecar.",
+      limpieza: "Limpiador (sin paso indicado)",
+      limpiezaDet: "Sirve como limpiador diario, mascarilla semanal y tratamiento localizado nocturno.",
+      cuando: "A diario como limpiador; una vez a la semana como mascarilla; por la noche como tratamiento localizado.",
+      modo: "Masajear sobre la piel húmeda y aclarar. Evitar la zona de los ojos.",
+      nota: "Sin perfume y no comedogénico. CeraVe no detalla cuánto tiempo se deja como mascarilla."
+    }
+  },
+
+  {
+    id: "cv-sa-limpiador-anti-rugosidades",
+    name: "SA Limpiador Anti-rugosidades",
+    img: "imagenes/cerave/cv-sa-limpiador-anti-rugosidades.webp",
+    brand: "cerave",
+    line: "cv-limpiadores",
+    n: ["corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel normal a seca, áspera, rugosa o con textura irregular (también granitos en brazos, espalda o muslos).",
+      tipo: "Gel limpiador espumoso con ácido salicílico, sin partículas exfoliantes.",
+      necesidad: "Limpia y exfolia suavemente para mejorar la textura sin alterar la barrera cutánea.",
+      limpieza: "Limpiador y exfoliante",
+      limpiezaDet: "Exfoliación química con ácido salicílico, sin exfoliantes mecánicos.",
+      cuando: "A diario si la piel lo tolera; en piel sensible o junto a otros exfoliantes, espaciar su uso.",
+      modo: "Mojar la piel con agua tibia, masajear con movimientos suaves y circulares y aclarar bien.",
+      nota: "Hipoalergénico, sin perfume y no comedogénico. Evitar el contacto con los ojos."
+    }
+  },
+
+  /* ---------- CeraVe · Hidratación rostro ---------- */
+  {
+    id: "cv-locion-hidratante-rostro",
+    name: "Loción Hidratante de Rostro PM",
+    img: "imagenes/cerave/cv-locion-hidratante-rostro.webp",
+    brand: "cerave",
+    line: "cv-rostro",
+    n: ["deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, sobre todo normal a seca y sensible, que busca una hidratación ligera.",
+      tipo: "Loción hidratante facial de noche, ligera y sin aceites, con niacinamida.",
+      necesidad: "Hidrata 24 horas, calma y ayuda a restaurar la barrera protectora sin obstruir los poros.",
+      cuando: "Por la noche (es la loción «PM»); CeraVe también la propone por la mañana y por la noche.",
+      modo: "Aplicar generosamente en rostro y cuello. Evitar el contorno de ojos. La primera vez hay que girar el dosificador y presionar hasta 10-20 veces.",
+      nota: "Sin perfume ni aceites y no comedogénica. CeraVe la indica como base para combinar con retinoides, antioxidantes o exfoliantes."
+    }
+  },
+
+  {
+    id: "cv-serum-acido-hialuronico",
+    name: "Sérum Hidratante con Ácido Hialurónico",
+    img: "imagenes/cerave/cv-serum-acido-hialuronico.webp",
+    brand: "cerave",
+    line: "cv-rostro",
+    n: ["deshidratacion"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible; sobre todo piel deshidratada, apagada o con tirantez.",
+      tipo: "Sérum hidratante ligero con ácido hialurónico y vitamina B5 (pantenol).",
+      necesidad: "Hidrata 24 horas y ayuda a restaurar la barrera protectora.",
+      cuando: "Por la mañana y/o por la noche, después de la limpieza y antes de la crema.",
+      modo: "Aplicar de forma uniforme en rostro y cuello, evitando el contorno de ojos.",
+      nota: "Hipoalergénico, sin perfume ni parabenos y no comedogénico. Compatible con vitamina C, retinol y exfoliantes químicos, según CeraVe."
+    }
+  },
+
+  {
+    id: "cv-water-gel-hialuronico",
+    name: "Water Gel Hidratante Ácido Hialurónico",
+    img: "imagenes/cerave/cv-water-gel-hialuronico.webp",
+    brand: "cerave",
+    line: "cv-rostro",
+    n: ["deshidratacion"],
+    sk: ["todas", "grasa", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, incluidas la grasa y la sensible; piel deshidratada.",
+      tipo: "Hidratante facial de textura «aqua gel» ligera, con ácido hialurónico y cobre PCA.",
+      necesidad: "Hidratación duradera (3 días, según CeraVe) con efecto «plump»; repara la barrera y aporta un efecto antioxidante.",
+      cuando: "Mañana y noche, después de la limpieza y de los sérums.",
+      modo: "Aplicar libremente en rostro y cuello.",
+      nota: "Sin perfume y no comedogénico. Evitar el contacto con los ojos."
+    }
+  },
+
+  {
+    id: "cv-contorno-reparador",
+    name: "Crema Reparadora Contorno de Ojos",
+    img: "imagenes/cerave/cv-contorno-reparador.webp",
+    brand: "cerave",
+    line: "cv-rostro",
+    n: ["ojos"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible y quien usa lentillas, con bolsas y ojeras.",
+      tipo: "Crema de contorno de ojos ligera y de rápida absorción, con extractos marinos y botánicos.",
+      necesidad: "Hidrata el contorno y ayuda a reducir la apariencia de bolsas y ojeras.",
+      cuando: "Una o dos veces al día, por la mañana y/o por la noche; sola o bajo el maquillaje.",
+      modo: "Aplicar en pequeños puntos alrededor de los ojos y extender a toquecitos, sin arrastrar, hasta que se absorba.",
+      nota: "Sin perfume ni parabenos, no comedogénica y testada oftalmológicamente."
+    }
+  },
+
+  /* ---------- CeraVe · Hidratación cuerpo ---------- */
+  {
+    id: "cv-crema-hidratante",
+    name: "Crema Hidratante",
+    img: "imagenes/cerave/cv-crema-hidratante.webp",
+    brand: "cerave",
+    line: "cv-cuerpo",
+    n: ["seca", "rojeces", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos y niños con piel seca a muy seca, irritada, con picor o con tendencia atópica.",
+      tipo: "Crema hidratante rica, no grasa y de rápida absorción, para rostro y cuerpo, con vaselina.",
+      necesidad: "Retiene la humedad y ayuda a mantener la barrera protectora; hidratación 24 horas.",
+      cuando: "Al menos dos veces al día (mañana y noche) o siempre que la piel se note seca.",
+      modo: "Aplicar generosamente en rostro y cuerpo tantas veces como sea necesario, o según indique el médico.",
+      nota: "Sin perfume y no comedogénica. Se diferencia de la loción en la textura: la crema es más rica y lleva vaselina, que sella la hidratación."
+    }
+  },
+
+  {
+    id: "cv-locion-hidratacion-intensiva",
+    name: "Loción Hidratante Intensiva",
+    img: "imagenes/cerave/cv-locion-hidratacion-intensiva.webp",
+    brand: "cerave",
+    line: "cv-cuerpo",
+    n: ["seca", "corporal"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Adultos y adolescentes desde 13 años con piel seca a muy seca y picor por la sequedad; también piel madura muy seca.",
+      tipo: "Loción corporal rica y cremosa con Hydro-Urea™ (5 %) y manteca de karité.",
+      necesidad: "Hidrata intensamente y alivia los 5 signos de la piel seca: picor, tirantez, aspereza, descamación y rojez.",
+      cuando: "A diario.",
+      modo: "Aplicar generosamente según sea necesario o según indique el médico.",
+      nota: "Hipoalergénica, sin perfume y de pH equilibrado. Según CeraVe, hidrata hasta 72 horas tras una aplicación."
+    }
+  },
+
+  {
+    id: "cv-sa-crema-anti-rugosidades",
+    name: "SA Crema Alisadora Anti-rugosidades",
+    img: "imagenes/cerave/cv-sa-crema-anti-rugosidades.webp",
+    brand: "cerave",
+    line: "cv-cuerpo",
+    n: ["seca", "corporal"],
+    sk: ["seca"],
+    d: {
+      paciente: "Piel del cuerpo rugosa, áspera o irregular con tendencia a la sequedad (por ejemplo, granitos en brazos, muslos o glúteos).",
+      tipo: "Crema corporal con urea, ácido salicílico y ácido láctico, no grasa ni pegajosa.",
+      necesidad: "Exfolia suavemente y alisa la piel mientras la hidrata y ayuda a restaurar la barrera.",
+      cuando: "A diario.",
+      modo: "Aplicar solo en las zonas afectadas o según indique el médico. Evitar el contorno de ojos y las zonas irritadas.",
+      solar: "Contiene un alfahidroxiácido que aumenta la sensibilidad al sol: usar protector solar y limitar la exposición durante su uso y la semana siguiente.",
+      nota: "Suspender si aparece irritación o ardor. Sin perfume y no comedogénica."
+    }
+  },
+
+  /* ---------- CeraVe · Anti-imperfecciones ---------- */
+  {
+    id: "cv-gel-control-imperfecciones",
+    name: "Gel Control Imperfecciones",
+    img: "imagenes/cerave/cv-gel-control-imperfecciones.webp",
+    brand: "cerave",
+    line: "cv-imperfecciones",
+    n: ["acne", "poros"],
+    sk: ["grasa", "imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica: granos, puntos negros y poros visibles.",
+      tipo: "Gel transparente con BHA (ácido salicílico), AHA (glicólico y láctico) y niacinamida.",
+      necesidad: "Desobstruye los poros, reduce los puntos negros y mejora la apariencia de las imperfecciones sin resecar.",
+      cuando: "Por la noche, una vez al día (así lo recomienda la descripción).",
+      modo: "Sobre la piel limpia, aplicar en todo el rostro con movimientos circulares, evitando el contorno de ojos.",
+      solar: "Contiene AHA, que aumenta la sensibilidad al sol: usar protector solar y limitar la exposición durante su uso y la semana siguiente.",
+      nota: "La web se contradice en la pauta: la descripción dice una vez al día por la noche, y otro apartado, de una a tres veces al día. Sin perfume ni alcohol y no comedogénico; tiene un olor propio de sus ingredientes."
+    }
+  },
+
+  {
+    id: "cv-parches-imperfecciones",
+    name: "Parches Anti-Granos",
+    img: "imagenes/cerave/cv-parches-imperfecciones.webp",
+    brand: "cerave",
+    line: "cv-imperfecciones",
+    n: ["acne"],
+    sk: ["imperfecciones", "sensible"],
+    d: {
+      paciente: "Desde 13 años, con granos puntuales; apto para piel sensible.",
+      tipo: "Parches de hidrocoloide invisibles (12 y 10 mm) con ceramidas y niacinamida.",
+      necesidad: "Absorben el exceso de sebo, reducen la rojez y calman el grano, con resultados en 3 horas y sin dejar marcas.",
+      cuando: "Cuando aparece el grano: más de 6 horas o toda la noche.",
+      modo: "Limpiar y secar la zona, cubrir el grano con el parche y retirarlo estirando despacio de los bordes. Se puede llevar bajo el maquillaje.",
+      nota: "Hipoalergénicos y no comedogénicos. Ayudan a no tocar el grano."
+    }
+  },
+
+  {
+    id: "cv-serum-retinol-antimarcas",
+    name: "Sérum Retinol Anti-marcas",
+    img: "imagenes/cerave/cv-serum-retinol-antimarcas.webp",
+    brand: "cerave",
+    line: "cv-imperfecciones",
+    n: ["acne", "poros"],
+    sk: ["imperfecciones"],
+    d: {
+      paciente: "Piel con tendencia acneica que tiene marcas post-acné, poros visibles o textura irregular.",
+      tipo: "Sérum ligero sin aceites con retinol encapsulado, niacinamida y regaliz.",
+      necesidad: "Atenúa las marcas post-acné, refina la textura y reduce la apariencia de los poros.",
+      cuando: "Por la noche. La primera vez, en noches alternas y aumentar según la tolerancia.",
+      modo: "Sobre la piel limpia y seca; después, una crema hidratante. Evitar los ojos y los labios. Si molesta al principio, espaciar las aplicaciones.",
+      solar: "Usar protector solar durante el día mientras se use.",
+      nota: "La página de la web es confusa: parte del texto está copiado de la loción hidratante PM («aplicar tantas veces como sea necesario»). La pauta de esta ficha sale de sus advertencias y sus preguntas frecuentes. No usar a la vez que otros exfoliantes potentes."
+    }
+  },
+
+  /* ---------- CeraVe · Antiedad Skin Renewing ---------- */
+  {
+    id: "cv-sr-serum-vitamina-c",
+    name: "Skin Renewing Sérum con Vitamina C",
+    img: "imagenes/cerave/cv-sr-serum-vitamina-c.webp",
+    brand: "cerave",
+    line: "cv-antiedad",
+    n: ["apagada", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible y con tendencia acneica, con tono apagado y primeros signos de la edad.",
+      tipo: "Sérum ligero con un 10 % de vitamina C pura, ácido hialurónico y vitamina B5.",
+      necesidad: "Ilumina, unifica el tono, mejora las líneas de expresión y aporta protección antioxidante.",
+      cuando: "Una vez al día, por la mañana.",
+      modo: "Sobre el rostro limpio y seco, antes de la crema y del protector solar. Evitar los ojos. La primera vez, girar el tapón en el sentido de las agujas del reloj para romper el sello.",
+      nota: "Guardar en un lugar fresco y oscuro. Puede cambiar de color con el tiempo y sigue siendo eficaz. Sin perfume y no comedogénico."
+    }
+  },
+
+  {
+    id: "cv-sr-serum-retinol",
+    name: "Skin Renewing Sérum Retinol",
+    img: "imagenes/cerave/cv-sr-serum-retinol.webp",
+    brand: "cerave",
+    line: "cv-antiedad",
+    n: ["arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible, con líneas de expresión, arrugas o textura irregular.",
+      tipo: "Sérum en crema ligero con retinol encapsulado, niacinamida y extracto de achicoria.",
+      necesidad: "Mejora las líneas de expresión y arrugas en 4 semanas y alisa la piel, con 24 horas de hidratación.",
+      cuando: "Una vez al día, por la noche. La primera vez con retinol, 2 o 3 noches por semana.",
+      modo: "Aplicar de forma uniforme en rostro y cuello limpios; después, una hidratante. Evitar los ojos, los párpados y los labios. Si molesta al principio, espaciar las aplicaciones.",
+      solar: "Usar protector solar durante el día mientras se use.",
+      nota: "Sin perfume y no comedogénico. Con vitamina C, usarla por la mañana y este sérum por la noche."
+    }
+  },
+
+  {
+    id: "cv-sr-crema-peptidos",
+    name: "Skin Renewing Crema con Péptidos",
+    img: "imagenes/cerave/cv-sr-crema-peptidos.webp",
+    brand: "cerave",
+    line: "cv-antiedad",
+    n: ["flacidez", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible y seca, con pérdida de firmeza y líneas de expresión.",
+      tipo: "Crema facial reafirmante con complejo de péptidos, de textura rica pero no grasa.",
+      necesidad: "Mejora la firmeza en 2 semanas, la elasticidad y las arrugas, con hasta 48 horas de hidratación.",
+      cuando: "Una vez al día, sobre todo por la noche.",
+      modo: "Aplicar de forma uniforme en rostro y cuello. Evitar los ojos.",
+      nota: "La web se contradice: la descripción dice una vez al día y las preguntas frecuentes, que es sobre todo de noche (si se usa de día, con protector solar después). Sin perfume y no comedogénica."
+    }
+  },
+
+  {
+    id: "cv-sr-contorno-reafirmante",
+    name: "Skin Renewing Crema Reafirmante Contorno de Ojos",
+    img: "imagenes/cerave/cv-sr-contorno-reafirmante.webp",
+    brand: "cerave",
+    line: "cv-antiedad",
+    n: ["ojos", "arrugas"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible y quien usa lentillas, con primeros signos de la edad en el contorno.",
+      tipo: "Crema ligera de contorno de ojos con complejo de péptidos, cafeína, ácido hialurónico y niacinamida.",
+      necesidad: "Reafirma, ilumina y reduce las líneas de expresión, las arrugas y la hinchazón del contorno.",
+      cuando: "De día y de noche, después de la limpieza y antes de la crema facial.",
+      modo: "Poner en el dedo, aplicar a puntitos por todo el contorno (ojeras, patas de gallo, párpados y hueso de la ceja) y difuminar con movimientos ascendentes hasta que se absorba.",
+      nota: "Sin perfume y testada oftalmológicamente. Evitar el contacto con los ojos."
+    }
+  },
+
+  /* ---------- CeraVe · Protección solar ---------- */
+  {
+    id: "cv-fluido-hidratante-spf50",
+    name: "Fluido Protector Invisible Hidratante SPF50",
+    img: "imagenes/cerave/cv-fluido-hidratante-spf50.webp",
+    brand: "cerave",
+    line: "cv-solar",
+    n: ["fotoproteccion"],
+    sk: ["seca", "sensible"],
+    d: {
+      paciente: "Piel normal a seca y sensible; uso diario en el rostro.",
+      tipo: "Fluido facial de textura acuosa ultraligera con acabado invisible.",
+      necesidad: "Alta protección UVB y UVA; ayuda a prevenir la hiperpigmentación y las líneas de expresión e hidrata 24 horas.",
+      cuando: "A diario, como último paso de la rutina de mañana.",
+      modo: "Aplicar generosamente en rostro y cuello justo antes de la exposición y reaplicar con frecuencia, sobre todo tras sudar, secarse o nadar.",
+      solar: "SPF 50. Probado bajo el maquillaje.",
+      nota: "No comedogénico. Más hidratante que el Fluido Oil Control."
+    }
+  },
+
+  {
+    id: "cv-fluido-oil-control-spf50",
+    name: "Fluido Protector Invisible Oil Control SPF50+",
+    img: "imagenes/cerave/cv-fluido-oil-control-spf50.webp",
+    brand: "cerave",
+    line: "cv-solar",
+    n: ["fotoproteccion"],
+    sk: ["grasa", "mixta", "imperfecciones"],
+    d: {
+      paciente: "Piel normal a grasa, mixta o con tendencia acneica; uso diario en el rostro.",
+      tipo: "Fluido facial ultraligero, matificante y de toque seco, con acabado invisible.",
+      necesidad: "Muy alta protección UVB y UVA, con 12 horas de control de la grasa y 24 horas de hidratación.",
+      cuando: "A diario, como último paso de la rutina de mañana; también como prebase de maquillaje.",
+      modo: "Aplicar generosamente en rostro y cuello justo antes de la exposición y reaplicar con frecuencia, sobre todo tras sudar, secarse o nadar.",
+      solar: "SPF 50+.",
+      nota: "No comedogénico, transpirable y no graso."
+    }
+  },
+
+  {
+    id: "cv-locion-protectora-spf30",
+    name: "Loción Protectora Invisible Hidratante SPF30",
+    img: "imagenes/cerave/cv-locion-protectora-spf30.webp",
+    brand: "cerave",
+    line: "cv-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también sensible; rostro y cuerpo.",
+      tipo: "Loción hidratante solar para rostro y cuerpo con acabado invisible.",
+      necesidad: "Alta protección UVB y UVA, refuerza la barrera e hidrata 24 horas; puede sustituir a la hidratante de la mañana.",
+      cuando: "Justo antes de exponerse al sol; por la mañana si se usa retinol por la noche.",
+      modo: "Aplicar justo antes de la exposición y renovar frecuente y generosamente, sobre todo tras nadar, sudar o secarse.",
+      solar: "SPF 30. Resistente al agua, al sudor y a la arena. No exponer directamente al sol a bebés y niños.",
+      nota: "Sin perfume ni parabenos y no comedogénica."
+    }
+  },
+
+  {
+    id: "cv-locion-protectora-spf50",
+    name: "Loción Protectora Invisible Hidratante SPF50+",
+    img: "imagenes/cerave/cv-locion-protectora-spf50.webp",
+    brand: "cerave",
+    line: "cv-solar",
+    n: ["fotoproteccion", "corporal"],
+    sk: ["todas", "sensible"],
+    d: {
+      paciente: "Todo tipo de piel, también la más sensible; rostro y cuerpo.",
+      tipo: "Loción hidratante solar para rostro y cuerpo con acabado invisible.",
+      necesidad: "Muy alta protección UVB y UVA, refuerza la barrera e hidrata 24 horas; puede sustituir a la hidratante de la mañana.",
+      cuando: "Justo antes de exponerse al sol; por la mañana si se usa retinol por la noche.",
+      modo: "Aplicar justo antes de la exposición y renovar frecuente y generosamente, sobre todo tras nadar, sudar o secarse.",
+      solar: "SPF 50+. Resistente al agua, al sudor y a la arena. No exponer directamente al sol a bebés y niños.",
+      nota: "Sin perfume y no comedogénica."
     }
   }
 ];
