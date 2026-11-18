@@ -42,7 +42,7 @@ const P = {
  curcuma: ["ivb-femmebalance","kob-curcumin-black-pepper","pure-thyroid-support-salud-hormonal","pure-arthro-aktiv","pure-curcumina","fin-condrostop"],
  probiotico: ["kob-kobhocalm","kob-pre-post-probiotic","pure-proflora-gi"],
  isoflavonas: ["ivb-menomaster"],
- sojaProt: ["ivb-proteina-vegana"],
+ sojaProt: ["ivb-proteina-vegana","sol-vm-2000"],
  cimicifuga: ["kob-w-balance"],
  omega3: ["ivb-gestanatal","ivb-lactanatal","ivb-omega-3-dha","ivb-omega-3-epa","ivb-vegan-omega-3","kob-omega3","pure-one-omega","sol-omega-3-triple","sol-omega-369"],
  vitD: ["ivb-muscleguard","ivb-fertiup","ivb-gestanatal","ivb-lactanatal","ivb-d3-k2-spray","ivb-vitalnatal-woman","ivb-vitamina-d3k2","kob-w-balance","kob-vit-d3-k2","pure-piel-cabello-unas","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-thyroid-support-salud-hormonal","pure-sport","pure-arthro-aktiv","pure-complejo-de-calcio","pure-pure-defense","pure-vitamina-d3","sol-d3-4000","sol-female-multiple","sol-male-multiple","sol-vm-2000"],

@@ -69,7 +69,7 @@ D.prods.push(
  "compTitulo":"Composición por cápsula","composicion":["Ácido R-lipoico: 100 mg.","Vitamina C: 80 mg (100 % del VRN).","Vitamina E: 12 mg α-TE (100 % del VRN)."],
  "pauta":"1 cápsula al día.","toma":"Lejos de las comidas (media hora antes o 2 horas después), todos los días.","envase":"60 cápsulas.",
  "embarazo":"","lactancia":"","interacciones":"","otras":""}},
-{"id":"kob-curcumin-black-pepper","name":"Turmeric + Black Pepper (Cúrcuma + pimienta negra)","img":"imagenes/kobho/kob-curcumin-black-pepper.webp","brand":"kobho","line":"kob-esenciales","n":["s-articular","s-digestion"],"d":{
+{"id":"kob-curcumin-black-pepper","name":"Turmeric + Black Pepper (Cúrcuma + pimienta negra)","img":"imagenes/kobho/kob-curcumin-black-pepper.webp","brand":"kobho","line":"kob-esenciales","n":["s-articular","s-digestion","s-dolor"],"d":{
  "paciente":"Adultos con molestias articulares que buscan una fórmula de cúrcuma.",
  "tipo":"Complemento alimenticio en cápsulas",
  "necesidad":"Articulaciones y respuesta inflamatoria, con apoyo al bienestar digestivo.",

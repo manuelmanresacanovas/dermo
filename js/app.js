@@ -87,8 +87,8 @@ function buscar(texto){
    o si su tipo empieza por «Complemento» o dice «Complemento alimenticio» o «Nutricosmético». */
 const AREAS={dermo:{name:"Dermofarmacia",lead:"Cuidado de la piel: fundamentos, patologías, marcas y elección de producto."},supl:{name:"Complementos alimenticios",lead:"Suplementación por marcas y necesidades."}};
 const DERMO_SEC=[["piel","La piel","Fundamentos, estructura y funciones."],["cosmeticos","Cosméticos","Tipos, usos y cómo elegirlos."],["patologias","Patologías","Enfermedades con afectación en la piel."],["marcas","Productos","Marcas y productos."],["eleccion","Elección de producto","Según la necesidad del cliente."],["todos","Todos los productos","Catálogo completo con filtros por marca, necesidad y tipo de piel."],["rutina","Rutina","Asistente: rutina de mañana y noche según el cliente."]];
-const SUPL_SEC=[["smarcas","Por marca"],["snec","Por necesidad"],["stodos","Todos los productos"]];
-const NAV_AREA={dermo:"dermo",piel:"dermo",cosmeticos:"dermo",patologias:"dermo",marcas:"dermo",eleccion:"dermo",todos:"dermo",rutina:"dermo",complementos:"supl",smarcas:"supl",snec:"supl",stodos:"supl"};
+const SUPL_SEC=[["smarcas","Por marca"],["snec","Por necesidad"],["stodos","Todos los productos"],["sinter","Interacciones"]];
+const NAV_AREA={dermo:"dermo",piel:"dermo",cosmeticos:"dermo",patologias:"dermo",marcas:"dermo",eleccion:"dermo",todos:"dermo",rutina:"dermo",complementos:"supl",smarcas:"supl",snec:"supl",stodos:"supl",sinter:"supl"};
 /* Marcas de complementos (area:"supl"): sus páginas cuelgan de Complementos › Por marca */
 const esMarcaSupl=b=>b.area==="supl";
 const baseMarca=b=>esMarcaSupl(b)?[["Inicio",""],["Complementos","complementos"],["Por marca","smarcas"]]:[["Inicio",""],["Productos","marcas"]];
@@ -103,7 +103,7 @@ const dermoTiles=()=>DERMO_SEC.map(s=>tile(s[0],s[1],s[2])).join("");
 const LOGOS={caudalie:"svg",filorga:"svg",sensilis:"svg",gemaherrerias:"svg",medik8:"svg",svr:"png",nuxe:"svg",lrp:"png",cantabria:"svg",avene:"png",isdin:"png",ivb:"svg",solgar:"svg",pure:"svg",kobho:"png",finisher:"png"};
 /* Marca en la página de marcas: logo a la izquierda, ajustado a la altura de la tarjeta (igual que los productos en el buscador) */
 const brandTile=b=>`<li><a class="card cbus cmarca" href="#marca-${b.id}">${LOGOS[b.id]?`<span class="mlogo"><img src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="" loading="lazy"></span>`:`<i class="ph"></i>`}<div><strong>${esc(b.name)}</strong><span>${n(D.prods.filter(p=>p.brand===b.id).length,"producto")}</span></div></a></li>`;
-const muroLogos=supl=>`<div class="logos${supl?" lsup":""}">${D.brands.filter(b=>LOGOS[b.id]&&(b.area==="supl")===!!supl).map(b=>`<span><img src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="${esc(b.name)}" loading="lazy"></span>`).join("")}</div>`;
+const muroLogos=supl=>`<div class="logos${supl?" lsup":""}">${D.brands.filter(b=>LOGOS[b.id]&&(b.area==="supl")===!!supl).map(b=>`<span><img class="l-${b.id}" src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="${esc(b.name)}" loading="lazy"></span>`).join("")}</div>`;
 /* Carrusel de complementos (imagenes/complementos/<nombre>.webp, fondo blanco). Para añadir fotos, súbelas a esa carpeta y añade el nombre aquí. */
 const CARRUSEL=["ivb-creamag","ivb-creatine-essential","ivb-muscleguard","ivb-omega-3-rico-en-dha","ivb-omega-3-rico-en-epa","ivb-proteina-lactea","ivb-vitamina-d3k2","kobho-alpha-lipoic-acid","kobho-astaxanthin-coq10","kobho-biotin-keratin","kobho-curcumin-black-pepper","kobho-kobhocalm","kobho-liposomal-vitamin-c","kobho-omega3","kobho-trans-resveratrol-quercetin","kobho-trimagnesium","kobho-vegan-protein-isolate","kobho-w-balance"];
 const barajar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
@@ -322,14 +322,37 @@ function paginaRutina(){
  const form=`<div class="rutform">${sel("r-n","1. ¿Qué le preocupa?","Elige la necesidad…",RUT_NEC().map(x=>[x.id,x.name]),RUT.n)}${sel("r-s","2. Tipo de piel","Elige el tipo de piel…",SKS,RUT.s)}${sel("r-e","3. ¿Embarazo o lactancia?","No",[["si","Sí"]],RUT.e)}${sel("r-b","4. Marca (opcional)","Cualquier marca",D.brands.filter(b=>b.area!=="supl").map(b=>[b.id,b.name]),RUT.b)}</div>`;
  return{t:"Rutina",nav:"rutina",html:`${crumbs([["Inicio",""],["Rutina"]])}<h1>Asistente de rutina</h1><p class="lead">Responde a las preguntas y te propone una rutina de mañana y noche con productos del catálogo.</p>${form}${RUT.n&&RUT.s?rutina():`<p class="empty">Elige la necesidad y el tipo de piel para ver la rutina.</p>`}`};
 }
+/* INTERACCIONES CON MEDICAMENTOS (Complementos › Interacciones).
+   No añade información: busca, en los textos de interacciones de cada ficha (lo que indica la marca y d.interCurso),
+   las frases que nombran el grupo de medicamentos elegido (datos/medicamentos.js) o, si no hay grupo, el texto escrito. */
+let MEDQ="";
+const MEDG=(D.meds||[]).map(g=>Object.assign({rx:new RegExp(g.re,"i")},g));
+const medGrupos=q=>{q=norm(q.trim());if(q.length<3)return[];return MEDG.filter(g=>[g.name].concat(g.alias).some(a=>{a=norm(a);return a.startsWith(q)||a.split(/\s+/).some(w=>w.startsWith(q))||(q.length>=5&&a.length>=4&&q.startsWith(a+" "))}))};
+const frases=t=>t.split(/\.\s+(?=[A-ZÁÉÍÓÚÑ¿])/).map(s=>s.trim().replace(/\.?$/,"."));
+const sevDe=s=>/no es una contraindicaci|motivo para recomendar|sin problemas/i.test(s)?"nota":/^no se han descrito/i.test(s)?"prec":/^no |\bno (tomar|combinar|recomendar|usar)|contraindicad|evitar|prohibici|no debe/i.test(s)?"evitar":"prec";
+const SEVT={evitar:"Evitar",prec:"Precaución",nota:"Nota"};
+const fuentesInter=p=>{const d=p.d||{},o=(d.interCurso||[]).map(x=>[x.c,x.t]);if(d.interacciones)o.push(["Lo que indica "+B(p.brand).name,d.interacciones]);return o};
+const avisosMed=gs=>D.prods.map(p=>{const it=[],vis=new Set();fuentesInter(p).forEach(a=>frases(a[1]).forEach(s=>{if(!vis.has(s)&&gs.some(g=>g.rx.test(s))){vis.add(s);it.push({c:a[0],s,v:sevDe(s)})}}));return it.length?{p,it,v:it.some(x=>x.v==="evitar")?0:it.some(x=>x.v==="prec")?1:2}:null}).filter(Boolean).sort((a,b)=>a.v-b.v||a.p.name.localeCompare(b.p.name,"es"));
+function paginaInter(id){
+ const q=MEDQ.trim(),g0=MEDG.find(g=>g.id===id),gs=q?medGrupos(q):g0?[g0]:[];
+ let res="";
+ if(gs.length||(q&&norm(q).length>=4)){
+  const libre=!gs.length,a=avisosMed(libre?[{rx:{test:s=>norm(s).includes(norm(q))}}]:gs);
+  res=`<h2>${libre?`Textos que mencionan «${esc(q)}»`:gs.map(g=>esc(g.name)).join(" · ")}</h2>${libre?`<p class="medej">No es un grupo conocido: se busca la palabra tal cual.</p>`:`<p class="medej">${gs.map(g=>esc(g.ej)).join(" · ")}</p>`}`+
+   (a.length?`<p class="lead" role="status">${n(a.length,"complemento")} con aviso.</p><ul class="medres">${a.map(x=>`<li class="box"><a class="medp" href="#prod-${x.p.id}">${x.p.img?`<img src="${esc(x.p.img)}" alt="" loading="lazy" width="64" height="64">`:`<i class="ph"></i>`}<span><strong>${esc(x.p.name)}</strong><span>${esc(B(x.p.brand).name)}</span></span></a><ul class="medav">${x.it.map(i=>`<li><span class="sev ${i.v}">${SEVT[i.v]}</span> <strong>${esc(i.c)}:</strong> ${esc(i.s)}</li>`).join("")}</ul></li>`).join("")}</ul>`
+   :`<p class="empty" role="status">Ningún complemento del catálogo tiene descrita una interacción con este medicamento. Eso no garantiza que sea seguro: revisa la ficha del producto.</p>`);
+ }else if(q)res=`<p class="empty" role="status">Escribe al menos 3 letras del medicamento o elige un grupo.</p>`;
+ return{t:"Interacciones con medicamentos",nav:"sinter",html:`${crumbs([["Inicio",""],["Complementos","complementos"],["Interacciones"]])}<h1>Interacciones con medicamentos</h1><p class="lead">Escribe el medicamento que toma el paciente (marca o principio activo) o elige un grupo: verás qué complementos del catálogo evitar o vigilar, y por qué.</p><label class="medlab" for="med">Medicamento</label><input type="search" id="med" value="${esc(MEDQ)}" placeholder="Ej.: Sintrom, omeprazol, sertralina…" autocomplete="off">${res}<h2 class="medh">${gs.length?"Otros grupos":"Grupos de medicamentos"}</h2><ul class="chips medchips">${MEDG.map(g=>`<li><a class="chip" href="#sinter-${g.id}"${gs.includes(g)?' aria-current="true"':""}>${esc(g.name)}</a></li>`).join("")}</ul><p class="lead mednota">Solo aparecen los complementos cuya ficha describe una interacción con ese medicamento. Que un complemento no aparezca no garantiza que sea seguro; ante la duda, consultar con el médico.</p>`};
+}
 function page(h){
  if(h==="rutina")return paginaRutina();
+ if(h==="sinter"||h.startsWith("sinter-"))return paginaInter(h.slice(7));
  if(h==="comparar")return paginaComparar();
  const i=h.indexOf("-"),k=i<0?h:h.slice(0,i),id=i<0?"":h.slice(i+1);
  if(k==="test"&&window.FORM){const r=FORM.page(id);if(r)return r}
  if(!h)return{t:"Catálogo de la farmacia",nav:"",html:`<h1>Catálogo de la farmacia</h1><p class="lead">Elige un área.</p><ul class="agrid">${areaDermo()}${areaSupl()}</ul>`};
  if(h==="dermo")return{t:"Dermofarmacia",nav:"dermo",html:`${crumbs([["Inicio",""],["Dermofarmacia"]])}<h1>Dermofarmacia</h1><p class="lead">${AREAS.dermo.lead}</p><ul class="grid">${dermoTiles()}</ul>`};
- if(h==="complementos"){const bs=D.brands.filter(esMarcaSupl),c=suplPorMarca().reduce((s,a)=>s+a[1].length,0),ns=needsSupl();return{t:"Complementos alimenticios",nav:"complementos",html:`${crumbs([["Inicio",""],["Complementos alimenticios"]])}<h1>Complementos alimenticios</h1><p class="lead">${AREAS.supl.lead}</p><ul class="grid">${tile("smarcas","Por marca","Marcas y productos.")}${tile("snec","Por necesidad","Según la necesidad del cliente.")}${tile("stodos","Todos los productos","Catálogo completo con filtros por marca y necesidad.")}</ul>`}}
+ if(h==="complementos"){const bs=D.brands.filter(esMarcaSupl),c=suplPorMarca().reduce((s,a)=>s+a[1].length,0),ns=needsSupl();return{t:"Complementos alimenticios",nav:"complementos",html:`${crumbs([["Inicio",""],["Complementos alimenticios"]])}<h1>Complementos alimenticios</h1><p class="lead">${AREAS.supl.lead}</p><ul class="grid">${tile("smarcas","Por marca","Marcas y productos.")}${tile("snec","Por necesidad","Según la necesidad del cliente.")}${tile("stodos","Todos los productos","Catálogo completo con filtros por marca y necesidad.")}${tile("sinter","Interacciones","Qué complementos evitar o vigilar según el medicamento que toma el paciente.")}</ul>`}}
  if(h==="smarcas"){const bs=D.brands.filter(esMarcaSupl),otros=suplPorMarca().filter(a=>!esMarcaSupl(a[0]));return{t:"Complementos por marca",nav:"smarcas",html:`${crumbs([["Inicio",""],["Complementos","complementos"],["Por marca"]])}<h1>Por marca</h1><p class="lead">Elige una marca.</p>${bs.length?`<ul class="grid">${bs.map(brandTile).join("")}</ul>`:`<p class="empty">Aún no hay marcas de complementos cargadas.</p>`}${otros.length?`<h2>Complementos de marcas de dermofarmacia</h2>${otros.map(a=>`<details class="acc"><summary>${esc(a[0].name)}<span>${n(a[1].length,"producto")}</span></summary><ul class="grid">${a[1].map(prodMini).join("")}</ul></details>`).join("")}`:""}`}}
  if(h==="snec")return{t:"Complementos por necesidad",nav:"snec",html:`${crumbs([["Inicio",""],["Complementos","complementos"],["Por necesidad"]])}<h1>Por necesidad</h1><p class="lead">Elige la necesidad del cliente.</p><ul class="grid">${needsSupl().map(x=>tile("nec-"+x.id,x.name,n(suplEn(x).length,"producto"))).join("")}</ul>`};
  if(k==="nec"&&N(id)&&N(id).area==="supl"){const x=N(id),g=D.brands.map(b=>[b,suplEn(x).filter(p=>p.brand===b.id)]).filter(a=>a[1].length),ls=ps=>`<ul class="grid">${ps.map(prodMini).join("")}</ul>`,secciones=(b,ps)=>b.lines.filter(l=>ps.some(p=>lineIds(p)[0]===l.id)).map(l=>`<h3><a href="#linea-${l.id}">${esc(l.name)}</a></h3>${ls(ps.filter(p=>lineIds(p)[0]===l.id))}`).join("");
@@ -349,12 +372,14 @@ function page(h){
  if(k==="pat"&&P(id)){const i=D.pats.findIndex(a=>a.id===id),x=D.pats[i],nx=D.pats[i+1];return{t:x.name,nav:"patologias",html:`${crumbs([["Inicio",""],["Patologías","patologias"],[x.name]])}<h1>${esc(x.name)}</h1><div class="box th">${md(x.t)}</div>${recPat(x)}${window.FORM?FORM.enlaceTema("patologias",x.id):""}${nx?`<p><a class="chip" href="#pat-${nx.id}">Siguiente: ${esc(nx.name)} →</a></p>`:""}`}}
  if(k==="prod"){const p=D.prods.find(p=>p.id===id);if(p){const b=B(p.brand);return{t:p.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name,"marca-"+b.id],[L(p.brand,lineIds(p)[0]),"linea-"+lineIds(p)[0]],[p.name]])}<h1>${esc(p.name)}</h1><p class="fcmp">${cmpBtn(p)}</p><div class="fgrid">${p.img?`<img class="fimg" src="${esc(p.img)}" alt="${esc(p.name)}" width="400" height="400">`:""}<div>${p.d?(p.d.pauta!==undefined?fichaSupl(p.d,b.name):prodFicha(p.d)):`<p class="empty">Ficha pendiente de completar.</p>`}<div class="box"><p><strong>Marca:</strong> <a href="#marca-${b.id}">${esc(b.name)}</a></p>${p.cn&&p.cn.length?`<p><strong>${p.cn.length>1?"Códigos nacionales":"Código nacional"}:</strong> ${p.cn.map(esc).join(", ")}</p>`:""}${p.ean&&p.ean.length?`<p><strong>${p.ean.length>1?"Códigos de barras":"Código de barras"}:</strong> ${p.ean.map(esc).join(", ")}</p>`:""}<p><strong>${lineIds(p).length>1?"Líneas":"Línea"}:</strong> ${lineIds(p).map(l=>`<a href="#linea-${l}">${esc(L(p.brand,l))}</a>`).join(", ")}</p>${prodNeeds(p).length?`<p><strong>Necesidades:</strong></p><ul class="chips">${prodNeeds(p).map(t=>`<li><a class="chip" href="#nec-${t}">${esc(N(t).name)}</a></li>`).join("")}</ul>`:""}</div></div></div>${complementosDe(p)}`}}}
  if(h==="buscar"){const q=Q.value.trim(),{r,bs,ps,fix}=buscar(q);
-  return{t:"Búsqueda",nav:"",html:`${crumbs([["Inicio",""],["Búsqueda"]])}<h1>Resultados</h1><p class="lead" role="status">${q?n(r.length+bs.length+ps.length,"resultado"):"Escribe para buscar."}${fix.length?` · Buscando: ${esc(fix.join(", "))}`:""}</p><ul class="grid">${bs.map(b=>tile("marca-"+b.id,b.name,"Marca")).join("")}${ps.map(x=>tile("pat-"+x.id,x.name,"Patología")).join("")}${r.map(prodCard).join("")}</ul>`}}
+  /* Si lo buscado es un medicamento, enlace a sus interacciones con complementos */
+  let mg=norm(q).length>=5?medGrupos(q):[];if(mg.length>3)mg=[];
+  return{t:"Búsqueda",nav:"",html:`${crumbs([["Inicio",""],["Búsqueda"]])}<h1>Resultados</h1><p class="lead" role="status">${q?n(r.length+bs.length+ps.length+mg.length,"resultado"):"Escribe para buscar."}${fix.length?` · Buscando: ${esc(fix.join(", "))}`:""}</p><ul class="grid">${mg.map(g=>tile("sinter-"+g.id,"Interacciones: "+g.name,"Complementos a evitar o vigilar con este medicamento")).join("")}${bs.map(b=>tile("marca-"+b.id,b.name,"Marca")).join("")}${ps.map(x=>tile("pat-"+x.id,x.name,"Patología")).join("")}${r.map(prodCard).join("")}</ul>`}}
  return{t:"No encontrado",nav:"",html:`<h1>Página no encontrada</h1><p class="empty">El enlace no existe o el producto fue retirado.<br><a href="#">Volver al inicio</a></p>`};
 }
 let last="";
 function render(){
- const h=location.hash.slice(1);if(h!==last){F="";}
+ const h=location.hash.slice(1);if(h!==last){F="";if(h.startsWith("sinter-"))MEDQ=""}
  const p=page(h);M.innerHTML=p.html;document.title=p.t+" · Catálogo Farmacia";
  const area=NAV_AREA[p.nav]||"";
  $("#nav").innerHTML=[["","Inicio",!h],["dermo","Dermofarmacia",area==="dermo"],["complementos","Complementos",area==="supl"]].map(a=>`<a href="#${a[0]}"${a[2]?' aria-current="page"':""}>${a[1]}</a>`).join("");
@@ -369,6 +394,7 @@ function render(){
   const nc=[...document.querySelectorAll("[data-tf]")].find(x=>x.dataset.tf===k&&x.value===v);if(nc)nc.focus()});
  const tfx=$("#tfx");if(tfx)tfx.onclick=()=>{Object.keys(TF).forEach(k=>TF[k]=[]);last=h;render();const c=$("[data-tf]");if(c)c.focus()};
  document.querySelectorAll("[data-rut]").forEach(s=>s.onchange=()=>{RUT[s.dataset.rut]=s.value;last=h;render();$("#"+s.id).focus()});
+ const med=$("#med");if(med)med.oninput=()=>{MEDQ=med.value;last=h;render();const m=$("#med");m.focus();m.setSelectionRange(m.value.length,m.value.length)};
  const cd=$("#cmpdif");if(cd)cd.onchange=()=>{CMPD=cd.checked;last=h;render();$("#cmpdif").focus()};
  pintaBarra();
  girarCarrusel();

@@ -79,7 +79,7 @@ D.prods.push(
  "pauta":"1 cucharada y media (6,6 g) antes y después del ejercicio.","toma":"Disolver en 300 ml de agua.","envase":"Bote de 300 g (unas 45 tomas).",
  "embarazo":"","lactancia":"","interacciones":"","otras":"Sin gluten, lactosa, soja, huevo ni aceite de palma."}},
 /* ---------- SALUD ARTICULAR ---------- */
-{"id":"fin-condrostop","name":"CondroStop","img":"imagenes/finisher/fin-condrostop.webp","brand":"finisher","line":"fin-articular","n":["s-articular","s-deporte"],"d":{
+{"id":"fin-condrostop","name":"CondroStop","img":"imagenes/finisher/fin-condrostop.webp","brand":"finisher","line":"fin-articular","n":["s-articular","s-deporte","s-dolor"],"d":{
  "paciente":"Personas que quieren cuidar el cartílago y la movilidad de las articulaciones.",
  "tipo":"Complemento alimenticio en polvo para disolver (sobres o bote, sabor naranja)",
  "necesidad":"Salud articular: regenerar el cartílago, aliviar el dolor articular y ganar flexibilidad.",

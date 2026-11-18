@@ -10,6 +10,7 @@ D.needs = (D.needs || []).concat([
   { id: "s-defensas", area: "supl", name: "Defensas", d: "Sistema inmunitario." },
   { id: "s-digestion", area: "supl", name: "Digestión y microbiota", d: "Fibra, probióticos y confort digestivo." },
   { id: "s-articular", area: "supl", name: "Articulaciones, huesos y músculo", d: "Cartílago, huesos y masa muscular." },
+  { id: "s-dolor", area: "supl", name: "Dolor y molestias", d: "Alivio del dolor y molestias articulares." },
   { id: "s-deporte", area: "supl", name: "Deporte y rendimiento", d: "Proteína, creatina y recuperación." },
   { id: "s-piel", area: "supl", name: "Piel, cabello y uñas", d: "Nutricosmética." },
   { id: "s-cardio", area: "supl", name: "Corazón, colesterol y circulación", d: "Omega 3, colesterol y piernas cansadas." },

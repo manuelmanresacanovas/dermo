@@ -31,7 +31,7 @@ const F = {
 "ivb-satisens": "Control del apetito y la saciedad cuidando el ánimo.",
 "ivb-menomaster": "Para perimenopausia y menopausia, de origen vegetal (salvia e isoflavonas); contiene soja.",
 "ivb-magnesio-total": "Magnesio bisglicinato y malato (215 mg) para cansancio, músculos y huesos.",
-"ivb-zerodol": "PEA (palmitoiletanolamida) en alta concentración para el confort diario.",
+"ivb-zerodol": "PEA (palmitoiletanolamida) en alta concentración para el alivio del dolor; 1 cápsula al día.",
 "ivb-vita-c-500": "Vitamina C 500 mg; IVB la propone con FerroPlus para absorber mejor el hierro.",
 "ivb-vitamina-d3k2": "Vitamina D3 + K2 en cápsulas, para quien se expone poco al sol.",
 "ivb-femmebalance": "Para el ciclo menstrual y el equilibrio hormonal. No recomendado en el embarazo.",
