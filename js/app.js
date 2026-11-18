@@ -100,10 +100,12 @@ const dermoTiles=()=>DERMO_SEC.map(s=>tile(s[0],s[1],s[2])).join("");
 /* Inicio: una tarjeta grande por área.
    Dermofarmacia muestra los logos de las marcas (imagenes/logos/<id de marca>.svg o .png; la marca sin logo no sale).
    Complementos hace lo mismo con los logos de sus marcas. */
-const LOGOS={caudalie:"svg",filorga:"svg",sensilis:"svg",gemaherrerias:"svg",medik8:"svg",svr:"png",nuxe:"svg",lrp:"png",cantabria:"svg",avene:"png",isdin:"png",aderma:"png",ivb:"svg",solgar:"svg",pure:"svg",kobho:"png",finisher:"png"};
+const LOGOS={caudalie:"svg",filorga:"svg",sensilis:"svg",gemaherrerias:"svg",medik8:"svg",svr:"png",nuxe:"svg",lrp:"png",cantabria:"svg",avene:"png",isdin:"png",aderma:"png",cerave:"svg",ivb:"svg",solgar:"svg",pure:"svg",kobho:"png",finisher:"png"};
 /* Marca en la página de marcas: logo a la izquierda, ajustado a la altura de la tarjeta (igual que los productos en el buscador) */
 const brandTile=b=>`<li><a class="card cbus cmarca" href="#marca-${b.id}">${LOGOS[b.id]?`<span class="mlogo"><img src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="" loading="lazy"></span>`:`<i class="ph"></i>`}<div><strong>${esc(b.name)}</strong><span>${n(D.prods.filter(p=>p.brand===b.id).length,"producto")}</span></div></a></li>`;
-const muroLogos=supl=>`<div class="logos${supl?" lsup":""}">${D.brands.filter(b=>LOGOS[b.id]&&(b.area==="supl")===!!supl).map(b=>`<span><img class="l-${b.id}" src="imagenes/logos/${b.id}.${LOGOS[b.id]}" alt="${esc(b.name)}" loading="lazy"></span>`).join("")}</div>`;
+/* En la portada, algunas marcas usan otra versión del logo (Pure: letras negras sin el recuadro azul) */
+const LOGO_MURO={pure:"pure-negro.svg"};
+const muroLogos=supl=>`<div class="logos${supl?" lsup":""}">${D.brands.filter(b=>LOGOS[b.id]&&(b.area==="supl")===!!supl).map(b=>`<span><img class="l-${b.id}" src="imagenes/logos/${LOGO_MURO[b.id]||b.id+"."+LOGOS[b.id]}" alt="${esc(b.name)}" loading="lazy"></span>`).join("")}</div>`;
 /* Carrusel de complementos (imagenes/complementos/<nombre>.webp, fondo blanco). Para añadir fotos, súbelas a esa carpeta y añade el nombre aquí. */
 const CARRUSEL=["ivb-creamag","ivb-creatine-essential","ivb-muscleguard","ivb-omega-3-rico-en-dha","ivb-omega-3-rico-en-epa","ivb-proteina-lactea","ivb-vitamina-d3k2","kobho-alpha-lipoic-acid","kobho-astaxanthin-coq10","kobho-biotin-keratin","kobho-curcumin-black-pepper","kobho-kobhocalm","kobho-liposomal-vitamin-c","kobho-omega3","kobho-trans-resveratrol-quercetin","kobho-trimagnesium","kobho-vegan-protein-isolate","kobho-w-balance"];
 const barajar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};

@@ -103,7 +103,10 @@ nav a[aria-current=page]{background:var(--a2);color:var(--a)}
 .logos,.ailus{margin-top:16px;aspect-ratio:3/2;border-radius:12px;overflow:hidden}
 .logos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:8px;padding:10px;background:#f3f1f6}
 .logos span{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;padding:4px 10px;min-height:0;overflow:hidden}
-.lsup span:last-child:nth-child(odd){grid-column:span 2}
+.logos span:last-child:nth-child(odd){grid-column:span 2}
+/* Pie de página con el aviso de uso */
+.pie{border-top:1px solid var(--b);margin-top:48px;padding:20px 16px 28px;color:var(--m);font-size:.82rem;line-height:1.5}
+.pie p{max-width:1068px;margin:0 auto}
 /* Interacciones con medicamentos (#sinter) */
 .medlab{display:block;font-weight:600;margin:4px 0 6px}
 #med{max-width:560px;margin-bottom:8px}
