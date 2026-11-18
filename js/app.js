@@ -86,9 +86,9 @@ function buscar(texto){
    Un producto es complemento si su marca tiene area:"supl" (marcas.js), si el producto tiene cat:"supl"
    o si su tipo empieza por «Complemento» o dice «Complemento alimenticio» o «Nutricosmético». */
 const AREAS={dermo:{name:"Dermofarmacia",lead:"Cuidado de la piel: fundamentos, patologías, marcas y elección de producto."},supl:{name:"Complementos alimenticios",lead:"Suplementación por marcas y necesidades."}};
-const DERMO_SEC=[["piel","La piel","Fundamentos, estructura y funciones."],["cosmeticos","Cosméticos","Tipos, usos y cómo elegirlos."],["patologias","Patologías","Enfermedades con afectación en la piel."],["marcas","Productos","Marcas y productos."],["eleccion","Elección de producto","Según la necesidad del cliente."]];
+const DERMO_SEC=[["piel","La piel","Fundamentos, estructura y funciones."],["cosmeticos","Cosméticos","Tipos, usos y cómo elegirlos."],["patologias","Patologías","Enfermedades con afectación en la piel."],["marcas","Productos","Marcas y productos."],["eleccion","Elección de producto","Según la necesidad del cliente."],["todos","Todos los productos","Catálogo completo con filtros por marca, necesidad y tipo de piel."]];
 const SUPL_SEC=[["smarcas","Por marca"],["snec","Por necesidad"]];
-const NAV_AREA={dermo:"dermo",piel:"dermo",cosmeticos:"dermo",patologias:"dermo",marcas:"dermo",eleccion:"dermo",complementos:"supl",smarcas:"supl",snec:"supl"};
+const NAV_AREA={dermo:"dermo",piel:"dermo",cosmeticos:"dermo",patologias:"dermo",marcas:"dermo",eleccion:"dermo",todos:"dermo",complementos:"supl",smarcas:"supl",snec:"supl"};
 /* Marcas de complementos (area:"supl"): sus páginas cuelgan de Complementos › Por marca */
 const esMarcaSupl=b=>b.area==="supl";
 const baseMarca=b=>esMarcaSupl(b)?[["Inicio",""],["Complementos","complementos"],["Por marca","smarcas"]]:[["Inicio",""],["Productos","marcas"]];
@@ -119,6 +119,19 @@ const nubeNec=()=>`<div class="ailus nubes" aria-hidden="true">${needsSupl().map
 const suplEn=x=>D.prods.filter(p=>esSupl(p)&&prodNeeds(p).includes(x.id));
 const areaDermo=()=>areaCard("dermo","dermo",n(D.prods.filter(p=>!esSupl(p)).length,"producto")+" de "+n(D.brands.filter(b=>b.area!=="supl").length,"marca"));
 const areaSupl=()=>{const c=suplPorMarca().reduce((s,a)=>s+a[1].length,0);return areaCard("complementos","supl",c?n(c,"producto")+" por ahora":"Se irán añadiendo poco a poco.",` <span class="nuevo">En construcción</span>`)};
+/* TODOS LOS PRODUCTOS (dermofarmacia): listado completo con filtros desplegables a la izquierda.
+   Cada opción indica cuántos productos quedarían con los demás filtros puestos; las que dejarían 0 se desactivan.
+   Tipo de piel: el de la ficha oficial (sk); «todo tipo de piel» sale en todas las opciones, igual que en Elección. */
+/* Casillas: dentro de un mismo filtro basta con cumplir una opción; entre filtros distintos hay que cumplirlos todos */
+const TF={b:[],n:[],s:[]},TFO={b:false,n:false,s:false};
+const dermoProds=()=>D.prods.filter(p=>!esSupl(p));
+const pasaFiltro=(p,f)=>(!f.b.length||f.b.includes(p.brand))&&(!f.n.length||prodNeeds(p).some(x=>f.n.includes(x)))&&(!f.s.length||(p.sk||[]).some(t=>t==="todas"||f.s.includes(t)));
+const filtroGrupo=(k,lab,opts,ps)=>`<details class="tfg" data-g="${k}"${TFO[k]?" open":""}><summary>${lab}${TF[k].length?` <span class="tfn">${TF[k].length}</span>`:""}<span class="flecha" aria-hidden="true">▾</span></summary><div class="tfops">${opts.map(([v,t])=>{const c=ps.filter(p=>pasaFiltro(p,Object.assign({},TF,{[k]:[v]}))).length,sel=TF[k].includes(v),off=!c&&!sel;return `<label class="tfop${off?" off":""}"><input type="checkbox" data-tf="${k}" value="${esc(v)}"${sel?" checked":""}${off?" disabled":""}><span>${esc(t)}</span><em>${c}</em></label>`}).join("")}</div></details>`;
+function paginaTodos(){
+ const ps=dermoProds(),r=ps.filter(p=>pasaFiltro(p,TF)),hay=TF.b.length||TF.n.length||TF.s.length;
+ const filtros=`<div class="tfil" role="group" aria-label="Filtros">${filtroGrupo("b","Marca",D.brands.filter(b=>b.area!=="supl").map(b=>[b.id,b.name]),ps)}${filtroGrupo("n","Necesidad",D.needs.filter(x=>x.area!=="supl").map(x=>[x.id,x.name]),ps)}${filtroGrupo("s","Tipo de piel",SKS.slice(1),ps)}${hay?`<button type="button" class="bcuenta" id="tfx">Quitar filtros</button>`:""}</div>`;
+ return{t:"Todos los productos",nav:"todos",html:`${crumbs([["Inicio",""],["Todos los productos"]])}<h1>Todos los productos</h1><div class="tgrid">${filtros}<div><p class="lead" role="status">${n(r.length,"producto")}${hay?` de ${ps.length}`:""}</p>${r.length?`<ul class="grid tlist">${r.map(prodCard).join("")}</ul>`:`<p class="empty">Ningún producto cumple estos filtros.</p>`}</div></div>`};
+}
 function page(h){
  const i=h.indexOf("-"),k=i<0?h:h.slice(0,i),id=i<0?"":h.slice(i+1);
  if(k==="test"&&window.FORM){const r=FORM.page(id);if(r)return r}
@@ -136,6 +149,7 @@ function page(h){
  if(h==="cosmeticos")return{t:"Cosméticos",nav:"cosmeticos",html:`${crumbs([["Inicio",""],["Cosméticos"]])}<h1>Cosméticos</h1><p class="lead">Tipos, usos y cómo elegirlos.</p><ul class="grid">${D.cosm.map(a=>tile("cosm-"+a.id,a.name,a.d)).join("")}${testTile("cosmeticos")}</ul>`};
  if(k==="cosm"&&D.cosm.some(a=>a.id===id)){const i=D.cosm.findIndex(a=>a.id===id),x=D.cosm[i],nx=D.cosm[i+1];return{t:x.name,nav:"cosmeticos",html:`${crumbs([["Inicio",""],["Cosméticos","cosmeticos"],[x.name]])}<h1>${esc(x.name)}</h1><div class="box th">${md(x.t)}</div>${window.FORM?FORM.enlaceTema("cosmeticos",x.id):""}${nx?`<p><a class="chip" href="#cosm-${nx.id}">Siguiente: ${esc(nx.name)} →</a></p>`:""}`}}
  if(h==="eleccion")return{t:"Elección de producto",nav:"eleccion",html:`${crumbs([["Inicio",""],["Elección de producto"]])}<h1>Elección de producto</h1><p class="lead">Elige la necesidad del cliente.</p><ul class="grid">${D.needs.filter(x=>x.area!=="supl").map(x=>tile("nec-"+x.id,x.name,n(D.prods.filter(p=>enEleccion(p,x)).length,"producto"))).join("")}</ul>`};
+ if(h==="todos")return paginaTodos();
  if(k==="nec"&&N(id)){const x=N(id),g=D.brands.map(b=>[b,D.prods.filter(p=>p.brand===b.id&&enEleccion(p,x)&&ok(p))]).filter(a=>a[1].length),lista=ps=>`<ul class="grid">${ps.map(prodMini).join("")}</ul>`,secciones=(b,ps)=>x.tipo?lista(ps):b.lines.filter(l=>ps.some(p=>lineaPrincipal(p,x)===l.id)).map(l=>`<h3><a href="#linea-${l.id}">Línea ${esc(l.name)}</a></h3>${lista(ps.filter(p=>lineaPrincipal(p,x)===l.id))}`).join("")+D.needs.filter(t=>t.tipo&&ps.some(p=>!lineaPrincipal(p,x)&&tipoDe(p,x)===t)).map(t=>`<h3><a href="#nec-${t.id}">${esc(t.name)}</a></h3>${lista(ps.filter(p=>!lineaPrincipal(p,x)&&tipoDe(p,x)===t))}`).join("");return{t:x.name,nav:"eleccion",html:`${crumbs([["Inicio",""],["Elección de producto","eleccion"],[x.name]])}<h1>${esc(x.name)}</h1>${x.c?`<p class="lead"><a href="#cosm-${x.c}">Ver guía</a></p>`:""}<label for="sk">Tu tipo de piel</label><select id="sk"><option value="">Selecciona tu tipo de piel…</option>${SKS.map(o=>`<option value="${o[0]}"${SK===o[0]?" selected":""}>${o[1]}</option>`).join("")}</select><p class="lead" style="margin-top:8px;font-size:.9rem">${x.tipo?"Aparecen todos los productos de este tipo de cada marca; cada tarjeta indica su línea.":"Cada marca muestra su línea principal para esta necesidad y, aparte, sus contornos, limpiadores y fotoprotectores indicados para ella."} El tipo de piel es el que indica la ficha oficial de cada marca («todo tipo de piel» aparece en todas las opciones).</p>${!SK?`<p class="empty">Elige tu tipo de piel para ver los productos.</p>`:g.length?g.map(a=>`<details class="acc"><summary>${esc(a[0].name)}<span>${n(a[1].length,"producto")}</span></summary>${secciones(a[0],a[1])}</details>`).join(""):`<p class="empty">Aún no hay productos confirmados para este tipo de piel en esta necesidad.</p>`}`}}
  if(k==="marca"&&B(id)){const b=B(id);return{t:b.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name]])}<h1>${esc(b.name)}</h1><h2>Líneas</h2>${b.lines.length?`<ul class="grid">${b.lines.map(l=>lineTile(l,n(D.prods.filter(p=>inLine(p,l.id)).length,"producto"))).join("")}</ul>`:`<p class="empty">Esta marca aún no tiene líneas cargadas.</p>`}${b.area!=="supl"&&window.FORM?FORM.enlaceTema("marcas",b.id):""}`}}
  if(k==="linea"){const b=D.brands.find(b=>b.lines.some(l=>l.id===id));if(b){const l=b.lines.find(l=>l.id===id);return{t:l.name,nav:navMarca(b),html:`${crumbs([...baseMarca(b),[b.name,"marca-"+b.id],[l.name]])}<h1>${esc(l.name)}</h1><p class="lead">${esc(b.name)}${l.para?` · ${esc(l.para)}`:""}</p>${D.prods.some(p=>inLine(p,id))?`<ul class="pgrid">${D.prods.filter(p=>inLine(p,id)).map(prodTile).join("")}</ul>`:`<p class="empty">Esta línea aún no tiene productos cargados.</p>`}`}}}
@@ -153,6 +167,14 @@ function render(){
  $("#nav").innerHTML=[["","Inicio",!h],["dermo","Dermofarmacia",area==="dermo"],["complementos","Complementos",area==="supl"]].map(a=>`<a href="#${a[0]}"${a[2]?' aria-current="page"':""}>${a[1]}</a>`).join("");
  const sub=$("#sub"),secs=area==="dermo"?DERMO_SEC.map(s=>[s[0],s[0]==="eleccion"?"Elección":s[1]]):area==="supl"?SUPL_SEC:[];sub.hidden=!secs.length;sub.innerHTML=secs.length?`<div>${secs.map(s=>`<a href="#${s[0]}"${s[0]===p.nav?' aria-current="page"':""}>${s[1]}</a>`).join("")}</div>`:"";
  const sk=$("#sk");if(sk)sk.onchange=()=>{SK=sk.value;last=h;render();$("#sk").focus()};const f=$("#f");if(f)f.onchange=()=>{F=f.value;last=h;render();f.focus()};
+ /* Al marcar una casilla se repinta la página conservando el scroll de cada lista y el foco en la casilla */
+ /* Solo un desplegable abierto a la vez */
+ document.querySelectorAll(".tfg").forEach(d=>d.ontoggle=()=>{TFO[d.dataset.g]=d.open;if(d.open)document.querySelectorAll(".tfg[open]").forEach(o=>{if(o!==d)o.open=false})});
+ document.querySelectorAll("[data-tf]").forEach(c=>c.onchange=()=>{const k=c.dataset.tf,v=c.value;TF[k]=c.checked?TF[k].concat(v):TF[k].filter(x=>x!==v);
+  const sc={};document.querySelectorAll(".tfg").forEach(d=>sc[d.dataset.g]=d.querySelector(".tfops").scrollTop);last=h;render();
+  document.querySelectorAll(".tfg").forEach(d=>d.querySelector(".tfops").scrollTop=sc[d.dataset.g]||0);
+  const nc=[...document.querySelectorAll("[data-tf]")].find(x=>x.dataset.tf===k&&x.value===v);if(nc)nc.focus()});
+ const tfx=$("#tfx");if(tfx)tfx.onclick=()=>{TF.b=[];TF.n=[];TF.s=[];last=h;render();const c=$("[data-tf]");if(c)c.focus()};
  girarCarrusel();
  if(h!==last&&h!=="buscar"){window.scrollTo(0,0);M.focus({preventScroll:true})}
  last=h;
@@ -176,4 +198,8 @@ Q.addEventListener("input",()=>{location.hash==="#buscar"?render():(location.has
   fin();   // cualquier otra tecla: termina la lectura y deja pasar la tecla
  },true);
 })();
-addEventListener("hashchange",render);render();
+/* Desplegables de filtros: se cierran al pulsar fuera o con Escape */
+const cerrarFiltros=()=>document.querySelectorAll(".tfg[open]").forEach(d=>d.open=false);
+document.addEventListener("click",e=>{if(e.target.isConnected&&!e.target.closest(".tfg"))cerrarFiltros()});
+document.addEventListener("keydown",e=>{const d=e.target.closest&&e.target.closest(".tfg[open]");if(e.key==="Escape"&&d){d.open=false;d.querySelector("summary").focus()}});
+addEventListener("hashchange",()=>{TFO.b=TFO.n=TFO.s=false;render()});render();
