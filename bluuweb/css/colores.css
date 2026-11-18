@@ -1,0 +1,13 @@
+/* ejemplo de usar colores con nombre propio */
+.color{
+    color:tomato;
+}
+/* Ejemplo de usar colores en rgb */
+.verde{
+    color: rgb(0, 255, 0);
+}
+/* Ejemplo de usar colores en hexadecimal */
+.celeste{
+    color:#44ffff;
+}
+

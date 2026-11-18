@@ -1,0 +1,15 @@
+
+button{
+    background: #404969;
+    color: skyblue
+}
+/* Pseudo-clase para cuando pasamos el ratón por encima de un elemento, aquí por ejemplo se pone el fondo naranja y el texto negro. */
+button:hover{
+    background: orange;
+    color: black;
+}
+/* Pseudo-clase para cuando hacemos clic en un elemento, aquí por ejemplo se pone el fondo rojo y el texto blanco */
+button:active{
+    background: red;
+    color: white;
+}

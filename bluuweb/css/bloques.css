@@ -1,0 +1,9 @@
+h1{
+    background: salmon;
+    display: inline-block; /* Transforma un elemento de bloque a un elemento de línea. */
+}
+
+a{
+    background: salmon;
+    display: block; /* Transforma un elemento de línea en un elemento de bloque. */
+}

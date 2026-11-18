@@ -1,0 +1,50 @@
+
+.nav-enlace{
+    display: inline-block;
+    background: salmon;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+/* Cuando queremos que el enlace cambie al poner el cursor encima usamos HOVER */
+
+.nav-enlace:hover{ /* Al pasar el cursor le hemos indicado que cambie el color del fondo y el color de la fuente */
+    background: sandybrown;
+    color: black;
+}
+
+/* center=centro, space-between=separadas por espacios, space-around=con espacio entre ellas y con los márgenes, flex-end=a la derecha */ /* Los espacios se colocan de forma automática según la cantidad de elementos que tenemos, en nuestro caso son 4. */
+
+ nav{
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cuando visualizamos el sitio desde un móvil o minimizando la pantalla nuestro diseño se debe adaptar a la situación. Debe ser RESPONSIVE */
+
+/* Utilizamos un MEDIA QUERIE para que cuando tenga de máximo 600px se comporte de una forma diferente. Flex-direction:column hace que cuando se baje el ancho por debajo de 600px los elementos seleccionados se comporten como columnas una debajo de otra.*/
+
+.nav-button{
+    background: salmon;
+    color:white;
+    padding: 10px 0px;
+    border: 2px solid #fff; /* BORDER tiene 3 parámetro, el tamaño, el estilo y el color del borde. */
+    display: none;         
+}
+
+@media (max-width: 550px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0px;
+    }
+    .nav-button{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none; 
+    }
+  }

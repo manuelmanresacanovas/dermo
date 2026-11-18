@@ -1,0 +1,20 @@
+/* Esta es mi hoja de estilos */
+
+h1{
+    color:rgba(99, 202, 99, 0.849);
+    font: size 36px;
+}
+
+h2{
+    color:#7c6eb1;
+    font: size 13px;
+}
+/* Para hacer referencia a los atributos id se escribe una almohadilla */
+
+#unico{
+    color:pink;
+}
+
+.rojo{
+    color:red;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Encabezado h1</h1>
+    <!-- Solo puede haber un solo elemento con el mismo atributo id, significa que si un elemento tiene el id="unico" ningún otro elemento puede tener el id="unico" -->
+    <h1 id="unico">Encabezado h1</h1>
+    <!-- Para las clases es otra cosa, diferentes elementos pueden tener el mismo atributo de class="rojo" (Por ejemplo) Un h1 y un párrafo pueden compartir el atributo de class="rojo" -->
+    <h1 class="rojo">Encabezado h1</h1>
+    <!-- Auqnue le haya puesto la class=rojo al párrafo no será de color rojo porque en mi hoja de estilos solo he puesto h1.rojo para que solo se aplique al h1 con la clase rojo. Si quisiera que se aplique a todas las class=rojo escribiría .rojo{  } -->
+    <p class="rojo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis laborum tempora obcaecati nam porro. Labore vel commodi facere numquam fugit magni officiis aperiam, doloribus placeat quis vitae ex hic! Reprehenderit!</p>
+    <!-- Puede haber varios atributos de class para un mismo elemento. Tendremos que escribir su código en la hoja de estilos. En este caso el encabezado h1 se verá de color y un fondo configurado en la hoja de estilos -->
+    <h1 class="rojo fondo">Encabezado h1</h1>
+</body>
+</html>

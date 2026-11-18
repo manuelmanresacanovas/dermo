@@ -1,0 +1,32 @@
+/* Esta es mi hoja de estilos. */
+
+/* Aquí estoy diciéndole a mi doc html que los encabezados h1 deben ser de color verde. */
+
+h1{
+    color:green;
+}
+
+/* Aquí estoy diciéndole a mi doc html que los encabezados h2 deben ser de color morado. */
+
+h2{
+    color:#7c6eb1;
+    font: size 13px;
+}
+
+/* Para hacer referencia a los atributos id se escribe una almohadilla. 
+Aquí le digo que el h1 con el id=unico será de color rosa. */
+
+h1#unico{
+    color:pink;
+}
+
+/* Para hacer referencia al atributo clase se escribe un punto (.)
+Aquí le digo que el h1 con class=rojo será de color rojo */
+
+h1.rojo{
+    color:red;
+}
+
+.fondo{
+    background: grey;
+}

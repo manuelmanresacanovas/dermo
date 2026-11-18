@@ -1,0 +1,16 @@
+nav{
+    background: skyblue;
+    padding: 20px;
+}
+
+.columna{
+    background: thistle;
+    color: royalblue;
+    padding: 20px;
+    width: 33.33%;
+    margin: 10px;
+}
+
+.padre{
+    display: flex; /* flex significa que el elemento pasa a ser flexible. */
+}
