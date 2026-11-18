@@ -35,14 +35,14 @@ const P = {
  fenilalanina: ["pure-cognitive-aminos"],
  ginseng: ["ivb-energy-up","kob-kobhoglp","pure-energy-extra"],
  rhodiola: ["ivb-energy-up","ivb-tyroenergy","kob-kobhocalm","pure-energy-extra","pure-rhodiola-rosea"],
- ashwagandha: ["kob-kobhocalm","kob-neuro-sleep","pure-thyroid-support-salud-hormonal","pure-energy-extra","pure-ashwagandha"],
- vitD: ["ivb-muscleguard","ivb-fertiup","ivb-gestanatal","ivb-lactanatal","ivb-d3-k2-spray","ivb-vitalnatal-woman","ivb-vitamina-d3k2","kob-w-balance","kob-vit-d3-k2","pure-piel-cabello-unas","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-thyroid-support-salud-hormonal","pure-sport","pure-arthro-aktiv","pure-complejo-de-calcio","pure-pure-defense","pure-vitamina-d3"],
+ ashwagandha: ["kob-kobhocalm","kob-neuro-sleep","pure-thyroid-support-salud-hormonal","pure-energy-extra","pure-ashwagandha","sol-ashwagandha"],
+ vitD: ["ivb-muscleguard","ivb-fertiup","ivb-gestanatal","ivb-lactanatal","ivb-d3-k2-spray","ivb-vitalnatal-woman","ivb-vitamina-d3k2","kob-w-balance","kob-vit-d3-k2","pure-piel-cabello-unas","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-thyroid-support-salud-hormonal","pure-sport","pure-arthro-aktiv","pure-complejo-de-calcio","pure-pure-defense","pure-vitamina-d3","sol-d3-4000","sol-female-multiple","sol-male-multiple","sol-vm-2000"],
  vitK2: ["ivb-muscleguard","ivb-fertiup","ivb-gestanatal","ivb-lactanatal","ivb-d3-k2-spray","ivb-vitalnatal-woman","ivb-vitamina-d3k2","kob-vit-d3-k2"],
  hongos: ["ivb-stress-off","kob-liposomal-vitamin-c"],
- cromo: ["ivb-gestanatal","ivb-lactanatal","ivb-metabolic-max","kob-kobhoglp","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-mineral-650a","pure-sport","fin-termogenico"],
+ cromo: ["ivb-gestanatal","ivb-lactanatal","ivb-metabolic-max","kob-kobhoglp","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-mineral-650a","pure-sport","fin-termogenico","sol-male-multiple","sol-vm-2000"],
  cafeina: ["kob-kobhoglp","kob-creatine-plus","fin-caffeine"],
  teverde: ["kob-kobhoglp","kob-melatonin-l-tryptophan","kob-creatine-plus","pure-piel-cabello-unas"],
- omega3: ["ivb-gestanatal","ivb-lactanatal","ivb-omega-3-dha","ivb-omega-3-epa","ivb-vegan-omega-3","kob-omega3","pure-one-omega"],
+ omega3: ["ivb-gestanatal","ivb-lactanatal","ivb-omega-3-dha","ivb-omega-3-epa","ivb-vegan-omega-3","kob-omega3","pure-one-omega","sol-omega-3-triple","sol-omega-369"],
  vitE: ["pure-vision","ivb-vitalnatal-man"],
  coq10: ["ivb-fertiup","ivb-energy-up","ivb-lactanatal","ivb-anti-ox-global","ivb-vitalnatal-man","ivb-tyroenergy","kob-astaxanthin-coq10","kob-collagen-hyaluronic-acid","pure-piel-cabello-unas","pure-all-in-one-multivitaminico","pure-lipid-aktiv","pure-co-q10","pure-sport","pure-ubiquinol","pure-coq10-con-pqq"]
 };

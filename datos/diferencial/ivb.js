@@ -1,0 +1,41 @@
+/* «En qué se diferencia» de los productos de IVB Wellness Lab (formato y criterio: ver datos/diferencial/caudalie.js) */
+(function(){
+const F = {
+"ivb-muscleguard": "Para no perder músculo en dieta, inactividad o con la edad: HMB con D3 y K2. No sustituye a la proteína.",
+"ivb-zinc-plus": "Zinc doble (OptiZinc® y picolinato, 25 mg) con cobre para defensas, piel, cabello y uñas.",
+"ivb-myo-inositol": "Myo-inositol a dosis completa (4 g) con NAC, zinc y cobre, en polvo.",
+"ivb-circudren": "Para piernas cansadas y pesadas: castaño de Indias y meliloto.",
+"ivb-fertiup": "Para la MUJER que busca el embarazo (preconcepción): myo-inositol, CoQ10 y folato activo, en polvo.",
+"ivb-energy-up": "Energía y rendimiento mental SIN cafeína: cordyceps, ginseng y rhodiola.",
+"ivb-gestanatal": "El multivitamínico para DURANTE el embarazo, con folato activo, hierro y yodo.",
+"ivb-lactanatal": "El multivitamínico para la LACTANCIA y el posparto, rico en colina y yodo.",
+"ivb-proteina-vegana": "Proteína vegetal (soja, guisante, altramuz y girasol) para quien no toma lácteos.",
+"ivb-proteina-lactea": "Proteína de leche y suero con lactasa añadida para mejorar la tolerancia.",
+"ivb-fiber-total": "Fibra soluble prebiótica baja en FODMAP, bien tolerada.",
+"ivb-omega-3-dha": "Omega-3 rico en DHA: cerebro y visión; IVB lo propone en el embarazo junto a GestaNatal.",
+"ivb-omega-3-epa": "Omega-3 rico en EPA: enfocado al corazón.",
+"ivb-creatine-essential": "Creatina pura (3 g, Creavitalis®) sin aditivos.",
+"ivb-ferroplus": "Hierro bisglicinato con vitamina C y folato para el cansancio por falta de hierro.",
+"ivb-anti-ox-global": "Antioxidante completo (cereza ácida, astaxantina y CoQ10) que además apoya la energía.",
+"ivb-articare": "Para las articulaciones y el cartílago: glucosamina, MSM y boswellia.",
+"ivb-d3-k2-spray": "Vitamina D3 + K2 en spray, para quien no traga bien las cápsulas.",
+"ivb-creamag": "Creatina (3 g) con magnesio para el cansancio; si solo se quiere creatina, CREATINE Essential.",
+"ivb-stress-off": "Para el estrés con adaptógenos (reishi y eleuterococo); 100 % vegetal.",
+"ivb-vegan-omega-3": "Omega-3 100 % vegetal, de microalga: el de veganos.",
+"ivb-somnilove": "Para dormir SIN melatonina: glicina, pasiflora y teanina en polvo.",
+"ivb-metil-b12": "Vitamina B12 activa en gotas (250 µg) con sabor fresa; apta para veganos.",
+"ivb-vitalnatal-man": "Para el HOMBRE que busca el embarazo con su pareja: CoQ10, NAC y zinc.",
+"ivb-vitalnatal-woman": "El multivitamínico preconcepcional de la mujer, en cápsulas; en el embarazo, GestaNatal.",
+"ivb-memory-on": "Memoria y concentración: citicolina, SAMe y bacopa.",
+"ivb-metabolic-max": "Glucosa, colesterol e hígado con berberina fitosomada.",
+"ivb-satisens": "Control del apetito y la saciedad cuidando el ánimo.",
+"ivb-menomaster": "Para perimenopausia y menopausia, de origen vegetal (salvia e isoflavonas); contiene soja.",
+"ivb-magnesio-total": "Magnesio bisglicinato y malato (215 mg) para cansancio, músculos y huesos.",
+"ivb-zerodol": "PEA (palmitoiletanolamida) en alta concentración para el confort diario.",
+"ivb-vita-c-500": "Vitamina C 500 mg; IVB la propone con FerroPlus para absorber mejor el hierro.",
+"ivb-vitamina-d3k2": "Vitamina D3 + K2 en cápsulas, para quien se expone poco al sol.",
+"ivb-femmebalance": "Para el ciclo menstrual y el equilibrio hormonal. No recomendado en el embarazo.",
+"ivb-tyroenergy": "Para la función tiroidea y la energía: myo-inositol y rhodiola."
+};
+D.prods.forEach(p => { if (F[p.id] && p.d) p.d.dif = F[p.id]; });
+})();
