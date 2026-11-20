@@ -173,8 +173,10 @@ const embCls=p=>{const t=norm(embarazoDe(p));if(!t)return "";if(/sin contraindic
 const PIEL_TXT={seca:"tiene la piel seca",grasa:"tiene la piel grasa",mixta:"tiene la piel mixta",imperfecciones:"tiene imperfecciones",sensible:"tiene la piel sensible"};
 const NEC_TXT={limpieza:["z:limp","busca un limpiador"],ojos:["z:ojos","es para el contorno de ojos"],fotoproteccion:["z:sol","busca protección solar"],corporal:["z:cuerpo","es para el cuerpo"]};
 /* [expresión, clave, texto, dónde buscar: tipo | cu (cuándo) | t (tipo + necesidad + paciente)] */
+/* Necesidades de tipo (necesidades_extra.js): su nombre es una categoría, no algo que «tratar», así que llevan su propia frase */
+const NEC_TIPO_TXT={atopica:["x:atop","tiene la piel atópica o eczema"],bebe:["x:bebe","es para un bebé o un niño"],labios:["z:labios","es para los labios"],manos:["z:manos","es para las manos, los pies o las uñas"],cabello:["z:pelo","es para el cabello"],cicatrices:["x:cica","tiene la piel dañada, una cicatriz o viene de un tratamiento"],maquillaje:["x:maq","quiere maquillaje o corrector"],autobronceado:["x:autob","quiere un autobronceador"],transpiracion:["x:deso","busca un desodorante"],hombre:["x:hombre","busca algo para hombre o para el afeitado"],fragancias:["x:frag","busca una fragancia"]};
 const RASGOS_TXT=[
- [/contorno de ojos/,"z:ojos","es para el contorno de ojos","tipo"],[/corporal|cuerpo/,"z:cuerpo","es para el cuerpo","tipo"],[/\bmanos\b/,"z:manos","es para las manos","tipo"],[/labi/,"z:labios","es para los labios","tipo"],[/cabell|capilar|champu/,"z:pelo","es para el cabello","tipo"],
+ [/contorno de ojos/,"z:ojos","es para el contorno de ojos","tipo"],[/todo el cuerpo|cuerpo completo/,"z:cuerpo","lo quiere para todo el cuerpo, no solo para las axilas","tipo"],[/corporal|cuerpo/,"z:cuerpo","es para el cuerpo","tipo"],[/\bmanos\b/,"z:manos","es para las manos","tipo"],[/labi/,"z:labios","es para los labios","tipo"],[/cabell|capilar|champu/,"z:pelo","es para el cabello","tipo"],
  [/piel adulta/,"e:adulta","es adulto","t"],
  [/acabado mate|matific/,"t:mate","quiere acabado mate","t"],[/textura rica|\brica\b|balsamo/,"t:rica","prefiere una textura rica","tipo"],[/ligera|gel-crema|gelcream|\bfluido\b|sin acabado graso|sin efecto graso|acabado seco/,"t:ligera","prefiere una textura ligera","tipo"],
  [/unific|tono desigual|uniform/,"t:unif","quiere unificar el tono","t"],[/como hidratante/,"t:hidr","lo quiere como hidratante diaria","cu"],
@@ -191,11 +193,19 @@ function rasgosDe(p){
  const pa=d.paciente||"",m=pa.match(/(?:desde|a partir de)(?: los)? (\d+) (años|meses)/i);
  if(m)add("edad:"+m[1]+m[2],m[2]==="meses"||+m[1]<10?`es para niños (desde ${m[1]} ${m[2]})`:`es adolescente (desde ${m[1]} años)`,1);else if(/toda la familia/i.test(pa))add("fam","es para toda la familia",1);
  const noche=/solo por la noche|^por la noche/.test(src.cu)||/de noche/.test(src.tipo),dia=/solo por la manana|^por la manana/.test(src.cu)||/de dia/.test(src.tipo);
- if(dia&&!noche)add("m:dia","busca uno de día",2);if(noche&&!dia)add("m:noche","busca uno de noche",2);
+ /* Día o noche solo distingue en tratamientos: en desodorantes y fragancias no ayuda a elegir */
+ const sinMomento=prodNeeds(p).some(t=>t==="transpiracion"||t==="fragancias");
+ if(!sinMomento){if(dia&&!noche)add("m:dia","busca uno de día",2);if(noche&&!dia)add("m:noche","busca uno de noche",2)}
  (p.sk||[]).forEach(s=>{if(PIEL_TXT[s])add("sk:"+s,PIEL_TXT[s],3)});
- prodNeeds(p).forEach(id=>{const x=N(id);if(!x||(id==="corporal"&&esSupl(p)))return;const e=NEC_TXT[id];e?add(e[0],e[1],4):add("n:"+id,"quiere tratar "+lcFirst(x.name),4)});
+ prodNeeds(p).forEach(id=>{const x=N(id);if(!x||(id==="corporal"&&esSupl(p)))return;const e=NEC_TXT[id]||NEC_TIPO_TXT[id];e?add(e[0],e[1],4):add("n:"+id,"quiere tratar "+lcFirst(x.name),4)});
+ /* Desodorantes: la duración de la protección (24 h, 48 h…) es lo que más los distingue */
+ const esDeso=prodNeeds(p).includes("transpiracion");
+ if(esDeso){const hd=norm([p.name,d.necesidad].join(" ")).match(/(\d+) ?h(oras)?\b/);if(hd)add("dur:"+hd[1],`necesita protección de ${hd[1]} horas`,5);
+  /* y el formato, en vez de la textura */
+  const fm=[["stick","en barra (stick)"],["roll-on","en roll-on"],["spray","en spray"],["vaporizador","en spray"],["fluido","fluido"],["crema","en crema"]].find(x=>norm(p.name+" "+(d.tipo||"")).includes(x[0]));if(fm)add("fmt:"+fm[1],"lo prefiere "+fm[1],5)}
  if(d.limpieza){const l=norm(d.limpieza);if(/1\.er paso/.test(l))add("lp:1","quiere desmaquillar (1.er paso de la limpieza)",5);else if(/2\.. paso/.test(l))add("lp:2","busca el limpiador del 2.º paso",5);else if(/unica/.test(l))add("lp:u","quiere un limpiador único, sin doble limpieza",5);else if(/ultimo paso/.test(l))add("lp:t","busca un tónico para terminar la limpieza",5)}
- RASGOS_TXT.forEach(([re,k,l,w])=>{if(re.test(src[w]))add(k,l,6)});
+ /* Las formas de tomar (cápsulas, bebible, masticable) solo valen para complementos: un desodorante en «stick» no se bebe */
+ RASGOS_TXT.forEach(([re,k,l,w])=>{if(/^f:/.test(k)&&!esSupl(p))return;if(esDeso&&/^t:(ligera|rica)$/.test(k))return;if(re.test(src[w]))add(k,l,6)});
  const sp=(d.tipo||"").match(/SPF ?(\d+\+?)/i);if(sp)add("spf:"+sp[1],`quiere SPF${sp[1]}`,6);
  return r;
 }

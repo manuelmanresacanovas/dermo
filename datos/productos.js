@@ -8555,7 +8555,7 @@ D.prods = [
     sk: ["todas"],
     d: {
       paciente: "Nuxe no indica un tipo de piel concreto.",
-      tipo: "Desodorante fluido.",
+      tipo: "Desodorante en roll-on, de textura fluida.",
       necesidad: "Protección 24 horas sin marcas.",
       cuando: "Por la mañana; reaplicar si es necesario.",
       modo: "Aplicar sobre la piel limpia y seca."
